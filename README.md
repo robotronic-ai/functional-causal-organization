@@ -9,6 +9,8 @@ They accompany the article *Measuring Functional Access in a Language Model by I
 
 Repository: [github.com/robotronic-ai/functional-causal-organization](https://github.com/robotronic-ai/functional-causal-organization)
 
+**License:** code under the [MIT License](LICENSE); data, results and documentation under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). See [License](#license).
+
 ## Contents
 
 | Folder | What it contains | Status |
@@ -136,6 +138,32 @@ Behavioral-profile summaries: T = 0.67 · B = 0.87 · E = 0.72 · C = 0.46. The 
 ### Scope
 
 One model, 8-bit weights, 12 of the 42 tests, one seed (the confidence intervals reflect variability across instances of that seed; repeating on other seeds is a natural extension). **Not a consciousness score.**
+
+## License
+
+© 2026 Ronan Merien.
+
+| Material | License |
+|---|---|
+| Source code (scripts, harnesses, generators, verifiers) | [MIT License](LICENSE) |
+| Data, raw results, protocols, documentation and this README | [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) |
+
+Unless a file states otherwise, these terms apply to everything under `16-pci-t-directional-specificity/` and `17-fca-bench/`. The CC BY 4.0 license requires attribution: cite the work as described below and indicate any changes you make. The MIT License requires that the copyright notice and permission notice be kept in copies of the code.
+
+The licenses cover this archive's contents. The Qwen3-8B model used in the experiments is a third-party artifact (Qwen Team) distributed under its own terms; it is not included here and is not relicensed by this repository.
+
+## How to cite
+
+If you use these instruments, protocols or results, please cite the article:
+
+> Merien, R. (2026). *Measuring Functional Access in a Language Model by Intervention: PCI_T and FCA-Bench* (version 1.5).
+
+and, for the code and data, the archived release of this repository (the DOI and release tag are given in the repository's `CITATION.cff` and release notes). GitHub's "Cite this repository" button reads `CITATION.cff`.
+
+## Reproducibility and integrity
+
+- Each folder fixes the SHA-256 fingerprint of its files; verify them before reuse.
+- Cite a **release tag or commit hash**, not only the repository URL: a branch can move, a tag and its archived release cannot.
 
 ## Intended use
 

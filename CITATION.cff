@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use these instruments, protocols or results, please cite them as below."
+title: "Functional causal organization: PCI_T and FCA-Bench"
+type: software
+authors:
+  - family-names: "Merien"
+    given-names: "Ronan"
+    affiliation: "Robotronic"
+    email: "ronan.merien@robotronic.com"
+version: "1.5"
+repository-code: "https://github.com/robotronic-ai/functional-causal-organization"
+license:
+  - MIT
+  - CC-BY-4.0
+abstract: >-
+  Code, protocols, raw results and verifiers for PCI_T (a perturbational
+  complexity index for transformers and its directional specificity) and
+  FCA-Bench (a functional causal access benchmark with behavioral and causal
+  profiles), applied to Qwen3-8B. Code under MIT; data, results and
+  documentation under CC BY 4.0.
+keywords:
+  - language models
+  - interpretability
+  - perturbational complexity
+  - functional access
+  - benchmark
