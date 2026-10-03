@@ -1,0 +1,138 @@
+{
+  "benchmark": "FCA-Bench (Functional Causal Access Benchmark)",
+  "protocol_version": "0.2.7",
+  "runner_id": "FCA027_GPU_R6",
+  "system": "Qwen3-8B, standard decoder Transformer, weights quantized to 8 bits (bitsandbytes), strict GPU execution, thinking mode off",
+  "n_per_test": 20,
+  "seed": 0,
+  "source_file": "FCA027_GPU_R6_12TESTS_n20_FINAL.json",
+  "aggregate_scalar": null,
+  "behavioral_profile": {
+    "T": {
+      "summary": 0.669,
+      "tests": {
+        "T1": {
+          "status": "executed",
+          "score": 0.8944,
+          "ci95": [
+            0.856,
+            0.9263
+          ]
+        },
+        "T2": {
+          "status": "executed",
+          "score": 0.2625,
+          "ci95": [
+            0.1125,
+            0.4125
+          ]
+        },
+        "T3": {
+          "status": "executed",
+          "score": 0.85,
+          "ci95": [
+            0.75,
+            0.9333
+          ]
+        }
+      }
+    },
+    "B": {
+      "summary": 0.8667,
+      "tests": {
+        "B1": {
+          "status": "executed",
+          "score": 0.8667,
+          "ci95": [
+            0.8,
+            0.9333
+          ]
+        }
+      }
+    },
+    "E": {
+      "summary": 0.7194,
+      "tests": {
+        "E1": {
+          "status": "executed",
+          "score": 0.7194,
+          "ci95": [
+            0.6683,
+            0.7647
+          ],
+          "n_valid": 19,
+          "e1_samples": 20
+        }
+      }
+    },
+    "C": {
+      "summary": 0.4625,
+      "tests": {
+        "C3": {
+          "status": "executed",
+          "score": 0.4625,
+          "ci95": [
+            0.4125,
+            0.5125
+          ]
+        }
+      }
+    }
+  },
+  "causal_profile": {
+    "R": {
+      "tests": {
+        "R1": {
+          "status": "structural_absent",
+          "required_capability": "silent_steps"
+        },
+        "R3": {
+          "status": "executed",
+          "score": 0.4,
+          "ci95": [
+            0.2,
+            0.6
+          ]
+        }
+      }
+    },
+    "D": {
+      "tests": {
+        "D1": {
+          "status": "structural_absent",
+          "required_capability": "idle_dynamics"
+        }
+      }
+    },
+    "L": {
+      "tests": {
+        "L2": {
+          "status": "structural_absent",
+          "required_capability": "persistent_latent_state"
+        }
+      }
+    },
+    "U": {
+      "tests": {
+        "U3": {
+          "status": "structural_absent",
+          "required_capability": "semantic_gc"
+        }
+      }
+    },
+    "I": {
+      "tests": {
+        "I3": {
+          "status": "structural_absent",
+          "required_capability": "independent_stream_clocks"
+        }
+      }
+    }
+  },
+  "notes": [
+    "Behavioral and causal profiles are reported separately; the protocol defines no aggregate FCA scalar (PROTOCOL.md, section 3).",
+    "structural_absent means the required architecture primitive is unavailable; it is not an executed task score.",
+    "The causal profile is read test by test: R3 is executable on a standard Transformer and is the only measured value in that profile.",
+    "T2 is the chance-corrected balanced accuracy of interval membership, max(0, 2*mean(BA)-1); raw mean BA = 0.6312 (chance = 0.5)."
+  ]
+}

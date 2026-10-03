@@ -1,0 +1,98 @@
+{
+  "cal3_prospective_replication": {
+    "decision": "CAL3_LATE_LAYER_GATE_PASS_SCORE2_AUTHORIZED",
+    "deepest_dominance_count": 5,
+    "fraction_l27_medians": {
+      "0.20": 1.432915563201667,
+      "0.40": 1.2771310711412207
+    },
+    "gate_passed": true,
+    "late_vs_lower_system_ratio": 1.3148749890587044,
+    "layer_system_medians": {
+      "0": 1.0493480322328057,
+      "18": 1.0616456414186675,
+      "27": 1.3297070644664692,
+      "9": 0.9914238006526267
+    }
+  },
+  "historical_v0_20": {
+    "PCI_T_ST_ADAPTED": 277.9609375,
+    "interpretation": "Historical absolute perturbational-complexity score under the v0.20 panel; retained unchanged and not directly comparable as a before/after pair with the X8 L27-only secondary measure."
+  },
+  "interpretation_boundaries": [
+    "The model parameters remain frozen; interventions are applied to residual-stream activations.",
+    "The X8 secondary value 343.9609375 is not a before/after increase from the historical v0.20 value 277.9609375 because the panels and aggregations differ.",
+    "Directional specificity is not a recurrence detector; a structured feed-forward control also separates.",
+    "The result does not by itself establish task usefulness, incremental validity of C_O, consciousness, or a consciousness scale.",
+    "Incremental validity of C_O requires paired prospective tests against independently defined functional targets or outcomes."
+  ],
+  "schema": "pci-t-v0.21-final-reviewer-summary-v1",
+  "score2_final": {
+    "decision": "SCORE2_FINAL_PROSPECTIVE_MEASUREMENT_COMPLETE",
+    "interpretation": "The primary scalar is a within-site directional enrichment ratio. A value of 1.381 means about 38% higher PCI_T for the endogenous residual direction than for the median of 15 orthogonal RMS-matched controls under the frozen L27 protocol.",
+    "primary_ci95": [
+      1.2005892004760104,
+      1.6092107751014075
+    ],
+    "primary_episode_values": {
+      "SCORE2_001": 1.433443747233928,
+      "SCORE2_002": 1.1906925686756995,
+      "SCORE2_003": 1.3293051647983127,
+      "SCORE2_004": 1.481924167929305,
+      "SCORE2_005": 1.210485832276321,
+      "SCORE2_006": 1.73649738227351
+    },
+    "primary_fraction_medians": {
+      "0.20": 1.3641703853672351,
+      "0.40": 1.267707925045157
+    },
+    "primary_scalar": 1.3813744560161205,
+    "primary_scalar_name": "PCI_T_DS_L27",
+    "secondary_ci95": [
+      300.640625,
+      380.2578125
+    ],
+    "secondary_scalar": 343.9609375,
+    "secondary_scalar_name": "PCI_T_ST_L27_SOURCE",
+    "selection_gate": null
+  },
+  "synthetic_adversarial_directional_specificity": {
+    "decision": "DIRECTIONAL_SPECIFICITY_SUPPORTED_FOR_QWEN_DEV_ONLY",
+    "families": {
+      "BRANCHING_DIRECTIONALLY_STRUCTURED": {
+        "control_score_median": 2.6875,
+        "designated_score_median": 22.625,
+        "directional_enrichment_median": 8.418604651159658,
+        "directional_win_rate_median": 1.0
+      },
+      "CHAOTIC_UNCOUPLED": {
+        "control_score_median": 157.1875,
+        "designated_score_median": 155.3125,
+        "directional_enrichment_median": 1.0004950287883518,
+        "directional_win_rate_median": 0.5333333333333333
+      },
+      "FEEDFORWARD_DIRECTIONALLY_STRUCTURED": {
+        "control_score_median": 12.90625,
+        "designated_score_median": 107.25,
+        "directional_enrichment_median": 8.398057715588848,
+        "directional_win_rate_median": 1.0
+      },
+      "RECURRENT_DIRECTIONALLY_STRUCTURED": {
+        "control_score_median": 13.96875,
+        "designated_score_median": 98.796875,
+        "directional_enrichment_median": 7.0773224421980085,
+        "directional_win_rate_median": 1.0
+      },
+      "UNTRAINED_RANDOM_LINEAR": {
+        "control_score_median": 219.765625,
+        "designated_score_median": 217.515625,
+        "directional_enrichment_median": 0.9953828512336493,
+        "directional_win_rate_median": 0.4
+      }
+    },
+    "gates_passed": true,
+    "interpretation": "Directional enrichment, not raw absolute PCI_T, separates the structured synthetic positive controls from random-linear and chaotic adversarial controls. This is not recurrence-specific because the structured feed-forward positive control also separates.",
+    "separation_ratio": 7.07382069730213
+  },
+  "system": "Qwen3-8B"
+}

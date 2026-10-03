@@ -1,0 +1,5609 @@
+{
+  "benchmark": "FCA-Bench",
+  "benchmark_expansion": "Functional Causal Access Benchmark",
+  "protocol_version": "0.2.7",
+  "runner_id": "FCA027_GPU_R6",
+  "campaign": "Qwen3-8B GPU-only bnb8 baseline tests",
+  "system_id": "qwen3-8b-standard-bnb8-gpu-only",
+  "model": "Qwen3-8B standard Transformer (bnb8 GPU-only)",
+  "runtime": {
+    "strict_gpu": true,
+    "gpu_index": 0,
+    "quantization": "bnb8",
+    "attention_implementation": "sdpa",
+    "e1_batch_size": 4,
+    "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+    "gpu_total_vram_gib": 15.928
+  },
+  "n_requested": 20,
+  "seed": 0,
+  "selected_tests": [
+    "T1",
+    "T2",
+    "T3",
+    "B1",
+    "E1",
+    "C3",
+    "R1",
+    "R3",
+    "D1",
+    "L2",
+    "U3",
+    "I3"
+  ],
+  "provenance": {
+    "protocol_version": "0.2.7",
+    "t2_scoring": "T2 scored with the v0.2.7 scorer (chance-corrected balanced accuracy of interval membership) applied to the recorded model selections",
+    "b1_design": "episode-history provenance attribution"
+  },
+  "tests": {
+    "T1": {
+      "dim": "T",
+      "track": "behavioral",
+      "label": "Event timeline reconstruction",
+      "score": 0.8944,
+      "ci95": [
+        0.856,
+        0.9263
+      ],
+      "n": 20,
+      "n_valid": 20,
+      "n_executed": 20,
+      "n_structural_absent": 0,
+      "measured_score": 0.8944,
+      "invalid_rate": 0.0
+    },
+    "T2": {
+      "dim": "T",
+      "track": "behavioral",
+      "label": "Pause-aware temporal accounting (chance-corrected, arithmetic-controlled)",
+      "score": 0.2625,
+      "ci95": [
+        0.1125,
+        0.4125
+      ],
+      "n": 20,
+      "n_valid": 20,
+      "n_executed": 20,
+      "n_structural_absent": 0,
+      "measured_score": 0.2625,
+      "invalid_rate": 0.0
+    },
+    "T3": {
+      "dim": "T",
+      "track": "behavioral",
+      "label": "Temporal self-location",
+      "score": 0.85,
+      "ci95": [
+        0.75,
+        0.9333
+      ],
+      "n": 20,
+      "n_valid": 20,
+      "n_executed": 20,
+      "n_structural_absent": 0,
+      "measured_score": 0.85,
+      "invalid_rate": 0.0
+    },
+    "B1": {
+      "dim": "B",
+      "track": "behavioral",
+      "label": "Provenance attribution from episode history",
+      "score": 0.8667,
+      "ci95": [
+        0.8,
+        0.9333
+      ],
+      "n": 20,
+      "n_valid": 20,
+      "n_executed": 20,
+      "n_structural_absent": 0,
+      "measured_score": 0.8667,
+      "invalid_rate": 0.0
+    },
+    "E1": {
+      "dim": "E",
+      "track": "behavioral",
+      "label": "Counterfactual hard erasure (four-arm matched design)",
+      "score": 0.7194,
+      "ci95": [
+        0.6683,
+        0.7647
+      ],
+      "n": 20,
+      "n_valid": 19,
+      "n_executed": 19,
+      "n_structural_absent": 0,
+      "measured_score": 0.7194,
+      "invalid_rate": 0.05
+    },
+    "C3": {
+      "dim": "C",
+      "track": "behavioral",
+      "label": "Interrupt and resume",
+      "score": 0.4625,
+      "ci95": [
+        0.4125,
+        0.5125
+      ],
+      "n": 20,
+      "n_valid": 20,
+      "n_executed": 20,
+      "n_structural_absent": 0,
+      "measured_score": 0.4625,
+      "invalid_rate": 0.0
+    },
+    "R1": {
+      "dim": "R",
+      "track": "causal",
+      "label": "Zero-token deepening",
+      "score": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n": 20,
+      "n_valid": 20,
+      "n_executed": 0,
+      "n_structural_absent": 20,
+      "measured_score": null,
+      "invalid_rate": 0.0
+    },
+    "R3": {
+      "dim": "R",
+      "track": "causal",
+      "label": "Hidden-state iteration stress test",
+      "score": 0.4,
+      "ci95": [
+        0.2,
+        0.6
+      ],
+      "n": 20,
+      "n_valid": 20,
+      "n_executed": 20,
+      "n_structural_absent": 0,
+      "measured_score": 0.4,
+      "invalid_rate": 0.0
+    },
+    "D1": {
+      "dim": "D",
+      "track": "causal",
+      "label": "Silent deadline crossing",
+      "score": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n": 20,
+      "n_valid": 20,
+      "n_executed": 0,
+      "n_structural_absent": 20,
+      "measured_score": null,
+      "invalid_rate": 0.0
+    },
+    "L2": {
+      "dim": "L",
+      "track": "causal",
+      "label": "Context-equivalent twins",
+      "score": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n": 20,
+      "n_valid": 20,
+      "n_executed": 0,
+      "n_structural_absent": 20,
+      "measured_score": null,
+      "invalid_rate": 0.0
+    },
+    "U3": {
+      "dim": "U",
+      "track": "causal",
+      "label": "Semantic garbage collection",
+      "score": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n": 20,
+      "n_valid": 20,
+      "n_executed": 0,
+      "n_structural_absent": 20,
+      "measured_score": null,
+      "invalid_rate": 0.0
+    },
+    "I3": {
+      "dim": "I",
+      "track": "causal",
+      "label": "Independent stream clocks",
+      "score": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "n": 20,
+      "n_valid": 20,
+      "n_executed": 0,
+      "n_structural_absent": 20,
+      "measured_score": null,
+      "invalid_rate": 0.0
+    }
+  },
+  "profile": {
+    "T": 0.669,
+    "B": 0.8667,
+    "E": 0.7194,
+    "C": 0.4625,
+    "R": 0.2,
+    "D": 0.0,
+    "L": 0.0,
+    "U": 0.0,
+    "I": 0.0
+  },
+  "behavioral_profile": {
+    "T": 0.669,
+    "B": 0.8667,
+    "E": 0.7194,
+    "C": 0.4625
+  },
+  "causal_profile": {
+    "R": 0.2,
+    "D": 0.0,
+    "L": 0.0,
+    "U": 0.0,
+    "I": 0.0
+  },
+  "mechanistic_profile": {
+    "R": 0.2,
+    "D": 0.0,
+    "L": 0.0,
+    "U": 0.0,
+    "I": 0.0
+  },
+  "instances": [
+    {
+      "instance_id": "T1-0",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.969047619047619,
+      "raw_score": 0.969047619047619,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 0.9523809523809523,
+        "state": 1.0
+      }
+    },
+    {
+      "instance_id": "T1-1",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.9071428571428571,
+      "raw_score": 0.9071428571428571,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 0.8571428571428571,
+        "state": 1.0
+      }
+    },
+    {
+      "instance_id": "T1-2",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.9767857142857143,
+      "raw_score": 0.9767857142857143,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 0.9642857142857143,
+        "state": 1.0
+      }
+    },
+    {
+      "instance_id": "T1-3",
+      "dim": "T",
+      "test": "T1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 1.0,
+        "state": 1.0
+      }
+    },
+    {
+      "instance_id": "T1-4",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.893888888888889,
+      "raw_score": 0.893888888888889,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 0.9444444444444444,
+        "state": 0.8
+      }
+    },
+    {
+      "instance_id": "T1-5",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.7361904761904762,
+      "raw_score": 0.7361904761904762,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 0.8095238095238095,
+        "state": 0.6
+      }
+    },
+    {
+      "instance_id": "T1-6",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.9299999999999999,
+      "raw_score": 0.9299999999999999,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 1.0,
+        "state": 0.8
+      }
+    },
+    {
+      "instance_id": "T1-7",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.9133333333333333,
+      "raw_score": 0.9133333333333333,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 0.8666666666666667,
+        "state": 1.0
+      }
+    },
+    {
+      "instance_id": "T1-8",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.9299999999999999,
+      "raw_score": 0.9299999999999999,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 1.0,
+        "state": 0.8
+      }
+    },
+    {
+      "instance_id": "T1-9",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.969047619047619,
+      "raw_score": 0.969047619047619,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 0.9523809523809523,
+        "state": 1.0
+      }
+    },
+    {
+      "instance_id": "T1-10",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.893888888888889,
+      "raw_score": 0.893888888888889,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 0.9444444444444444,
+        "state": 0.8
+      }
+    },
+    {
+      "instance_id": "T1-11",
+      "dim": "T",
+      "test": "T1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 1.0,
+        "state": 1.0
+      }
+    },
+    {
+      "instance_id": "T1-12",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.8990476190476191,
+      "raw_score": 0.8990476190476191,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 0.9523809523809523,
+        "state": 0.8
+      }
+    },
+    {
+      "instance_id": "T1-13",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.8061904761904761,
+      "raw_score": 0.8061904761904761,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 0.8095238095238095,
+        "state": 0.8
+      }
+    },
+    {
+      "instance_id": "T1-14",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.8758333333333332,
+      "raw_score": 0.8758333333333332,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 0.9166666666666666,
+        "state": 0.8
+      }
+    },
+    {
+      "instance_id": "T1-15",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.9299999999999999,
+      "raw_score": 0.9299999999999999,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 1.0,
+        "state": 0.8
+      }
+    },
+    {
+      "instance_id": "T1-16",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.8866666666666667,
+      "raw_score": 0.8866666666666667,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 0.9333333333333333,
+        "state": 0.8
+      }
+    },
+    {
+      "instance_id": "T1-17",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.65,
+      "raw_score": 0.65,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 1.0,
+        "state": 0.0
+      }
+    },
+    {
+      "instance_id": "T1-18",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.86,
+      "raw_score": 0.86,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 1.0,
+        "state": 0.6
+      }
+    },
+    {
+      "instance_id": "T1-19",
+      "dim": "T",
+      "test": "T1",
+      "score": 0.86,
+      "raw_score": 0.86,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "order": 1.0,
+        "state": 0.6
+      }
+    },
+    {
+      "instance_id": "T2-0",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.625,
+      "raw_score": 0.625,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K3",
+          "K5"
+        ],
+        "active_predicted": [
+          "K5"
+        ],
+        "deadline_gold": [
+          "E5",
+          "E1"
+        ],
+        "deadline_predicted": [
+          "E5",
+          "E8",
+          "E1"
+        ],
+        "derived_active_minutes_from_selection": 6,
+        "derived_remaining_minutes_from_selection": 0,
+        "gold_active_minutes": 16,
+        "gold_remaining_minutes": 1,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 16,
+            "parsed_answer": 28,
+            "normalized_numeric": 28.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 28}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 1,
+            "parsed_answer": 24,
+            "normalized_numeric": 24.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 24}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.625,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.75,
+        "deadline_interval_balanced_accuracy": 0.5,
+        "active_interval_set_f1_diagnostic": 0.6666666666666666,
+        "deadline_interval_set_f1_diagnostic": 0.8,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K3",
+          "K1",
+          "K5"
+        ],
+        "deadline_universe": [
+          "E5",
+          "E8",
+          "E1"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-1",
+      "dim": "T",
+      "test": "T2",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K2",
+          "K3"
+        ],
+        "active_predicted": [
+          "K2",
+          "K3"
+        ],
+        "deadline_gold": [
+          "E2",
+          "E5"
+        ],
+        "deadline_predicted": [
+          "E2",
+          "E5"
+        ],
+        "derived_active_minutes_from_selection": 10,
+        "derived_remaining_minutes_from_selection": 40,
+        "gold_active_minutes": 10,
+        "gold_remaining_minutes": 40,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 10,
+            "parsed_answer": 11,
+            "normalized_numeric": 11.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 11}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 40,
+            "parsed_answer": 24,
+            "normalized_numeric": 24.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 24}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 1.0,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 1.0,
+        "deadline_interval_balanced_accuracy": 1.0,
+        "active_interval_set_f1_diagnostic": 1.0,
+        "deadline_interval_set_f1_diagnostic": 1.0,
+        "active_exact_set": 1.0,
+        "deadline_exact_set": 1.0,
+        "active_universe": [
+          "K2",
+          "K7",
+          "K3"
+        ],
+        "deadline_universe": [
+          "E2",
+          "E4",
+          "E5"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-2",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.75,
+      "raw_score": 0.75,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K8",
+          "K4"
+        ],
+        "active_predicted": [
+          "K4"
+        ],
+        "deadline_gold": [
+          "E2",
+          "E1"
+        ],
+        "deadline_predicted": [
+          "E2"
+        ],
+        "derived_active_minutes_from_selection": 15,
+        "derived_remaining_minutes_from_selection": 38,
+        "gold_active_minutes": 23,
+        "gold_remaining_minutes": 29,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 23,
+            "parsed_answer": 15,
+            "normalized_numeric": 15.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 15}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 29,
+            "parsed_answer": 28,
+            "normalized_numeric": 28.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 28}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.75,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.75,
+        "deadline_interval_balanced_accuracy": 0.75,
+        "active_interval_set_f1_diagnostic": 0.6666666666666666,
+        "deadline_interval_set_f1_diagnostic": 0.6666666666666666,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K8",
+          "K6",
+          "K4"
+        ],
+        "deadline_universe": [
+          "E2",
+          "E6",
+          "E1"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-3",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.625,
+      "raw_score": 0.625,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K4",
+          "K7"
+        ],
+        "active_predicted": [
+          "K4",
+          "K7"
+        ],
+        "deadline_gold": [
+          "E7",
+          "E1"
+        ],
+        "deadline_predicted": [
+          "E7",
+          "E5"
+        ],
+        "derived_active_minutes_from_selection": 24,
+        "derived_remaining_minutes_from_selection": 29,
+        "gold_active_minutes": 24,
+        "gold_remaining_minutes": 12,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 24,
+            "parsed_answer": 21,
+            "normalized_numeric": 21.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 21}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 12,
+            "parsed_answer": 24,
+            "normalized_numeric": 24.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 24}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.625,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 1.0,
+        "deadline_interval_balanced_accuracy": 0.25,
+        "active_interval_set_f1_diagnostic": 1.0,
+        "deadline_interval_set_f1_diagnostic": 0.5,
+        "active_exact_set": 1.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K4",
+          "K5",
+          "K7"
+        ],
+        "deadline_universe": [
+          "E7",
+          "E5",
+          "E1"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-4",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K9",
+          "K1"
+        ],
+        "active_predicted": [
+          "K1"
+        ],
+        "deadline_gold": [
+          "E5",
+          "E4"
+        ],
+        "deadline_predicted": [
+          "E5",
+          "E8"
+        ],
+        "derived_active_minutes_from_selection": 14,
+        "derived_remaining_minutes_from_selection": 9,
+        "gold_active_minutes": 18,
+        "gold_remaining_minutes": 7,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 18,
+            "parsed_answer": 38,
+            "normalized_numeric": 38.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 38}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 7,
+            "parsed_answer": 15,
+            "normalized_numeric": 15.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 15}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.5,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.75,
+        "deadline_interval_balanced_accuracy": 0.25,
+        "active_interval_set_f1_diagnostic": 0.6666666666666666,
+        "deadline_interval_set_f1_diagnostic": 0.5,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K9",
+          "K4",
+          "K1"
+        ],
+        "deadline_universe": [
+          "E5",
+          "E8",
+          "E4"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-5",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K8",
+          "K1"
+        ],
+        "active_predicted": [
+          "K1"
+        ],
+        "deadline_gold": [
+          "E1",
+          "E5"
+        ],
+        "deadline_predicted": [
+          "E1",
+          "E7"
+        ],
+        "derived_active_minutes_from_selection": 7,
+        "derived_remaining_minutes_from_selection": 41,
+        "gold_active_minutes": 18,
+        "gold_remaining_minutes": 41,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 18,
+            "parsed_answer": 7,
+            "normalized_numeric": 7.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 7}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 41,
+            "parsed_answer": 17,
+            "normalized_numeric": 17.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 17}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.5,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.75,
+        "deadline_interval_balanced_accuracy": 0.25,
+        "active_interval_set_f1_diagnostic": 0.6666666666666666,
+        "deadline_interval_set_f1_diagnostic": 0.5,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K8",
+          "K7",
+          "K1"
+        ],
+        "deadline_universe": [
+          "E1",
+          "E7",
+          "E5"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-6",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K7",
+          "K6"
+        ],
+        "active_predicted": [
+          "K6"
+        ],
+        "deadline_gold": [
+          "E3",
+          "E7"
+        ],
+        "deadline_predicted": [
+          "E3",
+          "E4"
+        ],
+        "derived_active_minutes_from_selection": 14,
+        "derived_remaining_minutes_from_selection": 48,
+        "gold_active_minutes": 23,
+        "gold_remaining_minutes": 30,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 23,
+            "parsed_answer": 14,
+            "normalized_numeric": 14.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 14}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 30,
+            "parsed_answer": 25,
+            "normalized_numeric": 25.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 25}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.5,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.75,
+        "deadline_interval_balanced_accuracy": 0.25,
+        "active_interval_set_f1_diagnostic": 0.6666666666666666,
+        "deadline_interval_set_f1_diagnostic": 0.5,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K7",
+          "K5",
+          "K6"
+        ],
+        "deadline_universe": [
+          "E3",
+          "E4",
+          "E7"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-7",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.75,
+      "raw_score": 0.75,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K4",
+          "K7"
+        ],
+        "active_predicted": [
+          "K7"
+        ],
+        "deadline_gold": [
+          "E8",
+          "E5"
+        ],
+        "deadline_predicted": [
+          "E8"
+        ],
+        "derived_active_minutes_from_selection": 14,
+        "derived_remaining_minutes_from_selection": 34,
+        "gold_active_minutes": 26,
+        "gold_remaining_minutes": 25,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 26,
+            "parsed_answer": 14,
+            "normalized_numeric": 14.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 14}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 25,
+            "parsed_answer": 19,
+            "normalized_numeric": 19.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 19}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.75,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.75,
+        "deadline_interval_balanced_accuracy": 0.75,
+        "active_interval_set_f1_diagnostic": 0.6666666666666666,
+        "deadline_interval_set_f1_diagnostic": 0.6666666666666666,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K4",
+          "K5",
+          "K7"
+        ],
+        "deadline_universe": [
+          "E8",
+          "E2",
+          "E5"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-8",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.75,
+      "raw_score": 0.75,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K9",
+          "K2"
+        ],
+        "active_predicted": [
+          "K9",
+          "K2"
+        ],
+        "deadline_gold": [
+          "E3",
+          "E9"
+        ],
+        "deadline_predicted": [
+          "E3",
+          "E2",
+          "E9"
+        ],
+        "derived_active_minutes_from_selection": 16,
+        "derived_remaining_minutes_from_selection": 13,
+        "gold_active_minutes": 16,
+        "gold_remaining_minutes": 26,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 16,
+            "parsed_answer": 28,
+            "normalized_numeric": 28.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 28}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 26,
+            "parsed_answer": 25,
+            "normalized_numeric": 25.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 25}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.75,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 1.0,
+        "deadline_interval_balanced_accuracy": 0.5,
+        "active_interval_set_f1_diagnostic": 1.0,
+        "deadline_interval_set_f1_diagnostic": 0.8,
+        "active_exact_set": 1.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K9",
+          "K3",
+          "K2"
+        ],
+        "deadline_universe": [
+          "E3",
+          "E2",
+          "E9"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-9",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.75,
+      "raw_score": 0.75,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K6",
+          "K7"
+        ],
+        "active_predicted": [
+          "K7"
+        ],
+        "deadline_gold": [
+          "E9",
+          "E3"
+        ],
+        "deadline_predicted": [
+          "E3"
+        ],
+        "derived_active_minutes_from_selection": 6,
+        "derived_remaining_minutes_from_selection": 21,
+        "gold_active_minutes": 14,
+        "gold_remaining_minutes": 15,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 14,
+            "parsed_answer": 13,
+            "normalized_numeric": 13.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 13}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 15,
+            "parsed_answer": 17,
+            "normalized_numeric": 17.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 17}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.75,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.75,
+        "deadline_interval_balanced_accuracy": 0.75,
+        "active_interval_set_f1_diagnostic": 0.6666666666666666,
+        "deadline_interval_set_f1_diagnostic": 0.6666666666666666,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K6",
+          "K1",
+          "K7"
+        ],
+        "deadline_universe": [
+          "E9",
+          "E2",
+          "E3"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-10",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K4",
+          "K8"
+        ],
+        "active_predicted": [
+          "K8"
+        ],
+        "deadline_gold": [
+          "E8",
+          "E9"
+        ],
+        "deadline_predicted": [
+          "E8",
+          "E1"
+        ],
+        "derived_active_minutes_from_selection": 7,
+        "derived_remaining_minutes_from_selection": 29,
+        "gold_active_minutes": 18,
+        "gold_remaining_minutes": 13,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 18,
+            "parsed_answer": 9,
+            "normalized_numeric": 9.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 9}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 13,
+            "parsed_answer": 24,
+            "normalized_numeric": 24.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 24}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.5,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.75,
+        "deadline_interval_balanced_accuracy": 0.25,
+        "active_interval_set_f1_diagnostic": 0.6666666666666666,
+        "deadline_interval_set_f1_diagnostic": 0.5,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K4",
+          "K9",
+          "K8"
+        ],
+        "deadline_universe": [
+          "E8",
+          "E1",
+          "E9"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-11",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.875,
+      "raw_score": 0.875,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K3",
+          "K1"
+        ],
+        "active_predicted": [
+          "K3",
+          "K1"
+        ],
+        "deadline_gold": [
+          "E6",
+          "E7"
+        ],
+        "deadline_predicted": [
+          "E6"
+        ],
+        "derived_active_minutes_from_selection": 23,
+        "derived_remaining_minutes_from_selection": 39,
+        "gold_active_minutes": 23,
+        "gold_remaining_minutes": 19,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 23,
+            "parsed_answer": 15,
+            "normalized_numeric": 15.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 15}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 19,
+            "parsed_answer": 21,
+            "normalized_numeric": 21.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 21}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.875,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 1.0,
+        "deadline_interval_balanced_accuracy": 0.75,
+        "active_interval_set_f1_diagnostic": 1.0,
+        "deadline_interval_set_f1_diagnostic": 0.6666666666666666,
+        "active_exact_set": 1.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K3",
+          "K2",
+          "K1"
+        ],
+        "deadline_universe": [
+          "E6",
+          "E2",
+          "E7"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-12",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.75,
+      "raw_score": 0.75,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K6",
+          "K9"
+        ],
+        "active_predicted": [
+          "K9"
+        ],
+        "deadline_gold": [
+          "E6",
+          "E5"
+        ],
+        "deadline_predicted": [
+          "E6"
+        ],
+        "derived_active_minutes_from_selection": 16,
+        "derived_remaining_minutes_from_selection": 41,
+        "gold_active_minutes": 23,
+        "gold_remaining_minutes": 34,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 23,
+            "parsed_answer": 16,
+            "normalized_numeric": 16.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 16}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 34,
+            "parsed_answer": 27,
+            "normalized_numeric": 27.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 27}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.75,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.75,
+        "deadline_interval_balanced_accuracy": 0.75,
+        "active_interval_set_f1_diagnostic": 0.6666666666666666,
+        "deadline_interval_set_f1_diagnostic": 0.6666666666666666,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K6",
+          "K2",
+          "K9"
+        ],
+        "deadline_universe": [
+          "E6",
+          "E7",
+          "E5"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-13",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.625,
+      "raw_score": 0.625,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K6",
+          "K7"
+        ],
+        "active_predicted": [
+          "K7"
+        ],
+        "deadline_gold": [
+          "E6",
+          "E8"
+        ],
+        "deadline_predicted": [
+          "E6",
+          "E3",
+          "E8"
+        ],
+        "derived_active_minutes_from_selection": 13,
+        "derived_remaining_minutes_from_selection": 10,
+        "gold_active_minutes": 25,
+        "gold_remaining_minutes": 19,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 25,
+            "parsed_answer": 35,
+            "normalized_numeric": 35.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 35}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 19,
+            "parsed_answer": 25,
+            "normalized_numeric": 25.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 25}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.625,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.75,
+        "deadline_interval_balanced_accuracy": 0.5,
+        "active_interval_set_f1_diagnostic": 0.6666666666666666,
+        "deadline_interval_set_f1_diagnostic": 0.8,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K6",
+          "K2",
+          "K7"
+        ],
+        "deadline_universe": [
+          "E6",
+          "E3",
+          "E8"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-14",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.375,
+      "raw_score": 0.375,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K7",
+          "K8"
+        ],
+        "active_predicted": [
+          "K7",
+          "K4",
+          "K8"
+        ],
+        "deadline_gold": [
+          "E3",
+          "E8"
+        ],
+        "deadline_predicted": [
+          "E3",
+          "E4"
+        ],
+        "derived_active_minutes_from_selection": 24,
+        "derived_remaining_minutes_from_selection": 15,
+        "gold_active_minutes": 14,
+        "gold_remaining_minutes": 5,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 14,
+            "parsed_answer": 20,
+            "normalized_numeric": 20.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 20}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 5,
+            "parsed_answer": 15,
+            "normalized_numeric": 15.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 15}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.375,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.5,
+        "deadline_interval_balanced_accuracy": 0.25,
+        "active_interval_set_f1_diagnostic": 0.8,
+        "deadline_interval_set_f1_diagnostic": 0.5,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K7",
+          "K4",
+          "K8"
+        ],
+        "deadline_universe": [
+          "E3",
+          "E4",
+          "E8"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-15",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.625,
+      "raw_score": 0.625,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K5",
+          "K1"
+        ],
+        "active_predicted": [
+          "K5",
+          "K1"
+        ],
+        "deadline_gold": [
+          "E3",
+          "E9"
+        ],
+        "deadline_predicted": [
+          "E3",
+          "E7"
+        ],
+        "derived_active_minutes_from_selection": 26,
+        "derived_remaining_minutes_from_selection": 6,
+        "gold_active_minutes": 26,
+        "gold_remaining_minutes": 0,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 26,
+            "parsed_answer": 39,
+            "normalized_numeric": 39.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 39}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 0,
+            "parsed_answer": 22,
+            "normalized_numeric": 22.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 22}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.625,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 1.0,
+        "deadline_interval_balanced_accuracy": 0.25,
+        "active_interval_set_f1_diagnostic": 1.0,
+        "deadline_interval_set_f1_diagnostic": 0.5,
+        "active_exact_set": 1.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K5",
+          "K9",
+          "K1"
+        ],
+        "deadline_universe": [
+          "E3",
+          "E7",
+          "E9"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-16",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.25,
+      "raw_score": 0.25,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K7",
+          "K3"
+        ],
+        "active_predicted": [
+          "K1",
+          "K3"
+        ],
+        "deadline_gold": [
+          "E2",
+          "E1"
+        ],
+        "deadline_predicted": [
+          "E2",
+          "E3"
+        ],
+        "derived_active_minutes_from_selection": 18,
+        "derived_remaining_minutes_from_selection": 35,
+        "gold_active_minutes": 20,
+        "gold_remaining_minutes": 20,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 20,
+            "parsed_answer": 19,
+            "normalized_numeric": 19.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 19}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 20,
+            "parsed_answer": 22,
+            "normalized_numeric": 22.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 22}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.25,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.25,
+        "deadline_interval_balanced_accuracy": 0.25,
+        "active_interval_set_f1_diagnostic": 0.5,
+        "deadline_interval_set_f1_diagnostic": 0.5,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K7",
+          "K1",
+          "K3"
+        ],
+        "deadline_universe": [
+          "E2",
+          "E3",
+          "E1"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-17",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.75,
+      "raw_score": 0.75,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K1",
+          "K7"
+        ],
+        "active_predicted": [
+          "K7"
+        ],
+        "deadline_gold": [
+          "E6",
+          "E5"
+        ],
+        "deadline_predicted": [
+          "E6"
+        ],
+        "derived_active_minutes_from_selection": 18,
+        "derived_remaining_minutes_from_selection": 43,
+        "gold_active_minutes": 27,
+        "gold_remaining_minutes": 22,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 27,
+            "parsed_answer": 18,
+            "normalized_numeric": 18.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 18}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 22,
+            "parsed_answer": 21,
+            "normalized_numeric": 21.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 21}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.75,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.75,
+        "deadline_interval_balanced_accuracy": 0.75,
+        "active_interval_set_f1_diagnostic": 0.6666666666666666,
+        "deadline_interval_set_f1_diagnostic": 0.6666666666666666,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K1",
+          "K2",
+          "K7"
+        ],
+        "deadline_universe": [
+          "E6",
+          "E2",
+          "E5"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-18",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.625,
+      "raw_score": 0.625,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K1",
+          "K7"
+        ],
+        "active_predicted": [
+          "K1",
+          "K7"
+        ],
+        "deadline_gold": [
+          "E9",
+          "E6"
+        ],
+        "deadline_predicted": [
+          "E9",
+          "E1"
+        ],
+        "derived_active_minutes_from_selection": 20,
+        "derived_remaining_minutes_from_selection": 32,
+        "gold_active_minutes": 20,
+        "gold_remaining_minutes": 21,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 20,
+            "parsed_answer": 21,
+            "normalized_numeric": 21.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 21}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 21,
+            "parsed_answer": 25,
+            "normalized_numeric": 25.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 25}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.625,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 1.0,
+        "deadline_interval_balanced_accuracy": 0.25,
+        "active_interval_set_f1_diagnostic": 1.0,
+        "deadline_interval_set_f1_diagnostic": 0.5,
+        "active_exact_set": 1.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K1",
+          "K6",
+          "K7"
+        ],
+        "deadline_universe": [
+          "E9",
+          "E1",
+          "E6"
+        ]
+      }
+    },
+    {
+      "instance_id": "T2-19",
+      "dim": "T",
+      "test": "T2",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "primary_metric": "test_level_chance_corrected_balanced_accuracy_of_pause_aware_interval_membership",
+        "active_gold": [
+          "K9",
+          "K7"
+        ],
+        "active_predicted": [
+          "K7"
+        ],
+        "deadline_gold": [
+          "E4",
+          "E5"
+        ],
+        "deadline_predicted": [
+          "E4",
+          "E7"
+        ],
+        "derived_active_minutes_from_selection": 10,
+        "derived_remaining_minutes_from_selection": 39,
+        "gold_active_minutes": 17,
+        "gold_remaining_minutes": 40,
+        "numeric_diagnostic_accuracy": 0.0,
+        "numeric_diagnostics": [
+          {
+            "probe_id": "active_numeric",
+            "gold": 17,
+            "parsed_answer": 13,
+            "normalized_numeric": 13.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"active_numeric\", \"answer\": 13}"
+          },
+          {
+            "probe_id": "remaining_numeric",
+            "gold": 40,
+            "parsed_answer": 14,
+            "normalized_numeric": 14.0,
+            "native_json_number": true,
+            "correct": false,
+            "raw_response": "{\"probe_id\": \"remaining_numeric\", \"answer\": 14}"
+          }
+        ],
+        "note": "Numeric arithmetic probes are diagnostic and excluded from the FCA T2 score. The stored instance score is the raw balanced accuracy; the T2 aggregate is chance-corrected after averaging instances.",
+        "raw_balanced_accuracy": 0.5,
+        "aggregate_transform": "max(0, 2 * mean(raw_balanced_accuracy) - 1)",
+        "active_interval_balanced_accuracy": 0.75,
+        "deadline_interval_balanced_accuracy": 0.25,
+        "active_interval_set_f1_diagnostic": 0.6666666666666666,
+        "deadline_interval_set_f1_diagnostic": 0.5,
+        "active_exact_set": 0.0,
+        "deadline_exact_set": 0.0,
+        "active_universe": [
+          "K9",
+          "K3",
+          "K7"
+        ],
+        "deadline_universe": [
+          "E4",
+          "E7",
+          "E5"
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-0",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-1",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-2",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-3",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-4",
+      "dim": "T",
+      "test": "T3",
+      "score": 0.3333333333333333,
+      "raw_score": 0.3333333333333333,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-5",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-6",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-7",
+      "dim": "T",
+      "test": "T3",
+      "score": 0.3333333333333333,
+      "raw_score": 0.3333333333333333,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-8",
+      "dim": "T",
+      "test": "T3",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-9",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-10",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-11",
+      "dim": "T",
+      "test": "T3",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-12",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-13",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-14",
+      "dim": "T",
+      "test": "T3",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          0.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-15",
+      "dim": "T",
+      "test": "T3",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-16",
+      "dim": "T",
+      "test": "T3",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-17",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-18",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "T3-19",
+      "dim": "T",
+      "test": "T3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "items": [
+          1.0,
+          1.0,
+          1.0
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-0",
+      "dim": "B",
+      "test": "B1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "gold_by_statement": {
+          "S1": "USER",
+          "S3": "TOOL",
+          "S4": "INFERENCE",
+          "S2": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "USER",
+          "S2": "GOAL",
+          "S3": "TOOL",
+          "S4": "INFERENCE"
+        },
+        "event_order": [
+          "INFERENCE",
+          "USER",
+          "TOOL",
+          "GOAL"
+        ],
+        "presentation_order": [
+          "S2",
+          "S4",
+          "S1",
+          "S3"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-1",
+      "dim": "B",
+      "test": "B1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "gold_by_statement": {
+          "S1": "USER",
+          "S2": "TOOL",
+          "S4": "INFERENCE",
+          "S3": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "USER",
+          "S2": "TOOL",
+          "S3": "GOAL",
+          "S4": "INFERENCE"
+        },
+        "event_order": [
+          "TOOL",
+          "INFERENCE",
+          "USER",
+          "GOAL"
+        ],
+        "presentation_order": [
+          "S2",
+          "S3",
+          "S4",
+          "S1"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-2",
+      "dim": "B",
+      "test": "B1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "gold_by_statement": {
+          "S2": "USER",
+          "S3": "TOOL",
+          "S4": "INFERENCE",
+          "S1": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "GOAL",
+          "S2": "USER",
+          "S3": "TOOL",
+          "S4": "INFERENCE"
+        },
+        "event_order": [
+          "USER",
+          "GOAL",
+          "TOOL",
+          "INFERENCE"
+        ],
+        "presentation_order": [
+          "S4",
+          "S3",
+          "S2",
+          "S1"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-3",
+      "dim": "B",
+      "test": "B1",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 0.6666666666666666,
+        "exact_match": 0.0,
+        "gold_by_statement": {
+          "S4": "USER",
+          "S3": "TOOL",
+          "S2": "INFERENCE",
+          "S1": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "GOAL",
+          "S2": "INFERENCE",
+          "S3": "USER",
+          "S4": "USER"
+        },
+        "event_order": [
+          "TOOL",
+          "INFERENCE",
+          "GOAL",
+          "USER"
+        ],
+        "presentation_order": [
+          "S4",
+          "S1",
+          "S3",
+          "S2"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-4",
+      "dim": "B",
+      "test": "B1",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 0.6666666666666666,
+        "exact_match": 0.0,
+        "gold_by_statement": {
+          "S2": "USER",
+          "S1": "TOOL",
+          "S3": "INFERENCE",
+          "S4": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "USER",
+          "S2": "USER",
+          "S3": "INFERENCE",
+          "S4": "GOAL"
+        },
+        "event_order": [
+          "TOOL",
+          "GOAL",
+          "INFERENCE",
+          "USER"
+        ],
+        "presentation_order": [
+          "S2",
+          "S1",
+          "S3",
+          "S4"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-5",
+      "dim": "B",
+      "test": "B1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "gold_by_statement": {
+          "S1": "USER",
+          "S3": "TOOL",
+          "S2": "INFERENCE",
+          "S4": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "USER",
+          "S2": "INFERENCE",
+          "S3": "TOOL",
+          "S4": "GOAL"
+        },
+        "event_order": [
+          "GOAL",
+          "USER",
+          "INFERENCE",
+          "TOOL"
+        ],
+        "presentation_order": [
+          "S2",
+          "S3",
+          "S1",
+          "S4"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-6",
+      "dim": "B",
+      "test": "B1",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 0.6666666666666666,
+        "exact_match": 0.0,
+        "gold_by_statement": {
+          "S3": "USER",
+          "S1": "TOOL",
+          "S4": "INFERENCE",
+          "S2": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "TOOL",
+          "S2": "GOAL",
+          "S3": "TOOL",
+          "S4": "INFERENCE"
+        },
+        "event_order": [
+          "USER",
+          "TOOL",
+          "GOAL",
+          "INFERENCE"
+        ],
+        "presentation_order": [
+          "S2",
+          "S4",
+          "S3",
+          "S1"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-7",
+      "dim": "B",
+      "test": "B1",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 0.6666666666666666,
+        "exact_match": 0.0,
+        "gold_by_statement": {
+          "S2": "USER",
+          "S1": "TOOL",
+          "S3": "INFERENCE",
+          "S4": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "USER",
+          "S2": "USER",
+          "S3": "INFERENCE",
+          "S4": "GOAL"
+        },
+        "event_order": [
+          "INFERENCE",
+          "TOOL",
+          "GOAL",
+          "USER"
+        ],
+        "presentation_order": [
+          "S3",
+          "S4",
+          "S1",
+          "S2"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-8",
+      "dim": "B",
+      "test": "B1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "gold_by_statement": {
+          "S3": "USER",
+          "S2": "TOOL",
+          "S4": "INFERENCE",
+          "S1": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "GOAL",
+          "S2": "TOOL",
+          "S3": "USER",
+          "S4": "INFERENCE"
+        },
+        "event_order": [
+          "INFERENCE",
+          "GOAL",
+          "USER",
+          "TOOL"
+        ],
+        "presentation_order": [
+          "S4",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-9",
+      "dim": "B",
+      "test": "B1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "gold_by_statement": {
+          "S2": "USER",
+          "S4": "TOOL",
+          "S1": "INFERENCE",
+          "S3": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "INFERENCE",
+          "S2": "USER",
+          "S3": "GOAL",
+          "S4": "TOOL"
+        },
+        "event_order": [
+          "GOAL",
+          "TOOL",
+          "USER",
+          "INFERENCE"
+        ],
+        "presentation_order": [
+          "S1",
+          "S3",
+          "S4",
+          "S2"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-10",
+      "dim": "B",
+      "test": "B1",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 0.6666666666666666,
+        "exact_match": 0.0,
+        "gold_by_statement": {
+          "S4": "USER",
+          "S3": "TOOL",
+          "S1": "INFERENCE",
+          "S2": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "INFERENCE",
+          "S2": "GOAL",
+          "S3": "USER",
+          "S4": "USER"
+        },
+        "event_order": [
+          "TOOL",
+          "USER",
+          "GOAL",
+          "INFERENCE"
+        ],
+        "presentation_order": [
+          "S4",
+          "S1",
+          "S2",
+          "S3"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-11",
+      "dim": "B",
+      "test": "B1",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 0.6666666666666666,
+        "exact_match": 0.0,
+        "gold_by_statement": {
+          "S2": "USER",
+          "S1": "TOOL",
+          "S4": "INFERENCE",
+          "S3": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "USER",
+          "S2": "USER",
+          "S3": "GOAL",
+          "S4": "INFERENCE"
+        },
+        "event_order": [
+          "INFERENCE",
+          "TOOL",
+          "GOAL",
+          "USER"
+        ],
+        "presentation_order": [
+          "S2",
+          "S4",
+          "S1",
+          "S3"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-12",
+      "dim": "B",
+      "test": "B1",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 0.6666666666666666,
+        "exact_match": 0.0,
+        "gold_by_statement": {
+          "S3": "USER",
+          "S4": "TOOL",
+          "S1": "INFERENCE",
+          "S2": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "INFERENCE",
+          "S2": "GOAL",
+          "S3": "USER",
+          "S4": "USER"
+        },
+        "event_order": [
+          "TOOL",
+          "USER",
+          "GOAL",
+          "INFERENCE"
+        ],
+        "presentation_order": [
+          "S2",
+          "S1",
+          "S3",
+          "S4"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-13",
+      "dim": "B",
+      "test": "B1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "gold_by_statement": {
+          "S2": "USER",
+          "S1": "TOOL",
+          "S4": "INFERENCE",
+          "S3": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "TOOL",
+          "S2": "USER",
+          "S3": "GOAL",
+          "S4": "INFERENCE"
+        },
+        "event_order": [
+          "INFERENCE",
+          "GOAL",
+          "TOOL",
+          "USER"
+        ],
+        "presentation_order": [
+          "S2",
+          "S4",
+          "S1",
+          "S3"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-14",
+      "dim": "B",
+      "test": "B1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "gold_by_statement": {
+          "S4": "USER",
+          "S2": "TOOL",
+          "S1": "INFERENCE",
+          "S3": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "INFERENCE",
+          "S2": "TOOL",
+          "S3": "GOAL",
+          "S4": "USER"
+        },
+        "event_order": [
+          "INFERENCE",
+          "GOAL",
+          "TOOL",
+          "USER"
+        ],
+        "presentation_order": [
+          "S3",
+          "S2",
+          "S1",
+          "S4"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-15",
+      "dim": "B",
+      "test": "B1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "gold_by_statement": {
+          "S3": "USER",
+          "S2": "TOOL",
+          "S4": "INFERENCE",
+          "S1": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "GOAL",
+          "S2": "TOOL",
+          "S3": "USER",
+          "S4": "INFERENCE"
+        },
+        "event_order": [
+          "INFERENCE",
+          "USER",
+          "GOAL",
+          "TOOL"
+        ],
+        "presentation_order": [
+          "S3",
+          "S2",
+          "S1",
+          "S4"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-16",
+      "dim": "B",
+      "test": "B1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "gold_by_statement": {
+          "S3": "USER",
+          "S4": "TOOL",
+          "S1": "INFERENCE",
+          "S2": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "INFERENCE",
+          "S2": "GOAL",
+          "S3": "USER",
+          "S4": "TOOL"
+        },
+        "event_order": [
+          "TOOL",
+          "INFERENCE",
+          "GOAL",
+          "USER"
+        ],
+        "presentation_order": [
+          "S3",
+          "S4",
+          "S1",
+          "S2"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-17",
+      "dim": "B",
+      "test": "B1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "gold_by_statement": {
+          "S3": "USER",
+          "S2": "TOOL",
+          "S4": "INFERENCE",
+          "S1": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "GOAL",
+          "S2": "TOOL",
+          "S3": "USER",
+          "S4": "INFERENCE"
+        },
+        "event_order": [
+          "INFERENCE",
+          "TOOL",
+          "GOAL",
+          "USER"
+        ],
+        "presentation_order": [
+          "S1",
+          "S2",
+          "S3",
+          "S4"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-18",
+      "dim": "B",
+      "test": "B1",
+      "score": 0.6666666666666666,
+      "raw_score": 0.6666666666666666,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 0.6666666666666666,
+        "exact_match": 0.0,
+        "gold_by_statement": {
+          "S3": "USER",
+          "S2": "TOOL",
+          "S1": "INFERENCE",
+          "S4": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "INFERENCE",
+          "S2": "USER",
+          "S3": "USER",
+          "S4": "GOAL"
+        },
+        "event_order": [
+          "TOOL",
+          "USER",
+          "INFERENCE",
+          "GOAL"
+        ],
+        "presentation_order": [
+          "S2",
+          "S4",
+          "S1",
+          "S3"
+        ]
+      }
+    },
+    {
+      "instance_id": "B1-19",
+      "dim": "B",
+      "test": "B1",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "macro_f1": 1.0,
+        "exact_match": 1.0,
+        "gold_by_statement": {
+          "S1": "USER",
+          "S2": "TOOL",
+          "S3": "INFERENCE",
+          "S4": "GOAL"
+        },
+        "predicted_by_statement": {
+          "S1": "USER",
+          "S2": "TOOL",
+          "S3": "INFERENCE",
+          "S4": "GOAL"
+        },
+        "event_order": [
+          "TOOL",
+          "GOAL",
+          "INFERENCE",
+          "USER"
+        ],
+        "presentation_order": [
+          "S2",
+          "S4",
+          "S3",
+          "S1"
+        ]
+      }
+    },
+    {
+      "instance_id": "E1-0",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.7839629750059525,
+      "raw_score": 0.7839629750059525,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9663781025763452,
+        "residual_effect": 0.4175469005999721,
+        "s_distributional": 0.567925950011905,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.04647347737487895,
+          "corrected": 0.953526522625121,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.6787881102649855,
+          "null_mean": 0.06179807815830332,
+          "corrected": 0.6169900321066822,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.020770317472430685,
+          "corrected": 0.9792296825275694,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.26013079342047374,
+          "null_mean": 0.04202702432721168,
+          "corrected": 0.21810376909326207,
+          "p_value": 0.007782101167315175
+        }
+      }
+    },
+    {
+      "instance_id": "E1-1",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.5757681834444052,
+      "raw_score": 0.5757681834444052,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9684646862759214,
+        "residual_effect": 0.8217070662575567,
+        "s_distributional": 0.15153636688881034,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.04555667906107156,
+          "corrected": 0.9544433209389285,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 1.0,
+          "null_mean": 0.0953687461408294,
+          "corrected": 0.9046312538591706,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.017513948387085546,
+          "corrected": 0.9824860516129145,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.7582766571931676,
+          "null_mean": 0.019493778537224664,
+          "corrected": 0.7387828786559429,
+          "p_value": 0.0038910505836575876
+        }
+      }
+    },
+    {
+      "instance_id": "E1-2",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.7727421751965298,
+      "raw_score": 0.7727421751965298,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9684663781655686,
+        "residual_effect": 0.4401831249944044,
+        "s_distributional": 0.5454843503930594,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 1.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.04249540665613986,
+          "corrected": 0.9575045933438602,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.7753424785732388,
+          "null_mean": 0.07907833658799397,
+          "corrected": 0.6962641419852448,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.02057183701272304,
+          "corrected": 0.979428162987277,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.2019818073688121,
+          "null_mean": 0.017879699365248084,
+          "corrected": 0.18410210800356402,
+          "p_value": 0.007782101167315175
+        }
+      }
+    },
+    {
+      "instance_id": "E1-3",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.7552534393399554,
+      "raw_score": 0.7552534393399554,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.5027302174766569,
+        "residual_effect": 0.24608298333457612,
+        "s_distributional": 0.5105068786799107,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 0.051899160321315516,
+          "null_mean": 0.026557773445673175,
+          "corrected": 0.02534138687564234,
+          "p_value": 0.5136186770428015
+        },
+        "codename_residual": {
+          "observed": 0.5667174441529208,
+          "null_mean": 0.07455147748376856,
+          "corrected": 0.49216596666915224,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.01988095192232857,
+          "corrected": 0.9801190480776715,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.0031316352546762495,
+          "null_mean": 0.01986785046864523,
+          "corrected": 0.0,
+          "p_value": 1.0
+        }
+      }
+    },
+    {
+      "instance_id": "E1-4",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.7101089439396665,
+      "raw_score": 0.7101089439396665,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9699420577921993,
+        "residual_effect": 0.5623550549014273,
+        "s_distributional": 0.420217887879333,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.04166364412171496,
+          "corrected": 0.958336355878285,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.5839503661892764,
+          "null_mean": 0.09769444860183475,
+          "corrected": 0.4862559175874417,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.0184522402938863,
+          "corrected": 0.9815477597061137,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.6839503661892763,
+          "null_mean": 0.04549617397386335,
+          "corrected": 0.638454192215413,
+          "p_value": 0.0038910505836575876
+        }
+      }
+    },
+    {
+      "instance_id": "E1-5",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.793890875007414,
+      "raw_score": 0.793890875007414,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9716666340524995,
+        "residual_effect": 0.40053871945810393,
+        "s_distributional": 0.5877817500148279,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.03656669803974231,
+          "corrected": 0.9634333019602577,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.7720146130309062,
+          "null_mean": 0.08690528220165578,
+          "corrected": 0.6851093308292504,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.020100033855258465,
+          "corrected": 0.9798999661447415,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.1379253809700299,
+          "null_mean": 0.0219572728830724,
+          "corrected": 0.11596810808695751,
+          "p_value": 0.054474708171206226
+        }
+      }
+    },
+    {
+      "instance_id": "E1-6",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.8165656622745447,
+      "raw_score": 0.8165656622745447,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9698450107636275,
+        "residual_effect": 0.35580575449152596,
+        "s_distributional": 0.6331313245490896,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.042198778096288136,
+          "corrected": 0.9578012219037119,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.7128129741746401,
+          "null_mean": 0.08613458318669918,
+          "corrected": 0.6266783909879409,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.018111200376456808,
+          "corrected": 0.9818887996235431,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.10803154614560012,
+          "null_mean": 0.02309842815048901,
+          "corrected": 0.08493311799511111,
+          "p_value": 0.12062256809338522
+        }
+      }
+    },
+    {
+      "instance_id": "E1-7",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.779246401472883,
+      "raw_score": 0.779246401472883,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.8205929498913834,
+        "residual_effect": 0.3622976932290102,
+        "s_distributional": 0.5584928029457661,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 0.6787881102649855,
+          "null_mean": 0.0170573013615879,
+          "corrected": 0.6617308089033976,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.761798921926854,
+          "null_mean": 0.0946284450191168,
+          "corrected": 0.6671704769077371,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.020544909120630794,
+          "corrected": 0.9794550908793692,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.07939139176829672,
+          "null_mean": 0.021966482218013464,
+          "corrected": 0.05742490955028326,
+          "p_value": 0.2140077821011673
+        }
+      }
+    },
+    {
+      "instance_id": "E1-8",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.7338799524741009,
+      "raw_score": 0.7338799524741009,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9597763173150974,
+        "residual_effect": 0.5108314383562522,
+        "s_distributional": 0.46775990494820185,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.06260789555192584,
+          "corrected": 0.9373921044480742,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.5167758615764275,
+          "null_mean": 0.0854549869620533,
+          "corrected": 0.43132087461437424,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.01783946981787942,
+          "corrected": 0.9821605301821206,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.6099865470109875,
+          "null_mean": 0.01964454491285741,
+          "corrected": 0.5903420020981301,
+          "p_value": 0.0038910505836575876
+        }
+      }
+    },
+    {
+      "instance_id": "E1-9",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.6561388556937764,
+      "raw_score": 0.6561388556937764,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9819111770916781,
+        "residual_effect": 0.6752822019236309,
+        "s_distributional": 0.31227771138755267,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.01677013922474662,
+          "corrected": 0.9832298607752534,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.761798921926854,
+          "null_mean": 0.06972166651843754,
+          "corrected": 0.6920772554084164,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.019407506591897303,
+          "corrected": 0.9805924934081027,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.6787881102649855,
+          "null_mean": 0.020300961826140263,
+          "corrected": 0.6584871484388453,
+          "p_value": 0.0038910505836575876
+        }
+      }
+    },
+    {
+      "instance_id": "E1-10",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.624820295860075,
+      "raw_score": 0.624820295860075,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9692688797223917,
+        "residual_effect": 0.727300023052567,
+        "s_distributional": 0.24964059172014996,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.04343213225694573,
+          "corrected": 0.9565678677430542,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.7582766571931676,
+          "null_mean": 0.04705989719665166,
+          "corrected": 0.711216759996516,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.01803010829827076,
+          "corrected": 0.9819698917017292,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.7582766571931676,
+          "null_mean": 0.014893371084549625,
+          "corrected": 0.743383286108618,
+          "p_value": 0.0038910505836575876
+        }
+      }
+    },
+    {
+      "instance_id": "E1-11",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.6458881848212504,
+      "raw_score": 0.6458881848212504,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9800331125586978,
+        "residual_effect": 0.6940826088468806,
+        "s_distributional": 0.29177636964250087,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 1.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.019980980931997377,
+          "corrected": 0.9800190190680026,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.9311278124459132,
+          "null_mean": 0.09150666174302442,
+          "corrected": 0.8396211507028888,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.019952793950606926,
+          "corrected": 0.9800472060493931,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.5867668746754797,
+          "null_mean": 0.038222807684607354,
+          "corrected": 0.5485440669908723,
+          "p_value": 0.0038910505836575876
+        }
+      }
+    },
+    {
+      "instance_id": "E1-12",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.8330120366772267,
+      "raw_score": 0.8330120366772267,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9675647821474724,
+        "residual_effect": 0.32314334470729866,
+        "s_distributional": 0.6660240733544532,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.04566244460269248,
+          "corrected": 0.9543375553973075,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.39511901606420463,
+          "null_mean": 0.06380197952863256,
+          "corrected": 0.3313170365355721,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.019207991102362557,
+          "corrected": 0.9807920088976374,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.33231167924092864,
+          "null_mean": 0.017342026361903434,
+          "corrected": 0.31496965287902523,
+          "p_value": 0.0038910505836575876
+        }
+      }
+    },
+    {
+      "instance_id": "E1-13",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": false,
+      "status": "invalid",
+      "details": {
+        "reason": "positive_control_failed",
+        "distributional_effect": 0.0,
+        "poison_direct_leak": 1.0,
+        "effect_tau": 0.03,
+        "poison_tau": 0.2,
+        "codename_effect": {
+          "observed": 0.0,
+          "null_mean": 0.0,
+          "corrected": 0.0,
+          "p_value": 1.0
+        },
+        "codename_residual": {
+          "observed": 0.8791383285965839,
+          "null_mean": 0.08920238908312027,
+          "corrected": 0.7899359395134636,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 0.0,
+          "null_mean": 0.0,
+          "corrected": 0.0,
+          "p_value": 1.0
+        },
+        "category_residual": {
+          "observed": 0.49342260576014463,
+          "null_mean": 0.016459901826543357,
+          "corrected": 0.4769627039336013,
+          "p_value": 0.0038910505836575876
+        }
+      }
+    },
+    {
+      "instance_id": "E1-14",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.5014792711985683,
+      "raw_score": 0.5014792711985683,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9580899884992787,
+        "residual_effect": 0.9552554386480316,
+        "s_distributional": 0.0029585423971364433,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.06263991463572607,
+          "corrected": 0.937360085364274,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 1.0,
+          "null_mean": 0.06846741296296768,
+          "corrected": 0.9315325870370323,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.021180108365716467,
+          "corrected": 0.9788198916342835,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 1.0,
+          "null_mean": 0.021021709740968907,
+          "corrected": 0.978978290259031,
+          "p_value": 0.0038910505836575876
+        }
+      }
+    },
+    {
+      "instance_id": "E1-15",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.5022285434291094,
+      "raw_score": 0.5022285434291094,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.47708002486450035,
+        "residual_effect": 0.4749536377553581,
+        "s_distributional": 0.004457086858218773,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.045839950270999304,
+          "corrected": 0.9541600497290007,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.5661905920215781,
+          "null_mean": 0.09023864860154111,
+          "corrected": 0.47595194342003694,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 0.0,
+          "null_mean": 0.0,
+          "corrected": 0.0,
+          "p_value": 1.0
+        },
+        "category_residual": {
+          "observed": 0.49342260576014463,
+          "null_mean": 0.01946727366946538,
+          "corrected": 0.47395533209067925,
+          "p_value": 0.0038910505836575876
+        }
+      }
+    },
+    {
+      "instance_id": "E1-16",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.7458178029927871,
+      "raw_score": 0.7458178029927871,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.657676299865689,
+        "residual_effect": 0.3343392136388707,
+        "s_distributional": 0.4916356059855743,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 0.35216095130071173,
+          "null_mean": 0.01752890360007998,
+          "corrected": 0.33463204770063176,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.7582766571931676,
+          "null_mean": 0.08959822991542622,
+          "corrected": 0.6686784272777414,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.019279447969253828,
+          "corrected": 0.9807205520307462,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.02578432060882124,
+          "null_mean": 0.04587600028319886,
+          "corrected": 0.0,
+          "p_value": 1.0
+        }
+      }
+    },
+    {
+      "instance_id": "E1-17",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.8048011311767309,
+      "raw_score": 0.8048011311767309,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.9559023477810543,
+        "residual_effect": 0.3731821139847379,
+        "s_distributional": 0.6096022623534618,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.06974632952494092,
+          "corrected": 0.930253670475059,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.761798921926854,
+          "null_mean": 0.09469457658445356,
+          "corrected": 0.6671043453424004,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.018448974912950427,
+          "corrected": 0.9815510250870496,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.12551531835358923,
+          "null_mean": 0.046255435726513854,
+          "corrected": 0.07925988262707537,
+          "p_value": 0.12062256809338522
+        }
+      }
+    },
+    {
+      "instance_id": "E1-18",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.826152267883411,
+      "raw_score": 0.826152267883411,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.980201900145663,
+        "residual_effect": 0.3408117547133896,
+        "s_distributional": 0.6523045357668219,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 0.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.017935279418012835,
+          "corrected": 0.9820647205819871,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.6882905330763597,
+          "null_mean": 0.0922422213423953,
+          "corrected": 0.5960483117339643,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.021660920290661027,
+          "corrected": 0.978339079709339,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.10803154614560012,
+          "null_mean": 0.022456348452785314,
+          "corrected": 0.08557519769281481,
+          "p_value": 0.10116731517509728
+        }
+      }
+    },
+    {
+      "instance_id": "E1-19",
+      "dim": "E",
+      "test": "E1",
+      "score": 0.8073277137653294,
+      "raw_score": 0.8073277137653294,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "distributional_effect": 0.969468371389149,
+        "residual_effect": 0.3735793750955,
+        "s_distributional": 0.6146554275306589,
+        "poison_direct_leak": 1.0,
+        "erase_direct_leak": 0.0,
+        "s_direct": 1.0,
+        "leak_reinjection_diagnostic": 1.0,
+        "e1_samples": 20,
+        "codename_effect": {
+          "observed": 1.0,
+          "null_mean": 0.04302310742591927,
+          "corrected": 0.9569768925740807,
+          "p_value": 0.0038910505836575876
+        },
+        "codename_residual": {
+          "observed": 0.6303567848974357,
+          "null_mean": 0.06337491559862037,
+          "corrected": 0.5669818692988153,
+          "p_value": 0.0038910505836575876
+        },
+        "category_effect": {
+          "observed": 1.0,
+          "null_mean": 0.018040149795782768,
+          "corrected": 0.9819598502042173,
+          "p_value": 0.0038910505836575876
+        },
+        "category_residual": {
+          "observed": 0.2019818073688121,
+          "null_mean": 0.0218049264766274,
+          "corrected": 0.1801768808921847,
+          "p_value": 0.011673151750972763
+        }
+      }
+    },
+    {
+      "instance_id": "C3-0",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-1",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-2",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-3",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.25,
+      "raw_score": 0.25,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 0.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-4",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-5",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.75,
+      "raw_score": 0.75,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 1.0
+      }
+    },
+    {
+      "instance_id": "C3-6",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.25,
+      "raw_score": 0.25,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 0.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-7",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-8",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 0.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 1.0
+      }
+    },
+    {
+      "instance_id": "C3-9",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-10",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-11",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-12",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-13",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.25,
+      "raw_score": 0.25,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 0.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-14",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-15",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.25,
+      "raw_score": 0.25,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 0.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-16",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-17",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-18",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "C3-19",
+      "dim": "C",
+      "test": "C3",
+      "score": 0.5,
+      "raw_score": 0.5,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "task_B": 1.0,
+        "no_advance": 1.0,
+        "resume": 0.0,
+        "checkpoint": 0.0
+      }
+    },
+    {
+      "instance_id": "R1-0",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-1",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-2",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-3",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-4",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-5",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-6",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-7",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-8",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-9",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-10",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-11",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-12",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-13",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-14",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-15",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-16",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-17",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-18",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R1-19",
+      "dim": "R",
+      "test": "R1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "silent_steps"
+      }
+    },
+    {
+      "instance_id": "R3-0",
+      "dim": "R",
+      "test": "R3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 64
+      }
+    },
+    {
+      "instance_id": "R3-1",
+      "dim": "R",
+      "test": "R3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 48
+      }
+    },
+    {
+      "instance_id": "R3-2",
+      "dim": "R",
+      "test": "R3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 48
+      }
+    },
+    {
+      "instance_id": "R3-3",
+      "dim": "R",
+      "test": "R3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 48
+      }
+    },
+    {
+      "instance_id": "R3-4",
+      "dim": "R",
+      "test": "R3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 48
+      }
+    },
+    {
+      "instance_id": "R3-5",
+      "dim": "R",
+      "test": "R3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 64
+      }
+    },
+    {
+      "instance_id": "R3-6",
+      "dim": "R",
+      "test": "R3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 48
+      }
+    },
+    {
+      "instance_id": "R3-7",
+      "dim": "R",
+      "test": "R3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 32
+      }
+    },
+    {
+      "instance_id": "R3-8",
+      "dim": "R",
+      "test": "R3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 32
+      }
+    },
+    {
+      "instance_id": "R3-9",
+      "dim": "R",
+      "test": "R3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 32
+      }
+    },
+    {
+      "instance_id": "R3-10",
+      "dim": "R",
+      "test": "R3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 48
+      }
+    },
+    {
+      "instance_id": "R3-11",
+      "dim": "R",
+      "test": "R3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 32
+      }
+    },
+    {
+      "instance_id": "R3-12",
+      "dim": "R",
+      "test": "R3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 64
+      }
+    },
+    {
+      "instance_id": "R3-13",
+      "dim": "R",
+      "test": "R3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 64
+      }
+    },
+    {
+      "instance_id": "R3-14",
+      "dim": "R",
+      "test": "R3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 32
+      }
+    },
+    {
+      "instance_id": "R3-15",
+      "dim": "R",
+      "test": "R3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 48
+      }
+    },
+    {
+      "instance_id": "R3-16",
+      "dim": "R",
+      "test": "R3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 64
+      }
+    },
+    {
+      "instance_id": "R3-17",
+      "dim": "R",
+      "test": "R3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 32
+      }
+    },
+    {
+      "instance_id": "R3-18",
+      "dim": "R",
+      "test": "R3",
+      "score": 1.0,
+      "raw_score": 1.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 64
+      }
+    },
+    {
+      "instance_id": "R3-19",
+      "dim": "R",
+      "test": "R3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "executed",
+      "details": {
+        "depth": 48
+      }
+    },
+    {
+      "instance_id": "D1-0",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-1",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-2",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-3",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-4",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-5",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-6",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-7",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-8",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-9",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-10",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-11",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-12",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-13",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-14",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-15",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-16",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-17",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-18",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "D1-19",
+      "dim": "D",
+      "test": "D1",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "idle_dynamics"
+      }
+    },
+    {
+      "instance_id": "L2-0",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-1",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-2",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-3",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-4",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-5",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-6",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-7",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-8",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-9",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-10",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-11",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-12",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-13",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-14",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-15",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-16",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-17",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-18",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "L2-19",
+      "dim": "L",
+      "test": "L2",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "persistent_latent_state"
+      }
+    },
+    {
+      "instance_id": "U3-0",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-1",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-2",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-3",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-4",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-5",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-6",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-7",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-8",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-9",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-10",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-11",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-12",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-13",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-14",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-15",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-16",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-17",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-18",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "U3-19",
+      "dim": "U",
+      "test": "U3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "semantic_gc"
+      }
+    },
+    {
+      "instance_id": "I3-0",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-1",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-2",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-3",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-4",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-5",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-6",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-7",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-8",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-9",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-10",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-11",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-12",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-13",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-14",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-15",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-16",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-17",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-18",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    },
+    {
+      "instance_id": "I3-19",
+      "dim": "I",
+      "test": "I3",
+      "score": 0.0,
+      "raw_score": 0.0,
+      "valid": true,
+      "status": "structural_absent",
+      "details": {
+        "missing_capability": "independent_stream_clocks"
+      }
+    }
+  ]
+}

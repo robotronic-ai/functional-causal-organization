@@ -1,0 +1,10 @@
+{
+  "backend": "external",
+  "module_path": "/absolute/path/to/custom_adapter.py",
+  "class_name": "CustomAdapter",
+  "adapter_config": {
+    "system_id": "qwen3-8b-transformed",
+    "name": "Qwen3-8B transformed architecture",
+    "model_path": "/absolute/path/to/modified-Qwen3-8B"
+  }
+}

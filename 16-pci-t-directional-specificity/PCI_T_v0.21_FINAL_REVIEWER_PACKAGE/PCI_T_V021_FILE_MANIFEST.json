@@ -1,0 +1,46 @@
+{
+  "file_count": 8,
+  "files": [
+    {
+      "bytes": 4308,
+      "path": "PCI_T_V021_FINAL_RESULTS.json",
+      "sha256": "41b454073c073b266f96384e1ef9d9911121138fdcb3a3ac14ef879b9fe92f2c"
+    },
+    {
+      "bytes": 1091,
+      "path": "PCI_T_V021_PROVENANCE.json",
+      "sha256": "d15f34aa100d5a1a7c5c12cbf4e4c1fc811008b03aaa6f791036b7650fa2ca00"
+    },
+    {
+      "bytes": 5599,
+      "path": "PCI_T_V021_REVIEWER_SUMMARY.md",
+      "sha256": "58339be88651af13080b0e77bffdd901c1f1ec182e5cfc375b0421f31577b03d"
+    },
+    {
+      "bytes": 5130,
+      "path": "README.md",
+      "sha256": "1739774ec5c4cceb3bcf4c15cd15348ff676d71c157e1c640e82066925f3af5b"
+    },
+    {
+      "bytes": 79999,
+      "path": "raw_results/R01_CAL3_LATE_LAYER_GATE_RESULT_v0.21-X7.json",
+      "sha256": "2ced898841193c455856a7fcf0866b563b1098508086a05dad968f07367a95af"
+    },
+    {
+      "bytes": 253790,
+      "path": "raw_results/R01_DIRECTIONAL_SPECIFICITY_RESULT_v0.21-X4.json",
+      "sha256": "c1e165a664c4e79ff08f883b26574e22d318ef51691cccfa969e530142f6407b"
+    },
+    {
+      "bytes": 24807,
+      "path": "raw_results/R01_SCORE2_FINAL_RESULT_v0.21-X8.json",
+      "sha256": "c711e2603b3785f27d99e640e93fbf71879db84bb41ee33908fd1eac81816baa"
+    },
+    {
+      "bytes": 4371,
+      "path": "verify_pci_t_v021_final.py",
+      "sha256": "d2bfd7883804322765960f466b2dc5e4df8a6d7d4c6ff29d14cbe293516f6900"
+    }
+  ],
+  "schema": "pci-t-v0.21-final-file-manifest-v1"
+}

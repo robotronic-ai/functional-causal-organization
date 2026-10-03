@@ -1,0 +1,24 @@
+{
+  "frozen_score2_sha256": "5b8f0ae03a17ad0067d67b7d3b5fbab0851a63eb8e25695f70968ad130d3b468",
+  "manuscript_modified": false,
+  "raw_results": {
+    "X4": {
+      "contract_sha256": "9a708567949d9da4536f9f9b92f8a1a4d72c64e8411f07d8d208b8652698c954",
+      "file": "raw_results/R01_DIRECTIONAL_SPECIFICITY_RESULT_v0.21-X4.json",
+      "sha256": "c1e165a664c4e79ff08f883b26574e22d318ef51691cccfa969e530142f6407b"
+    },
+    "X7": {
+      "contract_sha256": "c8b640eb9dfa180f0503b8fa954431c76b56ef1e97dc6f0f4d604c094e617b57",
+      "file": "raw_results/R01_CAL3_LATE_LAYER_GATE_RESULT_v0.21-X7.json",
+      "sha256": "2ced898841193c455856a7fcf0866b563b1098508086a05dad968f07367a95af"
+    },
+    "X8": {
+      "contract_sha256": "eb4943eff7602c9aa4700079b1d0bad619c42f920dcc9984aeddd7b6add73a16",
+      "file": "raw_results/R01_SCORE2_FINAL_RESULT_v0.21-X8.json",
+      "sha256": "c711e2603b3785f27d99e640e93fbf71879db84bb41ee33908fd1eac81816baa"
+    }
+  },
+  "schema": "pci-t-v0.21-final-provenance-v1",
+  "score2_opened_only_after_x8_contract_freeze": true,
+  "score2_selection_gate": null
+}

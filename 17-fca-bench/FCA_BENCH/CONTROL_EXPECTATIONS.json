@@ -1,0 +1,29 @@
+{
+  "status": "preregistered_directional_examples",
+  "rules": [
+    {
+      "control": "standard_transformer",
+      "expectation": "Causal/interventional tests requiring absent architecture primitives return structural_absent rather than being simulated by prompting."
+    },
+    {
+      "control": "behavioral_without_mechanism",
+      "expectation": "Selected behavioral tests may be high while unsupported causal/interventional tests remain structural_absent."
+    },
+    {
+      "control": "same_base_plus_latent_recurrence",
+      "expectation": "R1 and R2 should improve relative to the same base model when silent recurrent computation is genuinely enabled; unrelated dimensions need not improve."
+    },
+    {
+      "control": "same_base_plus_dual_stream",
+      "expectation": "L3 and I3 are expected to change only if work and control states are independently addressable; ordinary instruction following is not sufficient."
+    },
+    {
+      "control": "compute_matched_non_target",
+      "expectation": "Additional compute may improve generic task accuracy but should not automatically satisfy state-specific intervention tests."
+    },
+    {
+      "control": "sham_intervention",
+      "expectation": "A sham operation should not reproduce the selective causal effect of the corresponding real intervention."
+    }
+  ]
+}

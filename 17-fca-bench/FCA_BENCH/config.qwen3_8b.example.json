@@ -1,0 +1,19 @@
+{
+  "backend": "hf",
+  "system_id": "qwen3-8b-standard",
+  "name": "Qwen3-8B standard Transformer",
+  "model_path": "./Qwen3-8B",
+  "device_map": "auto",
+  "dtype": "auto",
+  "trust_remote_code": true,
+  "max_new_tokens": 128,
+  "temperature": 0.0,
+  "sample_temperature": 0.8,
+  "top_p": 0.95,
+  "enable_thinking": false,
+  "seed": 1234,
+  "e1_samples": 5,
+  "lazy_context": true,
+  "local_files_only": true,
+  "progress": true
+}

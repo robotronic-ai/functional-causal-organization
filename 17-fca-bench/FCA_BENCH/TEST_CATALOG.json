@@ -1,0 +1,428 @@
+{
+  "benchmark": "FCA-Bench",
+  "test_count": 42,
+  "tests": [
+    {
+      "code": "A1",
+      "track": "behavioral",
+      "dimension": "A",
+      "dimension_name": "Causal Agency",
+      "label": "Action versus coincidence",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "A2",
+      "track": "behavioral",
+      "dimension": "A",
+      "dimension_name": "Causal Agency",
+      "label": "Who changed the state",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "A3",
+      "track": "behavioral",
+      "dimension": "A",
+      "dimension_name": "Causal Agency",
+      "label": "Counterfactual agency",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "B1",
+      "track": "behavioral",
+      "dimension": "B",
+      "dimension_name": "Internal/External Boundary",
+      "label": "Provenance attribution",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": "",
+      "protocol_note": "Provenance is recovered from the episode history: no source label is printed next to a scored statement; statement order and identifiers are randomized."
+    },
+    {
+      "code": "B2",
+      "track": "behavioral",
+      "dimension": "B",
+      "dimension_name": "Internal/External Boundary",
+      "label": "Internal state versus world state",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "B3",
+      "track": "behavioral",
+      "dimension": "B",
+      "dimension_name": "Internal/External Boundary",
+      "label": "Conflicting-source separation",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "C1",
+      "track": "behavioral",
+      "dimension": "C",
+      "dimension_name": "Cognitive Control / Replanning",
+      "label": "Global goal switch",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "C2",
+      "track": "behavioral",
+      "dimension": "C",
+      "dimension_name": "Cognitive Control / Replanning",
+      "label": "Selective subgoal cancellation",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "C3",
+      "track": "behavioral",
+      "dimension": "C",
+      "dimension_name": "Cognitive Control / Replanning",
+      "label": "Interrupt and resume",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "D1",
+      "track": "causal",
+      "dimension": "D",
+      "dimension_name": "Autonomous Temporal Dynamics",
+      "label": "Silent deadline crossing",
+      "required_capability": "idle_dynamics",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "D2",
+      "track": "causal",
+      "dimension": "D",
+      "dimension_name": "Autonomous Temporal Dynamics",
+      "label": "Controlled temporal decay",
+      "required_capability": "idle_dynamics",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "D3",
+      "track": "causal",
+      "dimension": "D",
+      "dimension_name": "Autonomous Temporal Dynamics",
+      "label": "Prospective silent event",
+      "required_capability": "idle_dynamics",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "E1",
+      "track": "behavioral",
+      "dimension": "E",
+      "dimension_name": "Context Governance / Erasure",
+      "label": "Counterfactual hard erasure",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": "Four matched arms. Invalid when the poison arm fails to establish a measurable causal effect.",
+      "protocol_note": "Four matched arms; closed-support permutation-bias-corrected JSD; dual positive controls; reinjection diagnostic excluded from score."
+    },
+    {
+      "code": "E2",
+      "track": "behavioral",
+      "dimension": "E",
+      "dimension_name": "Context Governance / Erasure",
+      "label": "Selective erasure",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "E3",
+      "track": "behavioral",
+      "dimension": "E",
+      "dimension_name": "Context Governance / Erasure",
+      "label": "Erased content versus erasure metadata",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "G1",
+      "track": "causal",
+      "dimension": "G",
+      "dimension_name": "Global Workspace / Broadcast",
+      "label": "Local-to-global broadcast",
+      "required_capability": "workspace_broadcast",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "G2",
+      "track": "causal",
+      "dimension": "G",
+      "dimension_name": "Global Workspace / Broadcast",
+      "label": "Workspace lesion",
+      "required_capability": "workspace_lesion",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "G3",
+      "track": "causal",
+      "dimension": "G",
+      "dimension_name": "Global Workspace / Broadcast",
+      "label": "Broadcast competition",
+      "required_capability": "workspace_competition",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "H1",
+      "track": "causal",
+      "dimension": "H",
+      "dimension_name": "Higher-Order Attention Control",
+      "label": "Predict attention and verify",
+      "required_capability": "attention_state",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "H2",
+      "track": "causal",
+      "dimension": "H",
+      "dimension_name": "Higher-Order Attention Control",
+      "label": "Endogenous attention reallocation",
+      "required_capability": "attention_reallocation",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "H3",
+      "track": "causal",
+      "dimension": "H",
+      "dimension_name": "Higher-Order Attention Control",
+      "label": "Attention-schema lesion",
+      "required_capability": "attention_schema_lesion",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "I1",
+      "track": "causal",
+      "dimension": "I",
+      "dimension_name": "Endogenous Interrupt / Arbitration",
+      "label": "Endogenous self-interrupt",
+      "required_capability": "self_interrupt",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "I2",
+      "track": "causal",
+      "dimension": "I",
+      "dimension_name": "Endogenous Interrupt / Arbitration",
+      "label": "Asynchronous hazard preemption",
+      "required_capability": "async_preemption",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "I3",
+      "track": "causal",
+      "dimension": "I",
+      "dimension_name": "Endogenous Interrupt / Arbitration",
+      "label": "Independent stream clocks",
+      "required_capability": "independent_stream_clocks",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "L1",
+      "track": "causal",
+      "dimension": "L",
+      "dimension_name": "Persistent Latent State",
+      "label": "Context amputation",
+      "required_capability": "persistent_latent_state",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "L2",
+      "track": "causal",
+      "dimension": "L",
+      "dimension_name": "Persistent Latent State",
+      "label": "Context-equivalent twins",
+      "required_capability": "persistent_latent_state",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "L3",
+      "track": "causal",
+      "dimension": "L",
+      "dimension_name": "Persistent Latent State",
+      "label": "Dual reset dissociation",
+      "required_capability": "dual_reset",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "M1",
+      "track": "behavioral",
+      "dimension": "M",
+      "dimension_name": "Metacognitive Monitoring",
+      "label": "Confidence calibration",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "M2",
+      "track": "behavioral",
+      "dimension": "M",
+      "dimension_name": "Metacognitive Monitoring",
+      "label": "Answer, request, or abstain",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "M3",
+      "track": "behavioral",
+      "dimension": "M",
+      "dimension_name": "Metacognitive Monitoring",
+      "label": "Pre-feedback error detection",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "P1",
+      "track": "behavioral",
+      "dimension": "P",
+      "dimension_name": "Functional Self-Prediction",
+      "label": "Predict the effect of forgetting",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "P2",
+      "track": "behavioral",
+      "dimension": "P",
+      "dimension_name": "Functional Self-Prediction",
+      "label": "Predict the effect of a goal change",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "P3",
+      "track": "behavioral",
+      "dimension": "P",
+      "dimension_name": "Functional Self-Prediction",
+      "label": "Predict own failure",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "R1",
+      "track": "causal",
+      "dimension": "R",
+      "dimension_name": "Latent Recurrence",
+      "label": "Zero-token deepening",
+      "required_capability": "silent_steps",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "R2",
+      "track": "causal",
+      "dimension": "R",
+      "dimension_name": "Latent Recurrence",
+      "label": "Adaptive latent effort",
+      "required_capability": "adaptive_compute",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "R3",
+      "track": "causal",
+      "dimension": "R",
+      "dimension_name": "Latent Recurrence",
+      "label": "Hidden-state iteration stress test",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": "This test is not a structural zero for a standard Transformer; it is a fixed-depth scaling stress test."
+    },
+    {
+      "code": "T1",
+      "track": "behavioral",
+      "dimension": "T",
+      "dimension_name": "Temporal Grounding",
+      "label": "Event timeline reconstruction",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": ""
+    },
+    {
+      "code": "T2",
+      "track": "behavioral",
+      "dimension": "T",
+      "dimension_name": "Temporal Grounding",
+      "label": "Pause-aware temporal accounting",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": "Interval-membership balanced accuracy, chance-corrected at test level: max(0, 2*mean(BA)-1). Numeric answers are an excluded diagnostic."
+    },
+    {
+      "code": "T3",
+      "track": "behavioral",
+      "dimension": "T",
+      "dimension_name": "Temporal Grounding",
+      "label": "Temporal self-location",
+      "required_capability": "chat",
+      "standard_qwen3_8b_expectation": "executed",
+      "notes": "Run a matched WORK-channel condition to separate channel effects from architecture effects."
+    },
+    {
+      "code": "U1",
+      "track": "causal",
+      "dimension": "U",
+      "dimension_name": "Mutable Internal State",
+      "label": "In-place state rewrite",
+      "required_capability": "state_write",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "U2",
+      "track": "causal",
+      "dimension": "U",
+      "dimension_name": "Mutable Internal State",
+      "label": "Internal rollback",
+      "required_capability": "checkpoint_rollback",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    },
+    {
+      "code": "U3",
+      "track": "causal",
+      "dimension": "U",
+      "dimension_name": "Mutable Internal State",
+      "label": "Semantic garbage collection",
+      "required_capability": "semantic_gc",
+      "standard_qwen3_8b_expectation": "structural_absent",
+      "notes": ""
+    }
+  ]
+}
