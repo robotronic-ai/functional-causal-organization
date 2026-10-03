@@ -1,6 +1,10 @@
 cff-version: 1.2.0
 message: "If you use these instruments, protocols or results, please cite them as below."
 title: "Functional causal organization: PCI_T and FCA-Bench"
+identifiers:
+  - type: other
+    value: "hal-05776792"
+    description: "HAL preprint of the accompanying article"
 type: software
 authors:
   - family-names: "Merien"

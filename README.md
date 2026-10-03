@@ -1,4 +1,5 @@
 # Functional causal organization — PCI_T and FCA-Bench
+Article: https://hal.science/hal-05776792
 
 Code, protocols, raw results and verifiers for two instruments that measure functional access in a language model **by intervention rather than by description**:
 
