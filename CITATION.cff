@@ -11,11 +11,9 @@ authors:
     given-names: "Ronan"
     affiliation: "Robotronic"
     email: "ronan.merien@robotronic.com"
-version: "1.5"
+version: "1.5.1"
 repository-code: "https://github.com/robotronic-ai/functional-causal-organization"
-license:
-  - MIT
-  - CC-BY-4.0
+license: MIT
 abstract: >-
   Code, protocols, raw results and verifiers for PCI_T (a perturbational
   complexity index for transformers and its directional specificity) and
