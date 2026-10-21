@@ -1,0 +1,54 @@
+{
+  "claims": [
+    {
+      "claim": "The Koopman-closure evaluation-state construction exactly generates every future trajectory of every declared readout.",
+      "id": "RR-MPR-EXACT",
+      "status": "THEORETICAL-DERIVATION"
+    },
+    {
+      "claim": "Predictive equivalence is the coarsest deterministic state equivalence preserving all future declared readouts.",
+      "id": "RR-BEHAVIORAL-QUOTIENT",
+      "status": "THEORETICAL-DERIVATION"
+    },
+    {
+      "claim": "Every reachable exact linear realization surjects onto the predictive realization; minimal reachable exact linear realizations are isomorphic.",
+      "id": "RR-LINEAR-MINIMALITY",
+      "status": "THEORETICAL-DERIVATION"
+    },
+    {
+      "claim": "In finite-dimensional cases, generalized future-readout Hankel rank equals minimal predictive realization dimension.",
+      "id": "RR-HANKEL-RANK",
+      "status": "THEORETICAL-DERIVATION+EXHAUSTIVE-FINITE-CHECK"
+    },
+    {
+      "claim": "For a finite system with all scalar functions available as readouts, the deterministic predictive quotient is the reachable orbit machine and the minimal linear predictive dimension equals the number of reachable states.",
+      "id": "ALL-READOUTS-ORBIT-COROLLARY",
+      "status": "THEORETICAL-DERIVATION+EXHAUSTIVE-FINITE-CHECK"
+    },
+    {
+      "claim": "For linear dynamics and linear readouts, the predictive realization is the reachable subspace modulo the reachable unobservable subspace.",
+      "id": "LINEAR-REACHABLE-OBSERVABLE-COROLLARY",
+      "status": "THEORETICAL-DERIVATION+EXHAUSTIVE-FINITE-CHECK"
+    },
+    {
+      "claim": "For finite-state Markov kernels, the observable-semigroup construction yields the minimal reachable linear realization of all expected future declared readouts under the declared controls.",
+      "id": "STOCHASTIC-EXPECTATION-EXTENSION",
+      "status": "THEORETICAL-DERIVATION+EXHAUSTIVE-FINITE-CHECK"
+    },
+    {
+      "claim": "A full path-law minimality theorem requires a richer observable class or direct experiment-law equivalence and is not established here.",
+      "id": "STOCHASTIC-FULL-PATH-BISIMULATION",
+      "status": "OPEN"
+    },
+    {
+      "claim": "For a declared semigroup of deterministic control generators, Koopman closure under all control words yields a minimal reachable linear realization of all declared controlled future readouts.",
+      "id": "CONTROLLED-SEMIGROUP-MINIMALITY",
+      "status": "THEORETICAL-DERIVATION+EXHAUSTIVE-FINITE-CHECK"
+    },
+    {
+      "claim": "The universal minimality proof depends only on a semigroup of linear operators on observables, declared source functionals, and a declared readout subspace.",
+      "id": "OBSERVABLE-SEMIGROUP-MINIMAL-REALIZATION",
+      "status": "THEORETICAL-DERIVATION"
+    }
+  ]
+}

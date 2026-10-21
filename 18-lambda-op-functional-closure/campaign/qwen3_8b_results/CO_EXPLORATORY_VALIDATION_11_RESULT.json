@@ -1,0 +1,471 @@
+{
+  "candidate_name": "CO_EXPLORE_PCA20_K18_LOCAL_SPLIT",
+  "candidate_refit_on_validation": false,
+  "closure": "REFUTED",
+  "collision_examples": [
+    {
+      "fiber": "b11|R",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            32,
+            56
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR"
+          ],
+          "units": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "fiber": "b9",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            24
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            6
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "ORIGINAL"
+          ],
+          "units": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "fiber": "b14",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            4,
+            18,
+            49,
+            57
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "ORIGINAL",
+            "DONOR"
+          ],
+          "units": [
+            21
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            61
+          ]
+        }
+      ]
+    },
+    {
+      "fiber": "b15",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            5,
+            10,
+            27,
+            38,
+            45
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "ORIGINAL",
+            "ORIGINAL"
+          ],
+          "units": [
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "fiber": "b0|L",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "ORIGINAL"
+          ],
+          "units": [
+            20,
+            33
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            7
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "ORIGINAL"
+          ],
+          "units": [
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "fiber": "b12",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            11,
+            12,
+            15,
+            19,
+            22,
+            25,
+            28,
+            30,
+            35,
+            36,
+            37,
+            39,
+            41,
+            43,
+            46,
+            47,
+            50,
+            52,
+            59,
+            60
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "ORIGINAL"
+          ],
+          "units": [
+            8,
+            64
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            14
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "ORIGINAL"
+          ],
+          "units": [
+            54
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL"
+          ],
+          "units": [
+            51
+          ]
+        }
+      ]
+    },
+    {
+      "fiber": "b0|R",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            9,
+            58,
+            63
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "ORIGINAL"
+          ],
+          "units": [
+            13
+          ]
+        }
+      ]
+    }
+  ],
+  "n_collision_fibers": 7,
+  "n_collision_pairs": 136,
+  "n_fibers": 17,
+  "n_nontrivial_fibers": 9,
+  "n_validation_systems": 64,
+  "nontrivial_coverage": 0.875,
+  "promotion_status": "REFUTED",
+  "rich_variance_explained_by_fibers": 0.4629252896787516,
+  "schema": "co-qwen3-8b-exploratory-co-validation-v1",
+  "scope_note": "Validation concerns the frozen exploratory operation-indexed cross-target organizational proxy. It is not a validation of a scalar full four-component C_O.",
+  "selection_mode": "COLLISION_GUIDED_LOCAL_SPLIT",
+  "systems_in_nontrivial_fibers": 56,
+  "validation_rule": {
+    "n_collision_pairs": 0,
+    "nontrivial_coverage_min": 0.2,
+    "within_fiber_distortion_fraction_max": 0.2
+  },
+  "within_fiber_distortion_fraction": 0.5370747103212484
+}

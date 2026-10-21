@@ -1,0 +1,96 @@
+{
+  "candidate_grid_was_fixed_before_phase18_target_evaluation": true,
+  "candidate_name": "Q18_RHO2_L1_R1__LAMBDA",
+  "components": [
+    "Lambda"
+  ],
+  "family": "LAMBDA",
+  "generalization_level": "OP",
+  "holdout_refit_allowed": false,
+  "measurement_panel_sha256": "ea9e74daa3e7f681d8efbbd8c7fa8b3afe77cb891857383cf455db872d511561",
+  "metrics": {
+    "fiber_fraction": 0.5833333333333334,
+    "n_collision_fibers": 0,
+    "n_collision_pairs": 0,
+    "n_fibers": 7,
+    "n_nontrivial_fibers": 3,
+    "nontrivial_coverage": 0.6666666666666666,
+    "systems_in_nontrivial_fibers": 8
+  },
+  "operation_algebra_changed": false,
+  "partition_quality": {
+    "adjusted_mutual_information": 0.8533973610411538,
+    "ami_by_target_coordinate": [
+      {
+        "ami": 0.0,
+        "target_index": 0
+      },
+      {
+        "ami": 0.0,
+        "target_index": 1
+      },
+      {
+        "ami": 0.0,
+        "target_index": 2
+      },
+      {
+        "ami": 0.0,
+        "target_index": 3
+      },
+      {
+        "ami": 0.0,
+        "target_index": 4
+      },
+      {
+        "ami": 0.0,
+        "target_index": 5
+      },
+      {
+        "ami": 0.0,
+        "target_index": 6
+      },
+      {
+        "ami": 0.0,
+        "target_index": 7
+      },
+      {
+        "ami": 0.0,
+        "target_index": 8
+      },
+      {
+        "ami": 0.35533399845189945,
+        "target_index": 9
+      },
+      {
+        "ami": 0.20784834094655133,
+        "target_index": 10
+      },
+      {
+        "ami": 0.36465949091241656,
+        "target_index": 11
+      }
+    ],
+    "ami_exceeds_global_grid_permutation_95": true,
+    "ami_exceeds_permutation_95": true,
+    "ami_permutation_95": 0.24307378406346783,
+    "ami_permutation_p_ge": 0.000999000999000999,
+    "descriptor_effective_fibers": 6.17232737686821,
+    "descriptor_fiber_fraction": 0.5833333333333334,
+    "descriptor_partition_entropy_bits": 2.6258145836939115,
+    "global_grid_max_ami_permutation_95": 0.4365622384138,
+    "permutation_seed": 18018,
+    "permutations": 1000,
+    "sufficiency_loss_H_target_given_descriptor_over_H_target": 0.0,
+    "target_entropy_bits": 2.355388542207534
+  },
+  "phase18_is_adaptive_after_phase17": true,
+  "representation": {
+    "continuous_bins": 2,
+    "lambda_rank_depth": 1,
+    "name": "RHO2_L1_R1",
+    "r_rank_depth": 1
+  },
+  "schema": "co-qwen3-8b-quotient-resolution-18-candidate-v1",
+  "source_content_panel_sha256": "92d9a79472c05cf091f823ed5e970542926106bbf13dd7e1ce16737fa5e0dff4",
+  "status": "USEFUL_EXPLORATORY_CANDIDATE"
+}

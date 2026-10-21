@@ -1,0 +1,49 @@
+{
+  "candidate": {"name": "GAMMA-DELTA-SEM", "version": "0.1",
+    "sha256": "7681fe8c17c3bfd9e94d0e4b566e14254f718821dbea3ba2dae66334c21f26c6"},
+  "prospective": {
+    "source_scripts": [
+      "scripts/gamma_delta_sem_generator_v0_1.py",
+      "scripts/gamma_delta_sem_harness_v0_1.py"
+    ],
+    "fixture_count": 32,
+    "family_counts": {"G0":2,"G1":2,"G2":2,"G3":2,"G4":2,"G5":2,
+                        "D0":2,"D1":2,"D2":2,"D3":2,"D4":2,"D5":2,
+                        "IND1A":2,"IND1B":2,"IND2A":2,"IND2B":2},
+    "sample_values": {
+      "G1": {"gamma": 0.5, "beta_minimizers": [0.0]},
+      "G2": {"gamma": 0.5, "beta_minimizers": [1.0]},
+      "D1": {"kappa": 0.875, "delta_dec": 1.0, "delta_cap": 0.875},
+      "IND1A": {"gamma": 1.0, "delta_cap": 1.0},
+      "IND1B": {"gamma": 1.0, "delta_cap": 0.0},
+      "IND2A": {"gamma": 1.0, "delta_cap": 1.0},
+      "IND2B": {"gamma": 0.5, "delta_cap": 1.0}
+    },
+    "exact_passes": "32/32",
+    "first_failure": null,
+    "verdict": "GD-V4 FINITE NON-REFUTATION"
+  },
+  "candidate_fixed_holdout": {
+    "source_scripts": [
+      "scripts/gamma_delta_sem_holdout_cf_generator_v0_1.py",
+      "scripts/gamma_delta_sem_holdout_cf_harness_v0_1.py"
+    ],
+    "candidate_unchanged": true,
+    "fixture_count": 32,
+    "family_counts": {"H0":4,"H1":4,"H2":4,"H3":4,"H4":4,"H5":4,"H6":4,"H7":4},
+    "family_values": {
+      "H0": {"gamma": 0.5, "beta_minimizers": [0.0, 0.5, 1.0], "kappa": 1.0, "delta_dec": 1.0, "delta_cap": 1.0,
+             "note": "three-minimizing-cut witness: equal system Gamma, three distinct directional balances"},
+      "H1": {"gamma": 0.402335426735, "beta_minimizers": [0.773678139619], "kappa": 0.811278124459, "delta_dec": 1.0, "delta_cap": 0.811278124459},
+      "H2": {"gamma": 0.49339272901, "beta_minimizers": [1.0], "kappa": 1.0, "delta_dec": 0.188721875541, "delta_cap": 0.188721875541},
+      "H3": {"gamma": 0.0, "beta_minimizers": [], "kappa": 1.0, "delta_dec": 0.0, "delta_cap": 0.0},
+      "H4": {"gamma": 0.75, "beta_minimizers": [0.666666666667], "kappa": 0.920619835714, "delta_dec": 1.0, "delta_cap": 0.920619835714},
+      "H5": {"gamma": 0.28063906223, "beta_minimizers": [0.890823957342], "kappa": 1.0, "delta_dec": 0.666666666667, "delta_cap": 0.666666666667},
+      "H6": {"gamma": 0.746696364505, "beta_minimizers": [0.6607675522], "kappa": 1.0, "delta_dec": 0.5, "delta_cap": 0.5},
+      "H7": {"gamma": 0.375, "beta_minimizers": [0.666666666667], "kappa": 0.946394630357, "delta_dec": 0.666666666667, "delta_cap": 0.630929753571}
+    },
+    "exact_passes": "32/32",
+    "first_failure": null,
+    "verdict": "GD-CF-HOLDOUT-PASS"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "bits": 3,
+  "closure": "PASS",
+  "closure_type": "NONTRIVIAL",
+  "coverage": "EXHAUSTIVE",
+  "elapsed_seconds": 6.037999066999873,
+  "n_fibers": 1710388,
+  "n_functional_collisions": 0,
+  "n_nontrivial_fibers": 666292,
+  "r2_reached_set_size_histogram": {
+    "1": 479424,
+    "2": 4584640,
+    "3": 8287488,
+    "4": 3425664
+  },
+  "schema": "co-lambda-op-closure-v1",
+  "systems_in_nontrivial_fibers": 15733120,
+  "total_deterministic_maps": 16777216
+}

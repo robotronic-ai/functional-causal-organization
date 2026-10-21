@@ -1,0 +1,446 @@
+{
+  "candidate_name": "FIDELITY_FIRST_PCA20_K16",
+  "construction_closure": {
+    "collision_examples": [
+      {
+        "fiber": 11,
+        "target_counts": {
+          "[\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"DONOR\",\"DONOR\",\"DONOR\"]": 1,
+          "[\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"DONOR\",\"DONOR\",\"ORIGINAL\"]": 1
+        }
+      },
+      {
+        "fiber": 13,
+        "target_counts": {
+          "[\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"DONOR\",\"DONOR\",\"ORIGINAL\"]": 1,
+          "[\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"DONOR\",\"ORIGINAL\",\"ORIGINAL\"]": 1
+        }
+      },
+      {
+        "fiber": 0,
+        "target_counts": {
+          "[\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"NONE\",\"ORIGINAL\",\"ORIGINAL\",\"DONOR\",\"DONOR\",\"DONOR\"]": 1,
+          "[\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"DONOR\",\"DONOR\",\"DONOR\"]": 1
+        }
+      },
+      {
+        "fiber": 6,
+        "target_counts": {
+          "[\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"DONOR\",\"DONOR\"]": 1,
+          "[\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"ORIGINAL\",\"DONOR\",\"ORIGINAL\"]": 1
+        }
+      }
+    ],
+    "n_collision_fibers": 4,
+    "n_collision_pairs": 4
+  },
+  "interpretation": "Representation and quotient are selected from rich-proxy fidelity only. Behavioral closure is inspected after the quotient is frozen.",
+  "n_systems": 24,
+  "pca_gate": {
+    "knn3_overlap_min": 0.75,
+    "loocv_r2_reconstruct_rich_min": 0.6,
+    "pairwise_distance_spearman_min": 0.95
+  },
+  "pca_records": [
+    {
+      "dimension_requested": 1,
+      "metrics": {
+        "construction_variance_retained": 0.3461349239617232,
+        "dimension": 1,
+        "knn3_overlap": 0.34722222222222215,
+        "loocv_r2_reconstruct_rich": 0.2890067982264253,
+        "pairwise_distance_spearman": 0.8172839999429233
+      },
+      "qualified": false
+    },
+    {
+      "dimension_requested": 2,
+      "metrics": {
+        "construction_variance_retained": 0.45588764558460027,
+        "dimension": 2,
+        "knn3_overlap": 0.4444444444444444,
+        "loocv_r2_reconstruct_rich": 0.34568918732130427,
+        "pairwise_distance_spearman": 0.8928873731824604
+      },
+      "qualified": false
+    },
+    {
+      "dimension_requested": 4,
+      "metrics": {
+        "construction_variance_retained": 0.600352087808608,
+        "dimension": 4,
+        "knn3_overlap": 0.7222222222222222,
+        "loocv_r2_reconstruct_rich": 0.4042802696360085,
+        "pairwise_distance_spearman": 0.960562206589518
+      },
+      "qualified": false
+    },
+    {
+      "dimension_requested": 6,
+      "metrics": {
+        "construction_variance_retained": 0.7006002519674368,
+        "dimension": 6,
+        "knn3_overlap": 0.75,
+        "loocv_r2_reconstruct_rich": 0.452777171694975,
+        "pairwise_distance_spearman": 0.9812514090837746
+      },
+      "qualified": false
+    },
+    {
+      "dimension_requested": 8,
+      "metrics": {
+        "construction_variance_retained": 0.7743415003146544,
+        "dimension": 8,
+        "knn3_overlap": 0.861111111111111,
+        "loocv_r2_reconstruct_rich": 0.4847340114492391,
+        "pairwise_distance_spearman": 0.9880349880852158
+      },
+      "qualified": false
+    },
+    {
+      "dimension_requested": 12,
+      "metrics": {
+        "construction_variance_retained": 0.8751559077924028,
+        "dimension": 12,
+        "knn3_overlap": 0.8888888888888888,
+        "loocv_r2_reconstruct_rich": 0.5364561724797088,
+        "pairwise_distance_spearman": 0.9902501391247273
+      },
+      "qualified": false
+    },
+    {
+      "dimension_requested": 16,
+      "metrics": {
+        "construction_variance_retained": 0.9397283877205999,
+        "dimension": 16,
+        "knn3_overlap": 0.8888888888888888,
+        "loocv_r2_reconstruct_rich": 0.5757108632448091,
+        "pairwise_distance_spearman": 0.9967169418244602
+      },
+      "qualified": false
+    },
+    {
+      "dimension_requested": 20,
+      "metrics": {
+        "construction_variance_retained": 0.9810200389648676,
+        "dimension": 20,
+        "knn3_overlap": 0.9305555555555555,
+        "loocv_r2_reconstruct_rich": 0.603284517779572,
+        "pairwise_distance_spearman": 0.9988795821977428
+      },
+      "qualified": true
+    },
+    {
+      "dimension_requested": 22,
+      "metrics": {
+        "construction_variance_retained": 0.9953558252277301,
+        "dimension": 22,
+        "knn3_overlap": 0.986111111111111,
+        "loocv_r2_reconstruct_rich": 0.6198843355853914,
+        "pairwise_distance_spearman": 0.999803085001641
+      },
+      "qualified": true
+    }
+  ],
+  "quotient_gate": {
+    "nontrivial_coverage_min": 0.2,
+    "within_fiber_distortion_fraction_max": 0.2
+  },
+  "quotient_records": [
+    {
+      "k_realized": 2,
+      "k_requested": 2,
+      "metrics": {
+        "fiber_sizes": [
+          13,
+          11
+        ],
+        "n_fibers": 2,
+        "n_nontrivial_fibers": 2,
+        "nontrivial_coverage": 1.0,
+        "rich_variance_explained_by_fibers": 0.2336662681748083,
+        "systems_in_nontrivial_fibers": 24,
+        "within_fiber_distortion_fraction": 0.7663337318251917
+      },
+      "qualified": false
+    },
+    {
+      "k_realized": 3,
+      "k_requested": 3,
+      "metrics": {
+        "fiber_sizes": [
+          13,
+          7,
+          4
+        ],
+        "n_fibers": 3,
+        "n_nontrivial_fibers": 3,
+        "nontrivial_coverage": 1.0,
+        "rich_variance_explained_by_fibers": 0.2801436927630109,
+        "systems_in_nontrivial_fibers": 24,
+        "within_fiber_distortion_fraction": 0.7198563072369891
+      },
+      "qualified": false
+    },
+    {
+      "k_realized": 4,
+      "k_requested": 4,
+      "metrics": {
+        "fiber_sizes": [
+          11,
+          7,
+          4,
+          2
+        ],
+        "n_fibers": 4,
+        "n_nontrivial_fibers": 4,
+        "nontrivial_coverage": 1.0,
+        "rich_variance_explained_by_fibers": 0.3324810947172119,
+        "systems_in_nontrivial_fibers": 24,
+        "within_fiber_distortion_fraction": 0.6675189052827881
+      },
+      "qualified": false
+    },
+    {
+      "k_realized": 6,
+      "k_requested": 6,
+      "metrics": {
+        "fiber_sizes": [
+          8,
+          7,
+          5,
+          2,
+          1,
+          1
+        ],
+        "n_fibers": 6,
+        "n_nontrivial_fibers": 4,
+        "nontrivial_coverage": 0.9166666666666666,
+        "rich_variance_explained_by_fibers": 0.45263977307643166,
+        "systems_in_nontrivial_fibers": 22,
+        "within_fiber_distortion_fraction": 0.5473602269235683
+      },
+      "qualified": false
+    },
+    {
+      "k_realized": 8,
+      "k_requested": 8,
+      "metrics": {
+        "fiber_sizes": [
+          5,
+          5,
+          4,
+          4,
+          2,
+          2,
+          1,
+          1
+        ],
+        "n_fibers": 8,
+        "n_nontrivial_fibers": 6,
+        "nontrivial_coverage": 0.9166666666666666,
+        "rich_variance_explained_by_fibers": 0.5560174554677877,
+        "systems_in_nontrivial_fibers": 22,
+        "within_fiber_distortion_fraction": 0.44398254453221236
+      },
+      "qualified": false
+    },
+    {
+      "k_realized": 10,
+      "k_requested": 10,
+      "metrics": {
+        "fiber_sizes": [
+          5,
+          5,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_fibers": 10,
+        "n_nontrivial_fibers": 6,
+        "nontrivial_coverage": 0.8333333333333334,
+        "rich_variance_explained_by_fibers": 0.6455584599244844,
+        "systems_in_nontrivial_fibers": 20,
+        "within_fiber_distortion_fraction": 0.3544415400755157
+      },
+      "qualified": false
+    },
+    {
+      "k_realized": 12,
+      "k_requested": 12,
+      "metrics": {
+        "fiber_sizes": [
+          4,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_fibers": 12,
+        "n_nontrivial_fibers": 7,
+        "nontrivial_coverage": 0.7916666666666666,
+        "rich_variance_explained_by_fibers": 0.722201462967219,
+        "systems_in_nontrivial_fibers": 19,
+        "within_fiber_distortion_fraction": 0.277798537032781
+      },
+      "qualified": false
+    },
+    {
+      "k_realized": 14,
+      "k_requested": 14,
+      "metrics": {
+        "fiber_sizes": [
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_fibers": 14,
+        "n_nontrivial_fibers": 7,
+        "nontrivial_coverage": 0.7083333333333334,
+        "rich_variance_explained_by_fibers": 0.7769175634175589,
+        "systems_in_nontrivial_fibers": 17,
+        "within_fiber_distortion_fraction": 0.2230824365824411
+      },
+      "qualified": false
+    },
+    {
+      "k_realized": 16,
+      "k_requested": 16,
+      "metrics": {
+        "fiber_sizes": [
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_fibers": 16,
+        "n_nontrivial_fibers": 6,
+        "nontrivial_coverage": 0.5833333333333334,
+        "rich_variance_explained_by_fibers": 0.8277117768894553,
+        "systems_in_nontrivial_fibers": 14,
+        "within_fiber_distortion_fraction": 0.17228822311054467
+      },
+      "qualified": true
+    },
+    {
+      "k_realized": 18,
+      "k_requested": 18,
+      "metrics": {
+        "fiber_sizes": [
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_fibers": 18,
+        "n_nontrivial_fibers": 4,
+        "nontrivial_coverage": 0.4166666666666667,
+        "rich_variance_explained_by_fibers": 0.8712632666907317,
+        "systems_in_nontrivial_fibers": 10,
+        "within_fiber_distortion_fraction": 0.12873673330926827
+      },
+      "qualified": true
+    },
+    {
+      "k_realized": 20,
+      "k_requested": 20,
+      "metrics": {
+        "fiber_sizes": [
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_fibers": 20,
+        "n_nontrivial_fibers": 3,
+        "nontrivial_coverage": 0.2916666666666667,
+        "rich_variance_explained_by_fibers": 0.9255107497843331,
+        "systems_in_nontrivial_fibers": 7,
+        "within_fiber_distortion_fraction": 0.07448925021566694
+      },
+      "qualified": true
+    }
+  ],
+  "rich_dimension": 288,
+  "schema": "co-qwen3-8b-fidelity-first-screen-v1",
+  "selected_pca": {
+    "dimension_requested": 20,
+    "metrics": {
+      "construction_variance_retained": 0.9810200389648676,
+      "dimension": 20,
+      "knn3_overlap": 0.9305555555555555,
+      "loocv_r2_reconstruct_rich": 0.603284517779572,
+      "pairwise_distance_spearman": 0.9988795821977428
+    },
+    "qualified": true
+  },
+  "selection_is_target_blind": true,
+  "source_panel": "/mnt/c/Users/Merien/pycharm/llama/quantum/exports/co_qwen3_8b_closure/CO_U_CROSS_TARGET_CHANNEL_07/CROSS_TARGET_07_PANEL.json",
+  "source_panel_sha256": "a9bde0fa2529186701054b451cdfe4d00086453018226ccef668791be1b79970",
+  "status": "FIDELITY_QUALIFIED_BUT_CLOSURE_REFUTED"
+}

@@ -1,0 +1,107 @@
+{
+  "checks": {
+    "AF_ALIGNED_1": true,
+    "AF_CROSSBOUND_0": true,
+    "AF_DIFFERS": true,
+    "B0_I_P_Y_2_ALIGNED": true,
+    "B0_I_P_Y_2_CROSSBOUND": true,
+    "B1_DELTA_CAP_1_BOTH": true,
+    "B2_SHAPLEY_1BIT_EACH_BOTH": true,
+    "B3_WEIGHTS_HALF_HALF_BOTH": true,
+    "B4_NEFF_2_BOTH": true,
+    "B5_PI_1_BOTH": true,
+    "B6_DELTA_PROP_1_BOTH": true,
+    "B7_GAMMA_1_BOTH": true,
+    "B8_R_1_2_4_1_BOTH": true,
+    "B9_COMPRESSED_CF_EQUAL": true,
+    "C0_C2_ALL_ROLES_CERTIFIED_EX_ANTE": true,
+    "C3_CROSS_TYPE_SWAP_FORBIDDEN": true,
+    "C4_WITHIN_ROLE_RECODING_PRESERVES_VERDICT": true,
+    "PRE_FREEZE_INTACT": true
+  },
+  "core": {
+    "Gamma": {
+      "Gamma": 1.0,
+      "J_Z1_to_Z2": 1.0,
+      "J_Z2_to_Z1": 1.0
+    },
+    "R": {
+      "1": {
+        "I_return": 2.0,
+        "K_eff": 2.0,
+        "R": 1.0,
+        "k": 1
+      },
+      "2": {
+        "I_return": 2.0,
+        "K_eff": 2.0,
+        "R": 1.0,
+        "k": 2
+      },
+      "4": {
+        "I_return": 2.0,
+        "K_eff": 2.0,
+        "R": 1.0,
+        "k": 4
+      }
+    }
+  },
+  "date": "2026-09-14",
+  "interpretation": "If PASS, the compressed numerical profile (Gamma, Delta_prop, R(k)) is not sufficient for the independently defined typed AF-FLEX consequence. The broader causal family C is not refuted. No consciousness-phenomenology claim is made.",
+  "schema": "FCI2-access-role-binding-result-v0.3",
+  "systems": {
+    "ALIGNED": {
+      "AF_FLEX": 1.0,
+      "Gamma": 1.0,
+      "R": {
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      },
+      "delta": {
+        "Delta_cap": 1.0,
+        "Delta_prop": 1.0,
+        "I_P_TASK_A": 1.0,
+        "I_P_TASK_B": 1.0,
+        "I_P_Y": 2.0,
+        "N_eff": 2.0,
+        "Pi_role": 1.0,
+        "shapley": [
+          1.0,
+          1.0
+        ],
+        "weights": [
+          0.5,
+          0.5
+        ]
+      }
+    },
+    "CROSSBOUND": {
+      "AF_FLEX": 0.0,
+      "Gamma": 1.0,
+      "R": {
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      },
+      "delta": {
+        "Delta_cap": 1.0,
+        "Delta_prop": 1.0,
+        "I_P_TASK_A": 1.0,
+        "I_P_TASK_B": 1.0,
+        "I_P_Y": 2.0,
+        "N_eff": 2.0,
+        "Pi_role": 1.0,
+        "shapley": [
+          1.0,
+          1.0
+        ],
+        "weights": [
+          0.5,
+          0.5
+        ]
+      }
+    }
+  },
+  "verdict": "FCI2-PROFILE-INSUFFICIENT-TYPED-BINDING"
+}

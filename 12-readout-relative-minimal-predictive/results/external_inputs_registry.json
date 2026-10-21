@@ -1,0 +1,24 @@
+{
+  "external_inputs": [
+    {
+      "name": "CO_ACCESS_COFACTORIZATION_CAMPAIGN_v1.zip",
+      "sha256": "ec08d08aba5d92dde720dd07c0d17b74c5eacb986f1f34281356d06ef16a3eb6",
+      "role": "Prior finite campaign and methodological context"
+    },
+    {
+      "name": "RMT_A5V05_RETARGET_RESULT_v01(4).json",
+      "sha256": "3e852798f6e3d210c230faf1b5fa6c44d5aef199f1709f65dd537b201dba2e04",
+      "role": "External empirical realized-causal-binding result"
+    },
+    {
+      "name": "RMT_A5V05_RETARGET_WRAPPER_RESULT_v01(4).json",
+      "sha256": "f81e97c19e278910728ae76eeedaed18d146afe8e58992c5f66ddf5c38b4765d",
+      "role": "A5 wrapper status"
+    },
+    {
+      "name": "RMT_A5V05_HOLDOUT_SPENT_v01(4).json",
+      "sha256": "bf05f154de2326f5224525929649045de00e541b6f2761ca0d09773641dac246",
+      "role": "A5 holdout-spent marker"
+    }
+  ]
+}

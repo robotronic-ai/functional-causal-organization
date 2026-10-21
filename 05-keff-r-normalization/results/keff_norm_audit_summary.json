@@ -1,0 +1,35 @@
+{
+  "source_notes": [
+    "KEFF_REENTRY_NORMALIZATION_theorem_v0_1.md",
+    "KEFF_REENTRY_NORM_RESULT_v0_1.md"
+  ],
+  "definitions": {
+    "K_eff(q)": "H_q(C|U), conditional entropy of the source-battery causal quotient given context",
+    "B_reentry,q": "I_q(C;Y_ret|U)",
+    "R_q": "B_reentry,q / K_eff(q), NA if K_eff(q)=0"
+  },
+  "theorem": {
+    "bound": "0 <= I(C;Y|U) <= H(C|U)  =>  0 <= R <= 1",
+    "derivation": "I(C;Y|U) = H(C|U) - H(C|Y,U); H(C|Y,U) >= 0 gives the upper bound; non-negativity of conditional mutual information gives the lower bound",
+    "perfect_calibration": "C determined by (Y,U)  =>  R = 1",
+    "absence_of_return": "C independent of Y given U  =>  R = 0",
+    "label_duplication_invariance": "subdividing labels within one causal class, q(C|U) unchanged, leaves K_eff unchanged",
+    "decomposition": "R_cap = kappa_R * R_dec, where kappa_R = H(C|U)/log2|C*| and R_dec = I(C;Y|U)/H(C|U); manuscript primary choice is R = R_dec"
+  },
+  "finite_audit": {
+    "controls": ["K0", "K1", "K2", "K3", "K4", "K5", "K6", "K7"],
+    "control_descriptions": {
+      "K0": "four uniform causal classes, perfect return -> R=1 (calibration)",
+      "K1": "four non-uniform causal classes, perfect return",
+      "K2": "independent return channel -> R=0 (absence of return)",
+      "K3": "erasure channel on the return side -> partial R in (0,1)",
+      "K4": "duplicated intervention labels, causal class unchanged -> K_eff unchanged",
+      "K5": "bijective recoding of labels/classes/outputs -> K_eff, R invariant",
+      "K6": "context U with different causal-class distributions -> K_eff tracks H(C|U) correctly",
+      "K7": "two substrates, different nominal dimensions, same causal quotient -> identical K_eff and R"
+    },
+    "result": "all eight controls pass exactly",
+    "verdict": "KEFF-NORM finite exact audit PASS"
+  },
+  "scope": "definition and finite audit only; no empirical transformer measurement (see 06-transformer-measurement/, out of scope here)"
+}

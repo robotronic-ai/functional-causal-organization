@@ -1,0 +1,272 @@
+{
+  "experiment": "gamma_directional_quotient_invariance_v14",
+  "definition_under_test": "Gamma_dir(pi) = 0.5 * [J(A->B')/H_q(A) + J(B->A')/H_q(B)].",
+  "replication_semantics": "Each macro role is replaced by multiple perfectly coherent physical copies. The intervention algebra still contains one independent bit per macro role, so H_q is unchanged.",
+  "systems": [
+    {
+      "system": "ring_copy_5",
+      "latent_macro_role_count": 5,
+      "latent_directional_gamma": 0.41666666666666663,
+      "replication_rows": [
+        {
+          "replicas_per_macro_role": 1,
+          "physical_role_count": 5,
+          "gamma": 0.41666666666666663,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 2,
+          "physical_role_count": 10,
+          "gamma": 0.41666666666666663,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 3,
+          "physical_role_count": 15,
+          "gamma": 0.41666666666666663,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 5,
+          "physical_role_count": 25,
+          "gamma": 0.41666666666666663,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "system": "xor_neighbors_5",
+      "latent_macro_role_count": 5,
+      "latent_directional_gamma": 0.625,
+      "replication_rows": [
+        {
+          "replicas_per_macro_role": 1,
+          "physical_role_count": 5,
+          "gamma": 0.625,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 2,
+          "physical_role_count": 10,
+          "gamma": 0.625,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 3,
+          "physical_role_count": 15,
+          "gamma": 0.625,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 5,
+          "physical_role_count": 25,
+          "gamma": 0.625,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "system": "mixed_boolean_5",
+      "latent_macro_role_count": 5,
+      "latent_directional_gamma": 0.4764097655573916,
+      "replication_rows": [
+        {
+          "replicas_per_macro_role": 1,
+          "physical_role_count": 5,
+          "gamma": 0.4764097655573916,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 2,
+          "physical_role_count": 10,
+          "gamma": 0.4764097655573916,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 3,
+          "physical_role_count": 15,
+          "gamma": 0.4764097655573916,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 5,
+          "physical_role_count": 25,
+          "gamma": 0.4764097655573916,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "system": "shared_noise_synergy_3",
+      "latent_macro_role_count": 3,
+      "latent_directional_gamma": 0.5,
+      "replication_rows": [
+        {
+          "replicas_per_macro_role": 1,
+          "physical_role_count": 3,
+          "gamma": 0.5,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 2,
+          "physical_role_count": 6,
+          "gamma": 0.5,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 3,
+          "physical_role_count": 9,
+          "gamma": 0.5,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 5,
+          "physical_role_count": 15,
+          "gamma": 0.5,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "system": "feedforward_two_role",
+      "latent_macro_role_count": 2,
+      "latent_directional_gamma": 0.5,
+      "replication_rows": [
+        {
+          "replicas_per_macro_role": 1,
+          "physical_role_count": 2,
+          "gamma": 0.5,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 2,
+          "physical_role_count": 4,
+          "gamma": 0.5,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 3,
+          "physical_role_count": 6,
+          "gamma": 0.5,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 5,
+          "physical_role_count": 10,
+          "gamma": 0.5,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "system": "bidirectional_swap_two_role",
+      "latent_macro_role_count": 2,
+      "latent_directional_gamma": 1.0,
+      "replication_rows": [
+        {
+          "replicas_per_macro_role": 1,
+          "physical_role_count": 2,
+          "gamma": 1.0,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 2,
+          "physical_role_count": 4,
+          "gamma": 1.0,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 3,
+          "physical_role_count": 6,
+          "gamma": 1.0,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        },
+        {
+          "replicas_per_macro_role": 5,
+          "physical_role_count": 10,
+          "gamma": 1.0,
+          "absolute_difference_from_latent": 0.0,
+          "all_cuts_bounded": true,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "entropy_miscount_diagnostic": {
+    "ring_copy_5": {
+      "replicas_per_macro_role": 3,
+      "correct_gamma": 0.41666666666666663,
+      "incorrect_gamma_if_entropy_is_replaced_by_physical_coordinate_count": 0.1388888888888889,
+      "ratio_incorrect_to_correct": 0.33333333333333337,
+      "interpretation": "Replication invariance requires H_q(source) from the actual coherent intervention distribution. Replacing source entropy with the number of physical coordinates would spuriously divide Gamma by the replica count."
+    },
+    "xor_neighbors_5": {
+      "replicas_per_macro_role": 3,
+      "correct_gamma": 0.625,
+      "incorrect_gamma_if_entropy_is_replaced_by_physical_coordinate_count": 0.20833333333333331,
+      "ratio_incorrect_to_correct": 0.3333333333333333,
+      "interpretation": "Replication invariance requires H_q(source) from the actual coherent intervention distribution. Replacing source entropy with the number of physical coordinates would spuriously divide Gamma by the replica count."
+    },
+    "mixed_boolean_5": {
+      "replicas_per_macro_role": 3,
+      "correct_gamma": 0.4764097655573916,
+      "incorrect_gamma_if_entropy_is_replaced_by_physical_coordinate_count": 0.1588032551857972,
+      "ratio_incorrect_to_correct": 0.3333333333333333,
+      "interpretation": "Replication invariance requires H_q(source) from the actual coherent intervention distribution. Replacing source entropy with the number of physical coordinates would spuriously divide Gamma by the replica count."
+    }
+  },
+  "all_replication_invariance_checks_passed": true,
+  "scientific_implication": "Directional normalization is representation-invariant under coherent role replication when source entropy is computed from the declared intervention distribution q. Physical coordinate count is not a valid substitute for H_q."
+}

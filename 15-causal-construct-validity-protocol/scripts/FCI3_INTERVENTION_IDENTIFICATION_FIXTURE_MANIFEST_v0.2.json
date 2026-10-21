@@ -1,0 +1,7 @@
+{
+  "date": "2026-09-14",
+  "fixtures_sha256": "553b5c22e92ff1182dfeaceda09458ca46ac0bc98c90f5938993e153bba48cdc",
+  "protocol_manifest_sha256": "ea4ba2e8f453fcd3ade5cf4e4536128eaf229dbd9f449b309c51c1643fb6a57f",
+  "schema": "FCI3-intervention-identification-fixture-freeze-v0.2",
+  "status": "FIXTURES-FROZEN-BEFORE-HARNESS"
+}

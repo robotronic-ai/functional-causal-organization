@@ -1,0 +1,243 @@
+{
+  "af_behavior": {
+    "families": [
+      {
+        "available": true,
+        "id": "AF-FLEX",
+        "probes": [
+          {
+            "id": "T1_x0",
+            "null": {
+              "0": "1/2",
+              "1": "1/2"
+            },
+            "pred": {
+              "0": "1",
+              "1": "0"
+            },
+            "q": "1/4",
+            "truth": {
+              "0": "1",
+              "1": "0"
+            }
+          },
+          {
+            "id": "T1_x1",
+            "null": {
+              "0": "1/2",
+              "1": "1/2"
+            },
+            "pred": {
+              "0": "0",
+              "1": "1"
+            },
+            "q": "1/4",
+            "truth": {
+              "0": "0",
+              "1": "1"
+            }
+          },
+          {
+            "id": "T2_x0",
+            "null": {
+              "0": "1/2",
+              "1": "1/2"
+            },
+            "pred": {
+              "0": "0",
+              "1": "1"
+            },
+            "q": "1/4",
+            "truth": {
+              "0": "0",
+              "1": "1"
+            }
+          },
+          {
+            "id": "T2_x1",
+            "null": {
+              "0": "1/2",
+              "1": "1/2"
+            },
+            "pred": {
+              "0": "1",
+              "1": "0"
+            },
+            "q": "1/4",
+            "truth": {
+              "0": "1",
+              "1": "0"
+            }
+          }
+        ]
+      },
+      {
+        "available": true,
+        "id": "AF-DELAY",
+        "probes": [
+          {
+            "id": "delay_x0",
+            "null": {
+              "0": "1/2",
+              "1": "1/2"
+            },
+            "pred": {
+              "0": "1",
+              "1": "0"
+            },
+            "q": "1/2",
+            "truth": {
+              "0": "1",
+              "1": "0"
+            }
+          },
+          {
+            "id": "delay_x1",
+            "null": {
+              "0": "1/2",
+              "1": "1/2"
+            },
+            "pred": {
+              "0": "0",
+              "1": "1"
+            },
+            "q": "1/2",
+            "truth": {
+              "0": "0",
+              "1": "1"
+            }
+          }
+        ]
+      },
+      {
+        "available": true,
+        "id": "AF-UPDATE",
+        "probes": [
+          {
+            "id": "0_to_1",
+            "null": {
+              "0": "1/2",
+              "1": "1/2"
+            },
+            "pred": {
+              "0": "0",
+              "1": "1"
+            },
+            "q": "1/2",
+            "truth": {
+              "0": "0",
+              "1": "1"
+            }
+          },
+          {
+            "id": "1_to_0",
+            "null": {
+              "0": "1/2",
+              "1": "1/2"
+            },
+            "pred": {
+              "0": "1",
+              "1": "0"
+            },
+            "q": "1/2",
+            "truth": {
+              "0": "1",
+              "1": "0"
+            }
+          }
+        ]
+      },
+      {
+        "available": true,
+        "id": "AF-STATUS",
+        "probes": [
+          {
+            "id": "external",
+            "null": {
+              "0": "1/2",
+              "1": "1/2"
+            },
+            "pred": {
+              "0": "1",
+              "1": "0"
+            },
+            "q": "1/2",
+            "truth": {
+              "0": "1",
+              "1": "0"
+            }
+          },
+          {
+            "id": "internal",
+            "null": {
+              "0": "1/2",
+              "1": "1/2"
+            },
+            "pred": {
+              "0": "0",
+              "1": "1"
+            },
+            "q": "1/2",
+            "truth": {
+              "0": "0",
+              "1": "1"
+            }
+          }
+        ]
+      }
+    ],
+    "id": "AF_ORACLE"
+  },
+  "date": "2026-09-14",
+  "schema": "CF-AF-structural-identification-witnesses-v0.1",
+  "witnesses": {
+    "DELTA_SINGLE_ROLE": {
+      "Delta_cap": 1.0,
+      "I_P_Y_bits": 1.0,
+      "Pi_role": 0.0,
+      "certified_roles": [
+        "MONOLITHIC-ACCESS"
+      ],
+      "description": "One monolithic certified causal role receives content plus a typed task selector and emits the correct response.",
+      "expected_Delta_prop": 0.0,
+      "response": "Y=P",
+      "source": "P~Bernoulli(1/2)"
+    },
+    "GAMMA_PARALLEL": {
+      "cross_cut_channels": {
+        "A_to_B_bits": 0.0,
+        "B_to_A_bits": 0.0
+      },
+      "description": "Two causally independent parallel access modules receive the same declared source but have no causal edges between modules.",
+      "expected_Gamma": 0.0,
+      "partition": {
+        "A": [
+          "MODULE-A"
+        ],
+        "B": [
+          "MODULE-B"
+        ]
+      }
+    },
+    "R_ACYCLIC_COMPILED": {
+      "description": "Finite online acyclic implementation. Each delayed or updated computation occupies fresh time-indexed roles; no causal path returns to a previously occupied functional role.",
+      "expected_R": {
+        "1": 0.0,
+        "2": 0.0,
+        "4": 0.0
+      },
+      "role_sequence": [
+        "INPUT",
+        "FLEX-T1",
+        "FLEX-T2",
+        "DELAY-STAGE-1",
+        "DELAY-READOUT",
+        "UPDATE-INITIAL",
+        "UPDATE-CORRECTION",
+        "UPDATE-READOUT",
+        "STATUS-READOUT"
+      ],
+      "same_role_return_paths": []
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "folder": "15-causal-construct-validity-protocol",
+  "items": [
+    {
+      "name": "fci2-access-role-binding-v0.3",
+      "kind": "adversarial-witness",
+      "status": "EXECUTED",
+      "reexecuted_in_this_archive": true,
+      "reexecution_verdict_matches_frozen_result": true,
+      "verdict": "FCI2-PROFILE-INSUFFICIENT-TYPED-BINDING",
+      "script": "scripts/fci2_access_role_binding_harness_v0_3.py",
+      "result": "results/FCI2_ACCESS_ROLE_BINDING_RESULT_v0.3.json"
+    },
+    {
+      "name": "fci2-typed-propagation-repair-v0.4",
+      "kind": "repair-candidate",
+      "status": "EXECUTED",
+      "reexecuted_in_this_archive": true,
+      "reexecution_verdict_matches_frozen_result": true,
+      "verdict": "FCI2-TYPED-PROPAGATION-REPAIR-PASS",
+      "scripts": [
+        "scripts/typed_propagation_repair_candidate_v0_4.py",
+        "scripts/typed_propagation_repair_harness_v0_4.py"
+      ],
+      "result": "results/FCI2_TYPED_PROPAGATION_REPAIR_RESULT_v0.4.json"
+    },
+    {
+      "name": "cfplus-joint-role-synergy-v0.5",
+      "kind": "adversarial-witness",
+      "status": "EXECUTED (per source bundle's own frozen result)",
+      "reexecuted_in_this_archive": false,
+      "reexecution_blocked_reason": "Harness verifies a source-hash manifest referencing 'CFPLUS_JOINT_ROLE_SYNERGY_SOURCE_REFS_v0.5.json', which was not present in the uploaded source bundle. All other referenced inputs were recovered and included; this one file is genuinely missing from the material supplied to this archive edition, not withheld by policy.",
+      "verdict": "CFPLUS-PROFILE-INSUFFICIENT-JOINT-SYNERGY",
+      "script": "scripts/cfplus_joint_role_synergy_harness_v0_5.py",
+      "result": "results/CFPLUS_JOINT_ROLE_SYNERGY_RESULT_v0.5.json"
+    },
+    {
+      "name": "cfplusplus-joint-typed-propagation-v0.6",
+      "kind": "repair-candidate",
+      "status": "EXECUTED (per source bundle's own frozen result)",
+      "reexecuted_in_this_archive": false,
+      "reexecution_blocked_reason": "Same gap as v0.5: 'CFPLUSPLUS_JOINT_TYPED_PROPAGATION_SOURCE_REFS_v0.6.json' was not present in the uploaded source bundle.",
+      "verdict": "CFPLUSPLUS-JOINT-TYPED-PROPAGATION (see result; initial REVIEW on symmetric control, resolved by v0.6.1 holdout)",
+      "scripts": [
+        "scripts/joint_typed_propagation_candidate_v0_6.py",
+        "scripts/joint_typed_propagation_harness_v0_6.py"
+      ],
+      "result": "results/CFPLUSPLUS_JOINT_TYPED_PROPAGATION_RESULT_v0.6.json"
+    },
+    {
+      "name": "cfplusplus-cross-type-holdout-v0.6.1",
+      "kind": "adjudication-fix",
+      "status": "EXECUTED (per source bundle's own frozen result)",
+      "reexecuted_in_this_archive": false,
+      "reexecution_blocked_reason": "Depends on the same v0.6 candidate/harness pair as cfplusplus-joint-typed-propagation-v0.6, which has the SOURCE_REFS gap noted above.",
+      "verdict": "CFPLUSPLUS-CROSS-TYPE-HOLDOUT-PASS",
+      "result": "results/CFPLUSPLUS_CROSS_TYPE_ASYMMETRY_HOLDOUT_RESULT_v0.6.1.json"
+    },
+    {
+      "name": "static-access-sufficiency-theorem",
+      "kind": "theorem",
+      "status": "PROVED",
+      "verdict": null,
+      "note": "Exact conditional theorem: equal joint typed response channels imply equal optimal static decision loss. Covers static access consequences only; temporal consequences (AF-DELAY, AF-UPDATE) are explicitly open."
+    },
+    {
+      "name": "cf-af-identification-limits-v0.1",
+      "kind": "adversarial-witness",
+      "status": "EXECUTED",
+      "reexecuted_in_this_archive": true,
+      "reexecution_verdict_matches_frozen_result": true,
+      "verdict": "AF-NOT-STRUCTURALLY-IDENTIFYING",
+      "script": "scripts/cf_af_identification_limits_harness_v0_1.py",
+      "results": [
+        "results/CF_AF_IDENTIFICATION_LIMITS_RESULT_v0.1.json",
+        "results/CF_AF_IDENTIFICATION_WITNESSES_v0.1.json"
+      ]
+    },
+    {
+      "name": "functional-access-necessity-bridge-v0.1-v0.2",
+      "kind": "theorem-plus-fixture",
+      "status": "EXECUTED",
+      "verdict": "Breadth/Temporal/Unity necessity theorems hold on frozen fixtures; BTU-to-A identification is explicitly open",
+      "results": [
+        "results/FUNCTIONAL_ACCESS_CONSTRUCT_CF_BRIDGE_RESULT_v0.1.json",
+        "results/ACCESS_UNITY_GAMMA_BRIDGE_RESULT_v0.2.json"
+      ]
+    },
+    {
+      "name": "fci3-intervention-identification-v0.2",
+      "kind": "adjudicator-validation",
+      "status": "EXECUTED-ON-SYNTHETIC-CASES-ONLY",
+      "reexecuted_in_this_archive": true,
+      "reexecution_verdict_matches_frozen_result": true,
+      "verdict": "FCI3-IDENTIFICATION-ADJUDICATOR-PASS",
+      "script": "scripts/fci3_intervention_identification_harness_v0_2.py",
+      "result": "results/FCI3_INTERVENTION_IDENTIFICATION_RESULT_v0.2.json",
+      "note": "Validates protocol logic only. Not evidence for C_O construct validity."
+    },
+    {
+      "name": "fci3-causal-construct-validity-protocol-v0.1",
+      "kind": "frozen-preregistration-template",
+      "status": "SPECIFIED-NEVER-EXECUTED-AGAINST-REAL-ARCHITECTURE-PAIRS",
+      "verdict": null,
+      "result": "results/FCI3_CAUSAL_CONSTRUCT_VALIDITY_HYPOTHESES_v0.1.json"
+    }
+  ]
+}

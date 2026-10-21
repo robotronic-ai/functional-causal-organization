@@ -1,0 +1,17 @@
+{
+  "candidate_count": 0,
+  "candidate_list": [],
+  "candidate_list_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "canonical_source": "v3.15.60.20 closure over final v3.15.60.19 Stage-A result",
+  "cells_per_lineage": 67,
+  "head_swap_cells_per_lineage": 66,
+  "identity_cells_per_lineage": 1,
+  "interpretation": "No same-C0 fiber witness was found; this is not evidence that Lambda is redundant.",
+  "lambda_used_for_candidate_selection": false,
+  "lineages": 3,
+  "scientific_status": "RMT-REAL-C0-NONDERIVABILITY-NOT-ESTABLISHED-NO-FIBER-WITNESS",
+  "stage": "REAL_C0_STAGE_A",
+  "stage_b_instantiated": false,
+  "states": 201,
+  "task_outcomes_used_for_candidate_selection": false
+}

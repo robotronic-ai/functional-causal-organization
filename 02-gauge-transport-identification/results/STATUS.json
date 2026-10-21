@@ -1,0 +1,84 @@
+{
+  "campaign": "02 - Gauge / transport identification: given P, does it fix which residual in one fiber matches which in another?",
+  "date": "2026-09-11",
+  "status": "RESOLVED-CONDITIONAL",
+  "chain": [
+    {
+      "step": "OPF-P4 (naive causal-complement requirement, prospective)",
+      "candidate": "IRP-OPF v0.1",
+      "candidate_sha256": "a8e7b940a687a761628a3d8c357f519b4be9a0d7e1bf2b2835d8bc67eeb4b65a",
+      "result": "24/48 (P4-A 0/12, P4-B 0/12, P4-C 12/12, P4-D 12/12)",
+      "verdict": "P4-V3 - OPF v0.1 refuted prospectively",
+      "post_p4_result": {
+        "P4-A": {"orthogonal_complements": 2, "distinct_surgeries": 2},
+        "P4-B": {"orthogonal_complements": 8, "distinct_surgeries": 8},
+        "theorem": "fiber-gauge non-identifiability: two admissible trivializations of the same P giving different surgery kernels cannot both equal one gauge-invariant functional of (K,q,pi)"
+      }
+    },
+    {
+      "step": "FIBER-AUT (exact O1 automorphism invariance of the scalar B)",
+      "theorem": "sections related by an exact O1 automorphism preserving q and pi have B_sigma1 = B_sigma2",
+      "audit_domain": "256 minimal 4-state extensions",
+      "systems_with_2plus_admissible_sections": 8,
+      "systems_with_differing_section_scores": 8,
+      "systems_with_score_difference_inside_one_automorphism_orbit": 0,
+      "verdict": "AUT-B-INV",
+      "implementation_note": "v0.1 script had a scope bug in binary-quotient composition, fixed in v0.1.1 with no change to protocol or theorem"
+    },
+    {
+      "step": "FIBER-GAUGE-CLOSURE / FIBER-TRANSPORT / FIBER-INTERVENTION-LIFT (theorems)",
+      "gauge_closure_theorem": "the semantic class 'successive active + autonomous append-only P' is closed under the full fiber gauge group prod_p Sym(A)",
+      "per_family_verdicts": {"P4-A": "GC-NONID", "P4-B": "GC-NONID", "P4-C": "GC-NONID"},
+      "transport_equivalence_theorem": "trivialization S=A*P <=> coherent fiber transport tau_{p->p'}, up to a global relabeling of A",
+      "intervention_lift_theorem": "coherent fiber transport <=> intervention-lift family (J_p) satisfying I1-I3; this IS the operational meaning of do(P=p) holding the residual fixed",
+      "conclusion": "pi alone does not fix the surgery; an explicit fiber-transport / intervention-lift structure is required"
+    },
+    {
+      "step": "FIBER-PARTIAL-ID (formal reporting policy)",
+      "failed_simple_fixes": [
+        "elementary semigroup invariants (rank, fixed points, Green L/R/J, centralizer size) do not select the oracle gauge on P4-A/B",
+        "neither min_phi B_phi nor max_phi B_phi is a general rule (oracle = min on P4-A/B, = max on IR10/P3-D/P4-C)",
+        "the gauge-free CMI substitute I(S;Y|h(S),U) reproduces IR10/P3-D but not P4-A/B/C"
+      ],
+      "policy": {"PI-POINT": "|B-set|=1", "PI-PARTIAL": "1<|B-set|<inf, report exact set or [B-,B+], no tie-break", "PI-EMPTY": "no compatible J, score = NA"},
+      "illustration_on_orthogonal_trivializations": {
+        "IR10": {"status": "PI-PARTIAL", "B_set": [0.5, 1.0]},
+        "P3D": {"status": "PI-PARTIAL", "B_set": [1.0, 1.125, 1.25, 1.5]},
+        "P4A": {"status": "PI-PARTIAL", "B_set": [0.5, 1.0]},
+        "P4B": {"status": "PI-PARTIAL", "B_set_size": 8, "B_interval": [0.392657719481, 1.0]},
+        "P4C": {"status": "PI-PARTIAL", "B_set_size": 8, "B_interval": [0.379430105305, 0.987692508896]}
+      }
+    },
+    {
+      "step": "JID-P5 (auxiliary causal signature, prospective)",
+      "abandoned_predecessors": ["JID-VERT (vertical-monoid conjugacy)", "JID-CONJ (vertical equivariance)"],
+      "candidate": "J-ID-SIGNATURE v0.1",
+      "candidate_sha256": "c3cb1d5fe391a5d3a38354531ecc90d509869385d8293d156bd31a8ebc5dd6e7",
+      "theorem": "a residual signature c:S->C, injective within every fiber and identically-set across fibers, induces a unique coherent intervention-lift family",
+      "result": "10/10 (P5-A 2/2, P5-B 2/2, P5-C 2/2, P5-D 2/2, P5-E 2/2)",
+      "verdict": "P5-V4 finite non-refutation",
+      "scope": "validates the identification algorithm conditional on a declared auxiliary signature existing; does not show such a signature is derivable from O1 in general"
+    },
+    {
+      "step": "JID-P6 (finite extension)",
+      "families": ["P6A", "P6B", "P6C", "P6D", "P6E", "P6F"],
+      "fixtures_total": 12,
+      "note": "no separate prose result note survives in the source repository; private oracle not redistributed; verdict inferred only from the root repository's summary table (finite non-refutation), not independently confirmed in this edition"
+    }
+  ],
+  "overall_verdict": "identifying P != identifying transport != computing the surgery. Transport is either derived from a declared auxiliary intervention algebra (JID-P5/P6, conditional), or the framework must report the admissible set (PI-PARTIAL) rather than choose an element of it.",
+  "next_authorized_campaign": "03-canonical-boundary-closure",
+  "known_gaps": [
+    {
+      "item": "JID-P6 prose result note",
+      "status": "not present in the source repository; only the harness, public fixtures, and root-README summary line survive"
+    }
+  ],
+  "not_included_in_this_edition": [
+    "Protocole_JID_VERT_v0.1.md / Protocole_JID_CONJ_v0.1.md and their audit scripts (explicitly abandoned approaches, kept in the source only for genealogy)",
+    "fiber_conditional_information_diagnostic*, fiber_section_splitting_audit* (superseded diagnostics)",
+    "genealogy manifest JSONs (JID_GENEALOGY_MISSING_FILES_MANIFEST, P6_GENEALOGY_REPAIR_MANIFEST) - pure bookkeeping",
+    "all *_PRIVATE.json oracle files (OPF_P4, JID_P5, JID_P6_FINITE, IRP_ORACLES_IR7_IR12, TSIPF_P3)",
+    "irp_interface_v0_1_1.py duplicated from folder 01 (not imported by any script in this folder)"
+  ]
+}

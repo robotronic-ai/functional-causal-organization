@@ -1,0 +1,57 @@
+{
+  "cases": [
+    {
+      "expected_instrument_status": "INSTRUMENT-CONSISTENT",
+      "expected_pair_status": "FIBER-CONSISTENT",
+      "id": "VALID_CONVERGENT",
+      "instrument_match": true,
+      "observed_instrument_status": "INSTRUMENT-CONSISTENT",
+      "observed_pair_status": "FIBER-CONSISTENT",
+      "pair_match": true
+    },
+    {
+      "expected_instrument_status": "INSTRUMENT-DISAGREEMENT",
+      "expected_pair_status": "EXCLUSION-UNSUPPORTED",
+      "id": "DIRECT_EFFECT_CONTAMINATION",
+      "instrument_match": true,
+      "observed_instrument_status": "INSTRUMENT-DISAGREEMENT",
+      "observed_pair_status": "EXCLUSION-UNSUPPORTED",
+      "pair_match": true
+    },
+    {
+      "expected_instrument_status": "INSTRUMENT-CONSISTENT",
+      "expected_pair_status": "RIVAL-MISMATCH",
+      "id": "RIVAL_MISMATCH",
+      "instrument_match": true,
+      "observed_instrument_status": "INSTRUMENT-CONSISTENT",
+      "observed_pair_status": "RIVAL-MISMATCH",
+      "pair_match": true
+    },
+    {
+      "expected_instrument_status": "INSTRUMENT-CONSISTENT",
+      "expected_pair_status": "FIBER-VIOLATION",
+      "id": "FIBER_VIOLATION",
+      "instrument_match": true,
+      "observed_instrument_status": "INSTRUMENT-CONSISTENT",
+      "observed_pair_status": "FIBER-VIOLATION",
+      "pair_match": true
+    },
+    {
+      "expected_instrument_status": "INSTRUMENT-CONSISTENT",
+      "expected_pair_status": "PROFILE-UNRESOLVED",
+      "id": "PROFILE_UNRESOLVED",
+      "instrument_match": true,
+      "observed_instrument_status": "INSTRUMENT-CONSISTENT",
+      "observed_pair_status": "PROFILE-UNRESOLVED",
+      "pair_match": true
+    }
+  ],
+  "checks": {
+    "ALL_FROZEN_CASES_CLASSIFIED_AS_EXPECTED": true,
+    "FIXTURE_HASH_INTACT": true
+  },
+  "date": "2026-09-14",
+  "interpretation": "The adjudicator distinguishes same-profile fiber consistency, fiber violation, exclusion failure, rival mismatch, profile uncertainty, and convergent-instrument disagreement on frozen synthetic fixtures. This validates protocol logic only, not CF construct validity.",
+  "schema": "FCI3-intervention-identification-result-v0.2",
+  "verdict": "FCI3-IDENTIFICATION-ADJUDICATOR-PASS"
+}

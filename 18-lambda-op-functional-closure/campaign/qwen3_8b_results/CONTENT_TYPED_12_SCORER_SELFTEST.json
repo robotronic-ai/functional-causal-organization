@@ -1,0 +1,11 @@
+{
+  "fixture_systems": 32,
+  "note": "Mechanical scorer test only; not empirical Qwen evidence.",
+  "schema": "co-qwen3-8b-content-typed-scorer-selftest-v1",
+  "screen_candidate": "CONTENT_TYPED_REVOKE_SUBSTITUTE_2F",
+  "screen_collision_pairs": 0,
+  "screen_nontrivial_coverage": 1.0,
+  "screen_status": "USEFUL_EXPLORATORY_CANDIDATE",
+  "validation_closed_status": "USEFUL_VALIDATED",
+  "validation_collision_injected_status": "REFUTED"
+}

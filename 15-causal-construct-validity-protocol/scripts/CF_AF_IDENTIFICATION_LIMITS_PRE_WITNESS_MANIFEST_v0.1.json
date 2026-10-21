@@ -1,0 +1,14 @@
+{
+  "date": "2026-09-14",
+  "files": {
+    "CF_AF_IDENTIFICATION_LIMITS_SOURCE_REFS_v0.1.json": "cbb1815187c591aac7917c44a760c35755ab672314b10ade62156b14d0a12f65",
+    "CF_AF_IDENTIFICATION_LIMITS_theory_v0.1.md": "1f04ca460cdfcfca6c4e67db30d8c151618a1dc2ea63133c674bb29d04655c74",
+    "Protocol_CF_AF_NECESSARY_CONDITION_ATTACK_v0.1_FROZEN.md": "c4ca3a68de9f35c20fac096f9ec2ac5963d8ba219e505f35f4e0b38ef77a22b4"
+  },
+  "schema": "CF-AF-identification-limits-pre-witness-freeze-v0.1",
+  "status": "PRE-WITNESS-FROZEN",
+  "upstream": {
+    "af_candidate_sha256": "8bdf05cb2be3c3085c52c0b2a389aa28e1cbf598dbd90d38496799050c82b889",
+    "af_candidate_source": "/mnt/data/_inspect_fci/01_AF_BATTERY/af_access_consequence_candidate_v0_1.py"
+  }
+}

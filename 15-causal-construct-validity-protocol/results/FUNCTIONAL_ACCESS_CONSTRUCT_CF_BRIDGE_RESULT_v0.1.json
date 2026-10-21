@@ -1,0 +1,81 @@
+{
+  "checks": {
+    "D1_TWO_ROLE_POSITIVE": true,
+    "D2_SINGLE_ROLE_BOUNDARY": true,
+    "FIXTURE_HASH_INTACT": true,
+    "G1_ACCESS_CYCLE_THEOREM": true,
+    "G2_GAMMA_COUNTEREXAMPLE": true
+  },
+  "date": "2026-09-14",
+  "gamma_parallel": {
+    "Gamma": 0.0,
+    "module_A_typed_access_correct": true,
+    "module_B_typed_access_correct": true
+  },
+  "graph_enumeration": {
+    "by_n": [
+      {
+        "cyclic_count": 0,
+        "dag_count": 1,
+        "graphs": 1,
+        "max_dag_path": 0,
+        "n": 1,
+        "passed": true
+      },
+      {
+        "cyclic_count": 1,
+        "dag_count": 3,
+        "graphs": 4,
+        "max_dag_path": 1,
+        "n": 2,
+        "passed": true
+      },
+      {
+        "cyclic_count": 39,
+        "dag_count": 25,
+        "graphs": 64,
+        "max_dag_path": 2,
+        "n": 3,
+        "passed": true
+      },
+      {
+        "cyclic_count": 3553,
+        "dag_count": 543,
+        "graphs": 4096,
+        "max_dag_path": 3,
+        "n": 4,
+        "passed": true
+      }
+    ],
+    "cyclic_count": 3593,
+    "dag_count": 572,
+    "total_graphs": 4165
+  },
+  "interpretation": "Finite exact validation supports the graph-cycle logic, the multi-role Delta_prop implication, the single-role boundary, and the Gamma=0 access-availability counterexample. This does not by itself validate functional consciousness.",
+  "schema": "functional-access-construct-cf-bridge-result-v0.1",
+  "single_role_delta": {
+    "Delta_cap": 1.0,
+    "Delta_prop": 0.0,
+    "I_total": 1.0,
+    "Pi_role": 0.0,
+    "m": 1
+  },
+  "two_role_delta": {
+    "Delta_cap": 1.0,
+    "Delta_prop": 1.0,
+    "I_role_1": 1.0,
+    "I_role_2": 1.0,
+    "I_total": 1.0,
+    "N_eff": 2.0,
+    "Pi_role": 1.0,
+    "shapley": [
+      0.5,
+      0.5
+    ],
+    "weights": [
+      0.5,
+      0.5
+    ]
+  },
+  "verdict": "ACCESS-CF-BRIDGE-FINITE-PASS"
+}

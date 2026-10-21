@@ -1,0 +1,32 @@
+{
+  "schema": "KV-BOUND-boundary-v0.3",
+  "equivalence_max_l2": 5.68862354973209e-16,
+  "mean": {
+    "post_cycle": {
+      "B_bits": 0.4917292966721748,
+      "H_Y_bits": 0.4917292966721748,
+      "C_bypass_bits": 0.0,
+      "slack_bits": 0.0
+    },
+    "prewrite": {
+      "B_bits": 1.75,
+      "H_Y_bits": 0.5931390622295665,
+      "C_bypass_bits": 1.1568609377704335,
+      "slack_bits": 0.0
+    },
+    "raw_kv": {
+      "B_bits": 1.6875,
+      "H_Y_bits": 0.0,
+      "C_bypass_bits": 1.6875,
+      "slack_bits": 0.0
+    },
+    "positive_latent": {
+      "B_bits": 2.0,
+      "H_Y_bits": 0.0,
+      "C_bypass_bits": 2.0,
+      "slack_bits": 0.0
+    }
+  },
+  "PASS": true,
+  "interpretation": "The exact finite-battery inequality B <= H(Y|carry)+C_bypass holds in every cell. Post-cycle interventions have zero conditional bypass; pre-write, raw-KV and explicit latent channels produce positive bypass."
+}

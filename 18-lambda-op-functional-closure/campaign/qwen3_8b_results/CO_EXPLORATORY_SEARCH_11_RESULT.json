@@ -1,0 +1,656 @@
+{
+  "candidate_name": "CO_EXPLORE_PCA20_K18_LOCAL_SPLIT",
+  "frozen_pca_dimension": 20,
+  "interpretation": "The search is exploratory. It first scores finer fidelity-qualified K values, then permits local PCA splits only inside construction collision fibers. Any selected candidate requires a new independent validation panel.",
+  "records": [
+    {
+      "closure": {
+        "collision_examples": [
+          {
+            "fiber": "b11",
+            "members": [
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "DONOR",
+                  "DONOR"
+                ],
+                "units": [
+                  6
+                ]
+              },
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "DONOR",
+                  "ORIGINAL"
+                ],
+                "units": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "fiber": "b13",
+            "members": [
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "DONOR",
+                  "ORIGINAL"
+                ],
+                "units": [
+                  21
+                ]
+              },
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "ORIGINAL",
+                  "ORIGINAL"
+                ],
+                "units": [
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "fiber": "b0",
+            "members": [
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "NONE",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "DONOR",
+                  "DONOR"
+                ],
+                "units": [
+                  9
+                ]
+              },
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "DONOR",
+                  "DONOR"
+                ],
+                "units": [
+                  8
+                ]
+              }
+            ]
+          },
+          {
+            "fiber": "b6",
+            "members": [
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "DONOR"
+                ],
+                "units": [
+                  22
+                ]
+              },
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "ORIGINAL"
+                ],
+                "units": [
+                  12
+                ]
+              }
+            ]
+          }
+        ],
+        "n_collision_fibers": 4,
+        "n_collision_pairs": 4
+      },
+      "fidelity": {
+        "fiber_sizes": [
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_fibers": 16,
+        "n_nontrivial_fibers": 6,
+        "nontrivial_coverage": 0.5833333333333334,
+        "rich_variance_explained_by_fibers": 0.8277117768894553,
+        "systems_in_nontrivial_fibers": 14,
+        "within_fiber_distortion_fraction": 0.17228822311054467
+      },
+      "k": 16,
+      "kind": "PURE_KMEANS",
+      "qualified": true
+    },
+    {
+      "closure": {
+        "collision_examples": [],
+        "n_collision_fibers": 0,
+        "n_collision_pairs": 0
+      },
+      "fidelity": {
+        "fiber_sizes": [
+          4,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_fibers": 20,
+        "n_nontrivial_fibers": 2,
+        "nontrivial_coverage": 0.25,
+        "rich_variance_explained_by_fibers": 0.9130879299208361,
+        "systems_in_nontrivial_fibers": 6,
+        "within_fiber_distortion_fraction": 0.08691207007916396
+      },
+      "k": 16,
+      "kind": "COLLISION_GUIDED_LOCAL_SPLIT",
+      "local_splits": {
+        "0": {
+          "dimension": 0,
+          "kind": "SPLIT",
+          "left": {
+            "kind": "LEAF",
+            "leaf": "L"
+          },
+          "right": {
+            "kind": "LEAF",
+            "leaf": "R"
+          },
+          "threshold": -7.756609993953526
+        },
+        "11": {
+          "dimension": 0,
+          "kind": "SPLIT",
+          "left": {
+            "kind": "LEAF",
+            "leaf": "L"
+          },
+          "right": {
+            "kind": "LEAF",
+            "leaf": "R"
+          },
+          "threshold": -3.3294025375280847
+        },
+        "13": {
+          "dimension": 0,
+          "kind": "SPLIT",
+          "left": {
+            "kind": "LEAF",
+            "leaf": "L"
+          },
+          "right": {
+            "kind": "LEAF",
+            "leaf": "R"
+          },
+          "threshold": 1.6502957724008107
+        },
+        "6": {
+          "dimension": 0,
+          "kind": "SPLIT",
+          "left": {
+            "kind": "LEAF",
+            "leaf": "L"
+          },
+          "right": {
+            "kind": "LEAF",
+            "leaf": "R"
+          },
+          "threshold": -18.57089527848362
+        }
+      },
+      "n_split_base_fibers": 4,
+      "qualified": true
+    },
+    {
+      "closure": {
+        "collision_examples": [
+          {
+            "fiber": "b11",
+            "members": [
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "DONOR",
+                  "DONOR"
+                ],
+                "units": [
+                  6
+                ]
+              },
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "DONOR",
+                  "ORIGINAL"
+                ],
+                "units": [
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "fiber": "b0",
+            "members": [
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "NONE",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "DONOR",
+                  "DONOR"
+                ],
+                "units": [
+                  9
+                ]
+              },
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "DONOR",
+                  "DONOR"
+                ],
+                "units": [
+                  8
+                ]
+              }
+            ]
+          }
+        ],
+        "n_collision_fibers": 2,
+        "n_collision_pairs": 2
+      },
+      "fidelity": {
+        "fiber_sizes": [
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_fibers": 18,
+        "n_nontrivial_fibers": 4,
+        "nontrivial_coverage": 0.4166666666666667,
+        "rich_variance_explained_by_fibers": 0.8712632666907317,
+        "systems_in_nontrivial_fibers": 10,
+        "within_fiber_distortion_fraction": 0.12873673330926827
+      },
+      "k": 18,
+      "kind": "PURE_KMEANS",
+      "qualified": true
+    },
+    {
+      "closure": {
+        "collision_examples": [],
+        "n_collision_fibers": 0,
+        "n_collision_pairs": 0
+      },
+      "fidelity": {
+        "fiber_sizes": [
+          4,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_fibers": 20,
+        "n_nontrivial_fibers": 2,
+        "nontrivial_coverage": 0.25,
+        "rich_variance_explained_by_fibers": 0.9130879299208361,
+        "systems_in_nontrivial_fibers": 6,
+        "within_fiber_distortion_fraction": 0.08691207007916396
+      },
+      "k": 18,
+      "kind": "COLLISION_GUIDED_LOCAL_SPLIT",
+      "local_splits": {
+        "0": {
+          "dimension": 0,
+          "kind": "SPLIT",
+          "left": {
+            "kind": "LEAF",
+            "leaf": "L"
+          },
+          "right": {
+            "kind": "LEAF",
+            "leaf": "R"
+          },
+          "threshold": -7.756609993953526
+        },
+        "11": {
+          "dimension": 0,
+          "kind": "SPLIT",
+          "left": {
+            "kind": "LEAF",
+            "leaf": "L"
+          },
+          "right": {
+            "kind": "LEAF",
+            "leaf": "R"
+          },
+          "threshold": -3.3294025375280847
+        }
+      },
+      "n_split_base_fibers": 2,
+      "qualified": true
+    },
+    {
+      "closure": {
+        "collision_examples": [
+          {
+            "fiber": "b0",
+            "members": [
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "NONE",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "DONOR",
+                  "DONOR"
+                ],
+                "units": [
+                  9
+                ]
+              },
+              {
+                "target": [
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "ORIGINAL",
+                  "DONOR",
+                  "DONOR",
+                  "DONOR"
+                ],
+                "units": [
+                  8
+                ]
+              }
+            ]
+          }
+        ],
+        "n_collision_fibers": 1,
+        "n_collision_pairs": 1
+      },
+      "fidelity": {
+        "fiber_sizes": [
+          3,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_fibers": 20,
+        "n_nontrivial_fibers": 3,
+        "nontrivial_coverage": 0.2916666666666667,
+        "rich_variance_explained_by_fibers": 0.9255107497843331,
+        "systems_in_nontrivial_fibers": 7,
+        "within_fiber_distortion_fraction": 0.07448925021566694
+      },
+      "k": 20,
+      "kind": "PURE_KMEANS",
+      "qualified": true
+    },
+    {
+      "closure": {
+        "collision_examples": [],
+        "n_collision_fibers": 0,
+        "n_collision_pairs": 0
+      },
+      "fidelity": {
+        "fiber_sizes": [
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "n_fibers": 21,
+        "n_nontrivial_fibers": 2,
+        "nontrivial_coverage": 0.20833333333333334,
+        "rich_variance_explained_by_fibers": 0.9451512525859769,
+        "systems_in_nontrivial_fibers": 5,
+        "within_fiber_distortion_fraction": 0.05484874741402312
+      },
+      "k": 20,
+      "kind": "COLLISION_GUIDED_LOCAL_SPLIT",
+      "local_splits": {
+        "0": {
+          "dimension": 0,
+          "kind": "SPLIT",
+          "left": {
+            "kind": "LEAF",
+            "leaf": "L"
+          },
+          "right": {
+            "kind": "LEAF",
+            "leaf": "R"
+          },
+          "threshold": -7.756609993953526
+        }
+      },
+      "n_split_base_fibers": 1,
+      "qualified": true
+    }
+  ],
+  "schema": "co-qwen3-8b-exploratory-co-search-v1",
+  "search_is_target_informed": true,
+  "search_k_values": [
+    16,
+    18,
+    20
+  ],
+  "source_panel_sha256": "a9bde0fa2529186701054b451cdfe4d00086453018226ccef668791be1b79970",
+  "source_systems": 24,
+  "status": "USEFUL_EXPLORATORY_CANDIDATE"
+}

@@ -1,0 +1,69 @@
+{
+  "architectures": [
+    "QuantumModelForCausalLM"
+  ],
+  "model_type": "quantum",
+  "dtype": "bfloat16",
+  "hidden_size": 2048,
+  "intermediate_size": 11008,
+  "num_hidden_layers": 36,
+  "num_attention_heads": 16,
+  "num_key_value_heads": 2,
+  "head_dim": 128,
+  "custom_layers": {
+    "0-4": {
+      "ffn_dim": 11008,
+      "gqa_ratio": 8,
+      "quant": {
+        "attn": "bf16",
+        "ffn": "bf16",
+        "mappings": "bf16"
+      }
+    },
+    "31-35": {
+      "ffn_dim": 11008,
+      "gqa_ratio": 8,
+      "quant": {
+        "attn": "bf16",
+        "ffn": "bf16",
+        "mappings": "bf16"
+      }
+    },
+    "5-30": {
+      "ffn_dim": 11008,
+      "gqa_ratio": 8,
+      "quant": {
+        "attn": "bf16",
+        "down_proj": "bf16",
+        "ffn": "bf16",
+        "gate_proj": "bf16",
+        "k_proj": "bf16",
+        "mappings": "bf16",
+        "o_proj": "bf16",
+        "q_proj": "bf16",
+        "up_proj": "bf16",
+        "v_proj": "bf16"
+      }
+    }
+  },
+  "current_flow": "s_attn",
+  "force_s_attn_flow": true,
+  "use_fusion_gate": false,
+  "use_lora_c_attn": true,
+  "fused_c_stride": 4,
+  "use_mhc": false,
+  "use_adaptive_routing": false,
+  "use_head_gating": false,
+  "global_attention_freq": 8,
+  "use_wavelet_hypercube": true,
+  "wavelet_levels": 4,
+  "wavelet_slice_frac": 0.25,
+  "use_custom_kv_cache": true,
+  "kv_cache_quant_mode": "qrot8",
+  "kv_page_size": 64,
+  "kv_topk_pages": 256,
+  "kv_sink_pages": 2,
+  "kv_recent_pages": 16,
+  "kv_max_gpu_pages": 384,
+  "kv_meta_dtype": "float8"
+}

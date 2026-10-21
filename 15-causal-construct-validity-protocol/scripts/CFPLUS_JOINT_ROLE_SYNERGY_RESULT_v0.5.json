@@ -1,0 +1,90 @@
+{
+  "checks": {
+    "A0_ROLES_FROZEN": true,
+    "A1_TARGET_X_FROZEN": true,
+    "A2_S_NEUTRAL_FROZEN": true,
+    "A3_A4_SEPARATE_SCORERS": true,
+    "A5_OUTPUT_RECODING_PRESERVES_VERDICT": true,
+    "AF_CONTENT_SYNERGY_ONE": true,
+    "AF_DIFFERS": true,
+    "AF_NUISANCE_SYNERGY_ZERO": true,
+    "J0_MARGINAL_CHANNELS_UNIFORM_IDENTICAL": true,
+    "J10_GAMMA_EQUAL": true,
+    "J11_R_EQUAL": true,
+    "J12_CFPLUS_EQUAL": true,
+    "J1_MARGINAL_MI_ZERO_BOTH": true,
+    "J2_JOINT_MI_ONE_BOTH": true,
+    "J3_SHAPLEY_HALF_BIT_EACH": true,
+    "J4_WEIGHTS_HALF_HALF": true,
+    "J5_NEFF_TWO": true,
+    "J6_PI_ONE": true,
+    "J7_DELTA_CAP_HALF": true,
+    "J8_DELTA_PROP_HALF": true,
+    "J9_TYPED_MARGINAL_SIGNATURE_EQUAL": true,
+    "PRE_FREEZE_INTACT": true,
+    "UPSTREAM_AF_HASH": true,
+    "UPSTREAM_REPAIR_HASH": true
+  },
+  "date": "2026-09-14",
+  "interpretation": "If PASS, C_F+ with scalar Delta_prop plus typed marginal role channels is insufficient for an independently frozen access consequence when the access-relevant content exists only in joint cross-role dependence.",
+  "schema": "CFPLUS-joint-role-synergy-result-v0.5",
+  "systems": {
+    "CONTENT-SYNERGY": {
+      "AF_FLEX": 1.0,
+      "CFplus_repr": "{'Gamma': 1.0, 'D_q': {'Delta_prop': 0.5, 'typed_binding_signature': (('ACCESS-L', (('0,0', 0.5, 0.5), ('0,1', 0.5, 0.5), ('1,0', 0.5, 0.5), ('1,1', 0.5, 0.5))), ('ACCESS-R', (('0,0', 0.5, 0.5), ('0,1', 0.5, 0.5), ('1,0', 0.5, 0.5), ('1,1', 0.5, 0.5))))}, 'R': ((1, 1.0), (2, 1.0), (4, 1.0))}",
+      "Gamma": 1.0,
+      "R": {
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      },
+      "info": {
+        "Delta_cap": 0.5,
+        "Delta_prop": 0.5,
+        "I_P_Y": 1.0,
+        "I_P_YL": 0.0,
+        "I_P_YR": 0.0,
+        "N_eff": 2.0,
+        "Pi_role": 1.0,
+        "shapley": [
+          0.5,
+          0.5
+        ],
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      "signature": "(('ACCESS-L', (('0,0', 0.5, 0.5), ('0,1', 0.5, 0.5), ('1,0', 0.5, 0.5), ('1,1', 0.5, 0.5))), ('ACCESS-R', (('0,0', 0.5, 0.5), ('0,1', 0.5, 0.5), ('1,0', 0.5, 0.5), ('1,1', 0.5, 0.5))))"
+    },
+    "NUISANCE-SYNERGY": {
+      "AF_FLEX": 0.0,
+      "CFplus_repr": "{'Gamma': 1.0, 'D_q': {'Delta_prop': 0.5, 'typed_binding_signature': (('ACCESS-L', (('0,0', 0.5, 0.5), ('0,1', 0.5, 0.5), ('1,0', 0.5, 0.5), ('1,1', 0.5, 0.5))), ('ACCESS-R', (('0,0', 0.5, 0.5), ('0,1', 0.5, 0.5), ('1,0', 0.5, 0.5), ('1,1', 0.5, 0.5))))}, 'R': ((1, 1.0), (2, 1.0), (4, 1.0))}",
+      "Gamma": 1.0,
+      "R": {
+        "1": 1.0,
+        "2": 1.0,
+        "4": 1.0
+      },
+      "info": {
+        "Delta_cap": 0.5,
+        "Delta_prop": 0.5,
+        "I_P_Y": 1.0,
+        "I_P_YL": 0.0,
+        "I_P_YR": 0.0,
+        "N_eff": 2.0,
+        "Pi_role": 1.0,
+        "shapley": [
+          0.5,
+          0.5
+        ],
+        "weights": [
+          0.5,
+          0.5
+        ]
+      },
+      "signature": "(('ACCESS-L', (('0,0', 0.5, 0.5), ('0,1', 0.5, 0.5), ('1,0', 0.5, 0.5), ('1,1', 0.5, 0.5))), ('ACCESS-R', (('0,0', 0.5, 0.5), ('0,1', 0.5, 0.5), ('1,0', 0.5, 0.5), ('1,1', 0.5, 0.5))))"
+    }
+  },
+  "verdict": "CFPLUS-PROFILE-INSUFFICIENT-JOINT-SYNERGY"
+}

@@ -1,0 +1,565 @@
+{
+  "output": "quantum_gamma_closure_sensitivity_v11.json",
+  "maximum_repeat_noise": 0.0,
+  "closure_summary": {
+    "1": {
+      "block_alphabet_sizes": {
+        "entry_0_4": {
+          "minimum": 4,
+          "median": 4.0,
+          "maximum": 4,
+          "values": [
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4,
+            4
+          ]
+        },
+        "core_5_30": {
+          "minimum": 6,
+          "median": 6.0,
+          "maximum": 6,
+          "values": [
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6,
+            6
+          ]
+        },
+        "terminal_31_35": {
+          "minimum": 10,
+          "median": 10.0,
+          "maximum": 10,
+          "values": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            10
+          ]
+        }
+      },
+      "evaluation": {
+        "1": {
+          "mean_context_gamma": 0.25,
+          "minimizing_cut_counts": {
+            "entry_0_4 | core_5_30+terminal_31_35": 8
+          }
+        }
+      }
+    },
+    "2": {
+      "block_alphabet_sizes": {
+        "entry_0_4": {
+          "minimum": 6,
+          "median": 6.0,
+          "maximum": 8,
+          "values": [
+            6,
+            6,
+            8,
+            6,
+            6,
+            6,
+            8,
+            7
+          ]
+        },
+        "core_5_30": {
+          "minimum": 10,
+          "median": 10.0,
+          "maximum": 14,
+          "values": [
+            10,
+            10,
+            10,
+            10,
+            10,
+            10,
+            14,
+            11
+          ]
+        },
+        "terminal_31_35": {
+          "minimum": 18,
+          "median": 18.0,
+          "maximum": 18,
+          "values": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            18
+          ]
+        }
+      },
+      "evaluation": {
+        "1": {
+          "mean_context_gamma": 0.1848211181217123,
+          "minimizing_cut_counts": {
+            "entry_0_4 | core_5_30+terminal_31_35": 8
+          }
+        },
+        "2": {
+          "mean_context_gamma": 0.22871970816172416,
+          "minimizing_cut_counts": {
+            "entry_0_4 | core_5_30+terminal_31_35": 7,
+            "terminal_31_35 | entry_0_4+core_5_30": 1
+          }
+        }
+      }
+    },
+    "4": {
+      "block_alphabet_sizes": {
+        "entry_0_4": {
+          "minimum": 10,
+          "median": 10.5,
+          "maximum": 19,
+          "values": [
+            10,
+            11,
+            16,
+            10,
+            10,
+            10,
+            16,
+            19
+          ]
+        },
+        "core_5_30": {
+          "minimum": 18,
+          "median": 18.0,
+          "maximum": 30,
+          "values": [
+            18,
+            18,
+            18,
+            18,
+            18,
+            18,
+            30,
+            27
+          ]
+        },
+        "terminal_31_35": {
+          "minimum": 34,
+          "median": 34.0,
+          "maximum": 34,
+          "values": [
+            34,
+            34,
+            34,
+            34,
+            34,
+            34,
+            34,
+            34
+          ]
+        }
+      },
+      "evaluation": {
+        "1": {
+          "mean_context_gamma": 0.1392871076462782,
+          "minimizing_cut_counts": {
+            "entry_0_4 | core_5_30+terminal_31_35": 8
+          }
+        },
+        "2": {
+          "mean_context_gamma": 0.17417757496990585,
+          "minimizing_cut_counts": {
+            "entry_0_4 | core_5_30+terminal_31_35": 7,
+            "terminal_31_35 | entry_0_4+core_5_30": 1
+          }
+        },
+        "4": {
+          "mean_context_gamma": 0.19931224574180442,
+          "minimizing_cut_counts": {
+            "entry_0_4 | core_5_30+terminal_31_35": 7,
+            "terminal_31_35 | entry_0_4+core_5_30": 1
+          }
+        }
+      }
+    },
+    "8": {
+      "block_alphabet_sizes": {
+        "entry_0_4": {
+          "minimum": 18,
+          "median": 22.0,
+          "maximum": 43,
+          "values": [
+            18,
+            23,
+            32,
+            18,
+            21,
+            18,
+            38,
+            43
+          ]
+        },
+        "core_5_30": {
+          "minimum": 34,
+          "median": 34.0,
+          "maximum": 62,
+          "values": [
+            34,
+            34,
+            34,
+            34,
+            37,
+            34,
+            62,
+            59
+          ]
+        },
+        "terminal_31_35": {
+          "minimum": 66,
+          "median": 66.0,
+          "maximum": 66,
+          "values": [
+            66,
+            66,
+            66,
+            66,
+            66,
+            66,
+            66,
+            66
+          ]
+        }
+      },
+      "evaluation": {
+        "1": {
+          "mean_context_gamma": 0.10893828896464566,
+          "minimizing_cut_counts": {
+            "entry_0_4 | core_5_30+terminal_31_35": 8
+          }
+        },
+        "2": {
+          "mean_context_gamma": 0.13719822453459174,
+          "minimizing_cut_counts": {
+            "entry_0_4 | core_5_30+terminal_31_35": 7,
+            "terminal_31_35 | entry_0_4+core_5_30": 1
+          }
+        },
+        "4": {
+          "mean_context_gamma": 0.15671140359671604,
+          "minimizing_cut_counts": {
+            "entry_0_4 | core_5_30+terminal_31_35": 7,
+            "terminal_31_35 | entry_0_4+core_5_30": 1
+          }
+        }
+      }
+    }
+  },
+  "fixed_horizon_invariance": {
+    "1": [
+      {
+        "cut": "entry_0_4 | core_5_30+terminal_31_35",
+        "closure_depths": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "j_left_to_right_range": 0.0,
+        "j_right_to_left_range": 0.0,
+        "denominator_range": 5.274961662827099,
+        "gamma_range": 0.14106171103535434,
+        "j_left_to_right_values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "j_right_to_left_values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "denominator_values": [
+          4.0,
+          5.433041856415846,
+          7.248767877907582,
+          9.2749616628271
+        ],
+        "gamma_values": [
+          0.25,
+          0.1848211181217123,
+          0.1392871076462782,
+          0.10893828896464566
+        ]
+      },
+      {
+        "cut": "core_5_30 | entry_0_4+terminal_31_35",
+        "closure_depths": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "j_left_to_right_range": 0.0,
+        "j_right_to_left_range": 0.0,
+        "denominator_range": 5.450976731465028,
+        "gamma_range": 0.19776439768271298,
+        "j_left_to_right_values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "j_right_to_left_values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "denominator_values": [
+          5.169925001442312,
+          6.799588777504768,
+          8.670332026606465,
+          10.62090173290734
+        ],
+        "gamma_values": [
+          0.38685280723454163,
+          0.2947367919173711,
+          0.23162247054455593,
+          0.18908840955182865
+        ]
+      },
+      {
+        "cut": "terminal_31_35 | entry_0_4+core_5_30",
+        "closure_depths": [
+          1,
+          2,
+          4,
+          8
+        ],
+        "j_left_to_right_range": 0.0,
+        "j_right_to_left_range": 0.0,
+        "denominator_range": 4.7664411409091745,
+        "gamma_range": 0.14688181546340934,
+        "j_left_to_right_values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "j_right_to_left_values": [
+          2.0,
+          2.0,
+          2.0,
+          2.0
+        ],
+        "denominator_values": [
+          6.0,
+          7.302553680617008,
+          8.947387391112937,
+          10.766441140909174
+        ],
+        "gamma_values": [
+          0.3333333333333333,
+          0.2742369785417624,
+          0.22426451392737368,
+          0.18645151786992398
+        ]
+      }
+    ],
+    "2": [
+      {
+        "cut": "entry_0_4 | core_5_30+terminal_31_35",
+        "closure_depths": [
+          2,
+          4,
+          8
+        ],
+        "j_left_to_right_range": 0.0,
+        "j_right_to_left_range": 0.0,
+        "denominator_range": 3.841919806411253,
+        "gamma_range": 0.09749858253956667,
+        "j_left_to_right_values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "j_right_to_left_values": [
+          0.3007048827786958,
+          0.3007048827786958,
+          0.3007048827786958
+        ],
+        "denominator_values": [
+          5.433041856415846,
+          7.248767877907582,
+          9.2749616628271
+        ],
+        "gamma_values": [
+          0.23551850662199958,
+          0.17650529832493594,
+          0.1380199240824329
+        ]
+      },
+      {
+        "cut": "core_5_30 | entry_0_4+terminal_31_35",
+        "closure_depths": [
+          2,
+          4,
+          8
+        ],
+        "j_left_to_right_range": 0.0,
+        "j_right_to_left_range": 0.0,
+        "denominator_range": 3.821312955402572,
+        "gamma_range": 0.1134276985272859,
+        "j_left_to_right_values": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "j_right_to_left_values": [
+          1.15625,
+          1.15625,
+          1.15625
+        ],
+        "denominator_values": [
+          6.799588777504768,
+          8.670332026606465,
+          10.62090173290734
+        ],
+        "gamma_values": [
+          0.3156690257684127,
+          0.24764575345423057,
+          0.2022413272411268
+        ]
+      },
+      {
+        "cut": "terminal_31_35 | entry_0_4+core_5_30",
+        "closure_depths": [
+          2,
+          4,
+          8
+        ],
+        "j_left_to_right_range": 0.0,
+        "j_right_to_left_range": 0.0,
+        "denominator_range": 3.4638874602921668,
+        "gamma_range": 0.09458168550107518,
+        "j_left_to_right_values": [
+          0.15625,
+          0.15625,
+          0.15625
+        ],
+        "j_right_to_left_values": [
+          2.0,
+          2.0,
+          2.0
+        ],
+        "denominator_values": [
+          7.302553680617008,
+          8.947387391112937,
+          10.766441140909174
+        ],
+        "gamma_values": [
+          0.2940844497046893,
+          0.23998087068456797,
+          0.1995027642036141
+        ]
+      }
+    ],
+    "4": [
+      {
+        "cut": "entry_0_4 | core_5_30+terminal_31_35",
+        "closure_depths": [
+          4,
+          8
+        ],
+        "j_left_to_right_range": 0.0,
+        "j_right_to_left_range": 0.0,
+        "denominator_range": 2.026193784919517,
+        "gamma_range": 0.04410686595227731,
+        "j_left_to_right_values": [
+          1.0,
+          1.0
+        ],
+        "j_right_to_left_values": [
+          0.5,
+          0.5
+        ],
+        "denominator_values": [
+          7.248767877907582,
+          9.2749616628271
+        ],
+        "gamma_values": [
+          0.20163996909683451,
+          0.1575331031445572
+        ]
+      },
+      {
+        "cut": "core_5_30 | entry_0_4+terminal_31_35",
+        "closure_depths": [
+          4,
+          8
+        ],
+        "j_left_to_right_range": 0.0,
+        "j_right_to_left_range": 0.0,
+        "denominator_range": 1.9505697063008753,
+        "gamma_range": 0.0472943465992087,
+        "j_left_to_right_values": [
+          1.0,
+          1.0
+        ],
+        "j_right_to_left_values": [
+          1.25,
+          1.25
+        ],
+        "denominator_values": [
+          8.670332026606465,
+          10.62090173290734
+        ],
+        "gamma_values": [
+          0.2575040308537846,
+          0.2102096842545759
+        ]
+      },
+      {
+        "cut": "terminal_31_35 | entry_0_4+core_5_30",
+        "closure_depths": [
+          4,
+          8
+        ],
+        "j_left_to_right_range": 0.0,
+        "j_right_to_left_range": 0.0,
+        "denominator_range": 1.8190537497962378,
+        "gamma_range": 0.042223437751466336,
+        "j_left_to_right_values": [
+          0.25,
+          0.25
+        ],
+        "j_right_to_left_values": [
+          2.0,
+          2.0
+        ],
+        "denominator_values": [
+          8.947387391112937,
+          10.766441140909174
+        ],
+        "gamma_values": [
+          0.24962994095615082,
+          0.20740650320468448
+        ]
+      }
+    ]
+  }
+}

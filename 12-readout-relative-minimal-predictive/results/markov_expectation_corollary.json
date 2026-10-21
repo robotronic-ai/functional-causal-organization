@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "hankel_rank_equals_predictive_dimension_failures": 0,
+    "markov_koopman_closure_failures": 0,
+    "predictive_dual_invariance_failures": 0
+  },
+  "minimal_predictive_dimension_histogram": {
+    "0": 9,
+    "1": 26,
+    "2": 208
+  },
+  "status": "PASS",
+  "universe": {
+    "arithmetic": "exact rational",
+    "controls": 2,
+    "declared_readout": "indicator(state == 1)",
+    "kernels": 9,
+    "ordered_kernel_pairs": 81,
+    "row_probability_grid": [
+      "0",
+      "1/2",
+      "1"
+    ],
+    "source_sets_per_pair": 3,
+    "states": 2,
+    "total_pair_source_cases": 243
+  }
+}

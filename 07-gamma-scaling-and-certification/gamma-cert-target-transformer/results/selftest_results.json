@@ -1,0 +1,206 @@
+{
+  "status": "V3",
+  "confidence_level": 0.95,
+  "gamma_lower": 0.09285393537647317,
+  "gamma_upper": 0.252291157775851,
+  "interval_width": 0.1594372223993778,
+  "v1_max_absolute_width": 0.1,
+  "candidate_cut": {
+    "gamma_upper": 0.252291157775851,
+    "cut_a": [
+      0,
+      1,
+      7,
+      8,
+      9
+    ],
+    "cut_b": [
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "cut_smaller_side_size": 5,
+    "cross_entropy_upper_a_bits": 1.2613956464877742,
+    "cross_entropy_upper_b_bits": 1.2615159312707354
+  },
+  "spectral_lower": {
+    "lambda2_normalized": 0.19098300562505252,
+    "minimum_weighted_degree": 1.9447580704383447
+  },
+  "lower_metadata": {
+    "selected_edge_count": 20,
+    "positive_directed_edge_count": 10,
+    "edge_records": [
+      {
+        "source": 0,
+        "target": 1,
+        "holdout_errors": 0,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.002781379662800343,
+        "information_lcb_bits": 0.9723790352191723
+      },
+      {
+        "source": 0,
+        "target": 7,
+        "holdout_errors": 1198,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.530200933909595,
+        "information_lcb_bits": 0.0
+      },
+      {
+        "source": 1,
+        "target": 2,
+        "holdout_errors": 0,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.002781379662800343,
+        "information_lcb_bits": 0.9723790352191723
+      },
+      {
+        "source": 1,
+        "target": 6,
+        "holdout_errors": 1193,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.5281227443904923,
+        "information_lcb_bits": 0.0
+      },
+      {
+        "source": 2,
+        "target": 3,
+        "holdout_errors": 0,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.002781379662800343,
+        "information_lcb_bits": 0.9723790352191723
+      },
+      {
+        "source": 2,
+        "target": 6,
+        "holdout_errors": 1173,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.5198046394965268,
+        "information_lcb_bits": 0.0
+      },
+      {
+        "source": 3,
+        "target": 4,
+        "holdout_errors": 0,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.002781379662800343,
+        "information_lcb_bits": 0.9723790352191723
+      },
+      {
+        "source": 3,
+        "target": 5,
+        "holdout_errors": 1210,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.5351864075909896,
+        "information_lcb_bits": 0.0
+      },
+      {
+        "source": 4,
+        "target": 5,
+        "holdout_errors": 0,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.002781379662800343,
+        "information_lcb_bits": 0.9723790352191723
+      },
+      {
+        "source": 4,
+        "target": 2,
+        "holdout_errors": 1181,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.5231329082037806,
+        "information_lcb_bits": 0.0
+      },
+      {
+        "source": 5,
+        "target": 6,
+        "holdout_errors": 0,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.002781379662800343,
+        "information_lcb_bits": 0.9723790352191723
+      },
+      {
+        "source": 5,
+        "target": 0,
+        "holdout_errors": 1182,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.5235488455217174,
+        "information_lcb_bits": 0.0
+      },
+      {
+        "source": 6,
+        "target": 7,
+        "holdout_errors": 0,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.002781379662800343,
+        "information_lcb_bits": 0.9723790352191723
+      },
+      {
+        "source": 6,
+        "target": 1,
+        "holdout_errors": 1212,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.5360170204809711,
+        "information_lcb_bits": 0.0
+      },
+      {
+        "source": 7,
+        "target": 8,
+        "holdout_errors": 0,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.002781379662800343,
+        "information_lcb_bits": 0.9723790352191723
+      },
+      {
+        "source": 7,
+        "target": 1,
+        "holdout_errors": 1234,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.5451481146546082,
+        "information_lcb_bits": 0.0
+      },
+      {
+        "source": 8,
+        "target": 9,
+        "holdout_errors": 0,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.002781379662800343,
+        "information_lcb_bits": 0.9723790352191723
+      },
+      {
+        "source": 8,
+        "target": 4,
+        "holdout_errors": 1221,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.5397537197464153,
+        "information_lcb_bits": 0.0
+      },
+      {
+        "source": 9,
+        "target": 0,
+        "holdout_errors": 0,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.002781379662800343,
+        "information_lcb_bits": 0.9723790352191723
+      },
+      {
+        "source": 9,
+        "target": 1,
+        "holdout_errors": 1182,
+        "holdout_total": 2400,
+        "error_rate_upper": 0.5235488455217174,
+        "information_lcb_bits": 0.0
+      }
+    ]
+  },
+  "quotient_gate": {
+    "passed": true,
+    "method": "exact_identity_macrostate",
+    "holdout_factorization_violations": 0
+  },
+  "selftest_exact_gamma": 0.2,
+  "selftest_interval_covers_exact": true,
+  "selftest_pass": true
+}

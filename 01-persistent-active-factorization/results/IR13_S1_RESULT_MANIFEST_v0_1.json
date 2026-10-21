@@ -1,0 +1,37 @@
+{
+  "candidate3_status": "DO_NOT_CONSTRUCT_UNTIL_SEMANTIC_FORK_RESOLVED",
+  "claim_status": "exact local non-identifiability conditional on joint legitimacy of both preregistered control families",
+  "date": "2026-09-11",
+  "files": {
+    "protocol": {
+      "name": "Protocole_IR13_S1_v0.1_stochastic_collision_search.md",
+      "sha256": "63c34f538487a167df1d327f84d75619488c43a1d2910a98fdaa494565a4a0d0"
+    },
+    "search": {
+      "name": "irp_ir13_stochastic_family_search_v0_1.py",
+      "sha256": "d2d6c35eca8ed89b31939e86bff41bf6723d1ffea32164d4b1428996173b2ecf"
+    },
+    "witness_audit": {
+      "name": "irp_ir13_S1_first_witness_audit_v0_1.py",
+      "sha256": "ccb01923527b1e2846537612a0054f35e446c2ee74ec6fc1710ea7e04feeedf6"
+    },
+    "witness_note": {
+      "name": "IR13_S1_exact_witness_v0_1.md",
+      "sha256": "f28b5d48691a8ed22aba68859434e0ea1f6f978368d692f4cad8ebeaf499f7c7"
+    }
+  },
+  "pre_search_protocol_sha256": "63c34f538487a167df1d327f84d75619488c43a1d2910a98fdaa494565a4a0d0",
+  "pre_search_search_code_sha256": "d2d6c35eca8ed89b31939e86bff41bf6723d1ffea32164d4b1428996173b2ecf",
+  "schema": "IR13-S1-result-v0.1",
+  "search_result": {
+    "B_active_oracle_bits": 1.0,
+    "B_storage_oracle_bits": 0.0,
+    "B_storage_original_bits": 1.0,
+    "active_constructions": 576,
+    "first_witness_o1_isomorphisms": 8,
+    "oracle_conflicting_isomorphisms": 8,
+    "pairs_checked_until_first_witness": 1,
+    "storage_channels": 6
+  },
+  "verdict": "S1-V1 exact O1 collision with oracle conflict"
+}

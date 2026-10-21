@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-14",
+  "files": {
+    "FCI2_ACCESS_ROLE_BINDING_CLOSURE_v0.3.md": "a41a38e8ced61ffbfbe84a2816abb5c4074b2e2676812733cec6e7957a1bd16d",
+    "Protocol_FCI2_TYPED_PROPAGATION_REPAIR_v0.4_FROZEN.md": "483b3c99f5adaab25b66cfd3931ba01b4553844e6aa6341690a6cdd4bc7d6139"
+  },
+  "schema": "FCI2-typed-propagation-repair-pre-candidate-freeze-v0.4",
+  "status": "PRE-REPAIR-CANDIDATE-FROZEN",
+  "upstream_witness_result_sha256": "c5f65e2639ee747b06c7ebb935df324edd1d02bea01d86d9c3484cea3380f1f8"
+}

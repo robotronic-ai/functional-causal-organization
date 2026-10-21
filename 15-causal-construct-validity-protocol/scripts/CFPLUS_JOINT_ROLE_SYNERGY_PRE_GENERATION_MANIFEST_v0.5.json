@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-14",
+  "files": {
+    "CFPLUS_ACCESS_ORGANIZATIONAL_CLOSURE_theory_v0.5.md": "6a3dbe21a88caa6973f7a0b2487858148fbc9c8302e328e1059ef2e7d34c6344",
+    "CFPLUS_JOINT_ROLE_SYNERGY_SOURCE_REFS_v0.5.json": "d61e95c78287f8925436f61cbad6608fec3a8c9d1f6e25f5927ce5214d2af021",
+    "Protocol_CFPLUS_JOINT_ROLE_SYNERGY_v0.5_FROZEN.md": "eeb4b628a182aa9414a0b0565668e89c27aea1bf7cf0e45320bf6f6daf1b8480"
+  },
+  "schema": "CFPLUS-joint-role-synergy-pre-generation-freeze-v0.5",
+  "status": "PRE-WITNESS-FROZEN",
+  "upstream": {
+    "CF_ACCESS_ORGANIZATIONAL_CLOSURE_SUMMARY_v0.4.md": "d24b5466509e16efee4d78815abde419fbf79eb880ee17a29e6605eb4883ce22",
+    "FCI2_TYPED_PROPAGATION_REPAIR_RESULT_v0.4.json": "4b12b493322a1222c9dfd925b13003cec4d5b3cf20087c5b9205a925c7ef9291",
+    "Protocol_FCI2_TYPED_PROPAGATION_REPAIR_v0.4_FROZEN.md": "483b3c99f5adaab25b66cfd3931ba01b4553844e6aa6341690a6cdd4bc7d6139",
+    "typed_propagation_repair_candidate_v0_4.py": "2489b9c1f7c46c543ba82fa878058c59c59b4b5cda011c17d3bce816be1f81d6"
+  }
+}

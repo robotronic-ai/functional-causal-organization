@@ -1,0 +1,212 @@
+{
+  "af_epsilon": {
+    "AF-DELAY": 0.03,
+    "AF-FLEX": 0.03,
+    "AF-UPDATE": 0.03
+  },
+  "beta_epsilon": 0.15,
+  "cases": [
+    {
+      "af_diffs_ci": {
+        "AF-DELAY": [
+          -0.015,
+          0.015
+        ],
+        "AF-FLEX": [
+          -0.01,
+          0.01
+        ],
+        "AF-UPDATE": [
+          -0.01,
+          0.01
+        ]
+      },
+      "beta_diff_ci": [
+        -0.08,
+        0.07
+      ],
+      "expected_instrument_status": "INSTRUMENT-CONSISTENT",
+      "expected_pair_status": "FIBER-CONSISTENT",
+      "id": "VALID_CONVERGENT",
+      "profile_diffs_ci": {
+        "Delta_prop": [
+          -0.01,
+          0.01
+        ],
+        "Gamma": [
+          -0.01,
+          0.01
+        ],
+        "R": [
+          -0.015,
+          0.015
+        ]
+      },
+      "rivals_equivalent": true,
+      "sentinel_changed": false
+    },
+    {
+      "af_diffs_ci": {
+        "AF-DELAY": [
+          0.06,
+          0.1
+        ],
+        "AF-FLEX": [
+          -0.01,
+          0.01
+        ],
+        "AF-UPDATE": [
+          0.05,
+          0.09
+        ]
+      },
+      "beta_diff_ci": [
+        0.25,
+        0.4
+      ],
+      "expected_instrument_status": "INSTRUMENT-DISAGREEMENT",
+      "expected_pair_status": "EXCLUSION-UNSUPPORTED",
+      "id": "DIRECT_EFFECT_CONTAMINATION",
+      "profile_diffs_ci": {
+        "Delta_prop": [
+          -0.01,
+          0.01
+        ],
+        "Gamma": [
+          -0.01,
+          0.01
+        ],
+        "R": [
+          -0.015,
+          0.015
+        ]
+      },
+      "rivals_equivalent": true,
+      "sentinel_changed": true
+    },
+    {
+      "af_diffs_ci": {
+        "AF-DELAY": [
+          -0.01,
+          0.01
+        ],
+        "AF-FLEX": [
+          -0.01,
+          0.01
+        ],
+        "AF-UPDATE": [
+          -0.01,
+          0.01
+        ]
+      },
+      "beta_diff_ci": [
+        -0.04,
+        0.05
+      ],
+      "expected_instrument_status": "INSTRUMENT-CONSISTENT",
+      "expected_pair_status": "RIVAL-MISMATCH",
+      "id": "RIVAL_MISMATCH",
+      "profile_diffs_ci": {
+        "Delta_prop": [
+          -0.01,
+          0.01
+        ],
+        "Gamma": [
+          -0.01,
+          0.01
+        ],
+        "R": [
+          -0.01,
+          0.01
+        ]
+      },
+      "rivals_equivalent": false,
+      "sentinel_changed": false
+    },
+    {
+      "af_diffs_ci": {
+        "AF-DELAY": [
+          -0.01,
+          0.01
+        ],
+        "AF-FLEX": [
+          0.08,
+          0.12
+        ],
+        "AF-UPDATE": [
+          -0.01,
+          0.01
+        ]
+      },
+      "beta_diff_ci": [
+        -0.05,
+        0.06
+      ],
+      "expected_instrument_status": "INSTRUMENT-CONSISTENT",
+      "expected_pair_status": "FIBER-VIOLATION",
+      "id": "FIBER_VIOLATION",
+      "profile_diffs_ci": {
+        "Delta_prop": [
+          -0.01,
+          0.01
+        ],
+        "Gamma": [
+          -0.01,
+          0.01
+        ],
+        "R": [
+          -0.01,
+          0.01
+        ]
+      },
+      "rivals_equivalent": true,
+      "sentinel_changed": false
+    },
+    {
+      "af_diffs_ci": {
+        "AF-DELAY": [
+          -0.01,
+          0.01
+        ],
+        "AF-FLEX": [
+          -0.01,
+          0.01
+        ],
+        "AF-UPDATE": [
+          -0.01,
+          0.01
+        ]
+      },
+      "beta_diff_ci": [
+        -0.02,
+        0.03
+      ],
+      "expected_instrument_status": "INSTRUMENT-CONSISTENT",
+      "expected_pair_status": "PROFILE-UNRESOLVED",
+      "id": "PROFILE_UNRESOLVED",
+      "profile_diffs_ci": {
+        "Delta_prop": [
+          -0.01,
+          0.01
+        ],
+        "Gamma": [
+          -0.01,
+          0.01
+        ],
+        "R": [
+          0.01,
+          0.05
+        ]
+      },
+      "rivals_equivalent": true,
+      "sentinel_changed": false
+    }
+  ],
+  "date": "2026-09-14",
+  "profile_epsilon": {
+    "Delta_prop": 0.03,
+    "Gamma": 0.03,
+    "R": 0.03
+  },
+  "schema": "FCI3-intervention-identification-fixtures-v0.2"
+}

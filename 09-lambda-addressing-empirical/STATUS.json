@@ -1,0 +1,12 @@
+{
+  "campaign": "Lambda empirical validation",
+  "interpretation_boundary": "The constructive witness is synthetic and does not retroactively change the frozen RMT Stage-A/Stage-B gate outcomes.",
+  "release": "1.0.0",
+  "status": {
+    "CONSTRUCTIVE_LAMBDA_WITNESS": "ESTABLISHED",
+    "GLOBAL_C0_LAMBDA_PROMOTION": "WITHHELD",
+    "RMT_REAL_C0_NONDERIVABILITY": "NOT-ESTABLISHED-NO-FIBER-WITNESS",
+    "RMT_REAL_DELTA_NONREDUCTION": "NOT-ESTABLISHED-LAYER-COMPLETE-RICH-DELTA-SEPARATES-ALL-CANDIDATES",
+    "UNIVERSAL_LAMBDA_NECESSITY": "OPEN"
+  }
+}

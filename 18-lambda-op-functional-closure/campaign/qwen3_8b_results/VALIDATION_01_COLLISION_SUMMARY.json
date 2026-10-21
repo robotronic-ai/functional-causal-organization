@@ -1,0 +1,115 @@
+{
+  "all_disagreements_confined_to_operation": "SUBSTITUTE",
+  "collision_fibers": [
+    {
+      "descriptor_bins": [
+        1,
+        6,
+        2
+      ],
+      "differing_target_coordinates": [
+        "SUBSTITUTE:H1"
+      ],
+      "units": [
+        9,
+        73
+      ]
+    },
+    {
+      "descriptor_bins": [
+        5,
+        7,
+        6
+      ],
+      "differing_target_coordinates": [
+        "SUBSTITUTE:H2",
+        "SUBSTITUTE:H3"
+      ],
+      "units": [
+        13,
+        74
+      ]
+    },
+    {
+      "descriptor_bins": [
+        5,
+        6,
+        4
+      ],
+      "differing_target_coordinates": [
+        "SUBSTITUTE:H1"
+      ],
+      "units": [
+        32,
+        34
+      ]
+    },
+    {
+      "descriptor_bins": [
+        0,
+        0,
+        6
+      ],
+      "differing_target_coordinates": [
+        "SUBSTITUTE:H2",
+        "SUBSTITUTE:H3"
+      ],
+      "units": [
+        35,
+        43,
+        102,
+        109
+      ]
+    },
+    {
+      "descriptor_bins": [
+        3,
+        0,
+        2
+      ],
+      "differing_target_coordinates": [
+        "SUBSTITUTE:H3"
+      ],
+      "units": [
+        54,
+        62
+      ]
+    },
+    {
+      "descriptor_bins": [
+        7,
+        1,
+        2
+      ],
+      "differing_target_coordinates": [
+        "SUBSTITUTE:H2",
+        "SUBSTITUTE:H3"
+      ],
+      "units": [
+        64,
+        112
+      ]
+    },
+    {
+      "descriptor_bins": [
+        0,
+        0,
+        0
+      ],
+      "differing_target_coordinates": [
+        "SUBSTITUTE:H3"
+      ],
+      "units": [
+        88,
+        92
+      ]
+    }
+  ],
+  "n_collision_fibers": 7,
+  "schema": "co-qwen3-8b-lambda-op-validation-01-collision-summary-v1",
+  "target_disagreement_counts": {
+    "SUBSTITUTE:H1": 2,
+    "SUBSTITUTE:H2": 3,
+    "SUBSTITUTE:H3": 5
+  }
+}

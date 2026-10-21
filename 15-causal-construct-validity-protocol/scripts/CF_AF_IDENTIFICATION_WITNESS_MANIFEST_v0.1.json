@@ -1,0 +1,8 @@
+{
+  "af_candidate_sha256": "8bdf05cb2be3c3085c52c0b2a389aa28e1cbf598dbd90d38496799050c82b889",
+  "attack_manifest_sha256": "4c3654afa73aa2f9d8890d597c125b73701afbf8d0268bca0cd1f4b6dc606646",
+  "date": "2026-09-14",
+  "schema": "CF-AF-identification-witness-freeze-v0.1",
+  "status": "WITNESS-FROZEN-BEFORE-EXECUTION",
+  "witness_sha256": "208eee80602b503a696979f4225c1cd5a252f1802f49d6ee38dde5999a7830c7"
+}

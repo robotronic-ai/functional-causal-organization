@@ -1,0 +1,54 @@
+{
+  "source_scripts": [
+    "scripts/gamma_delta_axiom_audit_v0_1.py",
+    "scripts/gamma_delta_characterization_audit_v0_2.py"
+  ],
+  "gamma_round1_minimal_axioms_G0_G6": {
+    "aggregators": {
+      "arith": {"F(1,0)": 0.5, "F(.5,.5)": 0.5, "F(1,1)": 1.0},
+      "geom":  {"F(1,0)": 0.0, "F(.5,.5)": 0.5, "F(1,1)": 1.0},
+      "min":   {"F(1,0)": 0.0, "F(.5,.5)": 0.5, "F(1,1)": 1.0}
+    },
+    "g_weak_current_arithmetic": "PASS",
+    "g_strong_current_arithmetic": "FAIL-EXACT",
+    "g0_g5_uniqueness": "REFUTED by arith/geom/min",
+    "witness_GE_same_gamma_different_beta": "PASS",
+    "verdict": "GAMMA: AX-NONUNIQUE + SEMANTIC-BRANCH(G-WEAK)"
+  },
+  "delta_decomposition": {
+    "uniform_perfect": {"cap": 1.0, "dec": 1.0},
+    "nonuniform_perfect_q_3_4_1_4": {"cap": 0.8112781244591328, "dec": 1.0, "kappa": 0.8112781244591328},
+    "independent_uniform": {"cap": 0.0},
+    "noisy_uniform": {"cap": 0.18872187554086717},
+    "delta_equals_kappa_times_dec": "PASS",
+    "dcap_vs_ddec_nonuniform_perfect_decoding_distinction": "PASS",
+    "verdict": "DELTA actuelle = D-CAP, pas pure D-DEC"
+  },
+  "independence_witnesses": {
+    "IND1": {"gamma_C1": 1.0, "gamma_C2": 1.0, "delta_C1": 1.0, "delta_C2": 0.0},
+    "IND2": {"delta_C3": 1.0, "delta_C4": 1.0, "gamma_C3": 1.0, "gamma_C4": 0.5},
+    "gamma_to_delta_functional_dependence": "REFUTED on finite domain",
+    "delta_to_gamma_functional_dependence": "REFUTED on finite domain",
+    "verdict": "GAMMA/DELTA: INDEPENDENCE-WITNESS"
+  },
+  "gamma_round2_marginal_independence_axiom": {
+    "arith_satisfies_marginal_independence": true,
+    "geom_satisfies_marginal_independence": false,
+    "geom_counter_witness": {"x1": "0", "x2": "1/4", "y1": "0", "y2": "1/4", "a": 0.0, "b": 0.25},
+    "min_satisfies_marginal_independence": false,
+    "min_counter_witness": {"x1": "0", "x2": "1/4", "y1": "0", "y2": "1/4", "a": "0", "b": "1/4"},
+    "finite_grid_reconstruction_x_over_2_plus_y_over_2": "PASS",
+    "verdict": "Gamma arithmetic uniquely characterized by nullity + symmetry + diagonal calibration + marginal independence"
+  },
+  "delta_round2_restricted_characterizations": {
+    "support_only_class_calibration": {"n=2": 1.0, "n=3": 0.630929753571, "n=4": 0.5, "n=8": 0.333333333333},
+    "q_adaptive_class_entropy_and_kappa": [
+      {"q": [0.5, 0.5], "H": 1.0, "c_dec": 1.0, "kappa": 1.0},
+      {"q": [0.75, 0.25], "H": 0.8112781244591328, "c_dec": 1.2326229068073113, "kappa": 0.8112781244591328},
+      {"q": [0.875, 0.125], "H": 0.5435644431995964, "c_dec": 1.839708267365091, "kappa": 0.5435644431995964}
+    ],
+    "delta_cap_characterization": "unique within support-only MI-linear class",
+    "delta_dec_characterization": "unique within q-adaptive MI-linear class",
+    "semantic_choice": "remains explicit, not mathematically forced"
+  }
+}

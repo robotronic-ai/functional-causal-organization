@@ -1,0 +1,16 @@
+{
+  "date": "2026-09-14",
+  "files": {
+    "CF_ACCESS_ORGANIZATIONAL_CLOSURE_theory_v0.3.md": "0b03e2697153748c94c6b67f512e1887525b88166395c66d7cd205157eb05576",
+    "FCI2_ACCESS_ROLE_BINDING_SOURCE_REFS_v0.3.json": "8ca3fb4af4c80a7db1e2d0fac9c040c3da4f7cf525769825a9c1207ae2f36068",
+    "Protocol_FCI2_ACCESS_ROLE_BINDING_v0.3_FROZEN.md": "58d77b1030dd4d9f705887192aac6434c6c51d6b1c68b09de7fbc9029b864450"
+  },
+  "schema": "FCI2-ACCESS-ROLE-BINDING-pre-generation-freeze-v0.3",
+  "status": "PRE-WITNESS-FROZEN",
+  "upstream": {
+    "af_candidate_sha256": "8bdf05cb2be3c3085c52c0b2a389aa28e1cbf598dbd90d38496799050c82b889",
+    "fci_closure_sha256": "65ba724e597bac49be79534472be610898625c1580ed653386327c02e115cfa4",
+    "fci_v0_2_theory_sha256": "af7a565d9b8ae767538359ed9b731abd8cd22cacac24377d2af27c5542f07137",
+    "four_family_theorem_sha256": "00f78b072cb99e97a5872ace1026ac1505e1056be19b8e38a0f847e1c6ab057b"
+  }
+}

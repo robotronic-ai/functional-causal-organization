@@ -1,0 +1,387 @@
+{
+  "candidate_name": "LAMBDA_OP_EXPLORE_GREEDY_QUANTIZED",
+  "candidate_origin": "TARGET_INFORMED_EXPLORATORY_CANDIDATE",
+  "candidate_sha256": "b47ca3215fc35fa86e7e409ce36d1801f5205da63ec9e7355d379e1c077aecac",
+  "closure": "REFUTED",
+  "closure_type": "NONE",
+  "collision_examples": [
+    {
+      "descriptor_bins": [
+        1,
+        6,
+        2
+      ],
+      "distinct_target_count": 2,
+      "target_groups": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            9
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            73
+          ]
+        }
+      ],
+      "units": [
+        9,
+        73
+      ]
+    },
+    {
+      "descriptor_bins": [
+        5,
+        7,
+        6
+      ],
+      "distinct_target_count": 2,
+      "target_groups": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "ORIGINAL",
+            "ORIGINAL"
+          ],
+          "units": [
+            13
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            74
+          ]
+        }
+      ],
+      "units": [
+        13,
+        74
+      ]
+    },
+    {
+      "descriptor_bins": [
+        5,
+        6,
+        4
+      ],
+      "distinct_target_count": 2,
+      "target_groups": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            32
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            34
+          ]
+        }
+      ],
+      "units": [
+        32,
+        34
+      ]
+    },
+    {
+      "descriptor_bins": [
+        0,
+        0,
+        6
+      ],
+      "distinct_target_count": 2,
+      "target_groups": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            35,
+            43,
+            109
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "ORIGINAL",
+            "ORIGINAL"
+          ],
+          "units": [
+            102
+          ]
+        }
+      ],
+      "units": [
+        35,
+        43,
+        102,
+        109
+      ]
+    },
+    {
+      "descriptor_bins": [
+        3,
+        0,
+        2
+      ],
+      "distinct_target_count": 2,
+      "target_groups": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            54
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "ORIGINAL"
+          ],
+          "units": [
+            62
+          ]
+        }
+      ],
+      "units": [
+        54,
+        62
+      ]
+    },
+    {
+      "descriptor_bins": [
+        7,
+        1,
+        2
+      ],
+      "distinct_target_count": 2,
+      "target_groups": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "ORIGINAL"
+          ],
+          "units": [
+            64
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "ORIGINAL",
+            "DONOR"
+          ],
+          "units": [
+            112
+          ]
+        }
+      ],
+      "units": [
+        64,
+        112
+      ]
+    },
+    {
+      "descriptor_bins": [
+        0,
+        0,
+        0
+      ],
+      "distinct_target_count": 2,
+      "target_groups": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "ORIGINAL"
+          ],
+          "units": [
+            88
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            92
+          ]
+        }
+      ],
+      "units": [
+        88,
+        92
+      ]
+    }
+  ],
+  "interpretation": "This is a fresh validation of a candidate chosen during target-informed exploration. No candidate parameters were changed using this validation panel.",
+  "model": "Qwen3-8B",
+  "n_fibers": 111,
+  "n_functional_collisions": 7,
+  "n_nontrivial_fibers": 14,
+  "n_selected_features": 3,
+  "n_validation_systems": 128,
+  "schema": "co-qwen3-8b-lambda-op-candidate-validation-score-v1",
+  "systems_in_nontrivial_fibers": 31,
+  "validation_panel_sha256": "12ed49bef3f05cc7fa7b7777fac1a4f87741f0eab4838d722656821199aa8e5a"
+}

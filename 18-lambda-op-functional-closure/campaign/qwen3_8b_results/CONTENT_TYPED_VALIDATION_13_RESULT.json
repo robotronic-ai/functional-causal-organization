@@ -1,0 +1,305 @@
+{
+  "candidate_name": "CONTENT_TYPED_POOLED96_REVOKE_SUBSTITUTE_3F",
+  "candidate_refit_on_validation": false,
+  "closure": "REFUTED",
+  "collision_examples": [
+    {
+      "fiber": "7|1|0",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            5
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "fiber": "5|1|6",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "ORIGINAL"
+          ],
+          "units": [
+            37,
+            53
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            8,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "fiber": "7|2|7",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "ORIGINAL"
+          ],
+          "units": [
+            18,
+            59,
+            60
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "ORIGINAL",
+            "ORIGINAL"
+          ],
+          "units": [
+            44
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "ORIGINAL"
+          ],
+          "units": [
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "fiber": "7|2|6",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            13
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL"
+          ],
+          "units": [
+            51
+          ]
+        }
+      ]
+    },
+    {
+      "fiber": "0|0|1",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            20
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            33
+          ]
+        }
+      ]
+    },
+    {
+      "fiber": "4|2|3",
+      "members": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            41
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "ORIGINAL",
+            "DONOR"
+          ],
+          "units": [
+            57
+          ]
+        }
+      ]
+    }
+  ],
+  "construction_12_and_validation_12_were_opened_training_data": true,
+  "n_collision_fibers": 6,
+  "n_collision_pairs": 15,
+  "n_fibers": 48,
+  "n_nontrivial_fibers": 11,
+  "n_validation_systems": 64,
+  "nontrivial_coverage": 0.421875,
+  "promotion_status": "REFUTED",
+  "rich_variance_explained_by_fibers": 0.8399791178267085,
+  "schema": "co-qwen3-8b-content-typed-validation-13-v1",
+  "scope_note": "Exploratory pooled refinement of the typed content-effect Lambda proxy over 96 opened systems. It is not a scalar validation of full C_O.",
+  "validation_rule": {
+    "n_collision_pairs": 0,
+    "nontrivial_coverage_min": 0.2,
+    "within_fiber_distortion_fraction_max": 0.25
+  },
+  "within_fiber_distortion_fraction": 0.1600208821732915
+}

@@ -1,0 +1,58 @@
+{
+  "bins_requested": 8,
+  "candidate_name": "LAMBDA_OP_EXPLORE_GREEDY_QUANTIZED",
+  "encoding": "Each selected scalar is assigned an integer bin using the frozen cutpoints below.",
+  "exploratory_closure": "PASS",
+  "exploratory_closure_type": "NONTRIVIAL",
+  "exploratory_metrics": {
+    "n_collision_fibers": 0,
+    "n_collision_pairs": 0,
+    "n_fibers": 89,
+    "n_nontrivial_fibers": 7,
+    "systems_in_nontrivial_fibers": 14
+  },
+  "features": [
+    {
+      "cutpoints": [
+        0.0010921245567214466,
+        0.0012172237412993447,
+        0.0012958688051205591,
+        0.0013714941055816832,
+        0.0014445949618886733,
+        0.0015131326463535266,
+        0.0016387030331695002
+      ],
+      "name": "SUBSTITUTE:H3:DLOG:reference_k_rms"
+    },
+    {
+      "cutpoints": [
+        0.0013633564282799632,
+        0.0014682010780734667,
+        0.001562032905102595,
+        0.0016366048329399252,
+        0.0017239788614155788,
+        0.0018342557106492963,
+        0.0019671470696169396
+      ],
+      "name": "SUBSTITUTE:H1:DLOG:reference_k_rms"
+    },
+    {
+      "cutpoints": [
+        -0.004441081744284092,
+        -0.0043610232232804,
+        -0.004210631529940577,
+        -0.004160042732292507,
+        -0.004061547032376413,
+        -0.003984926279474207,
+        -0.0038164333802188505
+      ],
+      "name": "KEEP:H1:DLOG:corridor_ratio"
+    }
+  ],
+  "must_be_validated_on_fresh_data": true,
+  "schema": "co-qwen3-8b-lambda-op-exploratory-candidate-v1",
+  "selected_feature_count": 3,
+  "selection_used_behavioral_target": true,
+  "source_holdout_sha256": "02de01459b4d1c58c26a76bf9a047eaaf489c9a99b7dc297ec8a7118bcd89cdd",
+  "status": "TARGET_INFORMED_EXPLORATORY_CANDIDATE"
+}

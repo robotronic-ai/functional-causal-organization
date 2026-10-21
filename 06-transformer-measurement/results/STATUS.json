@@ -1,0 +1,79 @@
+{
+  "campaign": "Transformer measurement (Pythia-70M-deduped, layer 2, position 1)",
+  "model": {
+    "id": "EleutherAI/pythia-70m-deduped",
+    "revision": "5ff092d907c3d8ba420d9fbef792426789eb2cd2",
+    "architecture": "GPTNeoXForCausalLM",
+    "layers": 6,
+    "hidden_size": 512,
+    "attention_heads": 8,
+    "source_layer": 2,
+    "source_position": 1
+  },
+  "status": "CLOSE-CONDITIONAL",
+  "sub_parts": {
+    "4A_reentry": {
+      "status": "CLOSE-CONDITIONAL",
+      "discovery_version": "v0.4",
+      "holdout_version": "v0.5",
+      "verdict": "TOP2-HOLDOUT-PASS",
+      "source_quotient": "ordered top-2 signature over 7 causally-prior auxiliary probes",
+      "partition": "{0}|{1}|{2}|{3,7}|{4}|{5}|{6}",
+      "K_eff_bits": 2.75,
+      "B_reentry_bits": 0.01362349150610347,
+      "R": 0.004953996911310352,
+      "eta": 0.9022417474341858,
+      "prior_holdout_v0_4": {
+        "R": 0.004230229753991946,
+        "eta": 0.8642766097095288
+      },
+      "note": "R_v0.4 and R_v0.5 are two point measurements on two disjoint return context batteries, not a confidence interval."
+    },
+    "4B_latent_closed_loop": {
+      "status": "LOOP-V1",
+      "protocol_version": "v0.6",
+      "runner_version": "v0.6.1",
+      "v0_6_first_attempt": {
+        "status": "EXECUTION-ERROR / NO-VERDICT",
+        "cause": "enumerate() bound to outer loop reused across nested loop; only 2 of 4 loop contexts populated",
+        "archived_as": "IMPLEMENTATION FAILURE BEFORE MEASUREMENT",
+        "is_a_refutation": false
+      },
+      "H_C0_bits": 2.75,
+      "R_profile": {
+        "R_1": 0.00396355274282772,
+        "R_2": 1.80125874286848e-05,
+        "R_4": 5.0926939219345e-10,
+        "R_8": 6.56648047639975e-18,
+        "R_16": -5.91445820305333e-18
+      },
+      "B_profile_bits": {
+        "B_1": 0.0108997700427762,
+        "B_2": 4.95346154288833e-05,
+        "B_4": 1.40049082853199e-09,
+        "B_8": "~0",
+        "B_16": "~0"
+      },
+      "interpretation": "No durable multi-round causal memory detected under this protocol; signal is numerically zero by round 4."
+    }
+  },
+  "archived_defects": [
+    {
+      "version": "v0.2",
+      "name": "future-filler indexing bug",
+      "description": "Nested-quotient robustness test varied auxiliary filler tokens positioned causally after the source readout position, so the readout could not depend on them; part of the observed C3=C6=C9 stability was structurally forced rather than genuinely tested.",
+      "adjudication_file": "TRANSFORMER_REENTRY_ROBUSTNESS_v0_2_ADJUDICATION.md",
+      "verdict_retained": "TR2-V1 / ROB-STABLE-PARTITION (holdout replication itself is valid)",
+      "fixed_in": "v0.3"
+    },
+    {
+      "version": "v0.6",
+      "name": "loop-context enumeration bug",
+      "description": "enumerate() over the outer loop-key loop was reused as the context index across a nested loop-filler loop, so only 2 of 4 loop contexts were ever populated; a KeyError surfaced downstream when the full 4-context prior was queried.",
+      "adjudication_file": "TRANSFORMER_LATENT_CLOSED_LOOP_v0_6_EXECUTION_ERROR_ADJUDICATION.md",
+      "verdict_retained": "EXECUTION-ERROR / NO-VERDICT (not a refutation)",
+      "fixed_in": "v0.6.1"
+    }
+  ],
+  "claim_boundary": "Exact computation on one frozen model / hook / donor battery / holdout. Does not generalize to other layers, models, or tasks without a new campaign, and is not evidence for or against functional consciousness as a measure of access consciousness."
+}

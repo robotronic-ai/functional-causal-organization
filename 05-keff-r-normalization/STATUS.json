@@ -1,0 +1,13 @@
+{
+  "campaign": "K_eff / R normalization",
+  "manuscript_sections": ["§12.5", "§18"],
+  "release": "0.1",
+  "status": {
+    "K_EFF_DEFINITION": "FROZEN (causal-equivalence quotient of the source battery, H(C|U))",
+    "R_BOUND_THEOREM": "PROVED (0 <= R <= 1, from the conditional-mutual-information chain rule)",
+    "SUBSTRATE_INDEPENDENCE": "PROVED (invariant to relabeling/duplication of the source battery)",
+    "FINITE_AUDIT_K0_K7": "KEFF-NORM finite exact audit PASS"
+  },
+  "scope": "Definition and finite exact audit only. The empirical transformer measurement that applies this normalization is out of scope for this folder (see 06-transformer-measurement/).",
+  "empirical_claim": false
+}

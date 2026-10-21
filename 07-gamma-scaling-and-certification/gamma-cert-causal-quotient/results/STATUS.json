@@ -1,0 +1,24 @@
+{
+  "package": "Gamma-Cert causal quotient stress test",
+  "execution_status": "EXECUTED_EXACT_FINITE",
+  "experiment": "redundant_causal_quotient_nullspace_stress",
+  "latent_roles": 4,
+  "replicas_per_role": 3,
+  "macrostate_gamma_invariant": 0.5,
+  "raw_physical_gamma_by_scale": {
+    "0.0": 0.16666666666666666,
+    "0.5": 0.16990547069243175,
+    "1.0": 0.2924757569679297,
+    "2.0": 0.4850198184166447,
+    "4.0": 0.4846995368356944
+  },
+  "raw_quotient_sufficient_by_scale": {
+    "0.0": true,
+    "0.5": true,
+    "1.0": false,
+    "2.0": false,
+    "4.0": false
+  },
+  "verdict": "IMPLEMENTATION-INVARIANCE-CONFIRMED-UNDER-COHERENT-ALGEBRA; RAW-ALGEBRA-QUOTIENT-FAILS-AT-SCALE-GEQ-1.0",
+  "consequence": "five-step safe certification procedure documented in docs/redundant-quotient-stress-test.md"
+}

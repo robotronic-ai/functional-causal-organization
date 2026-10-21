@@ -1,0 +1,373 @@
+{
+  "selection_version": 2,
+  "selection_rule": "Architecture-only selection after explicit exclusion of positional encoding caches, normalization layers, embeddings, and LM head. No behavioral target or Gamma value is used.",
+  "model_class": "QuantumModelForCausalLM",
+  "kv_cache_class": "PagedSparseKVCache",
+  "active_module_count": 72,
+  "hard_excluded_count": 72,
+  "selected_count": 0,
+  "selected_sites": [],
+  "excluded_sites": [
+    {
+      "name": "layers.0.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.0.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.1.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.1.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.10.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.10.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.11.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.11.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.12.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.12.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.13.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.13.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.14.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.14.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.15.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.15.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.16.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.16.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.17.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.17.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.18.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.18.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.19.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.19.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.2.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.2.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.20.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.20.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.21.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.21.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.22.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.22.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.23.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.23.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.24.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.24.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.25.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.25.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.26.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.26.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.27.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.27.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.28.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.28.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.29.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.29.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.3.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.3.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.30.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.30.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.31.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.31.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.32.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.32.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.33.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.33.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.34.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.34.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.35.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.35.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.4.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.4.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.5.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.5.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.6.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.6.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.7.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.7.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.8.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.8.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    },
+    {
+      "name": "layers.9.post_attention_layernorm",
+      "class": "DeepNorm",
+      "reason": "excluded_name_term:norm"
+    },
+    {
+      "name": "layers.9.rope_cache",
+      "class": "RoPECaching",
+      "reason": "excluded_name_term:rope"
+    }
+  ],
+  "important_note": "A high ranking is not a quotient certificate. Candidate sites must still pass matched-intervention transport, causal sufficiency, irreducibility, and independent holdout validation."
+}

@@ -1,0 +1,72 @@
+{
+  "af_profile": {
+    "families": {
+      "AF-DELAY": {
+        "L": 0.0,
+        "L0": 1.0,
+        "Lstar": 0.0,
+        "score": 1.0,
+        "status": "IDENTIFIED"
+      },
+      "AF-FLEX": {
+        "L": 0.0,
+        "L0": 1.0,
+        "Lstar": 0.0,
+        "score": 1.0,
+        "status": "IDENTIFIED"
+      },
+      "AF-STATUS": {
+        "L": 0.0,
+        "L0": 1.0,
+        "Lstar": 0.0,
+        "score": 1.0,
+        "status": "IDENTIFIED"
+      },
+      "AF-UPDATE": {
+        "L": 0.0,
+        "L0": 1.0,
+        "Lstar": 0.0,
+        "score": 1.0,
+        "status": "IDENTIFIED"
+      }
+    },
+    "status": "IDENTIFIED"
+  },
+  "checks": {
+    "N0_AF_SCORER_HASH": true,
+    "N1_ORACLE_AF_PROFILE": true,
+    "N2_ZERO_RECURRENCE_WITH_ORACLE_AF": true,
+    "N3_ZERO_GAMMA_WITH_ORACLE_AF": true,
+    "N4_ZERO_DELTA_PROP_WITH_AF_FLEX_ORACLE": true,
+    "N5_ANSWER_LABEL_RECODING": true,
+    "WITNESS_HASH_INTACT": true
+  },
+  "date": "2026-09-14",
+  "interpretation": "The frozen AF consequence battery can be maximized by fixtures with zero recurrence, zero integration, or zero propagated-role coverage respectively. Therefore AF behavior does not identify the individual CF coordinates. This is a statement about the AF indicator profile, not about the latent construct A.",
+  "schema": "CF-AF-identification-limits-result-v0.1",
+  "structural_witnesses": {
+    "DELTA_SINGLE_ROLE": {
+      "Delta_cap": 1.0,
+      "Delta_prop": 0.0,
+      "I_P_Y_bits": 1.0,
+      "Pi_role": 0.0,
+      "m": 1
+    },
+    "GAMMA_PARALLEL": {
+      "Gamma": 0.0,
+      "cross_cut_channels": {
+        "A_to_B_bits": 0.0,
+        "B_to_A_bits": 0.0
+      }
+    },
+    "R_ACYCLIC_COMPILED": {
+      "R": {
+        "1": 0.0,
+        "2": 0.0,
+        "4": 0.0
+      },
+      "same_role_return_paths": []
+    }
+  },
+  "verdict": "AF-NOT-STRUCTURALLY-IDENTIFYING"
+}

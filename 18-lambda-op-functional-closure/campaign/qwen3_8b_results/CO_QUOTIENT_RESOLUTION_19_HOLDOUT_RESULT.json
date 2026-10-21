@@ -1,0 +1,101 @@
+{
+  "candidate_name": "Q18_RHO2_L1_R1__LAMBDA",
+  "candidate_refit_on_holdout": false,
+  "candidate_sha256": "ca2405d2d96556fed56ec476c9c5ccdd1c7994144b979e7dd94be508a7b417cc",
+  "closure": "NON_REFUTED_ON_FRESH_HOLDOUT",
+  "development_multiplicity_threshold_usage": "reported descriptively only; not a holdout selection threshold because the holdout evaluates one frozen candidate",
+  "effective_holdout_rule": "Formula-17-compatible joint Lambda signature truncated to ordered top-1 for each OP x source x internal-intervention cell.",
+  "family": "LAMBDA",
+  "generalization_level": "OP",
+  "grid_reopened_on_holdout": false,
+  "lambda_rank_depth": 1,
+  "metrics": {
+    "fiber_fraction": 0.21875,
+    "n_collision_fibers": 0,
+    "n_collision_pairs": 0,
+    "n_fibers": 7,
+    "n_nontrivial_fibers": 4,
+    "nontrivial_coverage": 0.90625,
+    "systems_in_nontrivial_fibers": 29
+  },
+  "n_validation_systems": 32,
+  "operation_algebra_changed": false,
+  "panel_sha256": "ae22a9aeaf78dc6c320efa495e1a6bdd4626257f1abc9fb281b88002913155b5",
+  "partition_quality": {
+    "adjusted_mutual_information": 0.8060739596361114,
+    "ami_by_target_coordinate": [
+      {
+        "ami": 0.0,
+        "target_index": 0
+      },
+      {
+        "ami": 0.0,
+        "target_index": 1
+      },
+      {
+        "ami": 0.0,
+        "target_index": 2
+      },
+      {
+        "ami": 0.0,
+        "target_index": 3
+      },
+      {
+        "ami": 0.0,
+        "target_index": 4
+      },
+      {
+        "ami": 0.0,
+        "target_index": 5
+      },
+      {
+        "ami": 0.0,
+        "target_index": 6
+      },
+      {
+        "ami": 0.0,
+        "target_index": 7
+      },
+      {
+        "ami": 0.0,
+        "target_index": 8
+      },
+      {
+        "ami": 0.37044669246314793,
+        "target_index": 9
+      },
+      {
+        "ami": 0.13122479892145214,
+        "target_index": 10
+      },
+      {
+        "ami": 0.5008604338521463,
+        "target_index": 11
+      }
+    ],
+    "ami_exceeds_development_global_grid_permutation_95_descriptive": true,
+    "ami_exceeds_permutation_95": true,
+    "ami_permutation_95": 0.11886556310381662,
+    "ami_permutation_p_ge": 0.0001999600079984003,
+    "descriptor_effective_fibers": 3.886971375402299,
+    "descriptor_fiber_fraction": 0.21875,
+    "descriptor_partition_entropy_bits": 1.958646483360874,
+    "development_global_grid_max_ami_permutation_95": 0.4365622384138,
+    "permutation_seed": 19019,
+    "permutations": 5000,
+    "sufficiency_loss_H_target_given_descriptor_over_H_target": 2.2328414641490067e-16,
+    "target_entropy_bits": 1.4346860514952977
+  },
+  "promotion_status": "USEFUL_PROSPECTIVE_CANDIDATE",
+  "schedule_sha256": "1f2ae271a39fff70533bd58a0f3d1089dc7916c40769cbd994a52e67735bf2c0",
+  "schema": "co-qwen3-8b-quotient-resolution-19-holdout-result-v1",
+  "scope_note": "Prospective finite-battery holdout of one frozen OP-level Lambda quotient. A PASS supports this candidate on the declared Qwen battery; it is not universal closure of full C_O or all Qwen systems.",
+  "selection_rule": {
+    "ami_above_single_fixed_candidate_permutation_95": true,
+    "collision_pairs": 0,
+    "fiber_fraction_max": 0.8,
+    "nontrivial_coverage_min": 0.2,
+    "sufficiency_loss_max": 0.0
+  },
+  "status": "PROSPECTIVE_HOLDOUT_PASS"
+}

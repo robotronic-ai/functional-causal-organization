@@ -1,0 +1,14 @@
+{
+  "bits": 2,
+  "closure": "PASS",
+  "closure_type": "TRIVIAL_INJECTIVE",
+  "collision_examples": [],
+  "coverage": "EXHAUSTIVE",
+  "n_fibers": 256,
+  "n_functional_collisions": 0,
+  "n_nontrivial_fibers": 0,
+  "n_systems": 256,
+  "schema": "co-lambda-op-closure-v1",
+  "systems_in_nontrivial_fibers": 0,
+  "total_deterministic_maps": 256
+}

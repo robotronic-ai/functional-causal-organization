@@ -1,0 +1,93 @@
+{
+  "operation_algebra": [
+    "ID",
+    "KEEP",
+    "REVOKE",
+    "SUBSTITUTE"
+  ],
+  "presentations": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "results": {
+    "2_bit": {
+      "bits": 2,
+      "closure": "PASS",
+      "closure_type": "TRIVIAL_INJECTIVE",
+      "collision_examples": [],
+      "coverage": "EXHAUSTIVE",
+      "n_fibers": 256,
+      "n_functional_collisions": 0,
+      "n_nontrivial_fibers": 0,
+      "n_systems": 256,
+      "schema": "co-lambda-op-closure-v1",
+      "systems_in_nontrivial_fibers": 0,
+      "total_deterministic_maps": 256
+    },
+    "3_bit": {
+      "bits": 3,
+      "closure": "PASS",
+      "closure_type": "NONTRIVIAL",
+      "coverage": "EXHAUSTIVE",
+      "elapsed_seconds": 6.037999066999873,
+      "n_fibers": 1710388,
+      "n_functional_collisions": 0,
+      "n_nontrivial_fibers": 666292,
+      "r2_reached_set_size_histogram": {
+        "1": 479424,
+        "2": 4584640,
+        "3": 8287488,
+        "4": 3425664
+      },
+      "schema": "co-lambda-op-closure-v1",
+      "systems_in_nontrivial_fibers": 15733120,
+      "total_deterministic_maps": 16777216
+    },
+    "4_bit": {
+      "bits": 4,
+      "closure": "PASS",
+      "closure_type": "NONTRIVIAL",
+      "collision_examples": [],
+      "coverage": "DECLARED_TRANSPORT_ENVELOPE",
+      "generated_fibers": 512,
+      "n_fibers": 512,
+      "n_functional_collisions": 0,
+      "n_nontrivial_fibers": 512,
+      "n_systems": 1024,
+      "schema": "co-lambda-op-closure-v1",
+      "systems_in_nontrivial_fibers": 1024
+    },
+    "6_bit": {
+      "bits": 6,
+      "closure": "PASS",
+      "closure_type": "NONTRIVIAL",
+      "collision_examples": [],
+      "coverage": "DECLARED_TRANSPORT_ENVELOPE",
+      "generated_fibers": 512,
+      "n_fibers": 512,
+      "n_functional_collisions": 0,
+      "n_nontrivial_fibers": 512,
+      "n_systems": 1024,
+      "schema": "co-lambda-op-closure-v1",
+      "systems_in_nontrivial_fibers": 1024
+    },
+    "8_bit": {
+      "bits": 8,
+      "closure": "PASS",
+      "closure_type": "NONTRIVIAL",
+      "collision_examples": [],
+      "coverage": "DECLARED_TRANSPORT_ENVELOPE",
+      "generated_fibers": 512,
+      "n_fibers": 512,
+      "n_functional_collisions": 0,
+      "n_nontrivial_fibers": 512,
+      "n_systems": 1024,
+      "schema": "co-lambda-op-closure-v1",
+      "systems_in_nontrivial_fibers": 1024
+    }
+  },
+  "schema": "co-lambda-op-closure-suite-v1",
+  "sha256": "265115640cfd0484d99d6ebce9dca4093df876aed26ad43d49d425e52a37ef86"
+}

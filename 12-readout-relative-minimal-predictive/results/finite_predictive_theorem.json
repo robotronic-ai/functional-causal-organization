@@ -1,0 +1,33 @@
+{
+  "behavioral_quotient_class_count_histogram": {
+    "1": 256,
+    "2": 768,
+    "3": 1440,
+    "4": 1376
+  },
+  "checks": {
+    "behavioral_class_separation_failures": 0,
+    "behavioral_quotient_F_invariance_failures": 0,
+    "hankel_rank_equals_predictive_dimension_failures": 0,
+    "koopman_closure_failures": 0,
+    "predictive_linear_dynamics_well_defined_failures": 0
+  },
+  "predictive_dimension_histogram": {
+    "0": 64,
+    "1": 336,
+    "2": 1046,
+    "3": 1650,
+    "4": 744
+  },
+  "status": "PASS",
+  "universe": {
+    "deterministic_maps": 256,
+    "nonempty_source_subsets_per_map": 15,
+    "readout_basis": [
+      "x1",
+      "x2"
+    ],
+    "state_space": "F2^2",
+    "total_map_source_cases": 3840
+  }
+}

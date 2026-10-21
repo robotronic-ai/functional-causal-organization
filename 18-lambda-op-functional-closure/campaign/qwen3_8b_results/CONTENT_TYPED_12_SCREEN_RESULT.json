@@ -1,0 +1,1361 @@
+{
+  "candidate_name": "CONTENT_TYPED_SUBSTITUTE_ONLY_2F",
+  "feature_dimension": 24,
+  "interpretation": "The measured features are signed causal content effects under internal interventions. Quantile edges are target-blind; greedy feature selection is exploratory and may use the behavioral closure target.",
+  "records": [
+    {
+      "closure": {
+        "collision_examples": [],
+        "n_collision_fibers": 0,
+        "n_collision_pairs": 0,
+        "n_fibers": 22,
+        "n_nontrivial_fibers": 9,
+        "n_systems": 32,
+        "nontrivial_coverage": 0.59375,
+        "systems_in_nontrivial_fibers": 19
+      },
+      "family": "SUBSTITUTE_ONLY",
+      "fidelity": {
+        "fiber_sizes": [
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rich_variance_explained_by_fibers": 0.7545294032284702,
+        "within_fiber_distortion_fraction": 0.2454705967715298
+      },
+      "selected_feature_count": 2,
+      "selected_features": [
+        {
+          "bins_requested": 6,
+          "edges": [
+            -0.8896069731219844,
+            -0.5074364431147335,
+            0.2757499120956232,
+            0.5798730819515043,
+            0.8328603229352467
+          ],
+          "feature_index": 23,
+          "feature_name": "SUBSTITUTE:H3:HEAD_ROTATE:NONE_MINUS_ORIGINAL"
+        },
+        {
+          "bins_requested": 6,
+          "edges": [
+            -0.38518831316745394,
+            -0.12998890996807877,
+            0.22729020389026952,
+            0.5335295356134877,
+            0.7631901568760524
+          ],
+          "feature_index": 12,
+          "feature_name": "SUBSTITUTE:H1:ZERO_SUFFIX:DONOR_MINUS_ORIGINAL"
+        }
+      ],
+      "trace": [
+        {
+          "bins_requested": 6,
+          "closure": {
+            "collision_examples": [
+              {
+                "fiber": "4",
+                "members": [
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR",
+                      "DONOR"
+                    ],
+                    "units": [
+                      10,
+                      23,
+                      29
+                    ]
+                  },
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR",
+                      "ORIGINAL"
+                    ],
+                    "units": [
+                      19
+                    ]
+                  },
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "ORIGINAL",
+                      "ORIGINAL"
+                    ],
+                    "units": [
+                      5
+                    ]
+                  }
+                ]
+              },
+              {
+                "fiber": "3",
+                "members": [
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR",
+                      "DONOR"
+                    ],
+                    "units": [
+                      9,
+                      13,
+                      18,
+                      28
+                    ]
+                  },
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR"
+                    ],
+                    "units": [
+                      8
+                    ]
+                  }
+                ]
+              }
+            ],
+            "n_collision_fibers": 2,
+            "n_collision_pairs": 11,
+            "n_fibers": 6,
+            "n_nontrivial_fibers": 6,
+            "n_systems": 32,
+            "nontrivial_coverage": 1.0,
+            "systems_in_nontrivial_fibers": 32
+          },
+          "edges": [
+            -0.8896069731219844,
+            -0.5074364431147335,
+            0.2757499120956232,
+            0.5798730819515043,
+            0.8328603229352467
+          ],
+          "feature_index": 23,
+          "fidelity": {
+            "fiber_sizes": [
+              6,
+              6,
+              5,
+              5,
+              5,
+              5
+            ],
+            "rich_variance_explained_by_fibers": 0.29783109316633816,
+            "within_fiber_distortion_fraction": 0.7021689068336618
+          },
+          "step": 1
+        },
+        {
+          "bins_requested": 6,
+          "closure": {
+            "collision_examples": [],
+            "n_collision_fibers": 0,
+            "n_collision_pairs": 0,
+            "n_fibers": 22,
+            "n_nontrivial_fibers": 9,
+            "n_systems": 32,
+            "nontrivial_coverage": 0.59375,
+            "systems_in_nontrivial_fibers": 19
+          },
+          "edges": [
+            -0.38518831316745394,
+            -0.12998890996807877,
+            0.22729020389026952,
+            0.5335295356134877,
+            0.7631901568760524
+          ],
+          "feature_index": 12,
+          "fidelity": {
+            "fiber_sizes": [
+              3,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "rich_variance_explained_by_fibers": 0.7545294032284702,
+            "within_fiber_distortion_fraction": 0.2454705967715298
+          },
+          "step": 2
+        }
+      ],
+      "useful": true
+    },
+    {
+      "closure": {
+        "collision_examples": [],
+        "n_collision_fibers": 0,
+        "n_collision_pairs": 0,
+        "n_fibers": 25,
+        "n_nontrivial_fibers": 7,
+        "n_systems": 32,
+        "nontrivial_coverage": 0.4375,
+        "systems_in_nontrivial_fibers": 14
+      },
+      "family": "REVOKE_SUBSTITUTE",
+      "fidelity": {
+        "fiber_sizes": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rich_variance_explained_by_fibers": 0.7812027891725388,
+        "within_fiber_distortion_fraction": 0.21879721082746117
+      },
+      "selected_feature_count": 5,
+      "selected_features": [
+        {
+          "bins_requested": 6,
+          "edges": [
+            -0.8896069731219844,
+            -0.5074364431147335,
+            0.2757499120956232,
+            0.5798730819515043,
+            0.8328603229352467
+          ],
+          "feature_index": 23,
+          "feature_name": "SUBSTITUTE:H3:HEAD_ROTATE:NONE_MINUS_ORIGINAL"
+        },
+        {
+          "bins_requested": 6,
+          "edges": [
+            -0.7612492446124397,
+            -0.3596205965426169,
+            -0.16757449619832177,
+            0.4522081675092391,
+            0.8181425321556975
+          ],
+          "feature_index": 6,
+          "feature_name": "REVOKE:H2:HEAD_ROTATE:DONOR_MINUS_ORIGINAL"
+        },
+        {
+          "bins_requested": 2,
+          "edges": [
+            0.33752461932128275
+          ],
+          "feature_index": 21,
+          "feature_name": "SUBSTITUTE:H3:ZERO_SUFFIX:NONE_MINUS_ORIGINAL"
+        },
+        {
+          "bins_requested": 2,
+          "edges": [
+            0.3308395446813682
+          ],
+          "feature_index": 15,
+          "feature_name": "SUBSTITUTE:H1:HEAD_ROTATE:NONE_MINUS_ORIGINAL"
+        },
+        {
+          "bins_requested": 2,
+          "edges": [
+            -0.24987446924138473
+          ],
+          "feature_index": 22,
+          "feature_name": "SUBSTITUTE:H3:HEAD_ROTATE:DONOR_MINUS_ORIGINAL"
+        }
+      ],
+      "trace": [
+        {
+          "bins_requested": 6,
+          "closure": {
+            "collision_examples": [
+              {
+                "fiber": "4",
+                "members": [
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR",
+                      "DONOR"
+                    ],
+                    "units": [
+                      10,
+                      23,
+                      29
+                    ]
+                  },
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR",
+                      "ORIGINAL"
+                    ],
+                    "units": [
+                      19
+                    ]
+                  },
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "ORIGINAL",
+                      "ORIGINAL"
+                    ],
+                    "units": [
+                      5
+                    ]
+                  }
+                ]
+              },
+              {
+                "fiber": "3",
+                "members": [
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR",
+                      "DONOR"
+                    ],
+                    "units": [
+                      9,
+                      13,
+                      18,
+                      28
+                    ]
+                  },
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR"
+                    ],
+                    "units": [
+                      8
+                    ]
+                  }
+                ]
+              }
+            ],
+            "n_collision_fibers": 2,
+            "n_collision_pairs": 11,
+            "n_fibers": 6,
+            "n_nontrivial_fibers": 6,
+            "n_systems": 32,
+            "nontrivial_coverage": 1.0,
+            "systems_in_nontrivial_fibers": 32
+          },
+          "edges": [
+            -0.8896069731219844,
+            -0.5074364431147335,
+            0.2757499120956232,
+            0.5798730819515043,
+            0.8328603229352467
+          ],
+          "feature_index": 23,
+          "fidelity": {
+            "fiber_sizes": [
+              6,
+              6,
+              5,
+              5,
+              5,
+              5
+            ],
+            "rich_variance_explained_by_fibers": 0.29783109316633816,
+            "within_fiber_distortion_fraction": 0.7021689068336618
+          },
+          "step": 1
+        },
+        {
+          "bins_requested": 6,
+          "closure": {
+            "collision_examples": [],
+            "n_collision_fibers": 0,
+            "n_collision_pairs": 0,
+            "n_fibers": 22,
+            "n_nontrivial_fibers": 10,
+            "n_systems": 32,
+            "nontrivial_coverage": 0.625,
+            "systems_in_nontrivial_fibers": 20
+          },
+          "edges": [
+            -0.7612492446124397,
+            -0.3596205965426169,
+            -0.16757449619832177,
+            0.4522081675092391,
+            0.8181425321556975
+          ],
+          "feature_index": 6,
+          "fidelity": {
+            "fiber_sizes": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "rich_variance_explained_by_fibers": 0.689538449966403,
+            "within_fiber_distortion_fraction": 0.31046155003359693
+          },
+          "step": 2
+        },
+        {
+          "bins_requested": 2,
+          "closure": {
+            "collision_examples": [],
+            "n_collision_fibers": 0,
+            "n_collision_pairs": 0,
+            "n_fibers": 22,
+            "n_nontrivial_fibers": 10,
+            "n_systems": 32,
+            "nontrivial_coverage": 0.625,
+            "systems_in_nontrivial_fibers": 20
+          },
+          "edges": [
+            0.33752461932128275
+          ],
+          "feature_index": 21,
+          "fidelity": {
+            "fiber_sizes": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "rich_variance_explained_by_fibers": 0.689538449966403,
+            "within_fiber_distortion_fraction": 0.31046155003359693
+          },
+          "step": 3
+        },
+        {
+          "bins_requested": 2,
+          "closure": {
+            "collision_examples": [],
+            "n_collision_fibers": 0,
+            "n_collision_pairs": 0,
+            "n_fibers": 23,
+            "n_nontrivial_fibers": 9,
+            "n_systems": 32,
+            "nontrivial_coverage": 0.5625,
+            "systems_in_nontrivial_fibers": 18
+          },
+          "edges": [
+            0.3308395446813682
+          ],
+          "feature_index": 15,
+          "fidelity": {
+            "fiber_sizes": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "rich_variance_explained_by_fibers": 0.7066884293063525,
+            "within_fiber_distortion_fraction": 0.2933115706936475
+          },
+          "step": 4
+        },
+        {
+          "bins_requested": 2,
+          "closure": {
+            "collision_examples": [],
+            "n_collision_fibers": 0,
+            "n_collision_pairs": 0,
+            "n_fibers": 25,
+            "n_nontrivial_fibers": 7,
+            "n_systems": 32,
+            "nontrivial_coverage": 0.4375,
+            "systems_in_nontrivial_fibers": 14
+          },
+          "edges": [
+            -0.24987446924138473
+          ],
+          "feature_index": 22,
+          "fidelity": {
+            "fiber_sizes": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "rich_variance_explained_by_fibers": 0.7812027891725388,
+            "within_fiber_distortion_fraction": 0.21879721082746117
+          },
+          "step": 5
+        }
+      ],
+      "useful": true
+    },
+    {
+      "closure": {
+        "collision_examples": [],
+        "n_collision_fibers": 0,
+        "n_collision_pairs": 0,
+        "n_fibers": 24,
+        "n_nontrivial_fibers": 6,
+        "n_systems": 32,
+        "nontrivial_coverage": 0.4375,
+        "systems_in_nontrivial_fibers": 14
+      },
+      "family": "ZERO_SUFFIX_ONLY",
+      "fidelity": {
+        "fiber_sizes": [
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rich_variance_explained_by_fibers": 0.8033676409787446,
+        "within_fiber_distortion_fraction": 0.19663235902125542
+      },
+      "selected_feature_count": 3,
+      "selected_features": [
+        {
+          "bins_requested": 6,
+          "edges": [
+            -0.9884024071583604,
+            -0.40615067589093123,
+            0.33752461932128275,
+            0.5523627045500572,
+            0.8277995526829134
+          ],
+          "feature_index": 21,
+          "feature_name": "SUBSTITUTE:H3:ZERO_SUFFIX:NONE_MINUS_ORIGINAL"
+        },
+        {
+          "bins_requested": 6,
+          "edges": [
+            -0.38518831316745394,
+            -0.12998890996807877,
+            0.22729020389026952,
+            0.5335295356134877,
+            0.7631901568760524
+          ],
+          "feature_index": 12,
+          "feature_name": "SUBSTITUTE:H1:ZERO_SUFFIX:DONOR_MINUS_ORIGINAL"
+        },
+        {
+          "bins_requested": 2,
+          "edges": [
+            -0.18279163322422842
+          ],
+          "feature_index": 20,
+          "feature_name": "SUBSTITUTE:H3:ZERO_SUFFIX:DONOR_MINUS_ORIGINAL"
+        }
+      ],
+      "trace": [
+        {
+          "bins_requested": 6,
+          "closure": {
+            "collision_examples": [
+              {
+                "fiber": "4",
+                "members": [
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR",
+                      "DONOR"
+                    ],
+                    "units": [
+                      9,
+                      23,
+                      29
+                    ]
+                  },
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR",
+                      "ORIGINAL"
+                    ],
+                    "units": [
+                      19
+                    ]
+                  },
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "ORIGINAL",
+                      "ORIGINAL"
+                    ],
+                    "units": [
+                      5
+                    ]
+                  }
+                ]
+              },
+              {
+                "fiber": "3",
+                "members": [
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR",
+                      "DONOR"
+                    ],
+                    "units": [
+                      10,
+                      13,
+                      18,
+                      28
+                    ]
+                  },
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR"
+                    ],
+                    "units": [
+                      8
+                    ]
+                  }
+                ]
+              }
+            ],
+            "n_collision_fibers": 2,
+            "n_collision_pairs": 11,
+            "n_fibers": 6,
+            "n_nontrivial_fibers": 6,
+            "n_systems": 32,
+            "nontrivial_coverage": 1.0,
+            "systems_in_nontrivial_fibers": 32
+          },
+          "edges": [
+            -0.9884024071583604,
+            -0.40615067589093123,
+            0.33752461932128275,
+            0.5523627045500572,
+            0.8277995526829134
+          ],
+          "feature_index": 21,
+          "fidelity": {
+            "fiber_sizes": [
+              6,
+              6,
+              5,
+              5,
+              5,
+              5
+            ],
+            "rich_variance_explained_by_fibers": 0.2865583145584849,
+            "within_fiber_distortion_fraction": 0.7134416854415151
+          },
+          "step": 1
+        },
+        {
+          "bins_requested": 6,
+          "closure": {
+            "collision_examples": [],
+            "n_collision_fibers": 0,
+            "n_collision_pairs": 0,
+            "n_fibers": 22,
+            "n_nontrivial_fibers": 7,
+            "n_systems": 32,
+            "nontrivial_coverage": 0.53125,
+            "systems_in_nontrivial_fibers": 17
+          },
+          "edges": [
+            -0.38518831316745394,
+            -0.12998890996807877,
+            0.22729020389026952,
+            0.5335295356134877,
+            0.7631901568760524
+          ],
+          "feature_index": 12,
+          "fidelity": {
+            "fiber_sizes": [
+              3,
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "rich_variance_explained_by_fibers": 0.7323190351604745,
+            "within_fiber_distortion_fraction": 0.2676809648395256
+          },
+          "step": 2
+        },
+        {
+          "bins_requested": 2,
+          "closure": {
+            "collision_examples": [],
+            "n_collision_fibers": 0,
+            "n_collision_pairs": 0,
+            "n_fibers": 24,
+            "n_nontrivial_fibers": 6,
+            "n_systems": 32,
+            "nontrivial_coverage": 0.4375,
+            "systems_in_nontrivial_fibers": 14
+          },
+          "edges": [
+            -0.18279163322422842
+          ],
+          "feature_index": 20,
+          "fidelity": {
+            "fiber_sizes": [
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "rich_variance_explained_by_fibers": 0.8033676409787446,
+            "within_fiber_distortion_fraction": 0.19663235902125542
+          },
+          "step": 3
+        }
+      ],
+      "useful": true
+    },
+    {
+      "closure": {
+        "collision_examples": [],
+        "n_collision_fibers": 0,
+        "n_collision_pairs": 0,
+        "n_fibers": 24,
+        "n_nontrivial_fibers": 6,
+        "n_systems": 32,
+        "nontrivial_coverage": 0.4375,
+        "systems_in_nontrivial_fibers": 14
+      },
+      "family": "SUBSTITUTE_ZERO_SUFFIX",
+      "fidelity": {
+        "fiber_sizes": [
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "rich_variance_explained_by_fibers": 0.8033676409787446,
+        "within_fiber_distortion_fraction": 0.19663235902125542
+      },
+      "selected_feature_count": 3,
+      "selected_features": [
+        {
+          "bins_requested": 6,
+          "edges": [
+            -0.9884024071583604,
+            -0.40615067589093123,
+            0.33752461932128275,
+            0.5523627045500572,
+            0.8277995526829134
+          ],
+          "feature_index": 21,
+          "feature_name": "SUBSTITUTE:H3:ZERO_SUFFIX:NONE_MINUS_ORIGINAL"
+        },
+        {
+          "bins_requested": 6,
+          "edges": [
+            -0.38518831316745394,
+            -0.12998890996807877,
+            0.22729020389026952,
+            0.5335295356134877,
+            0.7631901568760524
+          ],
+          "feature_index": 12,
+          "feature_name": "SUBSTITUTE:H1:ZERO_SUFFIX:DONOR_MINUS_ORIGINAL"
+        },
+        {
+          "bins_requested": 2,
+          "edges": [
+            -0.18279163322422842
+          ],
+          "feature_index": 20,
+          "feature_name": "SUBSTITUTE:H3:ZERO_SUFFIX:DONOR_MINUS_ORIGINAL"
+        }
+      ],
+      "trace": [
+        {
+          "bins_requested": 6,
+          "closure": {
+            "collision_examples": [
+              {
+                "fiber": "4",
+                "members": [
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR",
+                      "DONOR"
+                    ],
+                    "units": [
+                      9,
+                      23,
+                      29
+                    ]
+                  },
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR",
+                      "ORIGINAL"
+                    ],
+                    "units": [
+                      19
+                    ]
+                  },
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "ORIGINAL",
+                      "ORIGINAL"
+                    ],
+                    "units": [
+                      5
+                    ]
+                  }
+                ]
+              },
+              {
+                "fiber": "3",
+                "members": [
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR",
+                      "DONOR"
+                    ],
+                    "units": [
+                      10,
+                      13,
+                      18,
+                      28
+                    ]
+                  },
+                  {
+                    "target": [
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "ORIGINAL",
+                      "DONOR",
+                      "DONOR"
+                    ],
+                    "units": [
+                      8
+                    ]
+                  }
+                ]
+              }
+            ],
+            "n_collision_fibers": 2,
+            "n_collision_pairs": 11,
+            "n_fibers": 6,
+            "n_nontrivial_fibers": 6,
+            "n_systems": 32,
+            "nontrivial_coverage": 1.0,
+            "systems_in_nontrivial_fibers": 32
+          },
+          "edges": [
+            -0.9884024071583604,
+            -0.40615067589093123,
+            0.33752461932128275,
+            0.5523627045500572,
+            0.8277995526829134
+          ],
+          "feature_index": 21,
+          "fidelity": {
+            "fiber_sizes": [
+              6,
+              6,
+              5,
+              5,
+              5,
+              5
+            ],
+            "rich_variance_explained_by_fibers": 0.2865583145584849,
+            "within_fiber_distortion_fraction": 0.7134416854415151
+          },
+          "step": 1
+        },
+        {
+          "bins_requested": 6,
+          "closure": {
+            "collision_examples": [],
+            "n_collision_fibers": 0,
+            "n_collision_pairs": 0,
+            "n_fibers": 22,
+            "n_nontrivial_fibers": 7,
+            "n_systems": 32,
+            "nontrivial_coverage": 0.53125,
+            "systems_in_nontrivial_fibers": 17
+          },
+          "edges": [
+            -0.38518831316745394,
+            -0.12998890996807877,
+            0.22729020389026952,
+            0.5335295356134877,
+            0.7631901568760524
+          ],
+          "feature_index": 12,
+          "fidelity": {
+            "fiber_sizes": [
+              3,
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "rich_variance_explained_by_fibers": 0.7323190351604745,
+            "within_fiber_distortion_fraction": 0.2676809648395256
+          },
+          "step": 2
+        },
+        {
+          "bins_requested": 2,
+          "closure": {
+            "collision_examples": [],
+            "n_collision_fibers": 0,
+            "n_collision_pairs": 0,
+            "n_fibers": 24,
+            "n_nontrivial_fibers": 6,
+            "n_systems": 32,
+            "nontrivial_coverage": 0.4375,
+            "systems_in_nontrivial_fibers": 14
+          },
+          "edges": [
+            -0.18279163322422842
+          ],
+          "feature_index": 20,
+          "fidelity": {
+            "fiber_sizes": [
+              3,
+              3,
+              2,
+              2,
+              2,
+              2,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            "rich_variance_explained_by_fibers": 0.8033676409787446,
+            "within_fiber_distortion_fraction": 0.19663235902125542
+          },
+          "step": 3
+        }
+      ],
+      "useful": true
+    }
+  ],
+  "schema": "co-qwen3-8b-content-typed-screen-v1",
+  "selection_is_exploratory_and_target_informed": true,
+  "source_panel_sha256": "9b2b9ec96836d39383852ac666ddc2c4aa362473ebed7e9b52d24270e6a8d90a",
+  "source_systems": 32,
+  "status": "USEFUL_EXPLORATORY_CANDIDATE"
+}

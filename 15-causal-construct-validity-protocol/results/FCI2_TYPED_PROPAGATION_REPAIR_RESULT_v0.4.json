@@ -1,0 +1,20 @@
+{
+  "aligned_signature": "(('TASK-A', (('0,0', 0.0, 1.0), ('0,1', 0.0, 1.0), ('1,0', 1.0, 0.0), ('1,1', 1.0, 0.0))), ('TASK-B', (('0,0', 0.0, 1.0), ('0,1', 1.0, 0.0), ('1,0', 0.0, 1.0), ('1,1', 1.0, 0.0))))",
+  "candidate_sha256": "2489b9c1f7c46c543ba82fa878058c59c59b4b5cda011c17d3bce816be1f81d6",
+  "checks": {
+    "PRE_REPAIR_FREEZE_INTACT": true,
+    "R0_BINDING_SIGNATURE_DIFFERS": true,
+    "R1_REPAIRED_CF_DIFFERS": true,
+    "R2_SCALAR_DELTA_UNCHANGED_EQUAL": true,
+    "R3_WITHIN_ROLE_RECODING_INVARIANT": true,
+    "R4_ROLE_ID_RENAMING_INVARIANT": true,
+    "R5_CROSS_TYPE_SWAP_NOT_EQUIVALENT": true,
+    "R6_DUPLICATION_WITHIN_ROLE_INVARIANT": true,
+    "R7_ONE_ROLE_SCALAR_GATE_ZERO": true
+  },
+  "crossbound_signature": "(('TASK-A', (('0,0', 0.0, 1.0), ('0,1', 1.0, 0.0), ('1,0', 0.0, 1.0), ('1,1', 1.0, 0.0))), ('TASK-B', (('0,0', 0.0, 1.0), ('0,1', 0.0, 1.0), ('1,0', 1.0, 0.0), ('1,1', 1.0, 0.0))))",
+  "date": "2026-09-14",
+  "interpretation": "The typed intervention-response signature repairs the frozen v0.3 content-to-role binding witness without changing the scalar Delta_prop gate. This is a witness-specific repair, not universal profile sufficiency.",
+  "schema": "FCI2-typed-propagation-repair-result-v0.4",
+  "verdict": "FCI2-TYPED-PROPAGATION-REPAIR-PASS"
+}

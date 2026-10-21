@@ -1,0 +1,22 @@
+{
+  "candidate_sha256": "5da0d1d9453d6abf5c9452e47e0b470288481b1961dc04b38bb982f04fbd7c88",
+  "checks": {
+    "I0B_SOURCE_RECODING_INVARIANT": true,
+    "I0_OUTPUT_RECODING_INVARIANT": true,
+    "I1_ROLE_IDENTIFIER_RENAMING_INVARIANT": true,
+    "I2_CROSS_TYPE_SWAP_NOT_FREE": false,
+    "I3_DUPLICATION_HANDLED_UPSTREAM_BY_QUOTIENT": true,
+    "I4_ONE_ROLE_SCALAR_GATE_ZERO": true,
+    "PRE_FREEZE_INTACT": true,
+    "S0_V05_JOINT_CHANNEL_DIFFERS": true,
+    "S1_V05_CFPLUSPLUS_DIFFERS": true,
+    "S2_V05_DELTA_SCALAR_UNCHANGED": true,
+    "T0_V03_JOINT_CHANNEL_DIFFERS": true,
+    "T1_V03_CFPLUSPLUS_DIFFERS": true,
+    "T2_V03_DELTA_SCALAR_UNCHANGED": true
+  },
+  "date": "2026-09-14",
+  "interpretation": "The typed joint intervention-response channel repairs both the v0.3 content-to-role binding witness and the v0.5 cross-role synergy witness while leaving Delta_prop as the scalar gate. Within the theorem's declared static-decision scope, equal joint channels imply equal achievable access-task risk.",
+  "schema": "CFPLUSPLUS-joint-typed-propagation-result-v0.6",
+  "verdict": "CFPLUSPLUS-JOINT-TYPED-PROPAGATION-REVIEW"
+}

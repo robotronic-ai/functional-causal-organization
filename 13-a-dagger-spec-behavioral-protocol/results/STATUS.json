@@ -1,0 +1,41 @@
+{
+  "campaign": "Qwen3-8B A-dagger v0.28",
+  "status": "COMPLETE",
+  "protocol": {
+    "version": "v0.28",
+    "status": "SEALED",
+    "spec_sha256": "96e7d6dd836b37e638e8a900e3e6c8bf8fea9d8f0edaef43fd03a89c5da0ef98",
+    "validation_status": "PASS"
+  },
+  "final_profile": {
+    "j_core_star": 2,
+    "Cert_T": "FAIL",
+    "Cert_E": "FAIL",
+    "Cert_B": "PASS",
+    "Cert_A": "FAIL"
+  },
+  "annotations": {
+    "j_core_star": [
+      "LOW_REFERENCE_POWER:DELAYED-USE",
+      "LOW_REFERENCE_POWER:SUBST"
+    ],
+    "Cert_T": [],
+    "Cert_E": [
+      "HARD-ERASURE:CONVENTION_UNVERIFIED",
+      "HARD-ERASURE:PREREQUISITE_WEAK",
+      "SELECTIVE-ERASURE:CONVENTION_UNVERIFIED"
+    ],
+    "Cert_B": [],
+    "Cert_A": [
+      "CONVENTION_WEAK"
+    ]
+  },
+  "provenance": {
+    "j_core_star": "MIGRATED_V027_UNCHANGED_RULES",
+    "Cert_T": "MIGRATED_V027_UNCHANGED_RULES",
+    "Cert_E": "FRESH_V028",
+    "Cert_B": "MIGRATED_V027_UNCHANGED_RULES",
+    "Cert_A": "FRESH_V028"
+  },
+  "reviewer_note": "This folder is a clean final edition. Superseded drafts, READY packages, aborted runs and trial-and-error artifacts are omitted."
+}

@@ -1,0 +1,13 @@
+{
+  "candidate_sha256": "5da0d1d9453d6abf5c9452e47e0b470288481b1961dc04b38bb982f04fbd7c88",
+  "checks": {
+    "H0_CANDIDATE_HASH_UNCHANGED": true,
+    "H1_FORBIDDEN_CROSS_TYPE_SWAP_DIFFERS": true,
+    "H2_WITHIN_ROLE_OUTPUT_RECODING_INVARIANT": true,
+    "H3_SOURCE_RECODING_INVARIANT": true
+  },
+  "date": "2026-09-14",
+  "interpretation": "The fixed v0.6 candidate does not quotient away an asymmetric cross-type role swap. The original I2 failure was due to a symmetric non-discriminating fixture, not to a free cross-type permutation in the candidate.",
+  "schema": "CFPLUSPLUS-cross-type-asymmetry-holdout-result-v0.6.1",
+  "verdict": "CFPLUSPLUS-CROSS-TYPE-HOLDOUT-PASS"
+}

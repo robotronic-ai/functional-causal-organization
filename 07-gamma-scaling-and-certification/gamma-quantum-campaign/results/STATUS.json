@@ -1,0 +1,32 @@
+{
+  "campaign": "Gamma-Quantum campaign (v1-v15)",
+  "target_model": "Quantum (QuantumModelForCausalLM, 36 layers, custom paged/quantized KV cache)",
+  "execution_status": "EXECUTED_REAL_MODEL",
+  "status": {
+    "V1_V3_LAYERWISE_SELF_SEPARABILITY_PROBE": "REJECTED (v1-v3, self-separability is not causal essentiality)",
+    "V4_TOKEN_MEDIATED_REENTRY": "COMPLETED (layer 35 causal only through emitted-token path)",
+    "V5_ENDOGENOUS_REENTRY_GATE": "REJECTED (degenerate binary-pole readout)",
+    "V6_PCA_RESPONSE_QUOTIENT": "REJECTED (unstable readout margin)",
+    "V7_LAYER_REGIME_DIAGNOSTIC": "COMPLETED (entry/core/terminal regimes established)",
+    "V8_EXACT_BLOCK_BATTERY": "DIAGNOSTIC_ONLY (inconsistent source/future alphabets)",
+    "V9_CLOSED_SUPPORT_BATTERY": "COMPLETED_WITH_NORMALIZATION_WARNING",
+    "V10_MULTIHORIZON_BATTERY": "COMPLETED_WITH_NORMALIZATION_WARNING (final battery, kept)",
+    "V11_CLOSURE_SENSITIVITY": "DECISIVE_DIAGNOSTIC (normalization artifact identified)",
+    "V12_DIRECTIONAL_EFFICIENCY": "SUPPORTED_CANDIDATE (measured on real target model)",
+    "V13_AUTONOMOUS_REGRESSION": "PASSED (self-contained, no target model)",
+    "V14_REPLICATION_INVARIANCE": "PASSED (self-contained, no target model)",
+    "V15_THEORY_STATUS": "CURRENT (manuscript definition not yet changed; semantic choice open)"
+  },
+  "headline_result": {
+    "candidate_name": "source-normalized interventional information efficiency",
+    "mean_context_gamma_dir_by_horizon": {
+      "1": 0.5,
+      "2": 0.543926220694674,
+      "4": 0.578125,
+      "8": 0.606426220694674
+    },
+    "closure_invariance": "exact at horizons 1, 2, 4 across closure depths 1, 2, 4, 8"
+  },
+  "manuscript_action": "do_not_replace_definition_until_unequal_capacity_axiom_is_fixed",
+  "interpretation_boundary": "Gamma_dir numbers here are real point estimates measured on a real target model under a candidate (not statistically certified) normalization; they are a different question from the certified V1/V3/NA interval produced by gamma-cert-target-transformer/, which has not been run on any real model."
+}

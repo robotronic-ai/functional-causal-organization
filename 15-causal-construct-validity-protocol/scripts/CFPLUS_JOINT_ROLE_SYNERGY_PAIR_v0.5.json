@@ -1,0 +1,43 @@
+{
+  "date": "2026-09-14",
+  "roles": [
+    {
+      "certified_before_outcome": true,
+      "role_type": "ACCESS-L"
+    },
+    {
+      "certified_before_outcome": true,
+      "role_type": "ACCESS-R"
+    }
+  ],
+  "schema": "CFPLUS-joint-role-synergy-pair-v0.5",
+  "shared_recurrent_core": {
+    "Z1_next": "Z1 XOR Z2",
+    "Z2_next": "Z1"
+  },
+  "source": {
+    "access_neutral": "S",
+    "access_target": "X",
+    "distribution": "iid Bernoulli(1/2)",
+    "variables": [
+      "X",
+      "S"
+    ]
+  },
+  "systems": [
+    {
+      "equations": {
+        "Y_L": "U",
+        "Y_R": "U XOR X"
+      },
+      "id": "CONTENT-SYNERGY"
+    },
+    {
+      "equations": {
+        "Y_L": "U",
+        "Y_R": "U XOR S"
+      },
+      "id": "NUISANCE-SYNERGY"
+    }
+  ]
+}

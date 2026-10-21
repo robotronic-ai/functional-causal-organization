@@ -1,0 +1,16 @@
+{
+  "campaign": "Gamma / Delta characterization",
+  "manuscript_sections": ["§7.1", "§7.2", "§16.6", "§18"],
+  "release": "0.2",
+  "status": {
+    "GAMMA_MINIMAL_AXIOMS_G0_G6": "AX-NONUNIQUE + SEMANTIC-BRANCH(G-WEAK)",
+    "GAMMA_WITH_MARGINAL_INDEPENDENCE": "AX-CHARACTERIZED (F(x,y)=(x+y)/2), conditional on the axiom being adopted",
+    "DELTA_DECOMPOSITION": "EXACT-DECOMPOSITION(D-CAP = kappa_q * D-DEC)",
+    "GAMMA_DELTA_INDEPENDENCE": "INDEPENDENCE-WITNESS",
+    "GD_SEM_PROSPECTIVE": "GD-V4 FINITE NON-REFUTATION (32/32)",
+    "GD_SEM_CANDIDATE_FIXED_HOLDOUT": "GD-CF-HOLDOUT-PASS (32/32)",
+    "WORK_STREAM_CLOSURE": "CLOSE-CONDITIONAL"
+  },
+  "supersedes": "an earlier POINT3 closure note in this same work stream, left at PENDING INDEPENDENT REPRODUCTION",
+  "interpretation_boundary": "Gamma's characterization is conditional on adopting the marginal-independence axiom as a manuscript-level hypothesis, not a consequence of causal invariance alone."
+}

@@ -1,0 +1,36 @@
+{
+  "conditional_hypothesis": {
+    "allowed_only_if": "AF-COORD is independently frozen before empirical testing",
+    "direction": "positive",
+    "id": "H-G-COORD",
+    "manipulation": "Z_G",
+    "primary_outcome": "AF-COORD",
+    "target_component": "Gamma"
+  },
+  "date": "2026-09-14",
+  "forbidden_rescue": "unspecified post-hoc downstream nonlinear readout",
+  "primary_hypotheses": [
+    {
+      "direction": "positive",
+      "id": "H-R-DELAY",
+      "manipulation": "Z_R",
+      "primary_outcome": "AF-DELAY",
+      "target_component": "R"
+    },
+    {
+      "direction": "positive",
+      "id": "H-R-UPDATE",
+      "manipulation": "Z_R",
+      "primary_outcome": "AF-UPDATE",
+      "target_component": "R"
+    },
+    {
+      "direction": "positive",
+      "id": "H-D-FLEX",
+      "manipulation": "Z_D",
+      "primary_outcome": "AF-FLEX",
+      "target_component": "Delta_prop"
+    }
+  ],
+  "schema": "FCI3-causal-construct-validity-hypotheses-v0.1"
+}

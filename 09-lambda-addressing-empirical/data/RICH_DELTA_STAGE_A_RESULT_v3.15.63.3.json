@@ -1,0 +1,1239 @@
+{
+  "cell_schedule": {
+    "cells": 67,
+    "descriptor_visibility": "SEALED",
+    "identity": 1,
+    "schedule_sha256_commitment": "5011216841a7cbe1c48b553dec2d47c86dd376c563cdf91a66212b2c0e326b27",
+    "swaps": 66
+  },
+  "checks": {
+    "BRIDGE_TOKENIZATION_DIAGNOSTIC": {
+      "actual_sha256": "38282b8a8a7b993da83bbc1bb445f38093785b72b35ff5c702d27f10903ae5f4",
+      "status": "PASS"
+    },
+    "CHECKPOINT_CONTROL": {
+      "actual_sha256": "9d44d4211e13d4f195c81333277d7bc6c260afe3e96e3bd505b97bf17816ffab",
+      "expected_sha256": "9d44d4211e13d4f195c81333277d7bc6c260afe3e96e3bd505b97bf17816ffab",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_rmt_paired_depth_v311/control_epoch_10_delta.pt",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "CHECKPOINT_DEPTH": {
+      "actual_sha256": "9ba7961df75fd81d8714ed19f2e6f6e99b048cac4072e3d04b348d899806a2aa",
+      "expected_sha256": "9ba7961df75fd81d8714ed19f2e6f6e99b048cac4072e3d04b348d899806a2aa",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_rmt_paired_depth_v311/depth_epoch_10_delta.pt",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "ENVIRONMENT_ANCHOR_PATH": {
+      "actual_sha256": "dac6ff52cee51806dae2301c08d202e0486b5ef9bf2b16e2f5a3bd3fde0b49ea",
+      "expected_sha256": "dac6ff52cee51806dae2301c08d202e0486b5ef9bf2b16e2f5a3bd3fde0b49ea",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_frozen_sources/environment_anchor_v3.15.58.json",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "ENVIRONMENT_RECORD_PATH": {
+      "actual_sha256": "1eeabf37ca64200dd01fe0f684afbfa320037cf04047ac5124aeca8de8fde4a9",
+      "expected_sha256": "1eeabf37ca64200dd01fe0f684afbfa320037cf04047ac5124aeca8de8fde4a9",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_frozen_sources/environment_record_v3.15.58.json",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "FROZEN_GENERATOR": {
+      "actual_sha256": "71fbcb608fb6dcdcf91a821b7027e1e7eb7b03d15e99d8a1db6cd7dea05589ce",
+      "expected_sha256": "71fbcb608fb6dcdcf91a821b7027e1e7eb7b03d15e99d8a1db6cd7dea05589ce",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/rmt_task_generator_v24.py",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "HF_SNAPSHOT::config.json": {
+      "actual_sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+      "expected_sha256": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_frozen_sources/hf_snapshot/config.json",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "HF_SNAPSHOT::model.safetensors": {
+      "actual_sha256": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+      "expected_sha256": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_frozen_sources/hf_snapshot/model.safetensors",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "HF_SNAPSHOT::tokenizer.json": {
+      "actual_sha256": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+      "expected_sha256": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_frozen_sources/hf_snapshot/tokenizer.json",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "HF_SNAPSHOT::tokenizer_config.json": {
+      "actual_sha256": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+      "expected_sha256": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_frozen_sources/hf_snapshot/tokenizer_config.json",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "HF_SNAPSHOT::vocab.txt": {
+      "actual_sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "expected_sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_frozen_sources/hf_snapshot/vocab.txt",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "HISTORICAL_BRIDGE_SOURCE": {
+      "actual_sha256": "d3fb9f479bc05bcab02c7ca72daf9a0056611111a7e39ee6d38d0df282d303e6",
+      "expected_sha256": "d3fb9f479bc05bcab02c7ca72daf9a0056611111a7e39ee6d38d0df282d303e6",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/CF_A_RMT_LAMBDA_CONFIRMATORY_TRIDEPTH_v3.15.20/train_confirmatory_tridepth_v31520.py",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "PREREGISTRATION_FREEZE": {
+      "actual_sha256": "a51805f5912701b34bce5f0e645955cfed8a1fc5033c0079629f98287eeb9e4a",
+      "expected_sha256": "a51805f5912701b34bce5f0e645955cfed8a1fc5033c0079629f98287eeb9e4a",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/RICH_DELTA_NONREDUCTION_FREEZE_v3.15.62.2.json",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "RMT_SOURCE::modeling_rmt/base.py": {
+      "actual_sha256": "44f35cdf65fb3618d8cd3f14a86902444a200b59512cdefd78cf553742c75bea",
+      "expected_sha256": "44f35cdf65fb3618d8cd3f14a86902444a200b59512cdefd78cf553742c75bea",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_frozen_sources/rmt_source/modeling_rmt/base.py",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "RMT_SOURCE::modeling_rmt/sequence_classification.py": {
+      "actual_sha256": "138c0ac8aab408845f9aa3cd7e0600988e5cfed60396a9b9f5fdb08048ea3835",
+      "expected_sha256": "138c0ac8aab408845f9aa3cd7e0600988e5cfed60396a9b9f5fdb08048ea3835",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_frozen_sources/rmt_source/modeling_rmt/sequence_classification.py",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "TOKENIZATION_ASSEMBLY_DIAGNOSTIC": {
+      "actual_sha256": "e99b5af1a5d4237e4c8dfb7b534418619c32d977945b854d1730f5f3b4fead68",
+      "status": "PASS"
+    },
+    "TRAINVAL_RECORD": {
+      "actual_sha256": "31746a9d094039da8a72301e7585351741be85ff2b741edf23d1feae4f6f5ab0",
+      "expected_sha256": "31746a9d094039da8a72301e7585351741be85ff2b741edf23d1feae4f6f5ab0",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_trainval_v24/TRAINING_INPUT_FREEZE_RECORD_v2.4.json",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "VALIDATION_JSONL": {
+      "actual_sha256": "7f087f6cd97fc3e9154575966692df4fb84bbde38403d033912b4c72fc5be1fa",
+      "expected_sha256": "7f087f6cd97fc3e9154575966692df4fb84bbde38403d033912b4c72fc5be1fa",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_trainval_v24/VALIDATION_v2.4.jsonl",
+      "reason": "hash match",
+      "status": "PASS"
+    },
+    "VALIDATION_SOURCE_ANCHOR": {
+      "actual_sha256": "e94f41d24dede799073f5f8ec95438c11e5908b6949dbf453afbb7415506a2d8",
+      "expected_sha256": "e94f41d24dede799073f5f8ec95438c11e5908b6949dbf453afbb7415506a2d8",
+      "path": "/mnt/c/Users/Merien/pycharm/llama/quantum/REAL_C0_VALIDATION_SOURCE_ANCHOR_v3.15.60.10.json",
+      "reason": "hash match",
+      "status": "PASS"
+    }
+  },
+  "dataset": {
+    "forbidden_keys_removed_before_bridge": [
+      "correct_label"
+    ],
+    "forbidden_values_exported": false,
+    "row_order_digest": "0f47acfae9882d0e54a95453eb8b7b5bb29d18f926bf932291334f19ba246a47",
+    "rows": 512,
+    "source_schema_keys": [
+      "context_id",
+      "context_meta",
+      "correct_label",
+      "example_id",
+      "filler_segment",
+      "probe_id",
+      "query_segment",
+      "split",
+      "task_family",
+      "twin_group_id",
+      "write_segment"
+    ],
+    "task_family_counts": {
+      "BIND": 256,
+      "UPDATE": 256
+    },
+    "validation_path": "/mnt/c/Users/Merien/pycharm/llama/quantum/cf_a_trainval_v24/VALIDATION_v2.4.jsonl",
+    "validation_sha256": "7f087f6cd97fc3e9154575966692df4fb84bbde38403d033912b4c72fc5be1fa"
+  },
+  "grouping": {
+    "generator_contract": "PROBES=[0,1,2,3]; twin_group_id=context_id",
+    "group_count": 128,
+    "group_key": "(task_family, context_id)",
+    "group_order": "frozen validation order of first row",
+    "grouping_sha256": "843b04cbf1dfc8119fe0a6a98f6858e513f3859f68ed270f91b2bf2ecec29f97",
+    "groups_by_family": {
+      "BIND": 64,
+      "UPDATE": 64
+    },
+    "lambda_used": false,
+    "pair_selection_used": false,
+    "probe_order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "status": "UNIQUE-PROBE-QUARTET-GROUPING-FROZEN-v3.15.63.3",
+    "task_outcome_used": false
+  },
+  "next_executable_step": "NO-STAGE-B-CANDIDATE",
+  "numerical_equivalence": {
+    "base_atol": 1e-07,
+    "calibration_rows": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      256,
+      257,
+      258,
+      259,
+      260,
+      261,
+      262,
+      263
+    ],
+    "hard_cap": 1e-05,
+    "max_identity_replay_error": 0.0,
+    "replay_errors": {
+      "CONTROL": 0.0,
+      "DEPTH": 0.0
+    },
+    "replay_multiplier": 10.0,
+    "rule": "every component for every ordered probe 0..3 in every one of 128 context groups at all three roles must be within tolerance; no averaging or pairwise-only rescue",
+    "tolerance": 1e-07
+  },
+  "pair_search": {
+    "anchor_rejected_pairs": 8911,
+    "candidate_count": 0,
+    "candidate_list": [],
+    "candidate_list_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "full_trace_compared_pairs": 0,
+    "lambda_used_for_selection": false,
+    "task_outcome_used_for_selection": false,
+    "total_unordered_pairs": 8911
+  },
+  "runtime": {
+    "device": "cuda",
+    "historical_validation_batch": 4,
+    "lineages": {
+      "CONTROL": {
+        "checkpoint_key_mapping": "identity",
+        "checkpoint_tensor_count": 18,
+        "ignored_output_classifier_keys": 2,
+        "input_size": 128,
+        "loaded_nonclassifier_tensor_count": 16,
+        "max_n_segments": 3,
+        "missing_base_or_untrained_keys_count": 189,
+        "segment_alignment": "left"
+      },
+      "DEPTH": {
+        "checkpoint_key_mapping": "identity",
+        "checkpoint_tensor_count": 34,
+        "ignored_output_classifier_keys": 2,
+        "input_size": 128,
+        "loaded_nonclassifier_tensor_count": 32,
+        "max_n_segments": 3,
+        "missing_base_or_untrained_keys_count": 173,
+        "segment_alignment": "left"
+      }
+    }
+  },
+  "scientific_gate": "RMT_REAL_DELTA_NONREDUCTION",
+  "scientific_pass_permitted_at_stage_A": false,
+  "scientific_scope": "Stage A only freezes same-rich-Delta candidates. RMT_REAL_DELTA_NONREDUCTION can pass only after Stage B unseals intrinsic Lambda signatures for this frozen candidate list.",
+  "scientific_status": "RMT-REAL-DELTA-NONREDUCTION-NOT-ESTABLISHED-RICH-DELTA-SEPARATES-ALL-CANDIDATES",
+  "screening_representation": {
+    "group_count": 128,
+    "group_order": "frozen validation order of first row",
+    "groups_by_family": {
+      "BIND": 64,
+      "UPDATE": 64
+    },
+    "object": "full typed four-probe perturbation-to-response trace channel",
+    "probe_order": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "reduction": "NONE",
+    "rich_schema": {
+      "groups": 128,
+      "probe_order": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "probes_per_group": 4,
+      "raw_component_shapes": {
+        "post_filler_memory": [
+          8,
+          768
+        ],
+        "post_write_memory": [
+          8,
+          768
+        ],
+        "query_classifier_input": [
+          768
+        ]
+      },
+      "raw_feature_dim": 13056,
+      "rich_feature_dim": 52224,
+      "tokenization_path": "exact historical v3.15.20 Bridge.full"
+    }
+  },
+  "state_count": 134,
+  "state_manifest": [
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 0,
+      "state_id": "cfa753943b78a0b815e0",
+      "trace_sha256": "5bbd1b51c12600392663467731f39669db1c582e7602db75ba585828669aab78"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 1,
+      "state_id": "6b5cd5fffe45aa1340d8",
+      "trace_sha256": "f235205f9de88456d9b9966c41b6540c0fbafc597effd62fe4f1be13c8e5cdba"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 2,
+      "state_id": "75b3d093bddda34dc5e0",
+      "trace_sha256": "4867fbdcf218bd724cecf4da2e4f2fbfec165801a4aaf6144da8f342e38ca439"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 3,
+      "state_id": "5851a3ae7d073d35d257",
+      "trace_sha256": "d39c1f4cf23fa8c99035aeb26b1ba3b4c71f77184ccc0ac39a46373fbc1b1c03"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 4,
+      "state_id": "4819cc09c05833f1f059",
+      "trace_sha256": "c315cf77bdf2ad8e4916e52b39704dd98f36e427c13ba1d33009e04d8658a28a"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 5,
+      "state_id": "6a8fb6520dc8585ac4db",
+      "trace_sha256": "4209a2c8804fb29ae215434321b54b6640075099435e22680d77543022c34031"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 6,
+      "state_id": "881729f97a833468016c",
+      "trace_sha256": "edcc40f6b7ab5f9e07a634b4690f1adb32d22c62ffaa6ebe8f661dc6940ef219"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 7,
+      "state_id": "c22e54a753ede30744ad",
+      "trace_sha256": "1b5047368bb50c2157c03fe9cd09af2463126d8f4aacadf9c68127fd10c5972e"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 8,
+      "state_id": "e191f0376964e75bc361",
+      "trace_sha256": "8cf9baed5f9b4d98e1469df2d342147c861c3524c6b838971a43960281319cfe"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 9,
+      "state_id": "aa9f3e01dbe3170aff1b",
+      "trace_sha256": "065fdb8e3d3f8c0fcb068e17eab9289730da32ab3b528bb574046e3a3e171349"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 10,
+      "state_id": "0644072342be2e22e1d6",
+      "trace_sha256": "c9fd4a78cb70fbfcdee2bf4ef047e8c60a08ccd19b5aea5b011aa9702c0e0c90"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 11,
+      "state_id": "ec1be1a8a28de4cd397a",
+      "trace_sha256": "90ad580071a96d260dd08a6bbee59783a0c5e55f3785896562d4886395f03f00"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 12,
+      "state_id": "0e97347c6b185f5cd33e",
+      "trace_sha256": "4bcdf59879fbfb649b1c16670657a05ff64d76da855c11417d538321188088d8"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 13,
+      "state_id": "a8df0ecbccdf22df4cca",
+      "trace_sha256": "f62eeebae0d4bee34c509e7ce6354537fa8a5668bda54e8616e51ff478e1f1a4"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 14,
+      "state_id": "61b2718064f05f59335d",
+      "trace_sha256": "c669ce1e8c4b52334315b5e8539106391b762144347ab74f899978dffcc38ddb"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 15,
+      "state_id": "aa9a7cc9d347d2510965",
+      "trace_sha256": "1252441b2345b9b3ce5a42eefaeceb5845827c4dbca4649aa74c2cddc84a7f14"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 16,
+      "state_id": "2736c546b8a4729247e8",
+      "trace_sha256": "7b417d6da9c2876542c11b6f6184c44cd556a2d70f8d307b9b118974b32499ab"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 17,
+      "state_id": "616bcacfc3c4bf673176",
+      "trace_sha256": "9569b98a32b7cc0bcd9bd7742b4db835479d4592888dd96c06748587ad24ea62"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 18,
+      "state_id": "3c10108512c6b1f3e326",
+      "trace_sha256": "e0c673c48d2dc5388de55e5a3c65f6712b825aadab3a79f3847e8b865346728d"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 19,
+      "state_id": "34dfdca7e4687357355a",
+      "trace_sha256": "4d10ae02d82334ddb03bb221455e8dce5c50630ec34da217e1255d5edaa36931"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 20,
+      "state_id": "495eaf95b83b52f39548",
+      "trace_sha256": "a841adb92e8846901c5735000383c8ed37e239f66e1195bf10715da502e5a580"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 21,
+      "state_id": "32c5bbab2ceaf304862d",
+      "trace_sha256": "fe866b8f965f6cdaac251996ada8e8f6833a892b328fabef1d6d977a8a343e77"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 22,
+      "state_id": "b941024c5fd9f49afce6",
+      "trace_sha256": "7a80b4d103ee4661ea979e1f9588979fa9563b6f6b23ef4525a58da64957e226"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 23,
+      "state_id": "b68d4f20d3899efa6fe2",
+      "trace_sha256": "b9835fac671bbe3f144f444f378870c5400a32bf448e48bde853312efbecff76"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 24,
+      "state_id": "3aeae7a7b5b1f1bb3fe7",
+      "trace_sha256": "326e5b14e2fcefeb0d4d266cc0f4db05ee4855a71e00077d1a930d246d180adc"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 25,
+      "state_id": "0f6060cace7f08c94e97",
+      "trace_sha256": "c08ed52ca417ddc5650fd39f26afa3d4473887711a3a68ff086f1a3df689a395"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 26,
+      "state_id": "939cac98b4f82e38a5bd",
+      "trace_sha256": "16c874e2b17e3c778aa4c0f0e477de24375b4d112c0a3dcc9b31901d298619f6"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 27,
+      "state_id": "9762cddb62bd7c50d1c9",
+      "trace_sha256": "a49e3b3ee11b13b0649eec554475b4d511ecb4b8db4aaf7274606b48b970e158"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 28,
+      "state_id": "151820101e843da1e302",
+      "trace_sha256": "759dffe306e17d0679f5682786cca3627346769c5ff2be765989b240a91cb838"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 29,
+      "state_id": "a79e5de5df6e20079f8b",
+      "trace_sha256": "46dfe133f24ce74da1cf0903c40de47d45aac93aba833ab4e20537c08a2099f5"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 30,
+      "state_id": "9dcc6c47784555e3f6f8",
+      "trace_sha256": "5f2ce7af4dff7e8e8fc04fbb4d73437932499317e8a48c966e77d1926383f72a"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 31,
+      "state_id": "1d3452c0a56b44733e1c",
+      "trace_sha256": "2943ce3d5748c2c29b675dcca28eced0278bc4d2e93a250e3e1701bb171506d4"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 32,
+      "state_id": "be4c110499da69efc8e5",
+      "trace_sha256": "6a186114dc139589b085751d8e423c9b4a97cdf41edba9db0fa2c639ea017d45"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 33,
+      "state_id": "21748a57603c8185f0d7",
+      "trace_sha256": "e7ec28db0f8e3f609065e1516834473996870458f0682362ec0ce436a110909c"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 34,
+      "state_id": "ed412074f96200d08b75",
+      "trace_sha256": "d33aee3d151ecc3985684ebd8993b8c6ad249ca77f7e6b6fd02eb529fd3c1947"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 35,
+      "state_id": "aa65ee1c79eaf8e63869",
+      "trace_sha256": "0e4cb8b8321f83194f35b25876d84e20fa8398144a4f6579539c063799eab864"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 36,
+      "state_id": "5ac620b441d71520f2c2",
+      "trace_sha256": "950fb908e441892bab36c6bdf5dfe1d1d257fc534f95733b70d7b063a1efece4"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 37,
+      "state_id": "61c735ef436e309bb8e1",
+      "trace_sha256": "bd0b61549606d05769b3b69be8d3bb32f852eb5c276ab2b93e6a432fe5d1917c"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 38,
+      "state_id": "7650d321a3818c60c0c9",
+      "trace_sha256": "84f83eea8aa839b68880a9e95200980ccd0e1df7f11c61d19bb6f09eac3f5816"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 39,
+      "state_id": "7ba78a5cc66a0b21d253",
+      "trace_sha256": "3f630d9a7210d846c5b6d11e988f47aa029f0a6bf27fcdda7052bf2de528f9dc"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 40,
+      "state_id": "bfe6b0de25466ea43415",
+      "trace_sha256": "353c1f44b5b5aad58aa96dcab6203468353b09a5ab5c0cfce7545141aa1b94a8"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 41,
+      "state_id": "23f65294aabda0d3f37d",
+      "trace_sha256": "941121566d387d31f21e5ac5ce168316b2d4040af422853cc1065750093f3541"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 42,
+      "state_id": "7e0d9767399351aaa805",
+      "trace_sha256": "442f3df36a0a5d6f50f9bdffc0218203dbd111f9f2895088cc4e19a25e8cceab"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 43,
+      "state_id": "398aaa72e5a42c34a725",
+      "trace_sha256": "03b32b8c4df37cdcbf7d8296b2ec818de99ae7edfb33a8656a98b5b1394ded5b"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 44,
+      "state_id": "4684f4986d92ea7b9d02",
+      "trace_sha256": "a098bd414958c22993589a9538121a5b1835b6fd9edef9951da14f5877fb3eb8"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 45,
+      "state_id": "7eb15a6d03ea4b88f62b",
+      "trace_sha256": "bf0da1a32beb57db3f759414e941b5b755bae4e71a03dbde3ef91dd367199503"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 46,
+      "state_id": "08a167871da0256084fb",
+      "trace_sha256": "5115303e926f77b6ea1b1d218a07600477b325db0e17a2f0f56ea8105511b2e2"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 47,
+      "state_id": "2b6f2c7a3f75a2df43be",
+      "trace_sha256": "a35a07200afe78740c7b54e872114dfa42450c623ecdaf4bed7c33a3f5ca58c3"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 48,
+      "state_id": "0f031e76ad2d0c8b41cc",
+      "trace_sha256": "59d716db0f4754bc3b37697cd41b3cb5e2c409525c2510df1080d0a6b5b185c7"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 49,
+      "state_id": "038ad7258fa9fcaff69f",
+      "trace_sha256": "fb871f28ae45cc3cc41a94d03b206e24bb4d1dbb80d1b43e2a939cb219947ac9"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 50,
+      "state_id": "afc4785aff94cfbf9ea0",
+      "trace_sha256": "f4daffe9fe68bd61f16d4598c1957c9133a28d29bd030589aede73751c30ccfe"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 51,
+      "state_id": "66f8c9c2cc4fd51071aa",
+      "trace_sha256": "7ae6820df4c70854c06fc1d435851e743eb2f20315fa4daef4e22257692887f5"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 52,
+      "state_id": "746f978bc569154225bc",
+      "trace_sha256": "b1889b97d83a1d1d25e24c6171a6265a88de7909ad87f1e0fc7d5311f8a5b125"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 53,
+      "state_id": "590a5c6c00d228511a86",
+      "trace_sha256": "e928258272f87e4ecefddc6b362e22254996d2abeb6f27454fc10516190d00e2"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 54,
+      "state_id": "fc782a24fa5a226908aa",
+      "trace_sha256": "0b507feb50b57b5c1d27e985fff086fb61f63fd54b2e4f45466ad21d479e1cdd"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 55,
+      "state_id": "3082dfc251575b8d616d",
+      "trace_sha256": "beaec742fe19f78d6fd172fd7ba103d4604ce6536d1fb4f032f28b168302604c"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 56,
+      "state_id": "d00f24122f402ba0463a",
+      "trace_sha256": "0143c5c71645b98a3eccd96447ac173932fd7f885e851d91edd02fe78e4d115b"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 57,
+      "state_id": "2241f4216939b8bf87c1",
+      "trace_sha256": "01bace747a781b6d4cf2ab58df182b9b0eac6cd39a4102692f6ad9e7478e043b"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 58,
+      "state_id": "2fee88d86b49f21b84a4",
+      "trace_sha256": "160261e2aa38ce3341638ed10cfd7bf1f99337297538dbc35d250a9990488856"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 59,
+      "state_id": "b153fad4f7777578715f",
+      "trace_sha256": "eb185338d52af432a557d15a92255605aef355d3a0c367d56a74b2898cc3a76c"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 60,
+      "state_id": "4dc93218b5b8e1c5aa86",
+      "trace_sha256": "9ff98edcc93134c610af3b8d07b767ac2729e26c1559332ca95d8d280bb6832b"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 61,
+      "state_id": "eb9bf252fb491ec809cc",
+      "trace_sha256": "098a9a10c1b9528e469bb44fb82d2c795a1b41dd92b0a39028879178d31f31bd"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 62,
+      "state_id": "cdfff4cd2880752971cd",
+      "trace_sha256": "a436504b5313fe59b8e54e8569cdcd58ffbbd15c678e2fc9ca3f65787cc3a4c6"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 63,
+      "state_id": "78993bcb87214509f3e8",
+      "trace_sha256": "fefaab898b4d8568d3aeb4a0a428fa829824fced62aafe865665b80a9599f4bc"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 64,
+      "state_id": "ab2852731ac994e071da",
+      "trace_sha256": "e6e6675514d469be5982761dc98384f6e2e4750aba481985dfe4242b6f7c4ca4"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 65,
+      "state_id": "7470a503712e90495640",
+      "trace_sha256": "07b14cc3c14108497eb8e67f4ce6890cc9f9dadd9073a3360de6566d321d954b"
+    },
+    {
+      "lineage": "CONTROL",
+      "opaque_cell_index": 66,
+      "state_id": "59f98fa28f1fea9716b7",
+      "trace_sha256": "7082f289f66ecec30aabe99ffa5fbf964a94ae44ce43cff4ca3474263a0203f4"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 0,
+      "state_id": "0142cba6931cba5d399c",
+      "trace_sha256": "54ba7c4325dd7295d77b9377330a807b02913e8b53b62fd56e54642367abf87b"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 1,
+      "state_id": "04eb13aa0f64a6d2f4f9",
+      "trace_sha256": "3e2e51addef2196c7c27ef30491d7cdee09d987b740bc94c083c161857b8d4b1"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 2,
+      "state_id": "55cd1f610962d8a93c91",
+      "trace_sha256": "e5711780c688d90ca7610434a9550b57f8386e06a174860c3a341989213f46de"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 3,
+      "state_id": "236d40230066a44cc4f8",
+      "trace_sha256": "5679705aeaab5b498d78eeb620298a709911b41e35e6f82da9525439ed95ac2b"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 4,
+      "state_id": "40e4e1a808f7140a854d",
+      "trace_sha256": "1deed1c7e774f9b5266c19c57ae494605a96758b67b26d02c04e554c62db3352"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 5,
+      "state_id": "f58c6f7c2c2a9d661a68",
+      "trace_sha256": "8276a99cf83b616e235edb8edbcbc2781097afda6dcdff883bc9f876a32d3b0d"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 6,
+      "state_id": "b7c7ede121be063565c0",
+      "trace_sha256": "59a7f4c7536a4de654393a2d2d31ee4186e3b7aa8d2a6f824c836336fa192985"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 7,
+      "state_id": "33b31cb6277bba0e04dd",
+      "trace_sha256": "4732cd5e3ab5b3c0ac01cd3205e26b346f5489c8b4618c616fe0464e41b0e7c7"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 8,
+      "state_id": "ecc1764d018ee9ab8b82",
+      "trace_sha256": "9d45ea1e77a61c5cda3fb7493f6fa03c507f19186ff3825344c2bba186e9df1a"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 9,
+      "state_id": "5135dc669478efe80a4a",
+      "trace_sha256": "8506081210ff626d4d801d4dfc832f59fc746de7f305cac354e1a33b6c13c9e2"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 10,
+      "state_id": "dc3100c368e556964402",
+      "trace_sha256": "f9ef6504175ed30f67cfd868e3b17f0f2d534305de9b31da3e671a2272b5f5bc"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 11,
+      "state_id": "7da095d730fbfb0940de",
+      "trace_sha256": "392b72ab6e9238098f8660f201138a1afaad232ab4aeb98037e0a5da4e531f25"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 12,
+      "state_id": "d5369fc1d027b599c029",
+      "trace_sha256": "76beb93577d2852d060297717ab22a256d4d7de1df117d06ba31f344d1ad3166"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 13,
+      "state_id": "9676e76f805b6553b468",
+      "trace_sha256": "580328e9b882f5220d488de828112b15efb75096dc0504d0648ff6c8eb10ad46"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 14,
+      "state_id": "3c034bb4f1b2a80d08e2",
+      "trace_sha256": "ec127babea0e23dd1ddc7eec2389c43da574a1ed252321dc335b0966a93281c7"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 15,
+      "state_id": "a4a845af92023e610310",
+      "trace_sha256": "e3ba95f30f2d7b6273fc34dc517bcf2b4bd8c5c1198c9302132e38879bee59c9"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 16,
+      "state_id": "8f1b74d55ec75fe22171",
+      "trace_sha256": "0627f42f00f2cb2ed7691f2384c6679d39c39e1f159434509bb315cfbcdfc9b4"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 17,
+      "state_id": "e3dbb22ccbb50a80c295",
+      "trace_sha256": "4ec5a0eefc6a9de6d6a676c88faee23273e02c5f9fe2fb864662fd1dc46a80ba"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 18,
+      "state_id": "817d03d372147e361427",
+      "trace_sha256": "b84bb72070bea40d85728791c52cdf5c0c9e83390db2abf7d5efd4c040e8717b"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 19,
+      "state_id": "780b897e31a7d9a056a4",
+      "trace_sha256": "14c4a3a244860bdbc368b422125da3a7a4977597fb008ec8abc921dbde7083f7"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 20,
+      "state_id": "8f874297c4f4aa3342cf",
+      "trace_sha256": "76a268a8c29c6b1f64ee9e2e1281824f2bcc5ff6189c4bbd0c2180623cec025d"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 21,
+      "state_id": "8ae612baec71e8e29287",
+      "trace_sha256": "81b27c696971d3206ce920bf89f6e1f1d7060d068b440685f8f09e013082c1b0"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 22,
+      "state_id": "99f0787f42590fb9ac10",
+      "trace_sha256": "f58af7a48b3655d363699e6eafa05b449c965e5a04cdf875eebcc4d9659fcac2"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 23,
+      "state_id": "823f309c17d2085a074e",
+      "trace_sha256": "3fd7fd447230edb6789b0b24b6f599f12ad5276651dbc08cfbfb35e22b143330"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 24,
+      "state_id": "921c89bd348af08254ce",
+      "trace_sha256": "f617dcf396db3cb3da5dbaf04d5b47c9926223d4b3152ce83d416b450ce6e205"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 25,
+      "state_id": "1b220920ee6f5c00a683",
+      "trace_sha256": "9e9286f6e6aac7d198819f141a50f54ce45ae73a696e78d4863dc77f994f13dd"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 26,
+      "state_id": "c8177f207f1ff1429c34",
+      "trace_sha256": "c1877cde40632b8b997080a8ed957eb2d9a534f049004902571fc696d3f8435a"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 27,
+      "state_id": "31f3a9365d41a44073ae",
+      "trace_sha256": "e9eeca15b125ab1c672de5aebdb84b9ed819c4bfb5f1767c86afbb9456de30e9"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 28,
+      "state_id": "77992de1b7ce876d4f33",
+      "trace_sha256": "e98d0fc197ce3983f946af49bc09308d8f25baf4a9ea9e2f3da2598bcd86ad85"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 29,
+      "state_id": "dabf82fc810361390336",
+      "trace_sha256": "107b940f1e8509d48be391403f78bea73f99ac7474fd5d6206e8ce4760ee4ea9"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 30,
+      "state_id": "96878dc24f7062ffc23b",
+      "trace_sha256": "557cecbf0f9b3db52b08c658535171e57e56e9fe9f6763b57d15ef6f8604cd36"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 31,
+      "state_id": "b6eee0586c38e377136b",
+      "trace_sha256": "4f2bf1b7be5bc91c06c9fc21e65dca3dae634607d403c4fca85fb3a42dc37030"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 32,
+      "state_id": "9363a773fd834efec723",
+      "trace_sha256": "0ac7b6ad1c236b4efb0c1587b9bbf1c10f8b5ce62dae2f7d0f6c6d9b07e03705"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 33,
+      "state_id": "158708c278fae61f5b59",
+      "trace_sha256": "91d1b96815296843d0f13268268a317db3baabf6cd288d994a38f437eb46d705"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 34,
+      "state_id": "ff08e59d763b61add0dc",
+      "trace_sha256": "6152aea3e86e5ee93165e445a8111ab904bc822d84aa7bd8d4032cbf7fb9c316"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 35,
+      "state_id": "8f9872f25089ca6585a6",
+      "trace_sha256": "b43221c89932857ced5e3cba198ec22dbbdcc6f3b63d029f62706d469789e46f"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 36,
+      "state_id": "fb4a2b2faac30c3cb8e1",
+      "trace_sha256": "cb935beec65f5793e732c9bab0bf56f041668678f3b62d6a7e3d7a0461dcec29"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 37,
+      "state_id": "3c5b6c32221b40420681",
+      "trace_sha256": "b17128b0c2bd8801b5767bc68d2c50a39d3eed32ef9d3a9f832e4cf6232c0274"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 38,
+      "state_id": "720009673bd40e158941",
+      "trace_sha256": "8523dccf700ac950666d0fdc81bd01cccfc4b1d2fa7923f9884ad4a5176bbae2"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 39,
+      "state_id": "5383f3ce51fe0cb992a8",
+      "trace_sha256": "0b278061b080a4cb6dd65dc14801a0ab22cab058459a50233a35a16fe382bb1e"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 40,
+      "state_id": "2649cc42230facd2b24a",
+      "trace_sha256": "d0eec0f0a42c70c273c617731d4b9c74e931786e772859566eb6219106e88ce9"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 41,
+      "state_id": "20c99e8a70716d860652",
+      "trace_sha256": "aee70db97bcbce045476f6dac33dc67da8875c3d7ea7e912f05eee449f2f8c6d"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 42,
+      "state_id": "c8e1499c8306bb45dad7",
+      "trace_sha256": "956f28d9428e17f6ea2a87900efd00b69e5662cebc522dc697c91c49b640e9fa"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 43,
+      "state_id": "2aea731eb85c8197ccb0",
+      "trace_sha256": "49604452402b78c620fc23420df9f9d2bf26d289b2e861d95da3dc89b923e2f5"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 44,
+      "state_id": "ab316f84c51983a6b593",
+      "trace_sha256": "419625ebe23cdbfa3a955bb1f2709bff75db0993801d6dc9799d8dfc3778a2e0"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 45,
+      "state_id": "0281c3b87fdb83033ae0",
+      "trace_sha256": "cc85f4b49459678d692d70793fe8e47d6954631487dd2353b77649cff700d770"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 46,
+      "state_id": "d93345a266c0ee3a2b2f",
+      "trace_sha256": "1c572b45319dce73e015a518e0660b280c7ea9189cb38c42e7d970146f9aa3bd"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 47,
+      "state_id": "5d6ac693d9d175e125c7",
+      "trace_sha256": "06b9f643505c2d65f627e51cd8cb416e86bb9e6ceb3e934f9b4f08b7d65b9cec"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 48,
+      "state_id": "069b0ab364e4a2736324",
+      "trace_sha256": "a520b4bf9a7bcca0caa1f7ba20f64e3b7d77e3e1bd3d449825318c322203cd8f"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 49,
+      "state_id": "5419eedd56deb6b68faf",
+      "trace_sha256": "a0d4ed3815c8ba4a374a3fd8b32ac3c9e46fbcfa11694af4550eac3616dedee3"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 50,
+      "state_id": "18b72bc248c6b0b375c1",
+      "trace_sha256": "fced073136971d46e7368efbcdce6678045cd70596fc0984cee00375d7d7df1b"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 51,
+      "state_id": "eb7ba83371955cc37c34",
+      "trace_sha256": "0d72953b51a1ef0b15874b562474b7e03505eab42aabd3bce34418285b2405cf"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 52,
+      "state_id": "38fc3667b6e8893b0701",
+      "trace_sha256": "a2240be1a0961c305053b23fa7d2f5e1924880f11e583eb88c13088734c31f02"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 53,
+      "state_id": "c2d89e376e6b473f3b3e",
+      "trace_sha256": "6d34468abf896c9948ff5e9d90d5275bea8e5c195958c1a425784c9442e95a01"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 54,
+      "state_id": "2ae37d844c09d82be59f",
+      "trace_sha256": "f61ea3373ae7c64b0ba3d8e8c374ca2784dd719b34f8959453c7b91dc9d39ac3"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 55,
+      "state_id": "d3a2241ae056e287e915",
+      "trace_sha256": "c57fd378551db89f85d40d21217d8547aa8618d62068d12387efbae3a6288684"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 56,
+      "state_id": "8a548b2b6919024b3769",
+      "trace_sha256": "6979db0e0bb0f2513f1ee0be57d5ecc584b9c3411e15f234dc0ff9057f3e8a7d"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 57,
+      "state_id": "ffb018f9e59ed0a495ac",
+      "trace_sha256": "f3b7be439db329b263d479d6c3f18cc2c1fd3a979cb61013849e7e8b3d724213"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 58,
+      "state_id": "06fef17ffa2fe50f7e36",
+      "trace_sha256": "eb336a7e64f3ab0e74585c0a8e57c8c75b00ef08734625485f92c030d3774e5e"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 59,
+      "state_id": "7d428e227d2e6a8ddd11",
+      "trace_sha256": "e2a5b1941dffc370ee78080a18734088ba95b95aabfab9eeacf4592c4be3ba57"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 60,
+      "state_id": "d35e01b2ef3c3fd73743",
+      "trace_sha256": "24880e0040fc35f4ba52bf8d830e9c8a2401b9fdc43dbb478af242f42ecf63c2"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 61,
+      "state_id": "2321aa0ad8c2716a6b84",
+      "trace_sha256": "7a37eaf7d50579ae3d63e6cbbc28c15a4575e05cdf32daab2e349ca2c85915fc"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 62,
+      "state_id": "c2eb780425f403e6efe1",
+      "trace_sha256": "1adc7c34ee8fd22574f8f9c0f4329a023a5bcc31ab6a86c7e49d913382dd63e5"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 63,
+      "state_id": "f724227dbdbf8187d438",
+      "trace_sha256": "120f2f3a6dfd30317cb822b65613bc03ba0ce490079fd27877202216eafc619f"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 64,
+      "state_id": "3145edd4f6e4ea069f88",
+      "trace_sha256": "a3b5cb03ca40c37e5573f281c0f4925a9d70a42dc791784524fc157a33789135"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 65,
+      "state_id": "94c54d66c950f8eb0146",
+      "trace_sha256": "b8582bc31ddb5c9cc87d224b2a6449ba8d9ae3ccca716f85a8b314ffdb27ba92"
+    },
+    {
+      "lineage": "DEPTH",
+      "opaque_cell_index": 66,
+      "state_id": "bb4a1b6b1e2bb70ae415",
+      "trace_sha256": "956ca7d126ff0e1f68c26d07eb1f2515f66b39dbdd01fb1d24a8da48d9f3a5eb"
+    }
+  ],
+  "state_manifest_sha256": "27764a7fee3e1cce37917a9582d79bee76714fbdd52341d46b98127a6345ce58",
+  "status": "RICH-DELTA-STAGE-A-COMPLETE-NO-CANDIDATE-v3.15.63.3",
+  "tokenization": {
+    "batch_count": 128,
+    "batch_observations_first3": [
+      {
+        "model_output_used_for_selection": false,
+        "segment_active_counts": [
+          4,
+          4,
+          4
+        ],
+        "segment_count": 3,
+        "tokenizer_call_count": 12,
+        "tokenizer_call_shapes_first8": [
+          [
+            26
+          ],
+          [
+            26
+          ],
+          [
+            26
+          ],
+          [
+            26
+          ],
+          [
+            24
+          ],
+          [
+            24
+          ],
+          [
+            24
+          ],
+          [
+            24
+          ]
+        ],
+        "tokenizer_methods": [
+          "encode"
+        ],
+        "tokenizer_trace_commitment_sha256": "14a53571693d85ea809c496b3825b4b511967ff62ebd05b53d7dce203521d56b"
+      },
+      {
+        "model_output_used_for_selection": false,
+        "segment_active_counts": [
+          4,
+          4,
+          4
+        ],
+        "segment_count": 3,
+        "tokenizer_call_count": 12,
+        "tokenizer_call_shapes_first8": [
+          [
+            26
+          ],
+          [
+            26
+          ],
+          [
+            26
+          ],
+          [
+            26
+          ],
+          [
+            28
+          ],
+          [
+            28
+          ],
+          [
+            28
+          ],
+          [
+            28
+          ]
+        ],
+        "tokenizer_methods": [
+          "encode"
+        ],
+        "tokenizer_trace_commitment_sha256": "fede574cb3281bf3764d96d064285da1ce70e1ebb395f87a2829f0bb20b2d929"
+      },
+      {
+        "model_output_used_for_selection": false,
+        "segment_active_counts": [
+          4,
+          4,
+          4
+        ],
+        "segment_count": 3,
+        "tokenizer_call_count": 12,
+        "tokenizer_call_shapes_first8": [
+          [
+            26
+          ],
+          [
+            26
+          ],
+          [
+            26
+          ],
+          [
+            26
+          ],
+          [
+            24
+          ],
+          [
+            24
+          ],
+          [
+            24
+          ],
+          [
+            24
+          ]
+        ],
+        "tokenizer_methods": [
+          "encode"
+        ],
+        "tokenizer_trace_commitment_sha256": "f64acf8a4183f931a20b56358a1effaa2f8e4dcfe50682c64d40610e75ae8c77"
+      }
+    ],
+    "contract_dry_run_model_output_used_for_selection": false,
+    "explicit_write_segment_metadata": false,
+    "historical_validation_batch": 4,
+    "tokenization_commitment_sha256": "8664f463586b4b4f38b610e59bbb6d1d927f0176aee664c7a4d3bff83b484cb0",
+    "tokenization_observation": "historical row/segment encode outputs + actual RMT prepare_kwargs activity"
+  },
+  "version": "3.15.63.3"
+}

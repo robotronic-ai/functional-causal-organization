@@ -1,0 +1,14 @@
+{
+  "bits": 8,
+  "closure": "PASS",
+  "closure_type": "NONTRIVIAL",
+  "collision_examples": [],
+  "coverage": "DECLARED_TRANSPORT_ENVELOPE",
+  "generated_fibers": 512,
+  "n_fibers": 512,
+  "n_functional_collisions": 0,
+  "n_nontrivial_fibers": 512,
+  "n_systems": 1024,
+  "schema": "co-lambda-op-closure-v1",
+  "systems_in_nontrivial_fibers": 1024
+}

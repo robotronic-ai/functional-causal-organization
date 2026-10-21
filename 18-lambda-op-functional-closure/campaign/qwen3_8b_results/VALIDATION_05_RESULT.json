@@ -1,0 +1,13 @@
+{
+  "candidate_name": "HYBRID_K3K2__SUB_H1_K4__SUB_H3_K12",
+  "closure": "REFUTED",
+  "n_collision_fibers": 9,
+  "n_collision_pairs": 18,
+  "n_fibers": 42,
+  "n_nontrivial_fibers": 14,
+  "n_validation_systems": 64,
+  "nontrivial_coverage": 0.5625,
+  "promotion_status": "REFUTED",
+  "schema": "co-qwen3-8b-active-causal-kernel-hybrid-validation-summary-v1",
+  "validation_panel_sha256": "4939aa08dc9946c9a371f4d042b60ddde3bc3dc24034c46df7a3f9ebf7afe2ca"
+}

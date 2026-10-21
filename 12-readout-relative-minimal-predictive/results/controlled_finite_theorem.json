@@ -1,0 +1,25 @@
+{
+  "checks": {
+    "behavioral_separation_failures": 0,
+    "controlled_behavioral_congruence_failures": 0,
+    "controlled_hankel_rank_failures": 0,
+    "controlled_predictive_dynamics_well_defined_failures": 0,
+    "multi_koopman_closure_failures": 0
+  },
+  "minimal_predictive_dimension_histogram": {
+    "0": 522,
+    "1": 711,
+    "2": 1436,
+    "3": 2434
+  },
+  "status": "PASS",
+  "universe": {
+    "controls": 2,
+    "declared_readout": "indicator(state == 1)",
+    "field": "F2",
+    "nonempty_source_subsets_per_pair": 7,
+    "states": 3,
+    "total_pair_source_cases": 5103,
+    "transition_map_pairs": 729
+  }
+}

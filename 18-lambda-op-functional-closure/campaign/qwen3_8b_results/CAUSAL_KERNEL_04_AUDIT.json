@@ -1,0 +1,84 @@
+{
+  "interpretation": "The preregistered screen found no candidate meeting both zero-collision and >=20% nontrivial coverage. K3/K6 reached the coverage threshold but retained one collision pair, motivating target-informed hybrid refinement.",
+  "near_frontier": {
+    "candidate_name": "K3_ALL_PER_OPERATION_K6",
+    "collision_examples": [
+      {
+        "descriptor": [
+          3,
+          0,
+          2,
+          0
+        ],
+        "target_groups": [
+          {
+            "target": [
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "DONOR",
+              "ORIGINAL",
+              "ORIGINAL"
+            ],
+            "units": [
+              24
+            ]
+          },
+          {
+            "target": [
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "ORIGINAL",
+              "DONOR",
+              "ORIGINAL"
+            ],
+            "units": [
+              8
+            ]
+          }
+        ],
+        "units": [
+          8,
+          24
+        ]
+      }
+    ],
+    "metrics": {
+      "n_collision_fibers": 1,
+      "n_collision_pairs": 1,
+      "n_fibers": 28,
+      "n_nontrivial_fibers": 3,
+      "n_systems": 32,
+      "nontrivial_coverage": 0.21875,
+      "systems_in_nontrivial_fibers": 7
+    }
+  },
+  "schema": "co-qwen3-8b-active-causal-kernel-screen-audit-v1",
+  "screen_best": {
+    "candidate_name": "K1_SUBSTITUTE_PER_ADDRESS_K10",
+    "metrics": {
+      "n_collision_fibers": 0,
+      "n_collision_pairs": 0,
+      "n_fibers": 31,
+      "n_nontrivial_fibers": 1,
+      "n_systems": 32,
+      "nontrivial_coverage": 0.0625,
+      "systems_in_nontrivial_fibers": 2
+    },
+    "status": "NO_USEFUL_CANDIDATE"
+  },
+  "source_panel_sha256": "89ddcf51159cad7a7c4547d14f9e0f34478222c0d18c645a82e5dae370856194"
+}

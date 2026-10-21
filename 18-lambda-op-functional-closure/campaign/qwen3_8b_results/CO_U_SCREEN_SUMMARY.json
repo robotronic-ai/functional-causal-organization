@@ -1,0 +1,101 @@
+{
+  "best_by_family": [
+    {
+      "all_panels_closed": false,
+      "candidate_name": "D0_ID_SLICE_K16",
+      "family": "D0_ID_SLICE",
+      "k": 16,
+      "n_collision_fibers": 14,
+      "n_collision_pairs": 3139,
+      "n_fibers": 16,
+      "n_nontrivial_fibers": 14,
+      "n_systems": 352,
+      "nontrivial_coverage": 0.9943181818181818,
+      "systems_in_nontrivial_fibers": 350
+    },
+    {
+      "all_panels_closed": false,
+      "candidate_name": "D1_SUBSTITUTE_SLICE_K16",
+      "family": "D1_SUBSTITUTE_SLICE",
+      "k": 16,
+      "n_collision_fibers": 15,
+      "n_collision_pairs": 2398,
+      "n_fibers": 16,
+      "n_nontrivial_fibers": 16,
+      "n_systems": 352,
+      "nontrivial_coverage": 1.0,
+      "systems_in_nontrivial_fibers": 352
+    },
+    {
+      "all_panels_closed": false,
+      "candidate_name": "D2_OPERATION_INDEXED_TRANSFORMS_K16",
+      "family": "D2_OPERATION_INDEXED_TRANSFORMS",
+      "k": 16,
+      "n_collision_fibers": 21,
+      "n_collision_pairs": 26,
+      "n_fibers": 314,
+      "n_nontrivial_fibers": 34,
+      "n_systems": 352,
+      "nontrivial_coverage": 0.20454545454545456,
+      "systems_in_nontrivial_fibers": 72
+    },
+    {
+      "all_panels_closed": false,
+      "candidate_name": "D3_OPERATION_INDEXED_WITH_ID_K16",
+      "family": "D3_OPERATION_INDEXED_WITH_ID",
+      "k": 16,
+      "n_collision_fibers": 2,
+      "n_collision_pairs": 2,
+      "n_fibers": 349,
+      "n_nontrivial_fibers": 3,
+      "n_systems": 352,
+      "nontrivial_coverage": 0.017045454545454544,
+      "systems_in_nontrivial_fibers": 6
+    }
+  ],
+  "decision": "STOP_PASSIVE_VQ_AND_MEASURE_ACTIVE_CAUSAL_KERNEL",
+  "schema": "co-qwen3-8b-operation-indexed-screen-summary-v1",
+  "selected_candidate": {
+    "candidate_name": "D3_OPERATION_INDEXED_WITH_ID_K16",
+    "family": "D3_OPERATION_INDEXED_WITH_ID",
+    "interpretation": "The best operation-indexed VQ proxy remains collision-bearing while becoming nearly injective. It is not promoted to fresh validation.",
+    "k": 16,
+    "n_collision_fibers": 2,
+    "n_collision_pairs": 2,
+    "n_fibers": 349,
+    "n_nontrivial_fibers": 3,
+    "n_systems": 352,
+    "nontrivial_coverage": 0.017045454545454544,
+    "per_panel_metrics": [
+      {
+        "n_collision_fibers": 0,
+        "n_collision_pairs": 0,
+        "n_fibers": 96,
+        "n_nontrivial_fibers": 0,
+        "n_systems": 96,
+        "nontrivial_coverage": 0.0,
+        "systems_in_nontrivial_fibers": 0
+      },
+      {
+        "n_collision_fibers": 0,
+        "n_collision_pairs": 0,
+        "n_fibers": 128,
+        "n_nontrivial_fibers": 0,
+        "n_systems": 128,
+        "nontrivial_coverage": 0.0,
+        "systems_in_nontrivial_fibers": 0
+      },
+      {
+        "n_collision_fibers": 1,
+        "n_collision_pairs": 1,
+        "n_fibers": 127,
+        "n_nontrivial_fibers": 1,
+        "n_systems": 128,
+        "nontrivial_coverage": 0.015625,
+        "systems_in_nontrivial_fibers": 2
+      }
+    ],
+    "systems_in_nontrivial_fibers": 6
+  },
+  "source_systems": 352
+}

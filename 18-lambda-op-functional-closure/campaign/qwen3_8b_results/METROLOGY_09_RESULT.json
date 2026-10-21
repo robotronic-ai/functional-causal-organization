@@ -1,0 +1,108 @@
+{
+  "behavior": {
+    "cell_outcome_stability_fraction": 1.0,
+    "target_vector_stability_fraction": 1.0
+  },
+  "compression_fidelity": {
+    "full_co_scalarization_auditable": false,
+    "interpretation_rule": {
+      "distance_spearman": "Higher is better; 1 means pairwise geometry is rank-preserved.",
+      "knn3_overlap": "Higher is better; 1 means local neighborhoods are preserved.",
+      "loocv_r2_reconstruct_rich": "Higher is better; <=0 means no out-of-sample reconstruction gain over the train-mean baseline.",
+      "within_fiber_distortion_fraction": "Lower is better; 0 means no rich variation remains inside categorical fibers."
+    },
+    "metrics": {
+      "ALL_FLOW_H2_FORWARD_CATEGORICAL": {
+        "dimension": 48,
+        "n_fibers": 6,
+        "nontrivial_coverage": 0.8333333333333334,
+        "pairwise_distance_spearman": -0.026670144795689417,
+        "rich_variance_explained_by_fibers": 0.2475804591413725,
+        "within_fiber_distortion_fraction": 0.7524195408586275
+      },
+      "DIAG_OFFDIAG_TEMPORAL_48D": {
+        "dimension": 48,
+        "knn3_overlap": 0.611111111111111,
+        "loocv_r2_reconstruct_rich": 0.39303049674066615,
+        "pairwise_distance_spearman": 0.8882327592357415
+      },
+      "GLOBAL_LOG_MEAN_1D": {
+        "dimension": 1,
+        "knn3_overlap": 0.27777777777777773,
+        "loocv_r2_reconstruct_rich": 0.26289971901808484,
+        "pairwise_distance_spearman": 0.7201723719695781
+      },
+      "GLOBAL_LOG_MEAN_STD_2D": {
+        "dimension": 2,
+        "knn3_overlap": 0.4166666666666667,
+        "loocv_r2_reconstruct_rich": 0.31727104256406613,
+        "pairwise_distance_spearman": 0.5955759763702003
+      },
+      "OPERATION_MOMENTS_8D": {
+        "dimension": 8,
+        "knn3_overlap": 0.375,
+        "loocv_r2_reconstruct_rich": 0.23647464034776866,
+        "pairwise_distance_spearman": 0.7218344487093507
+      },
+      "OP_SOURCE_MOMENTS_24D": {
+        "dimension": 24,
+        "knn3_overlap": 0.5277777777777778,
+        "loocv_r2_reconstruct_rich": 0.2479916858861918,
+        "pairwise_distance_spearman": 0.7456417573950144
+      }
+    },
+    "n_systems": 24,
+    "reason_full_co_not_auditable": "This panel does not contain certified Gamma, Delta, or R measurements. The audit covers the current Lambda/active-kernel proxy only.",
+    "rich_proxy": {
+      "axes": [
+        "operation",
+        "source_address",
+        "target_address",
+        "horizon",
+        "internal_metric"
+      ],
+      "dimension": 288,
+      "name": "CROSS_TARGET_ZERO_SUFFIX_LOG_TRAJECTORY",
+      "target_blind": true
+    },
+    "scalarization_contract": "C_O is a four-component profile, not a default scalar. One-dimensional summaries below are diagnostics only.",
+    "schema": "co-qwen3-8b-metrology-compression-fidelity-v1",
+    "source_panel": "/mnt/c/Users/Merien/pycharm/llama/quantum/exports/co_qwen3_8b_closure/CO_U_CROSS_TARGET_CHANNEL_07/CROSS_TARGET_07_PANEL.json",
+    "status": "EXPLORATORY_METROLOGY_AUDIT"
+  },
+  "continuous_internal_measurements": {
+    "absolute_range_p95": 0.0,
+    "exact_equality_fraction": 1.0,
+    "n_values_compared": 1728,
+    "noise_to_between_system_signal_ratio_max": 0.0,
+    "noise_to_between_system_signal_ratio_median": 0.0,
+    "noise_to_between_system_signal_ratio_p95": 0.0,
+    "relative_range_max": 0.0,
+    "relative_range_median": 0.0,
+    "relative_range_p95": 0.0
+  },
+  "descriptor_stability_fraction": {
+    "ALL_FINAL_H2_BIDIR": 1.0,
+    "ALL_FINAL_H2_FORWARD": 1.0,
+    "ALL_FLOW_H2_FORWARD": 1.0,
+    "SUB_FINAL_H12_FORWARD": 1.0,
+    "SUB_FINAL_H2_BIDIR": 1.0,
+    "SUB_FINAL_H2_FORWARD": 1.0,
+    "SUB_FINAL_H2_FORWARD_RANK": 1.0,
+    "SUB_FLOW_H12_FORWARD": 1.0,
+    "SUB_FLOW_H2_BIDIR": 1.0,
+    "SUB_FLOW_H2_FORWARD": 1.0,
+    "SUB_FLOW_H2_TOPOLOGY": 1.0
+  },
+  "dtype": "bfloat16",
+  "fresh_process_model_reload_each_repeat": true,
+  "limitations": [
+    "This audit estimates repeatability in the current bfloat16 CUDA stack; it does not estimate systematic bias relative to a float32 reference.",
+    "The compression-fidelity audit covers the current cross-target Lambda/active-kernel proxy, not certified Gamma, Delta, R, or a scalar C_O."
+  ],
+  "n_systems_repeated": 6,
+  "repeat_count": 3,
+  "schema": "co-qwen3-8b-metrology-audit-v1",
+  "status": "REPEATABILITY_CLEAN",
+  "status_is_engineering_heuristic_not_formal_theorem": true
+}

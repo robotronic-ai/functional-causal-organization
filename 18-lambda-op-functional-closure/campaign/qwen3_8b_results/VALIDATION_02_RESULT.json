@@ -1,0 +1,175 @@
+{
+  "candidate_name": "LAMBDA_OP_REFINED_SUBSTITUTE_FIRST",
+  "candidate_origin": "TARGET_INFORMED_REFINED_CANDIDATE",
+  "candidate_sha256": "292a8f3da5129d0f0197449da340fba74a4459ec42df8b55844f1eefc863b3d6",
+  "closure": "REFUTED",
+  "closure_type": "NONE",
+  "collision_examples": [
+    {
+      "descriptor_bins": [
+        5,
+        12,
+        9
+      ],
+      "distinct_target_count": 2,
+      "target_groups": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            41
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            67
+          ]
+        }
+      ],
+      "units": [
+        41,
+        67
+      ]
+    },
+    {
+      "descriptor_bins": [
+        5,
+        2,
+        2
+      ],
+      "distinct_target_count": 2,
+      "target_groups": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            80
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            119
+          ]
+        }
+      ],
+      "units": [
+        80,
+        119
+      ]
+    },
+    {
+      "descriptor_bins": [
+        12,
+        12,
+        2
+      ],
+      "distinct_target_count": 2,
+      "target_groups": [
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            109
+          ]
+        },
+        {
+          "target": [
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "ORIGINAL",
+            "DONOR",
+            "DONOR",
+            "DONOR"
+          ],
+          "units": [
+            112
+          ]
+        }
+      ],
+      "units": [
+        109,
+        112
+      ]
+    }
+  ],
+  "interpretation": "This is a fresh validation of a candidate chosen during target-informed exploration. No candidate parameters were changed using this validation panel.",
+  "model": "Qwen3-8B",
+  "n_fibers": 123,
+  "n_functional_collisions": 3,
+  "n_nontrivial_fibers": 5,
+  "n_selected_features": 3,
+  "n_validation_systems": 128,
+  "schema": "co-qwen3-8b-lambda-op-candidate-validation-score-v1",
+  "systems_in_nontrivial_fibers": 10,
+  "validation_panel_sha256": "4ca213d00fbb04e49dcddfcb9f321597fb84661965b0512ca33f80b0a346d8dd"
+}

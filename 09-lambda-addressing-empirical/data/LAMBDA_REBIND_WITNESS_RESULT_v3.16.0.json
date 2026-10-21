@@ -1,0 +1,46 @@
+{
+  "architecture": {
+    "only_difference": "RELINK: on COMMIT P<-U; LOCK: on COMMIT P unchanged",
+    "readout": "Y[r] = C[P[r]] in BOTH systems",
+    "state": "C[4] payload bank, P[4] role->content pointer permutation, U[4] late cue permutation"
+  },
+  "baseline_typed_channel": {
+    "comparison_count": 262656,
+    "exact_equal": true,
+    "lock_sha256": "12e7b7641193ddedd4a59dba662edc91cf62609a0a3a2c1110259fd5554759fa",
+    "mismatch_count": 0,
+    "relink_sha256": "12e7b7641193ddedd4a59dba662edc91cf62609a0a3a2c1110259fd5554759fa"
+  },
+  "claim_scope": "Constructive executable witness: identical declared baseline typed perturbation-response channel, divergent late context->role causal channel. Not a retroactive PASS of the frozen RMT real-Delta Stage B gate.",
+  "controls": {
+    "LOCK": {
+      "forced_pointer_accuracy": 1.0,
+      "identity_late_cue_accuracy": 1.0,
+      "precued_accuracy": 1.0
+    },
+    "RELINK": {
+      "forced_pointer_accuracy": 1.0,
+      "identity_late_cue_accuracy": 1.0,
+      "precued_accuracy": 1.0
+    }
+  },
+  "late_rebind": {
+    "LOCK": {
+      "cue_entropy_bits": 4.584962500721156,
+      "cue_pointer_mutual_information_bits": 0.0,
+      "episodes": 576,
+      "lambda_gate_normalized": 0.0,
+      "task_accuracy": 0.041666666666666664
+    },
+    "RELINK": {
+      "cue_entropy_bits": 4.584962500721156,
+      "cue_pointer_mutual_information_bits": 4.584962500721156,
+      "episodes": 576,
+      "lambda_gate_normalized": 1.0,
+      "task_accuracy": 1.0
+    }
+  },
+  "status": "LAMBDA-CONSTRUCTIVE-EMPIRICAL-WITNESS-ESTABLISHED",
+  "usecase": "LATE-ROLE-REBIND-SWITCHBOARD",
+  "version": "3.16.0"
+}

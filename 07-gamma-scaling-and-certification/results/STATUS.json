@@ -1,0 +1,47 @@
+{
+  "folder": "07 - Gamma scaling and certification",
+  "builds_on": "04-gamma-delta-characterization (axiomatic Gamma/Delta characterization)",
+  "sub_bundles": {
+    "gamma-quantum-campaign": {
+      "kind": "real-model empirical campaign",
+      "execution_status": "EXECUTED_REAL_MODEL",
+      "target_model": "Quantum (QuantumModelForCausalLM)",
+      "headline_verdict": "source-normalized Gamma_dir supported; unequal-capacity semantic choice left open",
+      "mean_gamma_dir_by_horizon": {"1": 0.5, "2": 0.543926220694674, "4": 0.578125, "8": 0.606426220694674}
+    },
+    "gamma-cert-target-transformer": {
+      "kind": "certified-interval protocol",
+      "execution_status": "NOT_EXECUTED_REAL_MODEL",
+      "status": "blocked_on_target_model_artifacts",
+      "target_model": "frozen recurrent-memory transformer from the manuscript (different from Quantum)",
+      "selftest_status": "V3 (interval [0.0929, 0.2523], width 0.159 > 0.10 precision band)",
+      "target_experiment_executed": false
+    },
+    "gamma-cert-causal-quotient": {
+      "kind": "exact finite stress test",
+      "execution_status": "EXECUTED_EXACT_FINITE",
+      "headline_verdict": "macrostate Gamma=0.5 invariant under coherent replication and null-space perturbation; raw physical Gamma drifts 0.167 to 0.485 as raw-algebra quotient sufficiency fails"
+    },
+    "gamma-cert-v0.41": {
+      "kind": "exact/calibrated scale certificates",
+      "execution_status": "EXECUTED_EXACT_OR_CALIBRATED",
+      "headline_verdict": "additive fractional-packing certificate (exact dual MILP) and one-sided spectral (Cheeger) certificate, demonstrated to n=1024 roles on a copy-expander benchmark"
+    },
+    "kv-bound-boundary": {
+      "kind": "proved theorem + toy verification",
+      "theorem_status": "PROVED",
+      "toy_selftest_execution_status": "EXECUTED_SYNTHETIC_TOY_MODEL",
+      "real_model_protocol_execution_status": "NOT_EXECUTED",
+      "headline_verdict": "B_q <= H(Y|C,U) + C_bypass confirmed exactly (zero slack) on synthetic system; 15-17 bit manuscript claim not yet tested on any real model"
+    }
+  },
+  "folder_wide_notes": {
+    "private_oracle_files_found": 0,
+    "duplicate_bundle_not_recopied": "gamma-quantum-campaign's baseline_certifier/ is byte-identical to gamma-cert-target-transformer/ and is not duplicated",
+    "french_source_notes_translated": [
+      "gamma-cert-v0.41/docs (from GAMMA_CERT_V04_NOTE.md)",
+      "kv-bound-boundary/docs (from temporal_boundary_note.md)"
+    ]
+  },
+  "overall_status": "MIXED: two sub-bundles executed on real models with genuinely different outcomes (one executed, one blocked); three sub-bundles are fully executed exact/synthetic verifications with no real-model dependency"
+}

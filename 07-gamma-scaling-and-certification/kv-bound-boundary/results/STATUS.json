@@ -1,0 +1,16 @@
+{
+  "package": "KV-BOUND boundary v0.3",
+  "theorem_status": "PROVED (chain rule + subadditivity)",
+  "toy_selftest_execution_status": "EXECUTED_SYNTHETIC_TOY_MODEL",
+  "toy_selftest_pass": true,
+  "real_model_falsification_protocol_execution_status": "NOT_EXECUTED",
+  "mean_results_by_mode_bits": {
+    "post_cycle": {"B": 0.4917292966721748, "H_Y": 0.4917292966721748, "C_bypass": 0.0},
+    "prewrite": {"B": 1.75, "H_Y": 0.5931390622295665, "C_bypass": 1.1568609377704335},
+    "raw_kv": {"B": 1.6875, "H_Y": 0.0, "C_bypass": 1.6875},
+    "positive_latent": {"B": 2.0, "H_Y": 0.0, "C_bypass": 2.0}
+  },
+  "corollary": "B_q <= H_q(Y_t|C_t,U_t) <= log2|V| holds iff C_bypass,q = 0 is measured to hold",
+  "manuscript_claim_status": "the 15-17 bit bound is NOT confirmed or refuted for any real model by this bundle; a falsifiable experimental criterion is specified but not run",
+  "not_a_target_model_result": "kv_bound_boundary_selftest.py runs on a synthetic single-layer toy attention module, not any real transformer"
+}

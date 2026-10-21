@@ -1,0 +1,37 @@
+{
+  "required_target_inputs": [
+    {
+      "name": "frozen_model",
+      "description": "Frozen post-memory-training recurrent-memory transformer."
+    },
+    {
+      "name": "model_loader",
+      "description": "Local Python loader that instantiates the frozen model without network access."
+    },
+    {
+      "name": "tokenizer_or_input_encoder",
+      "description": "Exact encoder used by the existing external validation campaign."
+    },
+    {
+      "name": "context_generator",
+      "description": "Frozen prompt or episode generator with stable context identifiers."
+    },
+    {
+      "name": "memory_intervention_hook",
+      "description": "Exact hook used to set the recurrent-memory mechanism under matched interventions."
+    },
+    {
+      "name": "quotient_discovery",
+      "description": "Discovery procedure or frozen map from physical memory variables to causal minimal macro-roles."
+    }
+  ],
+  "accepted_trial_output": {
+    "format": "NPZ",
+    "arrays": {
+      "x": "int8 matrix [trials, macro_roles], binary balanced source interventions",
+      "y": "int8 matrix [trials, macro_roles], binary next-cycle macro responses",
+      "context": "int64 vector [trials], frozen context identifiers",
+      "split": "int8 vector [trials], values 0,1,2,3 for the four independent streams"
+    }
+  }
+}

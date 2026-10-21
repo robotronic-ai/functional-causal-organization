@@ -1,0 +1,2550 @@
+{
+  "output": "quantum_gamma_directional_efficiency_v12.json",
+  "maximum_repeat_noise": 0.0,
+  "closure_invariance": {
+    "1": {
+      "closure_depths": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "mean_context_gamma_values": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "mean_context_gamma_range": 0.0,
+      "cuts": [
+        {
+          "cut": "entry_0_4 | core_5_30+terminal_31_35",
+          "j_left_to_right_range": 0.0,
+          "j_right_to_left_range": 0.0,
+          "gamma_cut_range": 0.0,
+          "gamma_cut_values": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "cut": "core_5_30 | entry_0_4+terminal_31_35",
+          "j_left_to_right_range": 0.0,
+          "j_right_to_left_range": 0.0,
+          "gamma_cut_range": 0.0,
+          "gamma_cut_values": [
+            0.75,
+            0.75,
+            0.75,
+            0.75
+          ]
+        },
+        {
+          "cut": "terminal_31_35 | entry_0_4+core_5_30",
+          "j_left_to_right_range": 0.0,
+          "j_right_to_left_range": 0.0,
+          "gamma_cut_range": 0.0,
+          "gamma_cut_values": [
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "2": {
+      "closure_depths": [
+        2,
+        4,
+        8
+      ],
+      "mean_context_gamma_values": [
+        0.543926220694674,
+        0.543926220694674,
+        0.543926220694674
+      ],
+      "mean_context_gamma_range": 0.0,
+      "cuts": [
+        {
+          "cut": "entry_0_4 | core_5_30+terminal_31_35",
+          "j_left_to_right_range": 0.0,
+          "j_right_to_left_range": 0.0,
+          "gamma_cut_range": 0.0,
+          "gamma_cut_values": [
+            0.575176220694674,
+            0.575176220694674,
+            0.575176220694674
+          ]
+        },
+        {
+          "cut": "core_5_30 | entry_0_4+terminal_31_35",
+          "j_left_to_right_range": 0.0,
+          "j_right_to_left_range": 0.0,
+          "gamma_cut_range": 0.0,
+          "gamma_cut_values": [
+            0.7890625,
+            0.7890625,
+            0.7890625
+          ]
+        },
+        {
+          "cut": "terminal_31_35 | entry_0_4+core_5_30",
+          "j_left_to_right_range": 0.0,
+          "j_right_to_left_range": 0.0,
+          "gamma_cut_range": 0.0,
+          "gamma_cut_values": [
+            0.578125,
+            0.578125,
+            0.578125
+          ]
+        }
+      ]
+    },
+    "4": {
+      "closure_depths": [
+        4,
+        8
+      ],
+      "mean_context_gamma_values": [
+        0.578125,
+        0.578125
+      ],
+      "mean_context_gamma_range": 0.0,
+      "cuts": [
+        {
+          "cut": "entry_0_4 | core_5_30+terminal_31_35",
+          "j_left_to_right_range": 0.0,
+          "j_right_to_left_range": 0.0,
+          "gamma_cut_range": 0.0,
+          "gamma_cut_values": [
+            0.625,
+            0.625
+          ]
+        },
+        {
+          "cut": "core_5_30 | entry_0_4+terminal_31_35",
+          "j_left_to_right_range": 0.0,
+          "j_right_to_left_range": 0.0,
+          "gamma_cut_range": 0.0,
+          "gamma_cut_values": [
+            0.8125,
+            0.8125
+          ]
+        },
+        {
+          "cut": "terminal_31_35 | entry_0_4+core_5_30",
+          "j_left_to_right_range": 0.0,
+          "j_right_to_left_range": 0.0,
+          "gamma_cut_range": 0.0,
+          "gamma_cut_values": [
+            0.625,
+            0.625
+          ]
+        }
+      ]
+    },
+    "8": {
+      "closure_depths": [
+        8
+      ],
+      "mean_context_gamma_values": [
+        0.606426220694674
+      ],
+      "mean_context_gamma_range": 0.0,
+      "cuts": [
+        {
+          "cut": "entry_0_4 | core_5_30+terminal_31_35",
+          "j_left_to_right_range": 0.0,
+          "j_right_to_left_range": 0.0,
+          "gamma_cut_range": 0.0,
+          "gamma_cut_values": [
+            0.653301220694674
+          ]
+        },
+        {
+          "cut": "core_5_30 | entry_0_4+terminal_31_35",
+          "j_left_to_right_range": 0.0,
+          "j_right_to_left_range": 0.0,
+          "gamma_cut_range": 0.0,
+          "gamma_cut_values": [
+            0.8203125
+          ]
+        },
+        {
+          "cut": "terminal_31_35 | entry_0_4+core_5_30",
+          "j_left_to_right_range": 0.0,
+          "j_right_to_left_range": 0.0,
+          "gamma_cut_range": 0.0,
+          "gamma_cut_values": [
+            0.640625
+          ]
+        }
+      ]
+    }
+  },
+  "deepest_closure_summary": {
+    "1": {
+      "contexts": [
+        {
+          "context_id": 0,
+          "word_a": "red",
+          "word_b": "blue",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 1,
+          "word_a": "north",
+          "word_b": "south",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 2,
+          "word_a": "yes",
+          "word_b": "no",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 3,
+          "word_a": "circle",
+          "word_b": "square",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 4,
+          "word_a": "morning",
+          "word_b": "evening",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 5,
+          "word_a": "left",
+          "word_b": "right",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 6,
+          "word_a": "open",
+          "word_b": "closed",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 7,
+          "word_a": "large",
+          "word_b": "small",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "mean_context_gamma": 0.5,
+        "median_context_gamma": 0.5,
+        "minimum_context_gamma": 0.5,
+        "maximum_context_gamma": 0.5,
+        "context_gamma_values": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "minimizing_cut_frequency": {
+          "entry_0_4 | core_5_30+terminal_31_35": 8,
+          "terminal_31_35 | entry_0_4+core_5_30": 8
+        },
+        "all_contexts_bounded": true,
+        "cuts": [
+          {
+            "cut": "entry_0_4 | core_5_30+terminal_31_35",
+            "mean_j_left_to_right_bits": 1.0,
+            "mean_j_right_to_left_bits": 0.0,
+            "mean_efficiency_left_to_right": 1.0,
+            "mean_efficiency_right_to_left": 0.0,
+            "mean_gamma_cut": 0.5,
+            "minimum_gamma_cut": 0.5,
+            "maximum_gamma_cut": 0.5
+          },
+          {
+            "cut": "core_5_30 | entry_0_4+terminal_31_35",
+            "mean_j_left_to_right_bits": 1.0,
+            "mean_j_right_to_left_bits": 1.0,
+            "mean_efficiency_left_to_right": 1.0,
+            "mean_efficiency_right_to_left": 0.5,
+            "mean_gamma_cut": 0.75,
+            "minimum_gamma_cut": 0.75,
+            "maximum_gamma_cut": 0.75
+          },
+          {
+            "cut": "terminal_31_35 | entry_0_4+core_5_30",
+            "mean_j_left_to_right_bits": 0.0,
+            "mean_j_right_to_left_bits": 2.0,
+            "mean_efficiency_left_to_right": 0.0,
+            "mean_efficiency_right_to_left": 1.0,
+            "mean_gamma_cut": 0.5,
+            "minimum_gamma_cut": 0.5,
+            "maximum_gamma_cut": 0.5
+          }
+        ]
+      }
+    },
+    "2": {
+      "contexts": [
+        {
+          "context_id": 0,
+          "word_a": "red",
+          "word_b": "blue",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 1,
+          "word_a": "north",
+          "word_b": "south",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 2,
+          "word_a": "yes",
+          "word_b": "no",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 3,
+          "word_a": "circle",
+          "word_b": "square",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 4,
+          "word_a": "morning",
+          "word_b": "evening",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 5,
+          "word_a": "left",
+          "word_b": "right",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 6,
+          "word_a": "open",
+          "word_b": "closed",
+          "gamma": 0.75,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 1.0,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 1.0,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 7,
+          "word_a": "large",
+          "word_b": "small",
+          "gamma": 0.6014097655573916,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.4056390622295664,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.2028195311147832,
+              "gamma_cut": 0.6014097655573916,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.25,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.625,
+              "gamma_cut": 0.8125,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.25,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.25,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.625,
+              "bounded": true
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "mean_context_gamma": 0.543926220694674,
+        "median_context_gamma": 0.5,
+        "minimum_context_gamma": 0.5,
+        "maximum_context_gamma": 0.75,
+        "context_gamma_values": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.75,
+          0.6014097655573916
+        ],
+        "minimizing_cut_frequency": {
+          "entry_0_4 | core_5_30+terminal_31_35": 7,
+          "terminal_31_35 | entry_0_4+core_5_30": 6
+        },
+        "all_contexts_bounded": true,
+        "cuts": [
+          {
+            "cut": "entry_0_4 | core_5_30+terminal_31_35",
+            "mean_j_left_to_right_bits": 1.0,
+            "mean_j_right_to_left_bits": 0.3007048827786958,
+            "mean_efficiency_left_to_right": 1.0,
+            "mean_efficiency_right_to_left": 0.1503524413893479,
+            "mean_gamma_cut": 0.575176220694674,
+            "minimum_gamma_cut": 0.5,
+            "maximum_gamma_cut": 0.75
+          },
+          {
+            "cut": "core_5_30 | entry_0_4+terminal_31_35",
+            "mean_j_left_to_right_bits": 1.0,
+            "mean_j_right_to_left_bits": 1.15625,
+            "mean_efficiency_left_to_right": 1.0,
+            "mean_efficiency_right_to_left": 0.578125,
+            "mean_gamma_cut": 0.7890625,
+            "minimum_gamma_cut": 0.75,
+            "maximum_gamma_cut": 1.0
+          },
+          {
+            "cut": "terminal_31_35 | entry_0_4+core_5_30",
+            "mean_j_left_to_right_bits": 0.15625,
+            "mean_j_right_to_left_bits": 2.0,
+            "mean_efficiency_left_to_right": 0.15625,
+            "mean_efficiency_right_to_left": 1.0,
+            "mean_gamma_cut": 0.578125,
+            "minimum_gamma_cut": 0.5,
+            "maximum_gamma_cut": 1.0
+          }
+        ]
+      }
+    },
+    "4": {
+      "contexts": [
+        {
+          "context_id": 0,
+          "word_a": "red",
+          "word_b": "blue",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 1,
+          "word_a": "north",
+          "word_b": "south",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.5,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.25,
+              "gamma_cut": 0.625,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 2,
+          "word_a": "yes",
+          "word_b": "no",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 3,
+          "word_a": "circle",
+          "word_b": "square",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 4,
+          "word_a": "morning",
+          "word_b": "evening",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 5,
+          "word_a": "left",
+          "word_b": "right",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 6,
+          "word_a": "open",
+          "word_b": "closed",
+          "gamma": 0.75,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 1.0,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 1.0,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 7,
+          "word_a": "large",
+          "word_b": "small",
+          "gamma": 0.875,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.5,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.75,
+              "gamma_cut": 0.875,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 1.0,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 1.0,
+              "bounded": true
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "mean_context_gamma": 0.578125,
+        "median_context_gamma": 0.5,
+        "minimum_context_gamma": 0.5,
+        "maximum_context_gamma": 0.875,
+        "context_gamma_values": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.75,
+          0.875
+        ],
+        "minimizing_cut_frequency": {
+          "entry_0_4 | core_5_30+terminal_31_35": 6,
+          "terminal_31_35 | entry_0_4+core_5_30": 6
+        },
+        "all_contexts_bounded": true,
+        "cuts": [
+          {
+            "cut": "entry_0_4 | core_5_30+terminal_31_35",
+            "mean_j_left_to_right_bits": 1.0,
+            "mean_j_right_to_left_bits": 0.5,
+            "mean_efficiency_left_to_right": 1.0,
+            "mean_efficiency_right_to_left": 0.25,
+            "mean_gamma_cut": 0.625,
+            "minimum_gamma_cut": 0.5,
+            "maximum_gamma_cut": 0.875
+          },
+          {
+            "cut": "core_5_30 | entry_0_4+terminal_31_35",
+            "mean_j_left_to_right_bits": 1.0,
+            "mean_j_right_to_left_bits": 1.25,
+            "mean_efficiency_left_to_right": 1.0,
+            "mean_efficiency_right_to_left": 0.625,
+            "mean_gamma_cut": 0.8125,
+            "minimum_gamma_cut": 0.75,
+            "maximum_gamma_cut": 1.0
+          },
+          {
+            "cut": "terminal_31_35 | entry_0_4+core_5_30",
+            "mean_j_left_to_right_bits": 0.25,
+            "mean_j_right_to_left_bits": 2.0,
+            "mean_efficiency_left_to_right": 0.25,
+            "mean_efficiency_right_to_left": 1.0,
+            "mean_gamma_cut": 0.625,
+            "minimum_gamma_cut": 0.5,
+            "maximum_gamma_cut": 1.0
+          }
+        ]
+      }
+    },
+    "8": {
+      "contexts": [
+        {
+          "context_id": 0,
+          "word_a": "red",
+          "word_b": "blue",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 1,
+          "word_a": "north",
+          "word_b": "south",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.5,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.25,
+              "gamma_cut": 0.625,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 2,
+          "word_a": "yes",
+          "word_b": "no",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 3,
+          "word_a": "circle",
+          "word_b": "square",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 4,
+          "word_a": "morning",
+          "word_b": "evening",
+          "gamma": 0.6014097655573916,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.4056390622295664,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.2028195311147832,
+              "gamma_cut": 0.6014097655573916,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.25,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.625,
+              "gamma_cut": 0.8125,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.25,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.25,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.625,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 5,
+          "word_a": "left",
+          "word_b": "right",
+          "gamma": 0.5,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35",
+            "terminal_31_35 | entry_0_4+core_5_30"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 0.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.5,
+              "gamma_cut": 0.75,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 0.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 0.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 0.5,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 6,
+          "word_a": "open",
+          "word_b": "closed",
+          "gamma": 0.875,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.5,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.75,
+              "gamma_cut": 0.875,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 1.0,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 1.0,
+              "bounded": true
+            }
+          ]
+        },
+        {
+          "context_id": 7,
+          "word_a": "large",
+          "word_b": "small",
+          "gamma": 0.875,
+          "minimizing_cuts": [
+            "entry_0_4 | core_5_30+terminal_31_35"
+          ],
+          "all_cuts_bounded": true,
+          "cuts": [
+            {
+              "cut": "entry_0_4 | core_5_30+terminal_31_35",
+              "left_blocks": [
+                "entry_0_4"
+              ],
+              "right_blocks": [
+                "core_5_30",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 1.5,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 0.75,
+              "gamma_cut": 0.875,
+              "bounded": true
+            },
+            {
+              "cut": "core_5_30 | entry_0_4+terminal_31_35",
+              "left_blocks": [
+                "core_5_30"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "terminal_31_35"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 1.0,
+              "bounded": true
+            },
+            {
+              "cut": "terminal_31_35 | entry_0_4+core_5_30",
+              "left_blocks": [
+                "terminal_31_35"
+              ],
+              "right_blocks": [
+                "entry_0_4",
+                "core_5_30"
+              ],
+              "source_entropy_left_bits": 1.0,
+              "source_entropy_right_bits": 2.0,
+              "j_left_to_right_bits": 1.0,
+              "j_right_to_left_bits": 2.0,
+              "efficiency_left_to_right": 1.0,
+              "efficiency_right_to_left": 1.0,
+              "gamma_cut": 1.0,
+              "bounded": true
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "mean_context_gamma": 0.606426220694674,
+        "median_context_gamma": 0.5,
+        "minimum_context_gamma": 0.5,
+        "maximum_context_gamma": 0.875,
+        "context_gamma_values": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.6014097655573916,
+          0.5,
+          0.875,
+          0.875
+        ],
+        "minimizing_cut_frequency": {
+          "entry_0_4 | core_5_30+terminal_31_35": 6,
+          "terminal_31_35 | entry_0_4+core_5_30": 5
+        },
+        "all_contexts_bounded": true,
+        "cuts": [
+          {
+            "cut": "entry_0_4 | core_5_30+terminal_31_35",
+            "mean_j_left_to_right_bits": 1.0,
+            "mean_j_right_to_left_bits": 0.6132048827786958,
+            "mean_efficiency_left_to_right": 1.0,
+            "mean_efficiency_right_to_left": 0.3066024413893479,
+            "mean_gamma_cut": 0.653301220694674,
+            "minimum_gamma_cut": 0.5,
+            "maximum_gamma_cut": 0.875
+          },
+          {
+            "cut": "core_5_30 | entry_0_4+terminal_31_35",
+            "mean_j_left_to_right_bits": 1.0,
+            "mean_j_right_to_left_bits": 1.28125,
+            "mean_efficiency_left_to_right": 1.0,
+            "mean_efficiency_right_to_left": 0.640625,
+            "mean_gamma_cut": 0.8203125,
+            "minimum_gamma_cut": 0.75,
+            "maximum_gamma_cut": 1.0
+          },
+          {
+            "cut": "terminal_31_35 | entry_0_4+core_5_30",
+            "mean_j_left_to_right_bits": 0.28125,
+            "mean_j_right_to_left_bits": 2.0,
+            "mean_efficiency_left_to_right": 0.28125,
+            "mean_efficiency_right_to_left": 1.0,
+            "mean_gamma_cut": 0.640625,
+            "minimum_gamma_cut": 0.5,
+            "maximum_gamma_cut": 1.0
+          }
+        ]
+      }
+    }
+  }
+}

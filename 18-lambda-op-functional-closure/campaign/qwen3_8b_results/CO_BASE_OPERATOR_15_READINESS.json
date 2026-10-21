@@ -1,0 +1,50 @@
+{
+  "ami_used_for_measurement_construction": false,
+  "components": [
+    "Gamma",
+    "Delta",
+    "R",
+    "Lambda"
+  ],
+  "delta_estimator": "DELTA_QWEN_INTERVENTION_RICHNESS_X_ROLE_PROPAGATION_V1",
+  "design_space": "C_O^(A,Q,rho)",
+  "diagnostic_status_vocabulary": [
+    "LOCALIZED",
+    "INTERACTIVE",
+    "DIFFUSE",
+    "UNRESOLVED"
+  ],
+  "experimental_interventions": [
+    "ZERO_LOCAL",
+    "HEAD_ROTATE_LOCAL"
+  ],
+  "gamma_estimator": "GAMMA_QWEN_ROLE_CUT_RESPONSE_V1",
+  "generalization_level": "OP",
+  "generalization_level_changed": false,
+  "global_scalar_co_constructed": false,
+  "horizons": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "implementation_correction": "source-dependent CONTROL_MAP clause order supported",
+  "lambda_estimator": "LAMBDA_CONTENT_TYPED_12_EXISTING_PROXY",
+  "operation_algebra": [
+    "ID",
+    "KEEP",
+    "REVOKE",
+    "SUBSTITUTE"
+  ],
+  "partition_evaluation": [
+    "sufficiency_loss",
+    "adjusted_mutual_information",
+    "fixed_fiber_permutation_95",
+    "partition_cost"
+  ],
+  "r_estimator": "R_QWEN_ROLE_CYCLE_PROFILE_V1",
+  "schema": "co-qwen3-8b-base-operator-15-readiness-v1",
+  "selected_systems": 16,
+  "source_panel_sha256": "92d9a79472c05cf091f823ed5e970542926106bbf13dd7e1ce16737fa5e0dff4",
+  "status": "PATCHED_READY_EXPLORATORY_COMPONENT_AUDIT"
+}

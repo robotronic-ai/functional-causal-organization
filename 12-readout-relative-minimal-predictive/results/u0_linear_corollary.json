@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "hankel_rank_equals_reachable_minus_unobservable_failures": 0
+  },
+  "minimal_predictive_dimension_histogram": {
+    "2": 224,
+    "3": 288
+  },
+  "status": "PASS",
+  "universe": {
+    "declared_readouts": [
+      "x1",
+      "x2"
+    ],
+    "dynamics_count": 512,
+    "field": "F2",
+    "source_interface": [
+      "e1",
+      "e2"
+    ],
+    "state_dimension": 3
+  }
+}

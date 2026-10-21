@@ -1,0 +1,10 @@
+{
+  "d_pq": 0.4,
+  "d_pr": 0.8,
+  "d_qr": 0.4,
+  "epsilon": 0.5,
+  "p_related_q": true,
+  "p_related_r": false,
+  "q_related_r": true,
+  "status": "PASS"
+}

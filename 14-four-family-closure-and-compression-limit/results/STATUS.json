@@ -1,0 +1,37 @@
+{
+  "folder": "14-four-family-closure-and-compression-limit",
+  "items": [
+    {
+      "name": "compression-limit-theorem",
+      "kind": "theorem",
+      "status": "PROVED",
+      "verdict": null,
+      "executed": false,
+      "note": "Direct proof by contradiction; self-contained, no harness required."
+    },
+    {
+      "name": "four-family-axis-completeness",
+      "kind": "narrative-campaign-result",
+      "status": "REPORTED-NOT-INDEPENDENTLY-VERIFIED",
+      "verdict": "FOUR-FAMILY ONTOLOGY — STRONG FINITE NON-REFUTATION",
+      "executed": false,
+      "note": "Reconstructed from a separate conversational record (pre-Λ 'v6' document lineage). No frozen protocol/fixture/harness files exist for this campaign in this archive edition."
+    },
+    {
+      "name": "claim-ladder",
+      "kind": "analytic-framework",
+      "status": "NOTATION-ADAPTED-FROM-VERIFIED-RUNGS",
+      "verdict_by_rung": {
+        "L0": "true but weak",
+        "L1": "exact conditional consequence of closure",
+        "L2": "supported by finite fixtures, not a universal theorem",
+        "L3": "NOT ESTABLISHED / FALSE for current compact profile",
+        "L4": "REFUTED on frozen finite witnesses",
+        "L5": "open, empirically testable (protocol frozen in folder 15)",
+        "L6": "future work"
+      },
+      "executed": false,
+      "note": "Ladder statuses are carried over from folder 15's frozen finite witnesses; only the notation mapping (C_F->C_O, Δ_prop->Δ, adding Λ) is new to this archive edition."
+    }
+  ]
+}

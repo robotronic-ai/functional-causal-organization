@@ -1,0 +1,42 @@
+{
+  "D": {
+    "minimal_classes_T1": 6,
+    "profile_classes": [
+      6,
+      10,
+      12
+    ],
+    "states": 12
+  },
+  "E": {
+    "environments": 6,
+    "hidden_irrelevant_pair": [
+      "iid_A",
+      "iid_B"
+    ],
+    "target_classes": 5
+  },
+  "ED": {
+    "joint_quotient_classes": 24,
+    "omega": [
+      2.8284271247461903,
+      2.449489742783178,
+      2.0,
+      0.0
+    ],
+    "raw_pairs": 576,
+    "refinement_classes": [
+      1,
+      4,
+      12,
+      24
+    ]
+  },
+  "OED": {
+    "minimal_interaction_order": 3,
+    "pairwise_classes": 4,
+    "states": 8,
+    "ternary_classes": 2
+  },
+  "status": "PASS"
+}

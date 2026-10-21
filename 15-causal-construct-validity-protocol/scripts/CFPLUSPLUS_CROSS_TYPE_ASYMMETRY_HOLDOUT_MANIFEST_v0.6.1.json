@@ -1,0 +1,10 @@
+{
+  "candidate_sha256": "5da0d1d9453d6abf5c9452e47e0b470288481b1961dc04b38bb982f04fbd7c88",
+  "date": "2026-09-14",
+  "files": {
+    "CFPLUSPLUS_v0.6_I2_CONTROL_ADJUDICATION.md": "6fe4c0828e4ebf3bca5bdad38170beea3d2eac840f19f5faea2cfb49201d9fe8",
+    "Protocol_CFPLUSPLUS_CROSS_TYPE_ASYMMETRY_HOLDOUT_v0.6.1_FROZEN.md": "3c39fd2a2f055bad3554ffac3180fc74cee997ca43f79fc3044edc334dbf78c2"
+  },
+  "schema": "CFPLUSPLUS-cross-type-asymmetry-holdout-freeze-v0.6.1",
+  "status": "CANDIDATE-FIXED-HOLDOUT-FROZEN"
+}

@@ -1,0 +1,65 @@
+{
+  "notes": [
+    "The theory is relative to a declared causal envelope and admissible descriptor library.",
+    "Minimal keys need not be unique.",
+    "Several minimal keys may induce the same minimal semantic partition.",
+    "Structural certification requires target-blind causal equivalences, not only numerical equality."
+  ],
+  "primary_defect_object": "unresolved_pair_set_U",
+  "schema_version": "1.0.0",
+  "secondary_metric": "Omega",
+  "theorems": [
+    {
+      "depends_on": [],
+      "id": "T1",
+      "name": "Fiber Factorization Theorem"
+    },
+    {
+      "depends_on": [
+        "T1"
+      ],
+      "id": "T2",
+      "name": "Refinement Monotonicity Theorem"
+    },
+    {
+      "depends_on": [
+        "T1"
+      ],
+      "id": "T3",
+      "name": "Minimal Admissible Sufficiency"
+    },
+    {
+      "depends_on": [
+        "T1"
+      ],
+      "id": "T4",
+      "name": "Symmetry Obstruction Theorem"
+    },
+    {
+      "depends_on": [
+        "T1",
+        "T4"
+      ],
+      "id": "T5",
+      "name": "Causal-Groupoid Factorization Theorem"
+    },
+    {
+      "depends_on": [],
+      "id": "T6",
+      "name": "Closed-Quotient Transport Theorem"
+    },
+    {
+      "depends_on": [
+        "T6"
+      ],
+      "id": "T7",
+      "name": "Certified-Quotient Composition Theorem"
+    }
+  ],
+  "witnesses": [
+    "D",
+    "E",
+    "ED",
+    "OED"
+  ]
+}

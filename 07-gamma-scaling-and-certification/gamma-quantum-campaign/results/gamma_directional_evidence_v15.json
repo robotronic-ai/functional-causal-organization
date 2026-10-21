@@ -1,0 +1,30 @@
+{
+  "status": "candidate_normalization_supported_but_semantic_choice_pending",
+  "quantum_directional_gamma_mean_by_horizon": {
+    "1": 0.5,
+    "2": 0.543926220694674,
+    "4": 0.578125,
+    "8": 0.606426220694674
+  },
+  "closure_invariance_range": {
+    "1": 0.0,
+    "2": 0.0,
+    "4": 0.0
+  },
+  "autonomous_reference_directional_gamma": {
+    "ring_copy_5": 0.41666666666666663,
+    "xor_neighbors_5": 0.625,
+    "mixed_boolean_5": 0.4764097655573916,
+    "shared_noise_synergy_3": 0.5
+  },
+  "v13_all_hard_checks_passed": true,
+  "v14_all_replication_invariance_checks_passed": true,
+  "replication_counts_tested": [
+    1,
+    2,
+    3,
+    5
+  ],
+  "recommended_name": "source-normalized interventional information efficiency",
+  "manuscript_action": "do_not_replace_definition_until_unequal_capacity_axiom_is_fixed"
+}

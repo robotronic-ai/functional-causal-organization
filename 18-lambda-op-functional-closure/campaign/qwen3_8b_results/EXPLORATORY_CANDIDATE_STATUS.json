@@ -1,0 +1,19 @@
+{
+  "bins_requested": 8,
+  "candidate_name": "LAMBDA_OP_EXPLORE_GREEDY_QUANTIZED",
+  "exploratory_closure": "PASS",
+  "exploratory_closure_type": "NONTRIVIAL",
+  "n_collision_fibers": 0,
+  "n_collision_pairs": 0,
+  "n_fibers": 89,
+  "n_nontrivial_fibers": 7,
+  "n_source_systems": 96,
+  "schema": "co-qwen3-8b-lambda-op-exploratory-result-v1",
+  "selected_feature_count": 3,
+  "selection_used_behavioral_target": true,
+  "source_holdout_sha256": "02de01459b4d1c58c26a76bf9a047eaaf489c9a99b7dc297ec8a7118bcd89cdd",
+  "status": "READY_FOR_FRESH_VALIDATION_01",
+  "systems_in_nontrivial_fibers": 14,
+  "validation_n": 128,
+  "validation_status": "PENDING_LOCAL_EXECUTION"
+}

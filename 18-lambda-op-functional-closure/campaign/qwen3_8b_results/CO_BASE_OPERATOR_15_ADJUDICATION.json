@@ -1,0 +1,161 @@
+{
+  "best_pilot_partition_by_declared_coarseness_rule": {
+    "adjusted_mutual_information": 0.5395669006315341,
+    "ami_permutation_95": 0.1549251496862819,
+    "ami_permutation_p_ge": 0.001996007984031936,
+    "family": "DELTA+LAMBDA",
+    "n_fibers": 11,
+    "nontrivial_coverage": 0.625,
+    "selected_feature_count": 3
+  },
+  "component_contract_audit": {
+    "Delta": {
+      "phase15_estimator": "DELTA_QWEN_INTERVENTION_RICHNESS_X_ROLE_PROPAGATION_V1",
+      "required_contract": "Primary profile (kappa_q, delta_q) with Delta_cap = kappa_q * delta_q = I(P;Y)/log2(|P*|); do not replace this by effective-rank times off-diagonal mass.",
+      "status": "FORMULA_CONTRACT_MISMATCH"
+    },
+    "Gamma": {
+      "phase15_estimator": "GAMMA_QWEN_ROLE_CUT_RESPONSE_V1",
+      "required_contract": "Directional interventional mutual information per declared cut, arithmetic-mean directional aggregator under the declared G-WEAK/marginal-independence semantics, minimum over admissible cuts.",
+      "status": "FORMULA_CONTRACT_MISMATCH"
+    },
+    "Lambda": {
+      "phase15_estimator": "LAMBDA_CONTENT_TYPED_12_EXISTING_PROXY",
+      "required_contract": "Retain typed content-to-role identity and joint cross-role response structure; scalar norms and marginal-only signatures are insufficient in general.",
+      "status": "PARTIAL_TYPED_PROXY"
+    },
+    "R": {
+      "phase15_estimator": "R_QWEN_ROLE_CYCLE_PROFILE_V1",
+      "required_contract": "Build source quotient C without consulting the return channel; report K_eff = H(C|U), B_reentry = I(C;Y_ret|U), and R = B_reentry/K_eff with causal controls.",
+      "status": "DEGENERATE_AND_NOT_CONSTRUCT_VALIDATED"
+    }
+  },
+  "design_decision": {
+    "intervention_algebra_A": "do not enrich to compositions yet",
+    "next_stage": "FORMULA_CONTRACT_16",
+    "operation_level": "OP remains fixed",
+    "quotient_symmetry_Q": "do not tune from behavioral targets",
+    "resolution_rho": "freeze from declared macro roles / threshold-free categorical or ordinal readouts before target opening"
+  },
+  "localized_measurement_issue": {
+    "component": "R",
+    "cycle_partition_quality": {
+      "adjusted_mutual_information": 0.0,
+      "ami_by_target_coordinate": [
+        {
+          "ami": 1.0,
+          "target_index": 0
+        },
+        {
+          "ami": 1.0,
+          "target_index": 1
+        },
+        {
+          "ami": 1.0,
+          "target_index": 2
+        },
+        {
+          "ami": 1.0,
+          "target_index": 3
+        },
+        {
+          "ami": 1.0,
+          "target_index": 4
+        },
+        {
+          "ami": 1.0,
+          "target_index": 5
+        },
+        {
+          "ami": 1.0,
+          "target_index": 6
+        },
+        {
+          "ami": 1.0,
+          "target_index": 7
+        },
+        {
+          "ami": 1.0,
+          "target_index": 8
+        },
+        {
+          "ami": 0.0,
+          "target_index": 9
+        },
+        {
+          "ami": 0.0,
+          "target_index": 10
+        },
+        {
+          "ami": 0.0,
+          "target_index": 11
+        }
+      ],
+      "ami_exceeds_permutation_95": false,
+      "ami_permutation_95": 0.0,
+      "ami_permutation_p_ge": 1.0,
+      "descriptor_effective_fibers": 1.0,
+      "descriptor_fiber_fraction": 0.0625,
+      "descriptor_partition_entropy_bits": 0.0,
+      "permutation_seed": 15015,
+      "permutations": 500,
+      "sufficiency_loss_H_target_given_descriptor_over_H_target": 1.0,
+      "target_entropy_bits": 2.4772170014624826
+    },
+    "cycle_plus_persistence_closed_using_persistence_only": true,
+    "cycle_plus_persistence_selected_features": [
+      "R:ID:persistence:k3",
+      "R:ID:persistence:k4",
+      "R:REVOKE:persistence:k3"
+    ],
+    "cycle_screen_metrics": {
+      "n_collision_fibers": 1,
+      "n_collision_pairs": 101,
+      "n_fibers": 1,
+      "n_nontrivial_fibers": 1,
+      "nontrivial_coverage": 1.0,
+      "systems_in_nontrivial_fibers": 16
+    },
+    "interpretation": "The algebraic role-cycle estimator is constant across the pilot and contributes no system discrimination. Any closure of the combined R screen is carried by the separately reported persistence control, not by cycle return.",
+    "status": "LOCALIZED_ESTIMATOR_DEGENERACY",
+    "unique_cycle_profiles_across_systems": 1,
+    "unique_persistence_profiles_across_systems": 16
+  },
+  "pilot_identifiability": {
+    "interpretation": "Because multiple target-informed single-component searches separate the same heterogeneous pairs on only 16 systems, the raw DIFFUSE label does not identify a distributed causal mechanism.",
+    "n_heterogeneous_pairs": 101,
+    "pair_primary_component_separation_patterns": [
+      {
+        "components": [
+          "Gamma",
+          "Delta",
+          "Lambda"
+        ],
+        "count": 101
+      }
+    ],
+    "primary_compact_closed_families": [
+      "GAMMA_PROFILE",
+      "DELTA_FACTORS_PRODUCT",
+      "LAMBDA_TYPED"
+    ]
+  },
+  "pilot_partition_promotion_allowed": false,
+  "promotion_blockers": [
+    "pilot feature search is target-informed",
+    "n=16 is a development pilot, not a prospective holdout",
+    "Gamma and Delta do not yet implement the manuscript formula contracts",
+    "R cycle estimator is degenerate",
+    "Lambda remains a partial typed proxy rather than the full joint typed channel"
+  ],
+  "raw_diagnostic_status": "DIFFUSE",
+  "schema": "co-qwen3-8b-base-operator-15-adjudication-v1",
+  "scientific_attribution_status": "UNRESOLVED",
+  "source_paths": {
+    "delta_contract": "04-gamma-delta-characterization/docs/delta-decomposition.md",
+    "gamma_contract": "04-gamma-delta-characterization/docs/gamma-axiom-characterization.md",
+    "lambda_joint_repair": "15-causal-construct-validity-protocol/docs/organizational-closure-repair-chain.md",
+    "r_contract": "06-transformer-measurement/docs/reentry-measurement-protocol.md"
+  },
+  "source_result_sha256": "c240454260413c9ddf720c67ee8d04766ba5fb65b87e3a29a90b37fb848da01a"
+}

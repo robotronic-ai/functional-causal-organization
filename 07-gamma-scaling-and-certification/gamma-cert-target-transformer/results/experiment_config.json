@@ -1,0 +1,21 @@
+{
+  "experiment_name": "gamma_recurrent_memory_transformer_target_v1",
+  "target_system": "frozen_recurrent_memory_transformer_from_manuscript",
+  "intervention_battery": "q_bal",
+  "role_alphabet": "binary",
+  "delta_lower": 0.025,
+  "delta_upper": 0.025,
+  "confidence_level": 0.95,
+  "top_k_per_source": 4,
+  "clip_probability": 0.001,
+  "max_candidate_cuts": 32,
+  "v1_max_absolute_width": 0.1,
+  "split_ids": {
+    "lower_discovery": 0,
+    "lower_holdout": 1,
+    "upper_discovery": 2,
+    "upper_holdout": 3
+  },
+  "quotient_gate_required": true,
+  "deterministic_inference_required": true
+}

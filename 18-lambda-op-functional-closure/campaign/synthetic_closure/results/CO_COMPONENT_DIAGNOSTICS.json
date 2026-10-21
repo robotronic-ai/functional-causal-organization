@@ -1,0 +1,60 @@
+{
+  "diagnostic_status_vocabulary": [
+    "LOCALIZED",
+    "INTERACTIVE",
+    "DIFFUSE",
+    "UNRESOLVED"
+  ],
+  "generalization_ladder_frozen_for_later_test": [
+    "ID",
+    "OP",
+    "ROLE",
+    "PARAM_OP",
+    "ALGEBRA",
+    "ORBIT_QUOTIENT"
+  ],
+  "phase_rule": "component definition is tested at fixed OP before changing generalization level",
+  "purpose": "finite witnesses for component-definition and generalization diagnostics; not Qwen measurements",
+  "schema": "co-synthetic-component-diagnostics-v1",
+  "status": "PASS",
+  "witnesses": {
+    "Delta.composition_rule": {
+      "delta_cap": 0.3333333333333333,
+      "diagnostic": "LOCALIZED",
+      "minimum": 0.0,
+      "normalized_mean": 0.16666666666666666,
+      "pass": true,
+      "pi_role": 0.0,
+      "product": 0.0
+    },
+    "Gamma.normalization_rule": {
+      "diagnostic": "LOCALIZED",
+      "gamma_macro_normalized_replication": 1.0,
+      "gamma_naive_physical_replication": 0.5,
+      "gamma_original": 1.0,
+      "pass": true
+    },
+    "ID_to_OP_generalization": {
+      "diagnostic": "LOCALIZED",
+      "id_equal": true,
+      "op_equal": false,
+      "pass": true
+    },
+    "Lambda.typed_binding": {
+      "diagnostic": "LOCALIZED",
+      "pass": true,
+      "same_scalar_amount": true,
+      "typed_relation_equal": false
+    },
+    "R.horizon_k": {
+      "diagnostic": "LOCALIZED",
+      "pass": true,
+      "r_cycle_profile_k1_to_k4": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ]
+    }
+  }
+}

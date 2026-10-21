@@ -1,0 +1,47 @@
+{
+  "campaign": "Readout-relative minimal predictive realization",
+  "kind": "mathematical theorem + exhaustive finite-universe verification",
+  "status": "PASS",
+  "execution_status": "NOT_APPLIED_TO_REAL_MODEL",
+  "execution_status_note": "This bundle is a constructive theorem (THEORETICAL-DERIVATION) with proof sketches, verified by exhaustive exact computation on small finite state spaces (up to a few thousand systems per check). It has not been applied to a trained neural network or any other real, high-dimensional system. Continuous/approximate realization and the full stochastic path-law extension are both explicitly OPEN, not attempted here.",
+  "core_theorem": {
+    "status": "THEORETICAL-DERIVATION",
+    "peer_reviewed": false,
+    "claims": [
+      "exact predictive realization: c_d A_pred^k eta(z) = d(F^k(E(z))) for every source, readout, delay",
+      "Q_{E,D} is the coarsest deterministic state quotient preserving all future declared readouts",
+      "V_{E,D} is minimal among reachable exact linear realizations; minimal realizations are isomorphic",
+      "generalized future-readout Hankel rank equals dim(V_{E,D}) in finite-dimensional cases",
+      "Q_{E,D} and V_{E,D} are genuinely different minimality notions, not to be conflated"
+    ]
+  },
+  "finite_verification": {
+    "status": "PASS",
+    "total_cases": 13538,
+    "total_failures": 0,
+    "checks": {
+      "all_readouts_orbit_corollary": {"status": "PASS", "cases": 3840, "failures": 0, "result_file": "results/all_readouts_orbit_corollary.json"},
+      "finite_predictive_theorem": {"status": "PASS", "cases": 3840, "failures": 0, "result_file": "results/finite_predictive_theorem.json"},
+      "u0_linear_corollary": {"status": "PASS", "cases": 512, "failures": 0, "result_file": "results/u0_linear_corollary.json"},
+      "controlled_finite_theorem": {"status": "PASS", "cases": 5103, "failures": 0, "result_file": "results/controlled_finite_theorem.json"},
+      "markov_expectation_corollary": {"status": "PASS", "cases": 243, "failures": 0, "result_file": "results/markov_expectation_corollary.json", "arithmetic": "exact rational"}
+    }
+  },
+  "open_extensions": {
+    "full_stochastic_path_law_bisimulation": "OPEN",
+    "continuous_approximate_realization": "OPEN",
+    "note": "Not established in this bundle; see docs/stochastic-extension-and-open-questions.md. The continuous side is developed separately, and likewise left open, in campaign 10-continuous-predictive-geometry/."
+  },
+  "external_evidence_referenced_not_contained": {
+    "RMT_A5V05_CAUSAL_RETARGET": {
+      "role": "independent evidence for realized causal binding, from a separate campaign in this project",
+      "status_reported_by_source": "RMT-A5V05-CAUSAL-RETARGET-PASS",
+      "note": "Referenced by hash only in external_inputs_registry.json; the underlying result files are not part of this bundle and are not re-derived here."
+    }
+  },
+  "archived_defects": [],
+  "retracted_prior_claims": [
+    "A prior target-indexed R_{E,D} table (from earlier work, not part of this bundle) is explicitly retracted as a resolution of the access line: it was a target re-encoding, not a substantive compression."
+  ],
+  "claim_boundary": "This is an exact algebraic theorem plus exhaustive small-finite-universe verification. It characterizes predictive capacity under a declared readout class, not realized causal use, and is not evidence for or against phenomenal consciousness on its own."
+}

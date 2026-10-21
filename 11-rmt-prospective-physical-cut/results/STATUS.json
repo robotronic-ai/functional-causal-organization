@@ -1,0 +1,56 @@
+{
+  "campaign": "RMT prospective physical-cut BSC v1",
+  "status": "NOT_EXECUTED_REAL_MODEL",
+  "real_model_status": "NOT_EXECUTED_REAL_MODEL",
+  "real_model_status_note": "The supplied archive contains a complete preregistration, frozen cut definition, bypass-qualification protocol, and model-independent analyzer, plus synthetic controls that validate the analyzer itself. It does not contain the target model's checkpoint, the local extraction environment, or any generated real-model response table. No real Quantum/RMT pass or fail has been produced or is claimed. This is confirmed directly from the source bundle's own REAL_EXECUTION_STATUS.md and from protocol.json's real_model_status field.",
+  "synthetic_engine_verification": {
+    "status": "PASS",
+    "note": "Verifies the model-independent analysis code distinguishes a legitimate no-bypass cut from a bypassed cut and from an uninformative receiver, on hand-constructed synthetic data only -- not a measurement of any real model.",
+    "controls": {
+      "ideal": {
+        "expected_status": "QUALIFIED_PASS",
+        "observed_status": "QUALIFIED_PASS",
+        "description": "No-bypass receiver that outputs T exactly; saturates D=p at every noise level p in {0,0.1,...,0.5}",
+        "max_fixed_T_source_TV": 0.0
+      },
+      "degraded": {
+        "expected_status": "ACCESS_FAIL",
+        "observed_status": "ACCESS_FAIL",
+        "description": "No-bypass receiver that ignores T and always predicts BIT0; D=0.5 at every p, fails the noiseless-access gate (D_0 <= 0.10) -- this is a correct rejection by the analyzer, not a defect",
+        "max_fixed_T_source_TV": 0.0
+      },
+      "bypass": {
+        "expected_status": "BYPASS_FAIL",
+        "observed_status": "BYPASS_FAIL",
+        "description": "Receiver with direct access to source C, bypassing T; correctly caught by the fixed-T source-invariance gate",
+        "max_fixed_T_source_TV": 1.0
+      }
+    }
+  },
+  "theorem": {
+    "statement": "For balanced binary content C, cut T = C xor Bernoulli(p), Hamming distortion, and a certified no-bypass receiver: D >= p (equivalently I(C;T|Y) >= R(D)).",
+    "status": "THEORETICAL-DERIVATION",
+    "verified_on_synthetic_ideal_frontier": true,
+    "note": "The ideal synthetic receiver saturates the theorem exactly (D=p at every grid point p in {0,0.1,0.2,0.3,0.4,0.5}); this confirms the analyzer implements the stated theorem correctly on a case built to satisfy it, not that the theorem has been tested on a real system."
+  },
+  "preregistration": {
+    "frozen": true,
+    "primary_horizon": 2,
+    "noise_grid": [0.0, 0.1, 0.2, 0.3, 0.4, 0.5],
+    "qualification_context_indices": [0, 2, 4, 6],
+    "confirmatory_context_indices": [1, 3, 5, 7],
+    "access_gate_max_D_at_p0": 0.1,
+    "bypass_tv_tolerance_onehot": 0.0,
+    "bypass_tv_tolerance_logits": 0.01,
+    "theorem_gap_tolerance_bits": 1e-9,
+    "primary_model_calls_required": 32
+  },
+  "archived_defects": [],
+  "remaining_work_before_real_result": [
+    "Implement the ACCESS-KERNEL v0.86 adapter exposing independently-controllable source_c and forced_t variables",
+    "Enforce checks B1-B5 of the bypass audit (content-neutral query, forced-T decoupling, Role-B clamp, cache hygiene, no source label leakage) in the real extraction pipeline",
+    "Generate the real response table (32 primary calls at horizon 2, up to 160 with secondary horizons)",
+    "Run scripts/analyze_rmt_cut.py on the real response table with no change to the preregistration after viewing the output"
+  ],
+  "claim_boundary": "This bundle establishes a frozen, falsifiable preregistration and a verified model-independent analysis engine. It makes no claim about any real trained model's information-theoretic access behavior. Any future real-model run under this protocol must not alter the preregistration after results are seen."
+}

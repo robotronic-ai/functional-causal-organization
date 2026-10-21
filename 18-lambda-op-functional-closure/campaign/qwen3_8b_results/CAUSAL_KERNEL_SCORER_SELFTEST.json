@@ -1,0 +1,17 @@
+{
+  "candidate_name": "K0_SUBSTITUTE_JOINT_K2",
+  "expected_useful_candidate": true,
+  "fixture_systems": 32,
+  "metrics": {
+    "n_collision_fibers": 0,
+    "n_collision_pairs": 0,
+    "n_fibers": 2,
+    "n_nontrivial_fibers": 2,
+    "n_systems": 32,
+    "nontrivial_coverage": 1.0,
+    "systems_in_nontrivial_fibers": 32
+  },
+  "observed_status": "USEFUL_EXPLORATORY_CANDIDATE",
+  "schema": "co-qwen3-8b-active-causal-kernel-scorer-selftest-v1",
+  "status": "PASS"
+}

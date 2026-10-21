@@ -1,0 +1,28 @@
+{
+  "schema": "co-qwen3-8b-lambda-op-v42.7-local-execution-result-v1",
+  "model": "Qwen3-8B",
+  "descriptor": "LAMBDA_OP_OPERATION_ADDRESS_EFFECT",
+  "operation_algebra": ["ID", "KEEP", "REVOKE", "SUBSTITUTE"],
+  "addresses": ["H1", "H2", "H3"],
+  "construction": {
+    "n_systems": 48,
+    "n_skipped": 0,
+    "panel_sha256": "944263e9401fc0fc9724f2b919b9ccf5927e7b88e46d8b7bc203bb310ddc0762"
+  },
+  "descriptor_freeze": {
+    "target_blind": true,
+    "sha256": "e73ca197bdb016dc0708aad9bd3af9b69bf86dc6147ca7f433d458420a2fae45"
+  },
+  "holdout": {
+    "n_systems": 96,
+    "n_skipped": 0,
+    "panel_sha256": "02de01459b4d1c58c26a76bf9a047eaaf489c9a99b7dc297ec8a7118bcd89cdd"
+  },
+  "closure": "REFUTED",
+  "closure_type": "NONE",
+  "n_fibers": 18,
+  "n_nontrivial_fibers": 8,
+  "systems_in_nontrivial_fibers": 86,
+  "n_functional_collisions": 6,
+  "interpretation": "The frozen Lambda-op descriptor is not functionally closed for this Qwen3-8B holdout because at least one exact descriptor fiber contains multiple functional targets."
+}

@@ -1,0 +1,481 @@
+{
+  "campaign": "Quantum target Gamma causal-integration campaign",
+  "status": "candidate directional normalization supported; unequal-capacity semantic choice remains open",
+  "stages": {
+    "v1_layerwise_kv_probe": {
+      "status": "completed",
+      "physical_layers": 36,
+      "initial_retained_layers": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "repeat_noise_maximum": 0.0,
+      "key_correction": "Self-separability is not equivalent to causal essentiality."
+    },
+    "v2_quotient_validation": {
+      "status": "failed",
+      "candidate_retained_layers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "factorization_violations": 0,
+      "failed_essential_sources": [
+        34
+      ],
+      "readout_global_margin_p05": 0.04024151648504397,
+      "interpretation": "The terminal boundary failure motivated a fresh frozen candidate rather than same-split pruning."
+    },
+    "v3_multihorizon_quotient_validation": {
+      "status": "failed",
+      "candidate_retained_layers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "excluded_layers": [
+        0,
+        34,
+        35
+      ],
+      "multihorizon_factorization_violations": 0,
+      "maximum_distance_by_horizon": {
+        "1": 0.0,
+        "2": 0.0,
+        "4": 0.0
+      },
+      "failed_essential_sources": [
+        33
+      ],
+      "readout_global_margin_p05": 0.04423214131825545,
+      "interpretation": "The moving terminal failure exposed a token-clamp boundary artifact."
+    },
+    "v4_token_reentry_diagnostic": {
+      "status": "completed",
+      "endogenous_essential_source_layers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "clamped_essential_source_layers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "token_mediated_only_source_layers": [
+        35
+      ],
+      "terminal_layer_35": {
+        "mean_one_step_max_effect": 0.0,
+        "mean_endogenous_reentry_max_effect": 0.10877997841133806,
+        "mean_clamped_reentry_max_effect": 0.0,
+        "token_change_rate": 0.125
+      },
+      "conclusion": "Layer 35 is causal through emitted-token re-entry and must not be removed by a token-clamped essentiality gate."
+    },
+    "v5_endogenous_reentry_gate": {
+      "status": "failed",
+      "retained_layers": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "excluded_layers": [
+        0
+      ],
+      "factorization_violations": 0,
+      "maximum_distance_by_horizon": {
+        "1": 0.0,
+        "2": 0.0,
+        "4": 0.0
+      },
+      "failed_essential_sources": [
+        35
+      ],
+      "readout_degenerate_coordinates": 5,
+      "readout_margin_p05": 0.036967000758629236,
+      "conclusion": "Layer 0 factorized robustly, but sparse token-mediated effects and the binary pole readout made the gate unsuitable."
+    },
+    "v6_unsupervised_pca_probe_quotient": {
+      "status": "failed",
+      "retained_role_count": 35,
+      "failed_readout_role_positions": [
+        1,
+        3,
+        23,
+        24,
+        28,
+        29,
+        32,
+        34
+      ],
+      "failed_essential_sources": [
+        34
+      ],
+      "layer_zero_raw_violations": 0,
+      "layer_zero_bit_violations": 0,
+      "layer_zero_maximum_distance": {
+        "1": 0.0,
+        "2": 0.0,
+        "4": 0.0
+      },
+      "readout_margin_p05": 0.0044511472806334496,
+      "conclusion": "The PCA threshold readout was not stable enough for a causal macro quotient."
+    },
+    "v7_layer_regime_diagnostic": {
+      "status": "completed",
+      "runtime_regimes": {
+        "outer_layers": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "core_layers": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "flow_equivalence": {
+        "same_argmax_token": true,
+        "logits_max_abs_difference": 0.0,
+        "cache_maximum_difference": 0.0,
+        "numerically_identical_at_1e_7": true
+      },
+      "selected_boundary_effects": {
+        "layer_4_t1_core_max": 0.041409288145646844,
+        "layer_30_t1_terminal_max": 0.07142477837839005,
+        "layer_31_t1_terminal_max": 0.18145852426044748,
+        "layer_35_t1_terminal_max": 0.0
+      },
+      "conclusion": "The active checkpoint has two runtime layer-setting regimes; fused and s_attn are numerically identical under the current configuration."
+    },
+    "v8_exact_three_block_gamma": {
+      "status": "diagnostic_only",
+      "horizon_1_gamma": 0.5,
+      "horizon_2_mean_context_gamma": 0.6503524413893479,
+      "problem": "Some cut scores exceeded one because source and future macro alphabets were inconsistent."
+    },
+    "v9_closed_support_gamma": {
+      "status": "completed_with_normalization_warning",
+      "horizon_1_mean_context_gamma": 0.25,
+      "horizon_2_mean_context_gamma": 0.2841092546468932,
+      "all_contexts_bounded": true,
+      "problem": "The denominator remained sensitive to the chosen current/future support closure."
+    },
+    "v10_multihorizon_closed_support": {
+      "status": "completed_with_normalization_warning",
+      "all_class_audits_passed": true,
+      "maximum_repeat_noise": 0.0,
+      "mean_context_gamma": {
+        "1": 0.15480764099054012,
+        "2": 0.19290883796182426,
+        "4": 0.22125074536765532
+      },
+      "minimizing_cut_frequency": {
+        "1": {
+          "entry_0_4": 8
+        },
+        "2": {
+          "entry_0_4": 7,
+          "terminal_31_35": 1
+        },
+        "4": {
+          "entry_0_4": 7,
+          "terminal_31_35": 1
+        }
+      },
+      "conclusion": "The mechanistic return signal strengthened with horizon, but Gamma changed when the closure support changed."
+    },
+    "v11_closure_sensitivity": {
+      "status": "decisive_diagnostic",
+      "maximum_repeat_noise": 0.0,
+      "horizon_1_weak_cut": {
+        "j_forward_values": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "j_reverse_values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "denominator_values": [
+          4.0,
+          5.433041856415846,
+          7.248767877907582,
+          9.2749616628271
+        ],
+        "gamma_values": [
+          0.25,
+          0.1848211181217123,
+          0.1392871076462782,
+          0.10893828896464566
+        ]
+      },
+      "conclusion": "Directional causal information was closure-invariant while raw-state cardinality normalization was not."
+    },
+    "v12_directional_efficiency": {
+      "status": "supported_candidate",
+      "definition": "Gamma_dir(pi) = 0.5 * [J(A->B')/H_q(A) + J(B->A')/H_q(B)]",
+      "closure_invariance_mean_gamma_range": {
+        "1": 0.0,
+        "2": 0.0,
+        "4": 0.0
+      },
+      "mean_context_gamma": {
+        "1": 0.5,
+        "2": 0.543926220694674,
+        "4": 0.578125,
+        "8": 0.606426220694674
+      }
+    },
+    "v13_autonomous_regression": {
+      "status": "passed",
+      "all_hard_checks_passed": true,
+      "reference_directional_gamma": {
+        "ring_copy_5": 0.41666666666666663,
+        "xor_neighbors_5": 0.625,
+        "mixed_boolean_5": 0.4764097655573916,
+        "shared_noise_synergy_3": 0.5
+      },
+      "semantic_change": "The candidate differs from the previous metric on unequal-capacity cuts."
+    },
+    "v14_replication_invariance": {
+      "status": "passed",
+      "replicas_per_macro_role_tested": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "all_replication_invariance_checks_passed": true,
+      "conclusion": "Source entropy must be computed from the declared intervention distribution after causal quotienting, not from physical coordinate count."
+    },
+    "v15_theory_audit": {
+      "status": "current",
+      "recommended_name": "source-normalized interventional information efficiency",
+      "manuscript_action": "Do not replace the manuscript definition until the unequal-capacity cut axiom is fixed."
+    }
+  }
+}

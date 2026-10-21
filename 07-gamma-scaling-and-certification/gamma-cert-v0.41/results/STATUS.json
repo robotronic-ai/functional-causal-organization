@@ -1,0 +1,20 @@
+{
+  "package": "Gamma-Cert v0.4 additive scale certificates",
+  "execution_status": "EXECUTED_EXACT_OR_CALIBRATED",
+  "status": {
+    "FRACTIONAL_PACKING_THEOREM": "PROVED + EXACT-AUDIT-PASS (dual MILP matches exhaustive enumeration on every tested system/config)",
+    "DECODING_GRAPH_SPECTRAL_CERTIFICATE": "PROVED (Gamma_q >= delta_min * lambda_2 / 4, one-sided)",
+    "COPY_EXPANDER_BENCHMARK": "EXACT (Gamma is exactly graph conductance by construction)",
+    "COMPLETE_GRAPH_CALIBRATION_N_UP_TO_1024": "EXACT, GAP ZERO",
+    "RANDOM_8_REGULAR_CALIBRATION_N_LEQ_20": "EXACT, SPECTRAL-SWEEP RECOVERS OPTIMUM",
+    "RANDOM_8_REGULAR_SCALING_N_UP_TO_1024": "CERTIFIED INTERVAL, NO EXHAUSTIVE CUT ENUMERATION"
+  },
+  "selected_results": {
+    "fractional_packing_tightness_xor_neighbors_6_block_1_1_1": 0.0,
+    "fractional_packing_tightness_xor_neighbors_6_block_3_2_1": 1.0,
+    "fractional_packing_tightness_random_boolean_6_block_3_2_1": 0.24817007101472585,
+    "copy_expander_gamma_interval_n_1024_d_8": [0.17297300168750088, 0.26708984375]
+  },
+  "manuscript_action": "no_change_to_gamma_definition; certified lower/upper bounds only",
+  "not_a_target_model_result": "This package certifies Gamma on synthetic/analytic benchmark systems, not on any real transformer."
+}

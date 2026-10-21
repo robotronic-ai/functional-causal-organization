@@ -1,0 +1,59 @@
+{
+  "Gamma": 0.5,
+  "checks": {
+    "FIXTURE_HASH_INTACT": true,
+    "U0_ACCESS_UNITY": true,
+    "U1_ALL_CUTS_POSITIVE_FLOW": true,
+    "U2_GAMMA_POSITIVE": true,
+    "U3_DECOMPOSED_CONTROL_ZERO_GAMMA": true
+  },
+  "cuts": [
+    {
+      "Gamma_cut": 0.5,
+      "J_left_to_right": 1.0,
+      "J_right_to_left": 0.0,
+      "access_degraded": true,
+      "cut_task_accuracy": 0.5,
+      "left": [
+        "A"
+      ],
+      "right": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "Gamma_cut": 0.5,
+      "J_left_to_right": 1.0,
+      "J_right_to_left": 0.0,
+      "access_degraded": true,
+      "cut_task_accuracy": 0.5,
+      "left": [
+        "B"
+      ],
+      "right": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "Gamma_cut": 0.5,
+      "J_left_to_right": 0.0,
+      "J_right_to_left": 1.0,
+      "access_degraded": true,
+      "cut_task_accuracy": 0.5,
+      "left": [
+        "C"
+      ],
+      "right": [
+        "A",
+        "B"
+      ]
+    }
+  ],
+  "date": "2026-09-14",
+  "decomposed_control_Gamma": 0.0,
+  "interpretation": "The frozen XOR unity fixture is functionally degraded by every admissible causal cut and every corresponding Gamma cut has positive flow. The decomposed control has Gamma=0. This supports the conditional access-unity/Gamma bridge on the exact fixture, not a universal identification of access consciousness.",
+  "schema": "access-unity-gamma-bridge-result-v0.2",
+  "verdict": "ACCESS-UNITY-GAMMA-BRIDGE-PASS"
+}

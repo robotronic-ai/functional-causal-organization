@@ -1,0 +1,15 @@
+{
+  "empirical_claim": false,
+  "manuscript_relation": {
+    "constrained_by": [
+      "fixed causal boundary",
+      "typed perturbation-response channel",
+      "causal equivalence",
+      "temporal closure"
+    ],
+    "new_symbols_are_extensions": true
+  },
+  "release": "1.0.0",
+  "scope": "Finite and structural causal-sufficiency theory for Lambda-like coupled targets.",
+  "status": "STABILIZED-CONSTRUCTIVE-THEORY"
+}

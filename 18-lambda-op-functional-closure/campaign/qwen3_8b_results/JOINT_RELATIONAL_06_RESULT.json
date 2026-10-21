@@ -1,0 +1,11 @@
+{
+  "candidate_name": "ALL_FLOW_ARGMAX",
+  "descriptor_length": 48,
+  "n_collision_fibers": 0,
+  "n_collision_pairs": 0,
+  "n_fibers": 95,
+  "n_nontrivial_fibers": 1,
+  "n_systems": 96,
+  "nontrivial_coverage": 0.020833333333333332,
+  "status": "NO_USEFUL_CANDIDATE"
+}

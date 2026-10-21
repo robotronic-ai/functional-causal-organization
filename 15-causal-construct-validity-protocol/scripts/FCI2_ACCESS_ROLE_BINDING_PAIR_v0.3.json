@@ -1,0 +1,70 @@
+{
+  "access_roles": [
+    {
+      "certified_before_outcome": true,
+      "id": "TASK-A",
+      "required_component": "X_A"
+    },
+    {
+      "certified_before_outcome": true,
+      "id": "TASK-B",
+      "required_component": "X_B"
+    }
+  ],
+  "content": {
+    "id": "TWO-INDEPENDENT-BITS-v1",
+    "probabilities": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+    ],
+    "states": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ]
+  },
+  "cross_type_permutation_admissible": false,
+  "date": "2026-09-14",
+  "recurrent_core": {
+    "state_roles": [
+      "Z1",
+      "Z2"
+    ],
+    "transition": {
+      "Z1_next": "Z1 XOR Z2",
+      "Z2_next": "Z1"
+    }
+  },
+  "schema": "FCI2-access-role-binding-pair-v0.3",
+  "systems": [
+    {
+      "binding": {
+        "TASK-A": "X_A",
+        "TASK-B": "X_B"
+      },
+      "id": "ALIGNED"
+    },
+    {
+      "binding": {
+        "TASK-A": "X_B",
+        "TASK-B": "X_A"
+      },
+      "id": "CROSSBOUND"
+    }
+  ]
+}

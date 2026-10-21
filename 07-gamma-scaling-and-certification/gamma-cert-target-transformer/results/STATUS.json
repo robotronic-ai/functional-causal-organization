@@ -1,0 +1,26 @@
+{
+  "package": "Gamma-Cert target transformer v1 (recurrent-memory transformer)",
+  "execution_status": "NOT_EXECUTED_REAL_MODEL",
+  "status": "blocked_on_target_model_artifacts",
+  "certificate_implementation_ready": true,
+  "certificate_selftest_completed": true,
+  "certificate_selftest_passed": true,
+  "selftest": {
+    "exact_gamma": 0.2,
+    "certified_interval": [0.09285393537647317, 0.252291157775851],
+    "interval_width": 0.1594372223993778,
+    "v1_max_absolute_width": 0.1,
+    "status": "V3",
+    "note": "software self-test on a synthetic 10-role system, not a scientific result about the target transformer"
+  },
+  "target_experiment_executed": false,
+  "target_execution_blocker": "The frozen recurrent-memory transformer checkpoint and its model-specific intervention adapter are not available in the current runtime.",
+  "missing_inputs": [
+    "frozen post-memory-training checkpoint or local model loader",
+    "tokenizer and context generator",
+    "recurrent-memory intervention hook",
+    "causal minimal-state quotient discovery or frozen quotient map"
+  ],
+  "scientific_rule": "Do not substitute another architecture and label it as the target experiment.",
+  "not_a_substitute_for_this_result": "The executed Gamma_dir measurements in gamma-quantum-campaign/ are on a different model (Quantum) under a different, not statistically certified normalization."
+}

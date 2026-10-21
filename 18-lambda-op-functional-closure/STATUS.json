@@ -1,0 +1,22 @@
+{
+  "folder": "18-lambda-op-functional-closure",
+  "manuscript_sections": ["17.7", "17.5", "7.3"],
+  "generalization_level": "OP",
+  "operation_algebra": ["ID", "KEEP", "REVOKE", "SUBSTITUTE"],
+  "synthetic_closure": {"2_bit": "PASS (exhaustive, injective)", "3_bit": "PASS (exhaustive)", "4_bit": "PASS (declared envelope)", "6_bit": "PASS (declared envelope)", "8_bit": "PASS (declared envelope)"},
+  "qwen3_8b": {
+    "compact_descriptors_on_fresh_panels": "REFUTED (fixed descriptor, validations 01, 02, 05, 11, 12, 13)",
+    "metrology_09": "REPEATABILITY_CLEAN",
+    "component_audit_15": "UNRESOLVED (estimators adjudicated as proxies; no promotion)",
+    "formula_contract_16": "FROZEN",
+    "formula_measurement_17": "NO_ADMISSIBLE_FIXED_RHO_PARTITION",
+    "quotient_resolution_18": "USEFUL_EXPLORATORY_CANDIDATE (development only)",
+    "holdout_19": "PROSPECTIVE_HOLDOUT_PASS (32 systems, 0 collisions, AMI 0.806)",
+    "replication_20": "FROZEN, NOT EXECUTED"
+  },
+  "not_claimed": [
+    "closure of the complete C_O profile",
+    "closure beyond the declared finite Qwen battery",
+    "that Gamma, Delta or R are unnecessary"
+  ]
+}

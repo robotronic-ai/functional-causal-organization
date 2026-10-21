@@ -1,0 +1,22 @@
+{
+  "checkpoints": {
+    "CONTROL": "9d44d4211e13d4f195c81333277d7bc6c260afe3e96e3bd505b97bf17816ffab",
+    "DEPTH": "9ba7961df75fd81d8714ed19f2e6f6e99b048cac4072e3d04b348d899806a2aa",
+    "TRIDEPTH": "87e48c5be456128202fbe5a8eb7f1b91b019800f61af0235b36dde8c825c837e"
+  },
+  "dataset": {
+    "task_generator": "71fbcb608fb6dcdcf91a821b7027e1e7eb7b03d15e99d8a1db6cd7dea05589ce",
+    "validation_jsonl": "7f087f6cd97fc3e9154575966692df4fb84bbde38403d033912b4c72fc5be1fa",
+    "validation_source_anchor": "e94f41d24dede799073f5f8ec95438c11e5908b6949dbf453afbb7415506a2d8"
+  },
+  "empty_candidate_list": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "environment": {
+    "anchor_v3.15.58": "dac6ff52cee51806dae2301c08d202e0486b5ef9bf2b16e2f5a3bd3fde0b49ea",
+    "record_v3.15.58": "1eeabf37ca64200dd01fe0f684afbfa320037cf04047ac5124aeca8de8fde4a9"
+  },
+  "historical_bridge_source_v3.15.20": "d3fb9f479bc05bcab02c7ca72daf9a0056611111a7e39ee6d38d0df282d303e6",
+  "preregistration_freezes": {
+    "layer_complete_v3.15.65": "d354f4943497de9dfde18c77807e5d5d39545d5c7f3134af5cb4fe3604e73702",
+    "rich_delta_v3.15.62.2": "a51805f5912701b34bce5f0e645955cfed8a1fc5033c0079629f98287eeb9e4a"
+  }
+}

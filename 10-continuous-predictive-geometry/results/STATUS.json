@@ -1,0 +1,46 @@
+{
+  "campaign": "Continuous predictive geometry (discounted predictive pseudometric)",
+  "kind": "mathematical theorem + exact numerical verification on a closed-form toy family",
+  "status": "PASS",
+  "execution_status": "NOT_APPLIED_TO_REAL_MODEL",
+  "execution_status_note": "This bundle proves and exactly verifies the discounted predictive pseudometric theory on a closed-form Bernoulli family and an explicit three-point counterexample. It has not been applied to a trained model, RNN, or any other real controlled system. The source material's own STATUS_AND_HANDOFF.md names applying the protocol to a controlled continuous representation with frozen readouts/interventions as the explicit 'next target', not a completed step.",
+  "results": {
+    "discounted_pseudometric_theorem": {
+      "status": "THEORETICAL-DERIVATION",
+      "claims": [
+        "d_gamma is a pseudometric, 0 <= d_gamma <= 1",
+        "d_gamma(x,y)=0 iff exact predictive equivalence under the declared readout class",
+        "universal truncation certificate: d_{gamma,H} <= d_gamma <= d_{gamma,H} + gamma^H, no mixing/contraction assumption required",
+        "compact + continuous d_m implies finite predictive epsilon-covers exist for every epsilon > 0",
+        "dynamic rollout error recurrence e_{t+1} <= L*e_t + delta separates quantization error from transition-model defect"
+      ]
+    },
+    "discounted_bernoulli_numerical_check": {
+      "status": "PASS",
+      "script": "scripts/verify_discounted_bernoulli.py",
+      "result_file": "results/discounted_bernoulli_results.json",
+      "gamma": 0.8,
+      "grid_size": 11,
+      "monotonic_failures": 0,
+      "truncation_failures": 0,
+      "triangle_failures": 0
+    },
+    "epsilon_nontransitivity_counterexample": {
+      "status": "PASS",
+      "script": "scripts/verify_epsilon_nontransitivity.py",
+      "result_file": "results/epsilon_nontransitivity_results.json",
+      "d_pq": 0.4,
+      "d_qr": 0.4,
+      "d_pr": 0.8,
+      "epsilon": 0.5,
+      "conclusion": "p~q and q~r under threshold epsilon, but p not~ r: threshold relations are not transitive"
+    },
+    "combined_verifier": {
+      "status": "PASS",
+      "script": "scripts/verify_all.py",
+      "result_file": "results/verification_summary.json"
+    }
+  },
+  "archived_defects": [],
+  "claim_boundary": "Exact mathematical theorems (pseudometric, truncation certificate, compactness/covers, nontransitivity counterexample, rollout recurrence) plus exact closed-form numerical verification on a Bernoulli toy family. No trained model, RNN, or other real system has been measured under this protocol. Not evidence for or against realized causal use or phenomenal consciousness on its own."
+}

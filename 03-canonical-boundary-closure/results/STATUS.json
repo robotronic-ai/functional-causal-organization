@@ -1,0 +1,92 @@
+{
+  "campaign": "03 - Canonicity of the P/N split and closure of the return boundary",
+  "date": "2026-09-12",
+  "status": "CLOSE-CONDITIONAL",
+  "closure_conditions": [
+    "an SCM / macro-graph reduced to the minimal causal quotient",
+    "an intervention algebra rich enough to test the RHO-CERT and TARGET-BOUNDARY obligations",
+    "the PN theorem hypotheses M1-M3 for eliminating the complement N",
+    "the abstention policy (PN-V3 / PN-V4/NA) whenever several boundaries or role partitions remain compatible with the data"
+  ],
+  "results": {
+    "pn_theorem": {
+      "verdict": "CAN-PN-HIST-V1",
+      "statement": "I_q^do(Z*_t ; P_{t+1} | U_t) = 0 under M1-M3; by the chain rule, N's canonicity is not required for the final estimand.",
+      "note": "Historical regression audit only; no new extractor was run."
+    },
+    "rho_certification": {
+      "candidate": "RHO-EXACT-CERT v0.1",
+      "candidate_sha256": "90bbbbc4cd0958a31ed70d3cbd5d6c71c4a825495c5e6fef8832a010b85a785d",
+      "first_run": {
+        "fixtures": "RHO_CERT_FIXTURES_v0_1.json (not included; superseded)",
+        "exact_passes": "45/49",
+        "failing_ids": ["R2.01", "R2.02", "R3.01", "R3.02"],
+        "verdict": "RHO-CANDIDATE REFUTED",
+        "adjudication": "FIXTURE/ORACLE DEFECT - NOT A SCIENTIFIC REFUTATION (see docs/rho-certification.md)"
+      },
+      "post_hoc_fixture_repair": {
+        "fixtures": "RHO_CERT_FIXTURES_v0_1_1.json",
+        "exact_passes": "49/49",
+        "note": "post-hoc consistency check only, not an independent validation"
+      },
+      "candidate_fixed_holdout": {
+        "fixtures": "RHO_CERT_HOLDOUT_CF_FIXTURES_v0_1.json",
+        "exact_passes": "32/32",
+        "families": ["H0", "H1", "H2", "H3", "H4", "H5", "H6", "H7"],
+        "verdict": "CF-HOLDOUT-PASS"
+      }
+    },
+    "target_boundary": {
+      "v0_1": {
+        "candidate": "TARGET-BOUNDARY-EXACT v0.1",
+        "candidate_sha256": "17ce4c2cda156751deab551d344dcf3ac90d42b0f63134a22eac5eaccde7bb32",
+        "exact_passes": "28/32",
+        "failing_family": "T3",
+        "verdict": "TB-v0.1 SUFFICIENCY-ONLY CRITERION REFUTED",
+        "counterexample": "A := Z, Y := Z xor A (functional cancellation hides the bypass edge Z -> Y)"
+      },
+      "v0_2": {
+        "candidate": "TARGET-BOUNDARY-EXACT v0.2",
+        "candidate_sha256": "28019ac36cf9f38a97526e378405a13ddd0d49109fb981d4346918c2f866e768",
+        "definition": "STRUCTURAL-CUT and INTERVENTIONAL-SUFFICIENCY, inclusion-minimal boundaries",
+        "prospective_result": {
+          "fixtures": "TARGET_BOUNDARY_FIXTURES_v0_2.json",
+          "exact_passes": "32/32",
+          "families": ["S0", "S1", "S2", "S3", "S4", "S5", "S6", "S7"],
+          "verdict": "TB-PROSPECTIVE FINITE NON-REFUTATION"
+        },
+        "candidate_fixed_holdout": {
+          "fixtures": "TARGET_BOUNDARY_HOLDOUT_CF_FIXTURES_v0_1.json",
+          "exact_passes": "32/32",
+          "families": ["H0", "H1", "H2", "H3", "H4", "H5", "H6", "H7"],
+          "verdict": "TB-CF-HOLDOUT-PASS"
+        }
+      }
+    },
+    "composition": {
+      "rule": "R = B intersect C_rho*, H = B \\ R, for each minimal boundary B and each maximal role partition; report all distinct triples (B,R,H)",
+      "first_run_v0_1": {
+        "fixtures": "POINT2_INTEGRATED_HOLDOUT_FIXTURES_v0_1.json (not included; superseded)",
+        "exact_passes": "16/18",
+        "failing_ids": ["I3.01", "I3.02"],
+        "verdict": "INTEGRATED FIXTURE/ORACLE DEFECT",
+        "adjudication": "I3 fixture omitted the a<->b role-transport certificate needed to form a genuine same-role clique; TARGET-BOUNDARY, RHO-CERT and the composition rule were all correctly implemented (see docs/composition-and-closure.md)"
+      },
+      "corrected_run_v0_2": {
+        "fixtures": "POINT2_INTEGRATED_HOLDOUT_FIXTURES_v0_2.json",
+        "exact_passes": "18/18",
+        "families": ["J0", "J1", "J2", "J3", "J4", "J5", "J6", "J7", "J8"],
+        "verdict": "POINT2-INTEGRATED-PASS"
+      }
+    }
+  },
+  "overall_verdict": "CLOSE-CONDITIONAL",
+  "next_authorized_campaign": "Characterization and axiomatic independence of Gamma and Delta (folder 04-gamma-delta-characterization)",
+  "not_included_in_this_edition": [
+    "all *_PRIVATE.json oracle answer-key files (fixture-level held-out labels used for automatic scoring)",
+    "the superseded v0.1 TARGET-BOUNDARY fixtures/oracles and harness/generator (refuted; kept only as the refutation record in docs/target-boundary.md)",
+    "the pre-fix RHO-CERT v0.1 harness/generator (superseded by v0.1.1)",
+    "the superseded POINT2-INTEGRATED-HOLDOUT v0.1 fixtures/oracles/manifests (superseded by v0.2 after the I3 defect)",
+    "process bookkeeping (MANIFEST.json, pre-run/pre-candidate/result manifests)"
+  ]
+}

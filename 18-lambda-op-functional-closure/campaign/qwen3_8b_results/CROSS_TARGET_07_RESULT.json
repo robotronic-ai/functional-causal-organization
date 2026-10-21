@@ -1,0 +1,15 @@
+{
+  "candidate_name": "ALL_FLOW_H2_FORWARD",
+  "descriptor_length": 48,
+  "interpretation": "The cross-target routing topology compresses strongly but is not functionally closed; coarse routing identity loses functionally relevant quantitative or temporal information.",
+  "n_collision_fibers": 2,
+  "n_collision_pairs": 63,
+  "n_fibers": 6,
+  "n_nontrivial_fibers": 2,
+  "n_systems": 24,
+  "nontrivial_coverage": 0.8333333333333334,
+  "panel_sha256": "a9bde0fa2529186701054b451cdfe4d00086453018226ccef668791be1b79970",
+  "schema": "co-qwen3-8b-cross-target-active-channel-reported-result-v1",
+  "status": "NO_USEFUL_CANDIDATE",
+  "systems_in_nontrivial_fibers": 20
+}

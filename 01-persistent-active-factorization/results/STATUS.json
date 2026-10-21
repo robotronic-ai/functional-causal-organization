@@ -1,0 +1,86 @@
+{
+  "campaign": "01 - Persistent vs. active factorization: search for a general O1-invariant extractor of P",
+  "date": "2026-09-11",
+  "status": "OPEN - EXACT O1 COLLISION, NOT RESOLVED",
+  "chain": [
+    {
+      "step": "full-reset / sync-factor (IRP v0.1/v0.2 candidates)",
+      "verdict": "REFUTED",
+      "refuted_by": ["IR9", "IR10"],
+      "included_in_this_edition": false,
+      "note": "synchronizability of the automaton is neither necessary nor sufficient for accumulation"
+    },
+    {
+      "step": "AF v0.1 (append-only factor recognition)",
+      "verdicts_by_family": {"IR7": "AF-U1", "IR8": "AF-U1", "IR9": "AF-SAT", "IR10": "AF-U1", "IR11": "AF-U1", "IR12": "AF-U1"},
+      "defects": [
+        "false positive on IR11 (non-invertible active transform read as append-only)",
+        "over-absorption on IR10 (maximal factor carries more than the intended persistent bit)"
+      ]
+    },
+    {
+      "step": "TS v0.1 (transformation-semigroup pivot)",
+      "role": "structural diagnostic only; computes T and T_SL, no surgery, no persistence claim"
+    },
+    {
+      "step": "IPF v0.1 (image-profile factor)",
+      "recovers_historical_P_on_IR10": true,
+      "corrects_IR11_false_positive": true,
+      "exhaustive_relabeling_equivariance": "228/228",
+      "verdict": "exact finite equivariance on IR7/IR8/IR10/IR11/IR12"
+    },
+    {
+      "step": "TSRS v0.1 (residual saturation surrogate)",
+      "historical_regression": "220/220 (IR7 96/96, IR10 96/96, IR11 4/4, IR12 24/24)",
+      "regression_note": "post-hoc, no confirmatory value (candidate discovered by inspecting these controls)",
+      "prospective_campaign": "TSRS-P1",
+      "prospective_result": "24/40 (P1-A 0/16, P1-B 12/12, P1-C 12/12)",
+      "candidate_sha256": "350e087be5de56bf834f147ec9ef9678b336ddf48119ae99a1be360c3c903288",
+      "verdict": "P1-V3 - TSRS v0.1 refuted prospectively",
+      "decisive_counterexample": "P1-A: cycle+reset active automaton with no accumulating memory; TSRS misreads the reset's irreversible semilattice class as accumulation"
+    },
+    {
+      "step": "TSF / TSF-AUT (faithful state-factor + automorphism audit on IR10.01)",
+      "faithful_TS_compatible_partitions": 4,
+      "finest": 1,
+      "coarsest": 3,
+      "historical_P_is_one_of_the_coarsest": true,
+      "verdict_TSF": "TSF-MULTI",
+      "O1_automorphism_count": 2,
+      "P_orbit_size": 1,
+      "verdict_TSF_AUT": "AUT-U",
+      "interpretation": "the semilattice quotient alone does not select P uniquely, but this is not an O1 symmetry obstruction on this control"
+    },
+    {
+      "step": "IR13-S1 (exhaustive O1 collision search: stochastic storage vs. active automaton families)",
+      "storage_channels": 6,
+      "active_constructions": 576,
+      "pairs_checked_until_first_witness": 1,
+      "o1_isomorphisms_of_witness": 8,
+      "oracle_conflicting_isomorphisms": 8,
+      "B_storage_oracle_bits": 0.0,
+      "B_storage_original_bits": 1.0,
+      "B_active_oracle_bits": 1.0,
+      "verdict": "S1-V1 exact O1 collision with oracle conflict",
+      "claim_status": "exact local non-identifiability conditional on joint legitimacy of both preregistered control families",
+      "candidate3_status": "DO_NOT_CONSTRUCT_UNTIL_SEMANTIC_FORK_RESOLVED",
+      "adjudication_framework": "ADJ-IR13 (Protocole_ADJ_IR13_v0_1.md) - no ADJ-V1/V2/V3 verdict recorded"
+    }
+  ],
+  "overall_verdict": "OPEN - no general O1-invariant extractor found; last non-refuted construction is IPF v0.1 (recognition only, no surgery); last attempted surgery (TSRS v0.1) is refuted; campaign ends in an exact preregistered O1 collision, not a working extractor",
+  "next_authorized_campaign": "02-gauge-transport-identification (reframed: given a declared P, what can still be said about the residual/transport structure)",
+  "known_gaps": [
+    {
+      "file": "IR13_S1_exact_witness_v0_1.md",
+      "sha256_expected": "f28b5d48691a8ed22aba68859434e0ea1f6f978368d692f4cad8ebeaf499f7c7",
+      "status": "referenced in IR13_S1_RESULT_MANIFEST_v0_1.json but absent from the source repository; not reconstructed in this edition"
+    }
+  ],
+  "not_included_in_this_edition": [
+    "Protocole_IRP_v0_1 / v0_2 drafts and the full-reset / sync-factor candidate code (superseded by v0.3; refuted on IR9/IR10)",
+    "Protocole_TSIPF_P2 / P3 and their fixtures/oracles (frozen, never executed, abandoned branch)",
+    "diagnostic and duplicate scripts (irp_candidate1/2_diagnostic*, verify_ipf_invariance.py, adj_rescore.py, adj_consistency_check.py, irp_interface_v0_1.py superseded by v0_1_1)",
+    "f7b_* / f8_* / f_domain_* / f_to_m* / pfree_* / phi_* / pn_* / q_reachability_* files (belong to folder 03)",
+    "all *_PRIVATE.json oracle files (TSRS_P1_ORACLES, IRP_ORACLES_IR7_IR12, TSIPF_P2/P3_ORACLES)"
+  ]
+}
