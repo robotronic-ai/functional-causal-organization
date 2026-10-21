@@ -1,6 +1,6 @@
 # Functional causal organization — research archive
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23124247.svg)](https://doi.org/10.5281/zenodo.CONCEPT_ID)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23124247.svg)](https://doi.org/10.5281/zenodo.23124247)
 
 Article: *Measuring Functional Access in a Language Model by Intervention: PCI_T and FCA-Bench* — HAL [hal-05776792](https://hal.science/hal-05776792) · Zenodo [10.5281/zenodo.23375827](https://doi.org/10.5281/zenodo.23375827)
 
