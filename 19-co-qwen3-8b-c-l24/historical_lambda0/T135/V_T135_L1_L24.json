@@ -1,0 +1,107 @@
+{
+ "schema": "claude-role-lambda-qwen-v1",
+ "version": "ROLELAMBDA_v1_PROPOSED",
+ "status": "DIAGNOSTIC_ONLY",
+ "q1_json": null,
+ "calibration_cases": [
+  "u15|SUBSTITUTE|H1",
+  "u16|REVOKE|H2",
+  "u17|SUBSTITUTE|H2",
+  "u18|REVOKE|H1"
+ ],
+ "reference_case": "u15|SUBSTITUTE|H1",
+ "candidate_mode": true,
+ "candidate_anchors": [
+  "heads[28,29,30,31]"
+ ],
+ "result": {
+  "version": "ROLELAMBDA_v1_PROPOSED",
+  "layer": 24,
+  "site": "role writes at layer 24",
+  "replicas": 10,
+  "delta_w": 0.11352509828856452,
+  "delta_x": 0.030418499779278137,
+  "roles": [
+   "heads[28,29,30,31]"
+  ],
+  "contents": [
+   "u16|REVOKE|H2",
+   "u17|SUBSTITUTE|H2",
+   "u18|REVOKE|H1"
+  ],
+  "reference": "__REF__",
+  "cells": {
+   "u16|REVOKE|H2->heads[28,29,30,31]": {
+    "status": "RESOLVED_POSITIVE",
+    "band_detail": "POSITIVE",
+    "effect_over_delta": [
+     9.933429655780559,
+     10.10871609185587
+    ]
+   },
+   "u17|SUBSTITUTE|H2->heads[28,29,30,31]": {
+    "status": "RESOLVED_POSITIVE",
+    "band_detail": "POSITIVE",
+    "effect_over_delta": [
+     10.039917051688901,
+     10.134124018547238
+    ]
+   },
+   "u18|REVOKE|H1->heads[28,29,30,31]": {
+    "status": "RESOLVED_POSITIVE",
+    "band_detail": "POSITIVE",
+    "effect_over_delta": [
+     3.620814777929769,
+     4.247835283089877
+    ]
+   }
+  },
+  "lower_relation": {
+   "u16|REVOKE|H2": [
+    "heads[28,29,30,31]"
+   ],
+   "u17|SUBSTITUTE|H2": [
+    "heads[28,29,30,31]"
+   ],
+   "u18|REVOKE|H1": [
+    "heads[28,29,30,31]"
+   ]
+  },
+  "labeled_relation": [
+   [
+    "u16|REVOKE|H2",
+    "heads[28,29,30,31]"
+   ],
+   [
+    "u17|SUBSTITUTE|H2",
+    "heads[28,29,30,31]"
+   ],
+   [
+    "u18|REVOKE|H1",
+    "heads[28,29,30,31]"
+   ]
+  ],
+  "iso_class": "9a257a8299b10ec5",
+  "iso_class_exact": true,
+  "content_pairs": {
+   "__REF__|u16|REVOKE|H2": "RESOLVED_DISTINCT",
+   "__REF__|u17|SUBSTITUTE|H2": "RESOLVED_DISTINCT",
+   "__REF__|u18|REVOKE|H1": "RESOLVED_DISTINCT",
+   "u16|REVOKE|H2|u17|SUBSTITUTE|H2": "RESOLVED_DISTINCT",
+   "u16|REVOKE|H2|u18|REVOKE|H1": "RESOLVED_DISTINCT",
+   "u17|SUBSTITUTE|H2|u18|REVOKE|H1": "RESOLVED_DISTINCT"
+  },
+  "content_pairs_unresolved": [],
+  "n_cells": 3,
+  "n_unresolved_cells": 0,
+  "completions": "every relation containing the 3 certified cells (2^0 candidates)",
+  "note": "no negative status exists: UNRESOLVED never means 'does not go there'",
+  "seconds": 310.0,
+  "signature": "8f5c55fc59c6d62a"
+ },
+ "roles": {
+  "heads[28,29,30,31]": [
+   "heads[28,29,30,31]"
+  ]
+ }
+}

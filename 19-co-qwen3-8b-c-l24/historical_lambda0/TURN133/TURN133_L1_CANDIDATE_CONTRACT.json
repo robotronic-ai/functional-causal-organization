@@ -1,0 +1,25 @@
+{
+  "schema": "co-l1-candidate-anchor-contract-t133-v1",
+  "status": "FROZEN_FOR_CLAUDE_PATCH",
+  "base_instrument": "Claude role_lambda.py; thresholds and two-status semantics unchanged",
+  "cli": {
+    "lambda_qwen.py": {
+      "new_option": "--anchors optional list of candidate-registry names; when present, bypass automatic Q1 certified-role extraction",
+      "frozen_anchor_runs": {
+        "layer_23": [
+          "heads[24,25,26,27]",
+          "mlp3"
+        ],
+        "layer_24": [
+          "heads[28,29,30,31]"
+        ]
+      }
+    }
+  },
+  "statuses": {
+    "RESOLVED_POSITIVE": "retained as an anchor-level positive content-to-address fact",
+    "UNRESOLVED": "never interpreted as absence"
+  },
+  "structural_lambda_rule": "Do not report point Lambda_O. Push anchor-level positive facts through every admissible quotient completion; retain only structural statements robust to all completions.",
+  "holdouts": "forbidden; calibration only"
+}

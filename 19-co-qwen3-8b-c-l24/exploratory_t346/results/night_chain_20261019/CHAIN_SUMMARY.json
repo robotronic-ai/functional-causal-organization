@@ -1,0 +1,67 @@
+{
+  "finished": "2026-10-20T00:52:50",
+  "note": "durations are measured wall-clock seconds of each step",
+  "started": "2026-10-19T20:47:25",
+  "steps": {
+    "fca_e1": {
+      "command": [
+        "/mnt/c/Users/Merien/pycharm/llama/.venv_linux/bin/python",
+        "-I",
+        "-u",
+        "/mnt/c/Users/Merien/pycharm/llama/quantum/t346_fca_e1_pilot.py",
+        "--run",
+        "--resume",
+        "--authorize-gpu-run",
+        "<authorization>"
+      ],
+      "log": "/mnt/c/Users/Merien/pycharm/llama/quantum/FAST_GPU_RESULTS/NIGHT_CHAIN_20261019_204725/fca_e1.log",
+      "returncode": 0,
+      "script_sha256": {
+        "__init__.py": "cb31f384bc3219b7b902be401615d82deb8c5804f0527ab43523b2db115e16fc",
+        "t346_fca_e1_pilot.py": "c0eb6944ab6801ca9a0fce37c9ede08dbb664c783cc983d741957261020ae893"
+      },
+      "seconds": 14506.3,
+      "status": "OK"
+    },
+    "t347_core": {
+      "command": [
+        "/mnt/c/Users/Merien/pycharm/llama/.venv_linux/bin/python",
+        "-I",
+        "-u",
+        "/mnt/c/Users/Merien/pycharm/llama/quantum/t347_run_cl24_float16_suite.py",
+        "--work",
+        "/mnt/c/Users/Merien/pycharm/llama/quantum",
+        "--scripts-dir",
+        "/mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS",
+        "--stage",
+        "core"
+      ],
+      "depends_on": "t347_gauge",
+      "status": "SKIPPED_DEPENDENCY_NOT_OK"
+    },
+    "t347_gauge": {
+      "command": [
+        "/mnt/c/Users/Merien/pycharm/llama/.venv_linux/bin/python",
+        "-I",
+        "-u",
+        "/mnt/c/Users/Merien/pycharm/llama/quantum/t347_run_cl24_float16_suite.py",
+        "--work",
+        "/mnt/c/Users/Merien/pycharm/llama/quantum",
+        "--scripts-dir",
+        "/mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS",
+        "--stage",
+        "gauge",
+        "--resume",
+        "--authorize-gpu-run",
+        "<authorization>"
+      ],
+      "log": "/mnt/c/Users/Merien/pycharm/llama/quantum/FAST_GPU_RESULTS/NIGHT_CHAIN_20261019_204725/t347_gauge.log",
+      "returncode": 2,
+      "script_sha256": {
+        "t347_run_cl24_float16_suite.py": "4164c40674b4c94e726589b98ef7bb95e606569808043765509218109d3763f2"
+      },
+      "seconds": 218.1,
+      "status": "FAILED"
+    }
+  }
+}

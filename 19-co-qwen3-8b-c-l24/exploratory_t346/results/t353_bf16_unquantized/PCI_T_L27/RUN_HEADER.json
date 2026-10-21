@@ -1,0 +1,181 @@
+{
+  "arms": [
+    "U26_BASELINE",
+    "U26_SHAM",
+    "U26_ABLATE_025",
+    "U26_ABLATE_050",
+    "U26_ABLATE_100"
+  ],
+  "deviations_from_historical_protocol": [
+    "dtype is an argument (history float16)",
+    "six new episodes",
+    "direction bank from NO_HOOK baseline fixed across arms",
+    "T346 seed streams",
+    "hook active on every processed token"
+  ],
+  "device": "cuda",
+  "directions": {
+    "T346P_001|0.20": {
+      "bank_sha256": "27c8288946e9b52140fbb165fb9f5faea3199816e335606877b973fb53115fcf",
+      "seed": 2026101803,
+      "source_position": 20,
+      "source_rms": 5.546375637671901
+    },
+    "T346P_001|0.40": {
+      "bank_sha256": "3b8d3a89a3b2cb6a9e40a58f76ceb15b942c3e8a14a8dfbc407d41b40f3bf36f",
+      "seed": 2026101813,
+      "source_position": 40,
+      "source_rms": 6.598948605463282
+    },
+    "T346P_002|0.20": {
+      "bank_sha256": "d601f321066bedc9650bf1181b443107878b1966faeca5252fc18285995455f0",
+      "seed": 2026102803,
+      "source_position": 19,
+      "source_rms": 6.445313167436522
+    },
+    "T346P_002|0.40": {
+      "bank_sha256": "fa586124f5cb5393e86baf0d44bc05174a84f7cbd97519a6bd75a1d9dde43863",
+      "seed": 2026102813,
+      "source_position": 38,
+      "source_rms": 6.643524801722592
+    },
+    "T346P_003|0.20": {
+      "bank_sha256": "405cbbb18b70f52e996dfe360c8c7bd4e93b304787006ccb493a8c2e0815e668",
+      "seed": 2026103803,
+      "source_position": 19,
+      "source_rms": 6.205504654282136
+    },
+    "T346P_003|0.40": {
+      "bank_sha256": "ffd20192450223e898edb3be930b7742ab76c60890fbb4952f5729ead68513f0",
+      "seed": 2026103813,
+      "source_position": 38,
+      "source_rms": 6.127142713854022
+    },
+    "T346P_004|0.20": {
+      "bank_sha256": "48ceb5a588fb9db3e41469799e521a624ab428033bbc65268aad0e547be052b1",
+      "seed": 2026104803,
+      "source_position": 20,
+      "source_rms": 6.1860554943067765
+    },
+    "T346P_004|0.40": {
+      "bank_sha256": "d97ee954551c5cd7a94da857a2e0e4aba8f29709ec08b5a73633d52fcfca2f62",
+      "seed": 2026104813,
+      "source_position": 40,
+      "source_rms": 7.179203905279709
+    },
+    "T346P_005|0.20": {
+      "bank_sha256": "32af68258f0be7f4ea9cca98eeaf5fa9781a2c3ea84dcf2044a95e2abc0b40b5",
+      "seed": 2026105803,
+      "source_position": 20,
+      "source_rms": 5.897900120437108
+    },
+    "T346P_005|0.40": {
+      "bank_sha256": "3dab21f4ad332a8095adf871d0e9b0b89a7d2990ce3a087d7f307052fd8107d2",
+      "seed": 2026105813,
+      "source_position": 41,
+      "source_rms": 6.03008370913392
+    },
+    "T346P_006|0.20": {
+      "bank_sha256": "ee11e48c3997cb01227deab4453c09bbfdb584ba4831315578ac21f8b9d17bc0",
+      "seed": 2026106803,
+      "source_position": 19,
+      "source_rms": 5.85643712867443
+    },
+    "T346P_006|0.40": {
+      "bank_sha256": "f64dd77ccb40728df346b2bb610f5ab5b790c3b79255e12996351dcd7e5f05b2",
+      "seed": 2026106813,
+      "source_position": 38,
+      "source_rms": 5.843326509109107
+    }
+  },
+  "dtype": "bfloat16",
+  "episode_overlap_check": {
+    "exact_duplicates": 0,
+    "files": [
+      "PCI_T_CAL2_DEV_EPISODES_v0.20.json",
+      "PCI_T_CAL2_HOLDOUT_EPISODES_v0.20.json",
+      "PCI_T_CAL_EPISODES_v0.17.json",
+      "PCI_T_SCORE_EPISODES_v0.17.json"
+    ],
+    "n_historical_texts": 24,
+    "per_episode": {
+      "T346P_001": {
+        "closest": null,
+        "max_jaccard_4grams": 0.0,
+        "max_shared_8grams": 0
+      },
+      "T346P_002": {
+        "closest": "PCI_T_CAL2_DEV_EPISODES_v0.20.json:CAL2_002",
+        "max_jaccard_4grams": 0.0057,
+        "max_shared_8grams": 0
+      },
+      "T346P_003": {
+        "closest": null,
+        "max_jaccard_4grams": 0.0,
+        "max_shared_8grams": 0
+      },
+      "T346P_004": {
+        "closest": "PCI_T_CAL2_DEV_EPISODES_v0.20.json:CAL2_002",
+        "max_jaccard_4grams": 0.0056,
+        "max_shared_8grams": 0
+      },
+      "T346P_005": {
+        "closest": null,
+        "max_jaccard_4grams": 0.0,
+        "max_shared_8grams": 0
+      },
+      "T346P_006": {
+        "closest": "PCI_T_CAL2_DEV_EPISODES_v0.20.json:CAL2_001",
+        "max_jaccard_4grams": 0.0059,
+        "max_shared_8grams": 0
+      }
+    }
+  },
+  "hook": {
+    "block": 0,
+    "layer": 24,
+    "positions": "ALL_PROCESSED_TOKENS"
+  },
+  "metric": {
+    "candidate_amplitudes_residual_rms": [
+      0.01,
+      0.03,
+      0.1,
+      0.3
+    ],
+    "d_proj": 64,
+    "h_step": 32,
+    "k_depth": 8,
+    "null_count_logical": 16,
+    "primary": "PCI_T_ST_ADAPTED",
+    "projection_seed": 1729,
+    "secondary": "PCI_T_LZ"
+  },
+  "model_load_seconds": 96.16141986846924,
+  "n_episodes": 6,
+  "probe": false,
+  "provenance": {
+    "episodes_embedded": "68c59239e977e9a6949a3937525aea29dbce7bac5ce0e6c8642316ada354a077",
+    "script": "49c6a7f33e27b5d746b8b3c7c4955afe9d1e2c82b5f6114fd82a050865459901",
+    "st_module": "7dff9b84ea8067085a9a33043cda04184e0c3e7fb492dee39387da455b9f927b",
+    "v20_launcher": "47def0be29eb761d2afc0a3c97faf8114fed4af3a01968803de38b94f4c6e2f7",
+    "v20_result_zip": "a1c805e8aa369c92ec670deb52290e3e7f61862d6d31f5277c66fcd7360ae237",
+    "x1_script": "3210bc513b7794e6bbe17455415124213b7ded800c13cc345664175a3dd98a8a",
+    "x5_1_script": "b5072f85504a2ae1829b80e9dcfa719f7a44fbf006e4ffad95c572e9bd121238"
+  },
+  "seconds_direction_derivation": 2.31,
+  "token_counts": {
+    "T346P_001": 102,
+    "T346P_002": 96,
+    "T346P_003": 96,
+    "T346P_004": 102,
+    "T346P_005": 104,
+    "T346P_006": 98
+  },
+  "tokenizer": {
+    "len_tokenizer": 151669,
+    "max_observed_token_id": 89059,
+    "tokenizer_class": "Qwen2TokenizerFast",
+    "vocab_size": 151643
+  }
+}

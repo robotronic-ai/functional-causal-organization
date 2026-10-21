@@ -1,7 +1,10 @@
 cff-version: 1.2.0
 message: "If you use these instruments, protocols or results, please cite them as below."
-title: "Functional causal organization: PCI_T and FCA-Bench"
+title: "Functional causal organization: research archive (PCI_T, FCA-Bench and companion campaigns)"
 identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23124247"
+    description: "Zenodo concept DOI (all versions; always resolves to the latest release)"
   - type: other
     value: "hal-05776792"
     description: "HAL preprint of the accompanying article"
@@ -11,16 +14,17 @@ authors:
     given-names: "Ronan"
     affiliation: "Robotronic"
     email: "ronan.merien@robotronic.com"
-version: "1.5"
+version: "1.6"
+date-released: "2026-10-21"
 repository-code: "https://github.com/robotronic-ai/functional-causal-organization"
-license:
-  - MIT
-  - CC-BY-4.0
+license: MIT
 abstract: >-
-  Code, protocols, raw results and verifiers for PCI_T (a perturbational
-  complexity index for transformers and its directional specificity) and
+  Code, protocols, raw results and verifiers for a series of 20 research
+  campaigns on functional causal organization, including PCI_T (a perturbational
+  complexity index for transformers and its directional specificity),
   FCA-Bench (a functional causal access benchmark with behavioral and causal
-  profiles), applied to Qwen3-8B. Code under MIT; data, results and
+  profiles) and a causal-organization profile (Gamma, Delta, R, Lambda),
+  applied to Qwen3-8B. Code under MIT; data, results and
   documentation under CC BY 4.0.
 keywords:
   - language models

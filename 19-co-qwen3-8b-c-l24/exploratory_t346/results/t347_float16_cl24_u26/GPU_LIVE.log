@@ -1,0 +1,153 @@
+/mnt/c/Users/Merien/pycharm/llama/.venv_linux/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (6.0.0.post1)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[gauge-cube] Loading Qwen
+Skipping import of cpp extensions due to incompatible torch version 2.9.0+cu128 for torchao version 0.15.0             Please see https://github.com/pytorch/ao/issues/2919 for more info
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|##        | 1/5 [00:07<00:30,  7.53s/it]Loading checkpoint shards:  40%|####      | 2/5 [00:15<00:22,  7.51s/it]Loading checkpoint shards:  60%|######    | 3/5 [00:22<00:14,  7.37s/it]Loading checkpoint shards:  80%|########  | 4/5 [00:28<00:06,  6.75s/it]Loading checkpoint shards: 100%|##########| 5/5 [00:30<00:00,  5.14s/it]Loading checkpoint shards: 100%|##########| 5/5 [00:30<00:00,  6.06s/it]
+Traceback (most recent call last):
+  File "/mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS/t347_f16_acquire_gauge_cube_gpu.py", line 279, in main
+    run_gpu(root, out, T292, pre, a.resume, a.world); return 0
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS/t347_f16_acquire_gauge_cube_gpu.py", line 167, in run_gpu
+    need([{'site': e['site'], 'donor_units': e['donor_units'], 'squared_rms_contrast': e['squared_rms_contrast']} for e in pairs]
+  File "/mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS/t347_f16_acquire_gauge_cube_gpu.py", line 33, in need
+    raise RuntimeError(msg)
+RuntimeError: D0 background pairs differ from the frozen pairs
+[gauge-cube] STOPPED: rerun with --gpu --resume
+/mnt/c/Users/Merien/pycharm/llama/.venv_linux/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (6.0.0.post1)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[gauge-cube] Loading Qwen
+Skipping import of cpp extensions due to incompatible torch version 2.9.0+cu128 for torchao version 0.15.0             Please see https://github.com/pytorch/ao/issues/2919 for more info
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|##        | 1/5 [00:07<00:28,  7.22s/it]Loading checkpoint shards:  40%|####      | 2/5 [00:14<00:21,  7.27s/it]Loading checkpoint shards:  60%|######    | 3/5 [00:22<00:14,  7.48s/it]Loading checkpoint shards:  80%|########  | 4/5 [00:28<00:07,  7.14s/it]Loading checkpoint shards: 100%|##########| 5/5 [00:31<00:00,  5.46s/it]Loading checkpoint shards: 100%|##########| 5/5 [00:31<00:00,  6.27s/it]
+Traceback (most recent call last):
+  File "/mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS/t347_f16_acquire_gauge_cube_gpu.py", line 279, in main
+    run_gpu(root, out, T292, pre, a.resume, a.world); return 0
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS/t347_f16_acquire_gauge_cube_gpu.py", line 167, in run_gpu
+    need([{'site': e['site'], 'donor_units': e['donor_units'], 'squared_rms_contrast': e['squared_rms_contrast']} for e in pairs]
+  File "/mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS/t347_f16_acquire_gauge_cube_gpu.py", line 33, in need
+    raise RuntimeError(msg)
+RuntimeError: D0 background pairs differ from the frozen pairs
+[gauge-cube] STOPPED: rerun with --gpu --resume
+/mnt/c/Users/Merien/pycharm/llama/.venv_linux/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (6.0.0.post1)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[gauge-cube] Loading Qwen
+Skipping import of cpp extensions due to incompatible torch version 2.9.0+cu128 for torchao version 0.15.0             Please see https://github.com/pytorch/ao/issues/2919 for more info
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|##        | 1/5 [00:07<00:28,  7.25s/it]Loading checkpoint shards:  40%|####      | 2/5 [00:14<00:21,  7.29s/it]Loading checkpoint shards:  60%|######    | 3/5 [00:22<00:14,  7.38s/it]Loading checkpoint shards:  80%|########  | 4/5 [00:28<00:07,  7.19s/it]Loading checkpoint shards: 100%|##########| 5/5 [00:31<00:00,  5.46s/it]Loading checkpoint shards: 100%|##########| 5/5 [00:31<00:00,  6.27s/it]
+[T347-F16] D0 background diagnostic heads[8,9,10,11] same_frozen_units=True fresh_units=[18, 19] frozen_units=[18, 19] fresh_sq_rms=0.0621030009 frozen_bf16_sq_rms=0.0501400873
+[T347-F16] D0 background diagnostic heads[16,17,18,19] same_frozen_units=False fresh_units=[16, 19] frozen_units=[15, 19] fresh_sq_rms=0.0691686611 frozen_bf16_sq_rms=0.0718197137
+[T347-F16] D0 background diagnostic heads[24,25,26,27] same_frozen_units=True fresh_units=[16, 19] frozen_units=[16, 19] fresh_sq_rms=0.0795052028 frozen_bf16_sq_rms=0.080008468
+[T347-F16] historical-bf16 drift diagnostic u26 m9=0: max_abs=0.0996819
+[T347-F16] historical-bf16 drift diagnostic u26 m9=1: max_abs=0.0744512
+[T347-F16] historical-bf16 drift diagnostic u26 m9=2: max_abs=0.0625361
+[T347-F16] historical-bf16 drift diagnostic u26 m9=4: max_abs=0.0772648
+[T347-F16] historical-bf16 drift diagnostic u26 m9=8: max_abs=0.0852492
+[T347-F16] historical-bf16 drift diagnostic u26 m9=16: max_abs=0.0768726
+[T347-F16] historical-bf16 drift diagnostic u26 m9=32: max_abs=0.0589412
+[T347-F16] historical-bf16 drift diagnostic u26 m9=64: max_abs=0.0887311
+[T347-F16] historical-bf16 drift diagnostic u26 m9=128: max_abs=0.075361
+[T347-F16] historical-bf16 drift diagnostic u26 m9=256: max_abs=0.0707535
+[gauge-cube] u26: 10/10 historical bf16 arms compared diagnostically; bitwise equality not required in float16 (writes of the 12 sites)
+[gauge-cube] IDENTITY_0 block 1/8 ; 194 s
+[gauge-cube] IDENTITY_0 block 2/8 ; 214 s
+[gauge-cube] IDENTITY_0 block 3/8 ; 234 s
+[gauge-cube] IDENTITY_0 block 4/8 ; 254 s
+[gauge-cube] IDENTITY_0 block 5/8 ; 274 s
+[gauge-cube] IDENTITY_0 block 6/8 ; 294 s
+[gauge-cube] IDENTITY_0 block 7/8 ; 315 s
+[gauge-cube] IDENTITY_0 block 8/8 ; 335 s
+[T347-F16] identity sub-cube vs historical bf16: bitwise=False max_abs=0.352053
+[gauge-cube] identity sub-cube (512 arms, 6 readers) bit for bit equal to the pinned reference
+[gauge-cube] IDENTITY_0: sub-cube equals the reference gauge sub-cube bit for bit: False
+[T347-F16] IDENTITY_0: historical bf16 reference differs as expected under dtype transport; diagnostic only
+[gauge-cube] UPDOWN_SCALE_0 block 1/8 ; 366 s
+[gauge-cube] UPDOWN_SCALE_0 block 2/8 ; 386 s
+[gauge-cube] UPDOWN_SCALE_0 block 3/8 ; 405 s
+[gauge-cube] UPDOWN_SCALE_0 block 4/8 ; 425 s
+[gauge-cube] UPDOWN_SCALE_0 block 5/8 ; 445 s
+[gauge-cube] UPDOWN_SCALE_0 block 6/8 ; 465 s
+[gauge-cube] UPDOWN_SCALE_0 block 7/8 ; 485 s
+[gauge-cube] UPDOWN_SCALE_0 block 8/8 ; 505 s
+[gauge-cube] UPDOWN_SCALE_0: sub-cube equals the reference gauge sub-cube bit for bit: False
+[T347-F16] UPDOWN_SCALE_0: historical bf16 reference differs as expected under dtype transport; diagnostic only
+[gauge-cube] UPDOWN_SCALE_1 block 1/8 ; 537 s
+[gauge-cube] UPDOWN_SCALE_1 block 2/8 ; 558 s
+[gauge-cube] UPDOWN_SCALE_1 block 3/8 ; 578 s
+[gauge-cube] UPDOWN_SCALE_1 block 4/8 ; 599 s
+[gauge-cube] UPDOWN_SCALE_1 block 5/8 ; 619 s
+[gauge-cube] UPDOWN_SCALE_1 block 6/8 ; 640 s
+[gauge-cube] UPDOWN_SCALE_1 block 7/8 ; 660 s
+[gauge-cube] UPDOWN_SCALE_1 block 8/8 ; 681 s
+[gauge-cube] UPDOWN_SCALE_1: sub-cube equals the reference gauge sub-cube bit for bit: False
+[T347-F16] UPDOWN_SCALE_1: historical bf16 reference differs as expected under dtype transport; diagnostic only
+[gauge-cube] UPDOWN_SCALE_2 block 1/8 ; 713 s
+[gauge-cube] UPDOWN_SCALE_2 block 2/8 ; 733 s
+[gauge-cube] UPDOWN_SCALE_2 block 3/8 ; 753 s
+[gauge-cube] UPDOWN_SCALE_2 block 4/8 ; 773 s
+[gauge-cube] UPDOWN_SCALE_2 block 5/8 ; 793 s
+[gauge-cube] UPDOWN_SCALE_2 block 6/8 ; 813 s
+[gauge-cube] UPDOWN_SCALE_2 block 7/8 ; 833 s
+[gauge-cube] UPDOWN_SCALE_2 block 8/8 ; 853 s
+[gauge-cube] UPDOWN_SCALE_2: sub-cube equals the reference gauge sub-cube bit for bit: False
+[T347-F16] UPDOWN_SCALE_2: historical bf16 reference differs as expected under dtype transport; diagnostic only
+[gauge-cube] VO_DIAG_0 block 1/8 ; 883 s
+[gauge-cube] VO_DIAG_0 block 2/8 ; 904 s
+[gauge-cube] VO_DIAG_0 block 3/8 ; 924 s
+[gauge-cube] VO_DIAG_0 block 4/8 ; 944 s
+[gauge-cube] VO_DIAG_0 block 5/8 ; 964 s
+[gauge-cube] VO_DIAG_0 block 6/8 ; 985 s
+[gauge-cube] VO_DIAG_0 block 7/8 ; 1005 s
+[gauge-cube] VO_DIAG_0 block 8/8 ; 1025 s
+[gauge-cube] VO_DIAG_0: sub-cube equals the reference gauge sub-cube bit for bit: False
+[T347-F16] VO_DIAG_0: historical bf16 reference differs as expected under dtype transport; diagnostic only
+[gauge-cube] VO_DIAG_1 block 1/8 ; 1055 s
+[gauge-cube] VO_DIAG_1 block 2/8 ; 1075 s
+[gauge-cube] VO_DIAG_1 block 3/8 ; 1095 s
+[gauge-cube] VO_DIAG_1 block 4/8 ; 1115 s
+[gauge-cube] VO_DIAG_1 block 5/8 ; 1135 s
+[gauge-cube] VO_DIAG_1 block 6/8 ; 1155 s
+[gauge-cube] VO_DIAG_1 block 7/8 ; 1175 s
+[gauge-cube] VO_DIAG_1 block 8/8 ; 1195 s
+[gauge-cube] VO_DIAG_1: sub-cube equals the reference gauge sub-cube bit for bit: False
+[T347-F16] VO_DIAG_1: historical bf16 reference differs as expected under dtype transport; diagnostic only
+[gauge-cube] VO_DIAG_2 block 1/8 ; 1224 s
+[gauge-cube] VO_DIAG_2 block 2/8 ; 1244 s
+[gauge-cube] VO_DIAG_2 block 3/8 ; 1265 s
+[gauge-cube] VO_DIAG_2 block 4/8 ; 1286 s
+[gauge-cube] VO_DIAG_2 block 5/8 ; 1307 s
+[gauge-cube] VO_DIAG_2 block 6/8 ; 1328 s
+[gauge-cube] VO_DIAG_2 block 7/8 ; 1348 s
+[gauge-cube] VO_DIAG_2 block 8/8 ; 1369 s
+[gauge-cube] VO_DIAG_2: sub-cube equals the reference gauge sub-cube bit for bit: False
+[T347-F16] VO_DIAG_2: historical bf16 reference differs as expected under dtype transport; diagnostic only
+[gauge-cube] QKNORM_RECIP_0 block 1/8 ; 1399 s
+[gauge-cube] QKNORM_RECIP_0 block 2/8 ; 1419 s
+[gauge-cube] QKNORM_RECIP_0 block 3/8 ; 1439 s
+[gauge-cube] QKNORM_RECIP_0 block 4/8 ; 1460 s
+[gauge-cube] QKNORM_RECIP_0 block 5/8 ; 1480 s
+[gauge-cube] QKNORM_RECIP_0 block 6/8 ; 1500 s
+[gauge-cube] QKNORM_RECIP_0 block 7/8 ; 1520 s
+[gauge-cube] QKNORM_RECIP_0 block 8/8 ; 1540 s
+[gauge-cube] QKNORM_RECIP_0: sub-cube equals the reference gauge sub-cube bit for bit: False
+[T347-F16] QKNORM_RECIP_0: historical bf16 reference differs as expected under dtype transport; diagnostic only
+[gauge-cube] QKNORM_RECIP_1 block 1/8 ; 1571 s
+[gauge-cube] QKNORM_RECIP_1 block 2/8 ; 1591 s
+[gauge-cube] QKNORM_RECIP_1 block 3/8 ; 1612 s
+[gauge-cube] QKNORM_RECIP_1 block 4/8 ; 1632 s
+[gauge-cube] QKNORM_RECIP_1 block 5/8 ; 1653 s
+[gauge-cube] QKNORM_RECIP_1 block 6/8 ; 1674 s
+[gauge-cube] QKNORM_RECIP_1 block 7/8 ; 1694 s
+[gauge-cube] QKNORM_RECIP_1 block 8/8 ; 1715 s
+[gauge-cube] QKNORM_RECIP_1: sub-cube equals the reference gauge sub-cube bit for bit: False
+[T347-F16] QKNORM_RECIP_1: historical bf16 reference differs as expected under dtype transport; diagnostic only
+[gauge-cube] QKNORM_RECIP_2 block 1/8 ; 1745 s
+[gauge-cube] QKNORM_RECIP_2 block 2/8 ; 1765 s
+[gauge-cube] QKNORM_RECIP_2 block 3/8 ; 1786 s
+[gauge-cube] QKNORM_RECIP_2 block 4/8 ; 1806 s
+[gauge-cube] QKNORM_RECIP_2 block 5/8 ; 1826 s
+[gauge-cube] QKNORM_RECIP_2 block 6/8 ; 1846 s
+[gauge-cube] QKNORM_RECIP_2 block 7/8 ; 1866 s
+[gauge-cube] QKNORM_RECIP_2 block 8/8 ; 1887 s
+[gauge-cube] QKNORM_RECIP_2: sub-cube equals the reference gauge sub-cube bit for bit: False
+[T347-F16] QKNORM_RECIP_2: historical bf16 reference differs as expected under dtype transport; diagnostic only
+[gauge-cube] gauge delta (12 readers): {'heads[0,1,2,3]': 0.0307, 'heads[4,5,6,7]': 0.0435, 'heads[8,9,10,11]': 0.0389, 'heads[12,13,14,15]': 0.0557, 'heads[16,17,18,19]': 0.0246, 'heads[20,21,22,23]': 0.0215, 'heads[24,25,26,27]': 0.0407, 'heads[28,29,30,31]': 0.0304, 'mlp0': 0.0205, 'mlp1': 0.0193, 'mlp2': 0.0143, 'mlp3': 0.0386}
+[gauge-cube] FINAL PASS_GAUGE_CUBE_ACQUISITION ; RESULT /mnt/c/Users/Merien/pycharm/llama/quantum/FAST_GPU_RESULTS/T347_S9_FULL12_GAUGE_CUBE_F16_WORLD26_GPU/RESULT.json

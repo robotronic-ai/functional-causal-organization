@@ -1,0 +1,114 @@
+{
+  "schema": "qwen3_8b_r_nonzero_certification_v2",
+  "date": "2026-10-17",
+  "model": "Qwen3-8B",
+  "system": "Real Qwen3-8B executed in bf16; declared full-vocabulary categorical softmax at temperature 1",
+  "certificate_status": "NONZERO_CERTIFIED",
+  "verdict": "NONZERO_CERTIFIED_QWEN3_8B_BF16_C_L24_R_u26_MLP0",
+  "scope": "Qwen3-8B itself; declared q-typed finite causal contract C_L24-R; world u26; recurring active L24.mlp0 role; sampled-token channel; t to t+1",
+  "claim": {
+    "quantity": "R_state(q | Qwen3-8B bf16, C_L24-R, u26)",
+    "strictly_positive": true,
+    "lower_bound": 7.385298596317709e-08,
+    "inequality": "R_state(q|C_L24-R,u26) >= 7.3852985963177091e-08 > 0",
+    "numerator_role": "L24.mlp0",
+    "B_mlp0_bits_lower_bound": 8.12382845594948e-07,
+    "K_eff_bits_upper_bound": 11.0,
+    "K_eff_strictly_positive": true,
+    "derivation": "0 < K_eff <= H(P | C) = 11 bits and B_return >= B_mlp0; hence R=B_return/K_eff >= B_mlp0/11 > 0",
+    "numerator_interval_basis": "minimum of primary bf16-as-run conditional event bounds across all 10 replicas, including conservative outside-V mass allocation"
+  },
+  "declared_contract": {
+    "world": 26,
+    "source_site": "L24.mlp0, active-token position",
+    "target_site": "same operational role at the next active-token position",
+    "source_bit": 5,
+    "source_battery": "11 uniformly sampled intervention bits, plus fixed/exogenous context bit; 4096 frozen masks, 2048 contrast pairs per role",
+    "generation": "Categorical(softmax(logits)), temperature 1, vocabulary size 151936",
+    "return_readout": "scalar return event derived from the next active L24.mlp0 write",
+    "return_event_token": 21,
+    "measured_V_size": 64,
+    "outside_V_mass_upper_bound": 3.054429352865065e-23,
+    "cache_bypass_control": "512/512 tested token-fixed checks passed under the declared L24 boundary",
+    "system_numeric_semantics": "bf16 computation as executed is the primary declared system; float64 is postprocessing, with a 1e-12-bit declared numerical floor",
+    "delta_A": "optional cross-gauge/exact-arithmetic robustness diagnostic, not a mandatory threshold of the primary bf16-as-run certificate",
+    "delta_A_robustness_status": "NOT_CERTIFIED (S27 reports B_rob_min_g=0); primary positivity remains a distinct claim"
+  },
+  "independent_validation": {
+    "S26_S27_source_export_recomputed": true,
+    "two_independent_JS_formulations_agreed": true,
+    "S27_mlp0_B_min_over_gauges_bits": 8.12382845594948e-07,
+    "S27_mlp0_R_lower_bound": 7.385298596317709e-08,
+    "all_10_primary_gauge_bounds_positive": true,
+    "S28_effect_signature_recomputed_from_checkpoint": true,
+    "S28_mlp0_same_outgoing_affected_readers": true,
+    "S28_matched_readers": 11,
+    "S28_total_retained_readers": 11,
+    "S28_Jaccard": 1.0,
+    "S28_weakest_t1_reader": "heads[16,17,18,19]",
+    "S28_weakest_reader_t1_witness_pairs": 49,
+    "S28_distinct_stricter_12_reader_partition_test": "11/12 agreement, false; not imposed as a separate necessary condition for this local return-kernel effect-signature contract"
+  },
+  "v45_1_scope_interpretation": {
+    "identity_principle_section": "8.1",
+    "return_principle_section": "8.3",
+    "q_typed_contract_section": "8.4",
+    "textual_rule": "Role identity concerns interventionally relevant incoming dependencies and functional futures under the declared interventions, up to relabeling or preregistered tolerance. The return-capable kernel is relevant; arbitrary nonreturning side effects need not be equated.",
+    "minimal_application": "Active L24.mlp0 is a typed, successively occupied computation site; S28 checks its frozen-panel intervention effect signature on 11 retained L25 readers in both cycles (Jaccard 1). Together with the measured token-mediated return and clamped bypass, this is the declared finite operational witness.",
+    "important_correction": "V45.1 does NOT impose an exhaustive, full-vocabulary, all-horizon predictive bisimulation as a prerequisite for reporting nonzero R on this declared finite causal contract. The word bisimulation in section 8.1 is relative to the declared interventionally relevant causal signature.",
+    "what_is_not_assumed": "No universal Q1 reconstruction, no equality of every reader partition across changing contexts, no all-token f_r evaluation, no delta_A gauge-noise threshold for the primary bf16-as-run claim",
+    "evidence_limit": "Matched binary outgoing effect sets are a finite operational role-identity witness, not a proof of identical full conditional future laws for arbitrary, undeclared interventions. This is a scope description, not an additional blocking prerequisite."
+  },
+  "nonclaims": [
+    "No exact numerical value of R across arbitrary intervention distributions q.",
+    "No universal claim across all contexts, all roles, all causal quotients, or all future horizons.",
+    "No cross-gauge delta_A robustness certificate in the separate exact-arithmetic interpretation."
+  ],
+  "evidence": {
+    "S26_full_softmax_export": {
+      "file": "S26_U26_FULLSOFTMAX_EXPORT.npz",
+      "sha256": "14f4a3221dffb48e251a87c5b1953b18db4510032e3993f7c6556dc784ecee9a"
+    },
+    "S27_return_bound_report": {
+      "file": "RESULT(20261017-192057).json",
+      "sha256": "9c6f5396e744ad44c13d7cce5e0aee31904a61102584e230eea255ef2fe193cd"
+    },
+    "S28_effect_signature_report": {
+      "file": "RESULT(20261017-191251).json",
+      "sha256": "bad69e5c996297308694cc42c2437626e5ca61b2bfc766f116b71711be759980"
+    },
+    "S28_effect_checkpoint": {
+      "file": "S28_CHECKPOINT.npz",
+      "sha256": "0f5c1140be9c6161be10ab6d950754ed606487c22ce35046cf9c6ef580dc656c"
+    },
+    "S28_t1_gauge_cube": {
+      "file": "S28_T1_GAUGE_CUBES_u26(1).npz",
+      "sha256": "51b9d5d7edeb5d5ff2f65f9b16b5fa02071168cb2b1a8760cfce3cbb318347cf"
+    },
+    "S26_acquisition_report": {
+      "file": "RESULT(20261017-191325).json",
+      "sha256": "e395e682dbc713b77e3199474ca6a780f0b7d804bd92e55bff70c80e4bbda3dd"
+    },
+    "independent_S26_numeric_reconstruction": {
+      "file": "R_MLP0_S26_INDEPENDENT_CONFIRMATION_EN.json",
+      "sha256": "14cbf240c1365979461dfb440bca00178e93d8f4273081535a8635879849595a"
+    },
+    "v45_1_primary_text": {
+      "file": "organisation-fonctionnelle-v45.1(4).html",
+      "sha256": "0aca49ddcc55fb1e2ba628c8826e23b05f6ab3b1314b7f37a2515dd4ef4eb5bf"
+    }
+  },
+  "independent_per_gauge_B_bits": {
+    "IDENTITY_0": 1.0512476327559631e-06,
+    "UPDOWN_SCALE_0": 9.91238521244343e-07,
+    "UPDOWN_SCALE_1": 8.123828455949479e-07,
+    "UPDOWN_SCALE_2": 8.125942677775671e-07,
+    "VO_DIAG_0": 9.201254040069324e-07,
+    "VO_DIAG_1": 1.0009801047105985e-06,
+    "VO_DIAG_2": 9.002075287044206e-07,
+    "QKNORM_RECIP_0": 1.5460782516741977e-06,
+    "QKNORM_RECIP_1": 1.2678089804198083e-06,
+    "QKNORM_RECIP_2": 1.1029770657730012e-06
+  },
+  "signoff_basis": "Qwen3-8B bf16 C_L24-R finite operational role correspondence as tested by S28, and S26/S27 lower bound independently recomputed. This status does not depend on proving exhaustive predictive bisimulation."
+}

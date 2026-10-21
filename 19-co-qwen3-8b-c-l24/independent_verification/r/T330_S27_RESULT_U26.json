@@ -1,0 +1,447 @@
+{
+  "status": "POSITIVE_RAW_SAME_ROLE_RETURN_LB__DELTA_QUOTIENT_NOT_YET_CERTIFIED",
+  "world": 26,
+  "q": "q_donor independent Bernoulli(0.5) on 12 bits; one contextual bit",
+  "transition": "temperature=1 full-vocabulary softmax, no top-k/top-p, no stochastic estimates",
+  "token_v_selection_fixed": true,
+  "vocabulary_included_size": 64,
+  "n_gauges": 10,
+  "n_source_roles": 11,
+  "n_conditioning_backgrounds_per_role": 2048,
+  "source_npz_sha256": "14f4a3221dffb48e251a87c5b1953b18db4510032e3993f7c6556dc784ecee9a",
+  "max_probability_normalization_error": 7.549516567451064e-15,
+  "observations": "same-role fixed scalar L24 t+1 readouts; gauge-local delta-calibrated candidate thresholds",
+  "tail_treatment": "adversarial allocation for each donor pair; optional signed tail-TV budgets",
+  "threshold_eligibility": "gauge-local observed adjacent scalar gap strictly exceeds delta_t1",
+  "conditional_information": "I(P_r; event[f_(g,r)(T)>threshold] | P_-r,C), averaged over 2048 fair backgrounds",
+  "return_lb_bits_by_gauge_and_role": [
+    [
+      1.0119899519268545e-07,
+      5.628637967678712e-08,
+      2.8777134115120463e-08,
+      1.3761910468065354e-06,
+      4.703615331561975e-07,
+      1.051246727954861e-06,
+      3.913496990961917e-08,
+      9.684202965677298e-07,
+      5.001062759732994e-08,
+      2.9488567856939055e-08,
+      3.2869896082970843e-08
+    ],
+    [
+      9.611547109273193e-08,
+      4.81214626493299e-08,
+      2.7286642561206662e-08,
+      1.2897036503099205e-06,
+      4.4123386197344554e-07,
+      9.912375616058769e-07,
+      4.37722574051079e-08,
+      8.821942135149083e-07,
+      4.5552192902595236e-08,
+      2.6525522111662072e-08,
+      3.170626191525151e-08
+    ],
+    [
+      7.877711340720391e-08,
+      4.431457306640807e-08,
+      2.5861863922996175e-08,
+      1.0523052047924776e-06,
+      3.421759994404483e-07,
+      8.123819832878571e-07,
+      3.6505041546810455e-08,
+      7.22189688249062e-07,
+      4.2845176889754894e-08,
+      2.4381997300504435e-08,
+      3.252034245410662e-08
+    ],
+    [
+      7.450135391489071e-08,
+      4.0637816338739226e-08,
+      2.248200560372153e-08,
+      1.0766831121230901e-06,
+      3.529403506056013e-07,
+      8.125934277508842e-07,
+      3.565735062728558e-08,
+      7.134016493058305e-07,
+      4.179718003419283e-08,
+      2.4373318958060615e-08,
+      2.9485028348817996e-08
+    ],
+    [
+      9.752174839429003e-08,
+      5.073216493493255e-08,
+      2.8202022040808453e-08,
+      1.231090473513183e-06,
+      4.142177047551374e-07,
+      9.201244821231791e-07,
+      3.942833174789895e-08,
+      8.206454692445777e-07,
+      4.438581800418483e-08,
+      2.739730924200806e-08,
+      3.316917638418271e-08
+    ],
+    [
+      1.0390867706079081e-07,
+      5.0265069098216646e-08,
+      2.9644415297741104e-08,
+      1.3141673561198232e-06,
+      4.5184802278688724e-07,
+      1.0009791537453355e-06,
+      4.0731967121672627e-08,
+      9.128704704569887e-07,
+      4.7232968984616456e-08,
+      2.7406593552550668e-08,
+      3.226824950469305e-08
+    ],
+    [
+      8.375214950929237e-08,
+      4.4643974451923084e-08,
+      2.480895356398284e-08,
+      1.1974597678297107e-06,
+      3.98256068809602e-07,
+      9.00206618474302e-07,
+      4.0116609210449696e-08,
+      8.055548129917534e-07,
+      4.440020789236734e-08,
+      2.3040109949699837e-08,
+      2.985656745407973e-08
+    ],
+    [
+      1.376002123699439e-07,
+      9.199647271231581e-08,
+      3.9220949592209204e-08,
+      1.9914584630157803e-06,
+      6.687349787255038e-07,
+      1.5460772909109699e-06,
+      5.0421793267634866e-08,
+      1.4447886993083993e-06,
+      6.877446017125867e-08,
+      4.154057947524814e-08,
+      4.7226033072684985e-08
+    ],
+    [
+      1.1196965335010986e-07,
+      6.870276006154995e-08,
+      3.2831354754963555e-08,
+      1.6882672217539294e-06,
+      6.015581296455736e-07,
+      1.2678083108663125e-06,
+      4.834013728298164e-08,
+      1.1961794163540214e-06,
+      5.641272262457951e-08,
+      3.890140050135793e-08,
+      4.801974804875346e-08
+    ],
+    [
+      1.0342430565083461e-07,
+      5.684587585174961e-08,
+      3.09327604285e-08,
+      1.4323558502757105e-06,
+      4.6087616148539803e-07,
+      1.1029760560291356e-06,
+      4.4447289464624045e-08,
+      1.0084719954677878e-06,
+      4.8194682379880526e-08,
+      3.224743162614997e-08,
+      3.7408740567015837e-08
+    ]
+  ],
+  "eligible_threshold_counts_by_gauge_and_role": [
+    [
+      5,
+      7,
+      3,
+      4,
+      11,
+      21,
+      12,
+      17,
+      16,
+      4,
+      5
+    ],
+    [
+      5,
+      7,
+      3,
+      4,
+      11,
+      22,
+      12,
+      16,
+      16,
+      4,
+      5
+    ],
+    [
+      5,
+      7,
+      3,
+      4,
+      11,
+      21,
+      12,
+      16,
+      15,
+      4,
+      5
+    ],
+    [
+      5,
+      7,
+      3,
+      4,
+      11,
+      21,
+      13,
+      17,
+      15,
+      4,
+      5
+    ],
+    [
+      5,
+      7,
+      3,
+      4,
+      11,
+      21,
+      12,
+      16,
+      15,
+      4,
+      5
+    ],
+    [
+      5,
+      7,
+      3,
+      4,
+      11,
+      22,
+      12,
+      17,
+      16,
+      4,
+      5
+    ],
+    [
+      5,
+      7,
+      3,
+      4,
+      11,
+      21,
+      12,
+      17,
+      15,
+      4,
+      5
+    ],
+    [
+      4,
+      6,
+      3,
+      4,
+      11,
+      20,
+      13,
+      19,
+      15,
+      5,
+      4
+    ],
+    [
+      5,
+      6,
+      3,
+      4,
+      10,
+      22,
+      13,
+      18,
+      17,
+      4,
+      4
+    ],
+    [
+      4,
+      8,
+      3,
+      5,
+      10,
+      21,
+      13,
+      19,
+      14,
+      4,
+      5
+    ]
+  ],
+  "roles_with_single_shared_background_witness_all_10_gauges": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "selected_role": 3,
+  "selected_min_raw_B_lower_bound_bits": 1.0523052047924776e-06,
+  "selected_state_ratio_lower_bound_under_declared_11bit_state_capacity": 9.566410952658887e-08,
+  "state_normalization_condition": "0 < K_eff(q_donor | C) = H(Z* | C) <= 11 bits on the retained active-role state; numerator must include this same-role return term",
+  "token_pair_js_provided": false,
+  "token_channel_conditional_mi_by_gauge_role": null,
+  "token_ratio_lower_bound_by_gauge_role": null,
+  "all_support_delta_quotient_stability_certified": false,
+  "R_intrinsic_Qwen3_8B_NONZERO_CERTIFIED": false,
+  "why_not_R_intrinsic": "Unknown outside-V token outputs can bridge delta-connected components of readouts; temporal causal quotient role identity and whole-state normalization must be independently established.",
+  "note": "Positive raw return is not an all-support delta-quotient certificate; the same physical L24 projection is not automatically the same causal role under quotient.",
+  "diagnostic_probes": [
+    {
+      "gauge": "IDENTITY_0",
+      "role": 0,
+      "best_background_pair_zero_mask": 2176,
+      "conditional_event_mi_lb_bits": 4.969654592752425e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.02612317299439537
+    },
+    {
+      "gauge": "IDENTITY_0",
+      "role": 1,
+      "best_background_pair_zero_mask": 2176,
+      "conditional_event_mi_lb_bits": 3.165846318310734e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.041120257132931215
+    },
+    {
+      "gauge": "IDENTITY_0",
+      "role": 2,
+      "best_background_pair_zero_mask": 2688,
+      "conditional_event_mi_lb_bits": 1.5940363838615086e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.046603480645466266
+    },
+    {
+      "gauge": "IDENTITY_0",
+      "role": 3,
+      "best_background_pair_zero_mask": 2244,
+      "conditional_event_mi_lb_bits": 1.7267651959083693e-05,
+      "min_delta_gap_among_eligible_thresholds": 0.035525451760548554
+    },
+    {
+      "gauge": "IDENTITY_0",
+      "role": 4,
+      "best_background_pair_zero_mask": 2176,
+      "conditional_event_mi_lb_bits": 1.0525962129325385e-05,
+      "min_delta_gap_among_eligible_thresholds": 0.008474503145757817
+    },
+    {
+      "gauge": "IDENTITY_0",
+      "role": 5,
+      "best_background_pair_zero_mask": 2176,
+      "conditional_event_mi_lb_bits": 1.623405460880292e-05,
+      "min_delta_gap_among_eligible_thresholds": 0.00788803512927938
+    },
+    {
+      "gauge": "IDENTITY_0",
+      "role": 6,
+      "best_background_pair_zero_mask": 1154,
+      "conditional_event_mi_lb_bits": 1.920231646320062e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.0029426228817532873
+    },
+    {
+      "gauge": "IDENTITY_0",
+      "role": 7,
+      "best_background_pair_zero_mask": 2116,
+      "conditional_event_mi_lb_bits": 1.5046536117398368e-05,
+      "min_delta_gap_among_eligible_thresholds": 0.0011029628571168626
+    },
+    {
+      "gauge": "IDENTITY_0",
+      "role": 8,
+      "best_background_pair_zero_mask": 2244,
+      "conditional_event_mi_lb_bits": 3.1658459463723716e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.0002552156710315945
+    },
+    {
+      "gauge": "IDENTITY_0",
+      "role": 9,
+      "best_background_pair_zero_mask": 2244,
+      "conditional_event_mi_lb_bits": 1.5940362657415749e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.0936665438928222
+    },
+    {
+      "gauge": "IDENTITY_0",
+      "role": 10,
+      "best_background_pair_zero_mask": 2176,
+      "conditional_event_mi_lb_bits": 1.5940363744566468e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.02598632658267752
+    },
+    {
+      "gauge": "UPDOWN_SCALE_0",
+      "role": 0,
+      "best_background_pair_zero_mask": 3712,
+      "conditional_event_mi_lb_bits": 3.8704211044553985e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.02612317299439537
+    },
+    {
+      "gauge": "UPDOWN_SCALE_0",
+      "role": 1,
+      "best_background_pair_zero_mask": 388,
+      "conditional_event_mi_lb_bits": 2.4655989419880555e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.041120257132931215
+    },
+    {
+      "gauge": "UPDOWN_SCALE_0",
+      "role": 2,
+      "best_background_pair_zero_mask": 642,
+      "conditional_event_mi_lb_bits": 1.2414565917244627e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.046603480645466266
+    },
+    {
+      "gauge": "UPDOWN_SCALE_0",
+      "role": 3,
+      "best_background_pair_zero_mask": 3268,
+      "conditional_event_mi_lb_bits": 1.3448166560592911e-05,
+      "min_delta_gap_among_eligible_thresholds": 0.035525451760548554
+    },
+    {
+      "gauge": "UPDOWN_SCALE_0",
+      "role": 4,
+      "best_background_pair_zero_mask": 388,
+      "conditional_event_mi_lb_bits": 8.197710955463304e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.008474503145757817
+    },
+    {
+      "gauge": "UPDOWN_SCALE_0",
+      "role": 5,
+      "best_background_pair_zero_mask": 1920,
+      "conditional_event_mi_lb_bits": 1.344816395000846e-05,
+      "min_delta_gap_among_eligible_thresholds": 1.7524067244423236e-05
+    },
+    {
+      "gauge": "UPDOWN_SCALE_0",
+      "role": 6,
+      "best_background_pair_zero_mask": 901,
+      "conditional_event_mi_lb_bits": 1.9202317745467057e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.003597003828046952
+    },
+    {
+      "gauge": "UPDOWN_SCALE_0",
+      "role": 7,
+      "best_background_pair_zero_mask": 2112,
+      "conditional_event_mi_lb_bits": 1.1718354052967773e-05,
+      "min_delta_gap_among_eligible_thresholds": 0.0021457150905479505
+    },
+    {
+      "gauge": "UPDOWN_SCALE_0",
+      "role": 8,
+      "best_background_pair_zero_mask": 3268,
+      "conditional_event_mi_lb_bits": 2.4655986526233006e-06,
+      "min_delta_gap_among_eligible_thresholds": 0.0010920733353587675
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "gpu_invoked": false,
+  "independence_note": "The row count is a lower bound on independent realizations. Interventions on one set of Qwen3-8B weights are not shown to be independent systems.",
+  "not_measured": [
+    "C_O stages on a modified state",
+    "reference-moment acquisition",
+    "any model other than Qwen3-8B"
+  ],
+  "parameters": {
+    "hours_per_night": 10.0,
+    "min_families": 5,
+    "predictors_M1": 8,
+    "predictors_MR": 8,
+    "rows_per_predictor": 3
+  },
+  "scenarios": [
+    {
+      "components": [
+        "gauge",
+        "r_greedy",
+        "r_sampled",
+        "role_t1",
+        "e1_6",
+        "pcit"
+      ],
+      "gpu_hours": 77.7,
+      "nights": 8,
+      "rows": 23,
+      "rows_per_predictor": 2,
+      "scenario": "FULL_ROW_BF16",
+      "seconds_per_row": 12162.9
+    },
+    {
+      "components": [
+        "gauge",
+        "r_greedy",
+        "r_sampled",
+        "role_t1",
+        "e1_6",
+        "pcit"
+      ],
+      "gpu_hours": 114.9,
+      "nights": 12,
+      "rows": 34,
+      "rows_per_predictor": 3,
+      "scenario": "FULL_ROW_BF16",
+      "seconds_per_row": 12162.9
+    },
+    {
+      "components": [
+        "gauge",
+        "r_greedy",
+        "r_sampled",
+        "role_t1",
+        "e1_20",
+        "pcit"
+      ],
+      "gpu_hours": 81.0,
+      "nights": 9,
+      "rows": 23,
+      "rows_per_predictor": 2,
+      "scenario": "FULL_ROW_BF16_E1_20",
+      "seconds_per_row": 12685.1
+    },
+    {
+      "components": [
+        "gauge",
+        "r_greedy",
+        "r_sampled",
+        "role_t1",
+        "e1_20",
+        "pcit"
+      ],
+      "gpu_hours": 119.8,
+      "nights": 12,
+      "rows": 34,
+      "rows_per_predictor": 3,
+      "scenario": "FULL_ROW_BF16_E1_20",
+      "seconds_per_row": 12685.1
+    },
+    {
+      "components": [
+        "gauge",
+        "r_greedy",
+        "role_t1",
+        "e1_6",
+        "pcit"
+      ],
+      "gpu_hours": 39.3,
+      "nights": 4,
+      "rows": 23,
+      "rows_per_predictor": 2,
+      "scenario": "ROW_WITHOUT_R_SAMPLED_BF16",
+      "seconds_per_row": 6157.900000000001
+    },
+    {
+      "components": [
+        "gauge",
+        "r_greedy",
+        "role_t1",
+        "e1_6",
+        "pcit"
+      ],
+      "gpu_hours": 58.2,
+      "nights": 6,
+      "rows": 34,
+      "rows_per_predictor": 3,
+      "scenario": "ROW_WITHOUT_R_SAMPLED_BF16",
+      "seconds_per_row": 6157.900000000001
+    },
+    {
+      "components": [
+        "gauge",
+        "r_greedy",
+        "e1_6",
+        "pcit"
+      ],
+      "gpu_hours": 26.2,
+      "nights": 3,
+      "rows": 23,
+      "rows_per_predictor": 2,
+      "scenario": "ROW_GAUGE_AND_R_GREEDY_BF16",
+      "seconds_per_row": 4095.8999999999996
+    },
+    {
+      "components": [
+        "gauge",
+        "r_greedy",
+        "e1_6",
+        "pcit"
+      ],
+      "gpu_hours": 38.7,
+      "nights": 4,
+      "rows": 34,
+      "rows_per_predictor": 3,
+      "scenario": "ROW_GAUGE_AND_R_GREEDY_BF16",
+      "seconds_per_row": 4095.8999999999996
+    },
+    {
+      "components": [
+        "f16_gauge",
+        "f16_core",
+        "e1_6",
+        "pcit"
+      ],
+      "gpu_hours": 29.1,
+      "nights": 3,
+      "rows": 23,
+      "rows_per_predictor": 2,
+      "scenario": "ROW_FLOAT16_T347_CHAIN",
+      "seconds_per_row": 4559.9
+    },
+    {
+      "components": [
+        "f16_gauge",
+        "f16_core",
+        "e1_6",
+        "pcit"
+      ],
+      "gpu_hours": 43.1,
+      "nights": 5,
+      "rows": 34,
+      "rows_per_predictor": 3,
+      "scenario": "ROW_FLOAT16_T347_CHAIN",
+      "seconds_per_row": 4559.9
+    }
+  ],
+  "schema": "T366_ACQUISITION_BUDGET_V1",
+  "stage_seconds_measured": {
+    "e1_20": 1650.0,
+    "e1_6": 1127.8,
+    "f16_core": 1120.5,
+    "f16_gauge": 2184.6,
+    "gauge": 1912.6,
+    "pcit": 127.0,
+    "r_greedy": 928.5,
+    "r_sampled": 6005.0,
+    "role_t1": 2062.0
+  }
+}

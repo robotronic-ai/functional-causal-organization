@@ -1,0 +1,82 @@
+{
+  "status": "PASS_R_GREEDY_RETURN_ACQUISITION",
+  "world": 26,
+  "masks": 4096,
+  "active_token_t": 23,
+  "clean_token_t_plus_1": 19,
+  "clean_token_per_gauge": {
+    "IDENTITY_0": 19,
+    "UPDOWN_SCALE_0": 19,
+    "UPDOWN_SCALE_1": 19,
+    "UPDOWN_SCALE_2": 19,
+    "VO_DIAG_0": 19,
+    "VO_DIAG_1": 19,
+    "VO_DIAG_2": 19,
+    "QKNORM_RECIP_0": 19,
+    "QKNORM_RECIP_1": 19,
+    "QKNORM_RECIP_2": 19
+  },
+  "clean_token_identical_under_gauges": true,
+  "distinct_tokens": [
+    19
+  ],
+  "token_counts": {
+    "19": 4096
+  },
+  "masks_with_token_different_from_clean": 0,
+  "H_token_bits_uniform_4096_masks": -0.0,
+  "token_flip_fraction_per_mask_bit": {
+    "heads[0,1,2,3]": 0.0,
+    "heads[4,5,6,7]": 0.0,
+    "heads[12,13,14,15]": 0.0,
+    "heads[20,21,22,23]": 0.0,
+    "heads[28,29,30,31]": 0.0,
+    "mlp0": 0.0,
+    "mlp1": 0.0,
+    "mlp2": 0.0,
+    "mlp3": 0.0,
+    "heads[8,9,10,11]": 0.0,
+    "heads[16,17,18,19]": 0.0,
+    "heads[24,25,26,27]": 0.0
+  },
+  "delta_L24_t1_per_site": {
+    "heads[0,1,2,3]": 0.06907534132869647,
+    "heads[4,5,6,7]": 0.037662340080039935,
+    "heads[8,9,10,11]": 0.05270557933983022,
+    "heads[12,13,14,15]": 0.04360422402797656,
+    "heads[16,17,18,19]": 0.03333480205639494,
+    "heads[20,21,22,23]": 0.0556359112158436,
+    "heads[24,25,26,27]": 0.018393090685687827,
+    "heads[28,29,30,31]": 0.023017339081896557,
+    "mlp0": 0.02590513358048134,
+    "mlp1": 0.025353368190209977,
+    "mlp2": 0.027412429033561902,
+    "mlp3": 0.02369328411335918
+  },
+  "token_pairs_separated_at_L24_t1_per_site": {
+    "heads[0,1,2,3]": 0,
+    "heads[4,5,6,7]": 0,
+    "heads[8,9,10,11]": 0,
+    "heads[12,13,14,15]": 0,
+    "heads[16,17,18,19]": 0,
+    "heads[20,21,22,23]": 0,
+    "heads[24,25,26,27]": 0,
+    "heads[28,29,30,31]": 0,
+    "mlp0": 0,
+    "mlp1": 0,
+    "mlp2": 0,
+    "mlp3": 0
+  },
+  "lemma": {
+    "sample": 32,
+    "a_arm_cache_plus_own_token_equals_clean_cache": 32,
+    "b_arm_cache_plus_clean_token_equals_clean": 32,
+    "valid": true
+  },
+  "L25_scores_equal_gauge_cube_per_replica": {
+    "IDENTITY_0": true
+  },
+  "raw_sha256": "dc30fa3587ff8b25596f28addddaf7cdf8321dc8cd6b9c8c3f5e645de6a84b6e",
+  "gpu_seconds": 928.5,
+  "R_computed": false
+}

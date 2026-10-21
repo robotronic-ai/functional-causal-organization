@@ -1,0 +1,54 @@
+{
+  "status": "NONZERO_CERTIFIED_DELTA_H_AND_DELTA_S_ON_U26_FINITE_DONOR_CONTRACT",
+  "world": 26,
+  "q": "q_donor = Bernoulli(0.5)^12, one context bit",
+  "n_roles": 11,
+  "n_contexts": 2,
+  "gauges_checked": 10,
+  "coalitions_per_gauge": 2048,
+  "game_entries_verified": 20480,
+  "full_game_exact": "v(S)=1 bit if and only if S intersects {1,5,6,7,8}; otherwise 0",
+  "five_informative_reader_indices": [
+    1,
+    5,
+    6,
+    7,
+    8
+  ],
+  "five_informative_reader_names": [
+    "heads[4,5,6,7]",
+    "mlp0",
+    "mlp1",
+    "mlp2",
+    "mlp3"
+  ],
+  "delta_cap_operational_reported": 1.0,
+  "delta_H_on_measured_one_layer_interface": 0.4,
+  "delta_S_on_measured_one_layer_interface": 0.4,
+  "shapley_per_informative_role": 0.2,
+  "finite_alphabet_refinement_theorem": {
+    "n_roles": 11,
+    "n_informative_readers": 5,
+    "minimum_normalized_share": "1/121",
+    "simpson_index_upper": "13693/14641",
+    "pi_S_lower_bound": "474/68465",
+    "pi_H_lower_bound": "474/68465",
+    "delta_cap_lower_bound": "1/11",
+    "delta_H_lower_bound": "474/753115",
+    "delta_S_lower_bound": "474/753115",
+    "both_lower_bound_float": 0.0006293859503528678
+  },
+  "refinement_conditions": [
+    "The intervention alphabet remains eleven independent binary donor roles, with the twelfth site treated as context.",
+    "Each future role readout includes or refines its original L25 scalar delta class.",
+    "The same eleven distinct certified causal roles, declared boundaries and q_donor are preserved.",
+    "The Shapley game remains monotone v(S)=I(P;Y_S|C); no unobserved policy classes enter the denominator."
+  ],
+  "excluded_claims": [
+    "No proof for a changed physical or causal boundary.",
+    "No certification for continuous interventions outside the frozen donor alphabet.",
+    "No assertion that the operational two-class P* equals the complete Qwen macro quotient."
+  ],
+  "source_npz_sha256": "bf2ac04c78c0d8b8321de8c1bc4e6e6909af0ca1c8c463403381571e15897368",
+  "original_full12_npz_sha256": "8d421b29a240c61ba10ae005674bc27b2b4d4fcc4e575aa055d32f32d4da3cc8"
+}

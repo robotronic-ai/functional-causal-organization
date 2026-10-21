@@ -1,0 +1,4 @@
+Control row R000_DOSE000 (dose 0, no weight edited) run through t367_intervened_c_o_gpu.py, stage gauge, strict guards.
+raw_sha256 of the cube NPZ: 8d421b29a240c61ba10ae005674bc27b2b4d4fcc4e575aa055d32f32d4da3cc8, identical to results/gauge_cube_u26.json of the certified bf16 bundle;
+the 12 gauge deltas are identical to that file; 10/10 frozen historical arms, the identity sub-cube and the nine sub-cubes against S5 were bit for bit.
+gpu_seconds 2292.9 (certified run: 1912.6). The NPZ is not archived.

@@ -1,0 +1,33 @@
+{
+  "status": "PASS_INDEPENDENT_S26_EXPORT_NUMERICAL_RETURN_AND_S28_REPORTED_EFFECT_SIGNATURE",
+  "scope": "finite bf16 as-run contract C_L24-R world u26, role mlp0; not full Q1 or intrinsic R",
+  "s26_export_sha256": "14f4a3221dffb48e251a87c5b1953b18db4510032e3993f7c6556dc784ecee9a",
+  "s27_report_sha256": "9c6f5396e744ad44c13d7cce5e0aee31904a61102584e230eea255ef2fe193cd",
+  "s28_report_sha256": "bad69e5c996297308694cc42c2437626e5ca61b2bfc766f116b71711be759980",
+  "role": "mlp0",
+  "mask_bit": 5,
+  "return_token": 21,
+  "event": "Scalar L24(t+1) relative-distance-to-clean-19 readout; ball around return score of token 21 with export delta_t1 per gauge; singleton token 21 on measured V in all ten gauges; outside-V probability adversarial, max 3.054429352865065e-23",
+  "gauge_values_B_bits": {
+    "IDENTITY_0": 1.0512476327559631e-06,
+    "UPDOWN_SCALE_0": 9.91238521244343e-07,
+    "UPDOWN_SCALE_1": 8.123828455949479e-07,
+    "UPDOWN_SCALE_2": 8.125942677775671e-07,
+    "VO_DIAG_0": 9.201254040069324e-07,
+    "VO_DIAG_1": 1.0009801047105985e-06,
+    "VO_DIAG_2": 9.002075287044206e-07,
+    "QKNORM_RECIP_0": 1.5460782516741977e-06,
+    "QKNORM_RECIP_1": 1.2678089804198083e-06,
+    "QKNORM_RECIP_2": 1.1029770657730012e-06
+  },
+  "B_min_bits": 8.123828455949479e-07,
+  "R_state_min": 7.385298596317708e-08,
+  "denominator_max_bits": 11,
+  "matches_S27_primary_bound": true,
+  "S28_mlp0_effect_signature_Jaccard": 1.0,
+  "S28_mlp0_all_11_readers_equal": true,
+  "limitations": [
+    "S26 export provides scalar readout, not full raw L24 token-pair distance tensor. The reconstructed singleton event certifies the identical numerical bound via this scalar function.",
+    "Full global Q1 temporal bisimulation/intrinsic R not established."
+  ]
+}

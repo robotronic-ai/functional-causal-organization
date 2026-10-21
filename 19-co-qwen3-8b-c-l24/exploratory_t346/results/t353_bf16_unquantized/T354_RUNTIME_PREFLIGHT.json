@@ -1,0 +1,14 @@
+{
+  "command": "/mnt/c/Users/Merien/pycharm/llama/.venv_linux/bin/python",
+  "error": null,
+  "ok": true,
+  "packages": {
+    "numpy": true,
+    "torch": true,
+    "transformers": true
+  },
+  "schema": "T354_PYTHON_RUNTIME_V1",
+  "sys_base_prefix": "/usr",
+  "sys_executable": "/mnt/c/Users/Merien/pycharm/llama/.venv_linux/bin/python",
+  "sys_prefix": "/mnt/c/Users/Merien/pycharm/llama/.venv_linux"
+}

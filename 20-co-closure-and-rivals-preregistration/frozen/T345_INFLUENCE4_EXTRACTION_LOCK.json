@@ -1,0 +1,32 @@
+{
+  "lock_id": "T345_MR_INFLUENCE4_EXTRACTOR_V1",
+  "phase": "DESCRIPTOR_CONVENTIONS_SEALED_BEFORE_PREDICTIVE_CODE_AND_BEFORE_PAIRED_OUTCOMES",
+  "supersedes": "T344 influence-descriptor extraction ambiguities only; T344 targets, models, folds, contrasts unchanged",
+  "world_used_for_software_validation": "u26",
+  "primary_reference_time": "t",
+  "secondary_time": "t+1_exploratory_temporal_robustness_only",
+  "donor_boundary": "Qwen3-8B L24 11 retained donor sites (indices 0 to 10); physical heads[24,25,26,27] at index 11 is context",
+  "matrix": "11x11 by removing the matching row and column of heads[24,25,26,27] from named 12x12 directed J",
+  "source_estimator": "same frozen full12 donor-pair influence estimator used for uploaded t and t+1 reports; do not redefine sign or averaging from an outcome",
+  "context_weighting": "retain the frozen original q_donor context weighting; no q_bal reweighting",
+  "row_column_alignment": "match exact role names, reordered to common retained-role source order before J-transpose asymmetry; fail on missing/duplicated names",
+  "gauge_primary": "IDENTITY_0 (stored replica0 in original acquisition ordering, pending optional verification of raw replica_names)",
+  "gauge_robustness": "evaluate all 10 exact Q1 gauges separately, no treating gauges as independent arms, no cherry-picking",
+  "features": {
+    "influence_frobenius_normalized": "||J11||_F / sqrt(11*11) = ||J11||_F / 11",
+    "influence_spectral_norm": "largest singular value of J11",
+    "influence_stable_rank": "||J11||_F**2 / ||J11||_2**2, or 0 if J11 exactly zero",
+    "influence_direction_asymmetry": "||J11-J11.T||_F / ||J11||_F, or 0 if J11 exactly zero"
+  },
+  "zero_matrix": "feature values 0 with zero-indicator as non-predictive metadata",
+  "fold_local_scaling": "center/scale each feature only from training folds; zero-variance feature maps to zero centered column with scale=1; report inactive columns but do not replace them after target inspection",
+  "pending_acquisition_seal": [
+    "arm and family ids",
+    "identical prospective feature extraction on all arms",
+    "frozen target labels and methods",
+    "grouped crossvalidation splits",
+    "time/target event alignment"
+  ],
+  "prediction_status": "NOT_TESTED_ONE_REALIZATION",
+  "do_not_derive_invariants_from_gauge_spread_alone": true
+}

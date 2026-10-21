@@ -1,0 +1,174 @@
+{
+  "protocol_id": "T343_QWEN3_8B_PERFORMANCE_FIRST",
+  "source_sections": [
+    "V45.1_17.6",
+    "V45.1_17.8",
+    "V45.1_17.9"
+  ],
+  "decision_date": "2026-10-18",
+  "stage": "STUDY_DESIGN_FROZEN__RUN_IDS_SEEDS_AND_ESTIMATORS_UNSEALED",
+  "preregistration_required_before_confirmatory_measurement": true,
+  "priority_order": [
+    "PERFORMANCE_SCORECARD",
+    "RIVAL_PREDICTION",
+    "SIGNED_INTERVENTION_RESPONSE",
+    "INDEPENDENT_GRADED_CLOSURE"
+  ],
+  "cross_track_gating": false,
+  "source_model": {
+    "model": "Qwen3-8B",
+    "weights": "fixed",
+    "organization_dtype": "bf16",
+    "fca_historical_dtype": "int8_quantized",
+    "pairing_rule": "same_arm_dtype_weights_decoding_interventions_and_tasks",
+    "donor_mask_is_independent_arm": false
+  },
+  "primary_targets": [
+    {
+      "id": "FCA_E1",
+      "kind": "bounded_measured_score",
+      "panel": "FCA_behavioral",
+      "direction_under_delta_ablation": "non_increase"
+    },
+    {
+      "id": "PCI_T_DS_L27",
+      "kind": "directional_ratio",
+      "panel": "PCI_T",
+      "direction_under_delta_ablation": "non_increase"
+    }
+  ],
+  "secondary_targets": [
+    "FCA_C3",
+    "FCA_T2"
+  ],
+  "descriptive_targets": [
+    "FCA_T1",
+    "FCA_T3",
+    "FCA_B1",
+    "FCA_R3",
+    "PCI_T_ST_L27"
+  ],
+  "co_coordinates": [
+    "Gamma",
+    "Delta",
+    "R",
+    "Lambda"
+  ],
+  "co_feature_map": {
+    "Gamma": "numerical_matched_contract_min_cut_or_fixed_comparable_bound",
+    "Delta": "min(Delta_H,Delta_S) computed on matched arms",
+    "R": "same_source_same_horizon_finite_state_ratio_or_fixed_comparable_bound",
+    "Lambda": "density_directed_L24_relations_strict_gt_delta_abs_fixed_denominator"
+  },
+  "m0_features": [
+    "intervention_rms",
+    "content_output_information",
+    "effective_passive_memory",
+    "preintervention_development_performance"
+  ],
+  "influence4_features": [
+    "frobenius_normalized",
+    "spectral_norm",
+    "stable_rank",
+    "direction_asymmetry"
+  ],
+  "influence4_zero_matrix_convention": "MUST_SEAL_BEFORE_CONFIRMATORY_MEASUREMENT",
+  "additional_rivals": [
+    "observability",
+    "controllability",
+    "effective_rank",
+    "intrinsic_dimension"
+  ],
+  "additional_rivals_status": "NOT_IDENTIFIED_FROM_SINGLE_STEP_CUBE_BY_DEFAULT",
+  "models": {
+    "M0": [
+      "intercept",
+      "intervention_rms",
+      "content_output_information",
+      "effective_passive_memory",
+      "preintervention_development_performance"
+    ],
+    "M1_CO": [
+      "M0",
+      "Gamma",
+      "Delta",
+      "R",
+      "Lambda"
+    ],
+    "MR_INFLUENCE4": [
+      "M0",
+      "frobenius_normalized",
+      "spectral_norm",
+      "stable_rank",
+      "direction_asymmetry"
+    ]
+  },
+  "group_holdout": {
+    "unit": "independent_arm",
+    "group_rule": "group_by_realization_and_intervention_family_no_episode_or_donor_leakage",
+    "n_splits_when_eligible": 5,
+    "minimum_independent_groups_for_full_confirmatory_rival_regression": 5,
+    "split_seal": "MUST_SEAL_BEFORE_OUTCOME_OPENING"
+  },
+  "predictor": {
+    "algorithm": "ridge",
+    "lambda_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "scaler": "train_fold_only",
+    "tuning": "inner_group_cv_only",
+    "test": "same_outer_group_folds_all_models",
+    "primary_metric": "delta_heldout_R2",
+    "aux_metrics": [
+      "heldout_R2",
+      "MSE",
+      "RMSE"
+    ],
+    "variance_guard": "TARGET_UNRESOLVED_FOR_R2"
+  },
+  "confirmatory_decision": {
+    "per_target": "M1_delta_R2_lower_one_sided_97p5_percent_CI_gt_0_vs_predeclared_best_eligible_matched_size_rival_and_vs_M0",
+    "alpha_each_primary_target_one_sided": 0.025,
+    "ci_group_aware": "MUST_SEAL_BOOTSTRAP_OR_ALTERNATIVE_BEFORE_HOLDOUT_OPENING",
+    "negative_or_unresolved": "REPORT_WITHOUT_RESCUE",
+    "all_initiated_results_published": true
+  },
+  "ablation": {
+    "arms": [
+      "BASELINE",
+      "SHAM",
+      "L24_ROLE_ABLATION"
+    ],
+    "augmentation": "OPTIONAL_ONLY_IF_PREREGISTERED",
+    "weights_fixed": true,
+    "source_mechanism": "L24_role_sharing_Delta",
+    "signed_predictions": {
+      "FCA_E1": "non_increase_for_valid_downward_delta",
+      "PCI_T_DS_L27": "non_increase_for_valid_downward_delta"
+    },
+    "dose_response_min_declared_nonzero_levels": 3,
+    "manipulation_validity_calibration": "MUST_SEAL_BEFORE_MEASUREMENT"
+  },
+  "closure": {
+    "status": "SEPARATE_NOT_GATING",
+    "protocol": "T341"
+  },
+  "seal_fields_required_for_confirmation": [
+    "realization_arm_ids",
+    "group_folds",
+    "random_seeds",
+    "FCA_bf16_instrument",
+    "PCI_T_bf16_instrument",
+    "influence_matrix_estimator",
+    "effective_memory_estimator",
+    "content_output_information_estimator",
+    "L24_ablation_implementation",
+    "equivalence_tolerances",
+    "planned_doses",
+    "group_uncertainty_method"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "status": "STRUCTURAL_CACHE_BYPASS_TEST_ONLY",
+  "world": "generic_prompt_not_u26",
+  "tested_intervention": "surrogate L24 mlp.down_proj forward-output perturbation at t",
+  "token_clamp": "fixed identical token at t+1",
+  "source_role": "L24",
+  "target_role": "L24 t+1",
+  "cache_bypass_l24_supported": true,
+  "q1_gauges_tested": 1,
+  "reentry_positive_certified": false,
+  "R_intrinsic_certified": false,
+  "notes": [
+    "The same-role recurrent R requires frozen-donor u26 intervention and positive free-token effect",
+    "This test does not establish temporal Q1 causal-role identity or K_eff state sufficiency",
+    "Caches of upper layers may change and later layers may depend on them; claim is specifically about L24"
+  ],
+  "reports": [
+    {
+      "gauge": "IDENTITY_0",
+      "fixed_next_token": 12095,
+      "unforced_argmax_token_control": 12095,
+      "unforced_argmax_token_perturbed": 12095,
+      "all_L24_t1_readers_bitwise_equal": true,
+      "comparisons": {
+        "layer24_input": {
+          "bitwise_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "o_proj_input": {
+          "bitwise_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "down_proj_input": {
+          "bitwise_equal": true,
+          "max_abs_difference": 0.0
+        },
+        "layer24_output": {
+          "bitwise_equal": true,
+          "max_abs_difference": 0.0
+        }
+      },
+      "t1_final_logits_bitwise_equal": false
+    }
+  ],
+  "elapsed_seconds": 95.287
+}

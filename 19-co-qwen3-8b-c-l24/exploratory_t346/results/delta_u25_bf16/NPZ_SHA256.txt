@@ -1,0 +1,3 @@
+NPZ files are not archived; checksums of the operator copies:
+c393dad78d7c7a1fa909a205dfb6bec4ccac82283c2fc53a52e85e2d775a3745  S9_FULL12_GAUGE_CUBES_u25.npz (input cube, matches raw_sha256 of the u25 gauge cube record)
+31b03bdd29b4f7cca109a7bcf2fa2136dee12162cdbc97696508a166bddea23e  S23_GAME_TABLE_u25.npz (table_sha256 in RESULT.json)

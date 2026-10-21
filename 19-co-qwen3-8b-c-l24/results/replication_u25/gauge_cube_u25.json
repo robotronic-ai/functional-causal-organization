@@ -1,0 +1,36 @@
+{
+  "status": "PASS_GAUGE_CUBE_ACQUISITION",
+  "world": 25,
+  "arms_per_replica": 4096,
+  "gauge_delta_12_readers": {
+    "heads[0,1,2,3]": 0.5102348926460145,
+    "heads[4,5,6,7]": 0.49220805262968326,
+    "heads[8,9,10,11]": 0.48642677216505925,
+    "heads[12,13,14,15]": 0.6772279622238595,
+    "heads[16,17,18,19]": 0.32805934518309554,
+    "heads[20,21,22,23]": 0.061849994490469046,
+    "heads[24,25,26,27]": 0.6030771037014222,
+    "heads[28,29,30,31]": 0.634705725987331,
+    "mlp0": 0.38965574382858037,
+    "mlp1": 0.4207927039339472,
+    "mlp2": 0.34532192860211186,
+    "mlp3": 0.22589392388315344
+  },
+  "identifiable_readers": {
+    "heads[0,1,2,3]": true,
+    "heads[4,5,6,7]": true,
+    "heads[8,9,10,11]": true,
+    "heads[12,13,14,15]": true,
+    "heads[16,17,18,19]": true,
+    "heads[20,21,22,23]": true,
+    "heads[24,25,26,27]": true,
+    "heads[28,29,30,31]": true,
+    "mlp0": true,
+    "mlp1": true,
+    "mlp2": true,
+    "mlp3": true
+  },
+  "raw_sha256": "c393dad78d7c7a1fa909a205dfb6bec4ccac82283c2fc53a52e85e2d775a3745",
+  "gpu_seconds": 1931.3,
+  "formal_Qwen_Gamma_certified": false
+}

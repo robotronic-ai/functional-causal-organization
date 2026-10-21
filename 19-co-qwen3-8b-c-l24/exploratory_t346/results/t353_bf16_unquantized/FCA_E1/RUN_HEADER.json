@@ -1,0 +1,97 @@
+{
+  "arms": [
+    "U26_BASELINE",
+    "U26_SHAM",
+    "U26_ABLATE_025",
+    "U26_ABLATE_050",
+    "U26_ABLATE_100"
+  ],
+  "config": {
+    "attn_implementation": "sdpa",
+    "backend": "hf",
+    "device_map": null,
+    "dtype": "bfloat16",
+    "e1_batch_size": 4,
+    "e1_samples": 20,
+    "enable_thinking": false,
+    "gpu_index": 0,
+    "lazy_context": true,
+    "local_files_only": true,
+    "max_new_tokens": 128,
+    "model_path": "/mnt/c/Users/Merien/pycharm/llama/quantum/Qwen3-8B",
+    "name": "Qwen3-8B standard Transformer (bnb8 GPU-only; FCA v0.2.7)",
+    "progress": false,
+    "quantization": "none",
+    "required_runner_id": "FCA027_GPU_R6",
+    "sample_temperature": 0.8,
+    "seed": 1234,
+    "strict_gpu": true,
+    "system_id": "qwen3-8b-standard-bnb8-gpu-only",
+    "temperature": 0.0,
+    "top_p": 0.95,
+    "trust_remote_code": true
+  },
+  "deviations_from_historical_R6": [
+    "quantization=none (historical bnb8)",
+    "dtype=bfloat16 (historical float16 compute)"
+  ],
+  "hook": {
+    "block": 0,
+    "columns": [
+      0,
+      3072
+    ],
+    "layer": 24,
+    "positions": "ALL_PROCESSED_TOKENS",
+    "record_write": true
+  },
+  "n_instances": 20,
+  "probe": false,
+  "provenance": {
+    "fca_files": {
+      "__init__.py": "cb31f384bc3219b7b902be401615d82deb8c5804f0527ab43523b2db115e16fc",
+      "adapters.py": "501ceebf6c679375cadf4e571cb88ce55087fdce447e2e89027aab27dd85b009",
+      "analyze_specificity.py": "636712bd4ffdc850426e66345577e8938da3b7bd4dce4f96d9a1aec2feb04d88",
+      "audit_b1.py": "743c1c94cfbe3473df407072598dfdc1c22f28901166e487453a870e11feba1e",
+      "config.qwen3_8b_gpu8.json": "f6ea46a3d4d49f73e17ec2d76e749e3801f78e105f1756fe86de56f94f1cc74b",
+      "core.py": "6cf59e6d017f8a217d3812c4aaeebabd709009ee8533c1d72208aafa59c51f12",
+      "harness.py": "20a92c00a343b29cb6f8150e3298b5d93869f11102b54a9f1bf25212c8ed4da1",
+      "mechanistic.py": "79f30d41f8583c687d3e08d9a8f2edfc7d534ce3efdfc5c796fa166dae640fb4",
+      "merge_results.py": "c8a5ebcf2abeac4a0d66346c371bcc2b48a0a12188948df4ce32b3bc9093d6db",
+      "metrics.py": "ae72eb0e42b918c1fc69caa24e41c4fceee377d0bc66c13a648a2596e817b7d3",
+      "preflight.py": "261fcc94959ae36fbcdfef9416039d68d11a1ee462bc8daf284fb153278dcf0e",
+      "progress.py": "4c00185fb75debe4e41d5c65e22614bd44a4c6e8f61b48c36ac5f2ea8bf313f0",
+      "run.py": "84a92977dd1f745c0dc7a89e43505c33d29fbf0fd6b6345017fb53ef0f295ca4",
+      "run_qwen3_8b_gpu.py": "f2e972f2a9c016ce6b8ef2a5930979d461e2aff4b32b9a79b8e81947a8b30f2d",
+      "sealing.py": "a359b27e74eea14aac73b7df6a65b9bc45c0b5b4632e3fb1be2012919f6748bc",
+      "tests_agency.py": "22a1c968663968aa7f6196d190c9ddc51e4843daa4d5c9c0a4833e4283995787",
+      "tests_attention_schema.py": "3da1424f2ef12c3511c62b07e6938c1b3e38f115c3fca55b68d6fe100d0d2452",
+      "tests_boundary.py": "fbcc2f79c9363abd6c533ee2a29034b6d55494b0d73e22ad8aa15b8379d13710",
+      "tests_control.py": "f2e3f37ed6c41b225e7316a4d3943fa8aac6c105bb8d02411f104eb1843e7dbd",
+      "tests_erasure.py": "c533146055c20087e74a5853e44d6631632f2d3cb6e5e5144735dfc0e3c56ad0",
+      "tests_interrupt.py": "9514c5e273afa2468c70ff9241fe7528523e6ff41f88dc62e0d113264fff4c12",
+      "tests_latent_state.py": "4b2ae8e6c650c042b19d6bd90c1a87fb29a335faeb1a37936f7a729a423ae1e2",
+      "tests_meta.py": "539346852f074f3dec2cc50c90d1c1705d027eb90232a5af3ef5bf4a625c3ae4",
+      "tests_mutable_state.py": "5a265217f7ec410ba1fb97f98287c21dfe0e1110e6326a61f596c757fad92617",
+      "tests_recurrence.py": "50e8b7cd7f06d2d831895b094d222e6fd5dae748a3b8ab21a669e3bf5d874aa5",
+      "tests_selfpred.py": "95b57906f9de0c432613f556e113105fe75b49b610ec6309a98dde450e28aeee",
+      "tests_temporal_dynamics.py": "b39bce3971b79b854b64b3078c3c97f73ef188fe32a4b5ab663064c9d1515022",
+      "tests_time.py": "1c32837941d585b41e6d38374229fdf289f82598039eb862698aa7b6d966fc9a",
+      "tests_workspace.py": "5160496ca9a01832285df939b53d954c231e1c8caba62b459a0b1602e2364622",
+      "validate.py": "95994b6659f699de5d04831f73ef5f37f3cf48fdd7c8363ff9576edbeb9bea28"
+    },
+    "fca_tree_sha256": "4575dab4e42c619568c9e5750be5d69477837a0ffe1846494c18a10e9a8b0085",
+    "pilot_script": "49c6a7f33e27b5d746b8b3c7c4955afe9d1e2c82b5f6114fd82a050865459901",
+    "script": "c0eb6944ab6801ca9a0fce37c9ede08dbb664c783cc983d741957261020ae893"
+  },
+  "runtime": {
+    "attention_implementation": "sdpa",
+    "e1_batch_size": 4,
+    "gpu_index": 0,
+    "gpu_name": "NVIDIA GeForce RTX 5060 Ti",
+    "gpu_total_vram_gib": 15.928,
+    "quantization": "none",
+    "strict_gpu": true
+  },
+  "task_seed_base": 2026101801
+}

@@ -1,0 +1,183 @@
+{
+  "definition": "rel(a, b)   = rms(a - b) / (0.5 (rms(a) + rms(b)))\n  delta_w     = max over every state (t, content, role) and every pair of replicas of rel (orbit diameter of the writes)\n  delta_x     = max over every content and every pair of replicas of rel (orbit diameter of the content vectors)\n  e_g(z, r)   = max_t rel(w_g[(t, z)][r], w_g[(t, REF)][r])\n  cell (z, r) RESOLVED_POSITIVE if e_g(z, r) > 2 delta_w in every replica g ; otherwise UNRESOLVED (never negative)\n  contents z, z' resolved distinct if rel(xin_g[z], xin_g[z']) > 2 delta_x in every replica g\nClaim checked: the lower relation is non-empty at each layer with all content pairs resolved, so every admissible completion\nof the unresolved cells is non-empty and Lambda_O is not identically zero on this restricted domain.\nThe rel formula, the thresholds and the verdicts are recomputed here with numpy only; the recorded JSON is used only for the\nfinal comparison. Files are loaded with torch.load(weights_only=True).",
+  "layers": {
+    "L23": {
+      "recorded_json": "NUIT_T127/T135/V_T135_L1_L23.json",
+      "recorded_json_sha256": "f41cd977d2e1ab90ffbddac892c016d6de8e2abac43d9a8c463812f5d0e02484",
+      "checkpoint_signature": "333c115a5893a31b",
+      "replica_sha256": {
+        "rep0_IDENTITY_0.pt": "9e65daa8975fdf287798ace0e5c29628f340f436e8e7860ed456fa678342751f",
+        "rep1_UPDOWN_SCALE_0.pt": "fac7a75104ede91c4970b5e3a1780b7935072c3300643df6321a34d73d1e4b45",
+        "rep2_UPDOWN_SCALE_1.pt": "5456f4aa2bf0be533e98a90279c4bc09df6f96715a673ba4f500b5c8d346cc6f",
+        "rep3_UPDOWN_SCALE_2.pt": "bcc0035af7e8e5f5cea578f37cc9f48f03175dbfdb4e689dd5e4490d11828512",
+        "rep4_VO_DIAG_0.pt": "4445dc123236e31c1e692ba1e4236b9d7b024128f22b77da952eab7e9477dcd7",
+        "rep5_VO_DIAG_1.pt": "f523798681791f74dfb50e52c46faeed28dc928b5cfd902348d94a220414cdcf",
+        "rep6_VO_DIAG_2.pt": "30012d54b6043f5314dbf1d0dfce1ff356b9e35082c8cde16a068b4d114e8c41",
+        "rep7_QKNORM_RECIP_0.pt": "11b92690173c77f5e6808ec3c4a62c5e021970be28bef81f7a08520f1af63abd",
+        "rep8_QKNORM_RECIP_1.pt": "a311e48ad825e3309ee37319a5fff7a8fce3d26e4c0201b1d80cfbc2e140005b",
+        "rep9_QKNORM_RECIP_2.pt": "003057818e130fd6f0363ef984b7249316c0cf861fcfad4604e72ab305623a27"
+      },
+      "roles": [
+        "heads[24,25,26,27]",
+        "mlp3"
+      ],
+      "contents": [
+        "u16|REVOKE|H2",
+        "u17|SUBSTITUTE|H2",
+        "u18|REVOKE|H1"
+      ],
+      "delta_w": 0.10848574699245678,
+      "delta_x": 0.025612645708020253,
+      "contexts": 4,
+      "cells": {
+        "u16|REVOKE|H2->heads[24,25,26,27]": {
+          "status": "UNRESOLVED",
+          "effect_over_delta": [
+            1.9252818717805973,
+            2.034756776798565
+          ],
+          "min_margin_over_2delta": -0.07471812821940271
+        },
+        "u16|REVOKE|H2->mlp3": {
+          "status": "RESOLVED_POSITIVE",
+          "effect_over_delta": [
+            3.2442015601094902,
+            3.3825445177814
+          ],
+          "min_margin_over_2delta": 1.2442015601094902
+        },
+        "u17|SUBSTITUTE|H2->heads[24,25,26,27]": {
+          "status": "UNRESOLVED",
+          "effect_over_delta": [
+            1.443795407823758,
+            1.6830619443852681
+          ],
+          "min_margin_over_2delta": -0.556204592176242
+        },
+        "u17|SUBSTITUTE|H2->mlp3": {
+          "status": "RESOLVED_POSITIVE",
+          "effect_over_delta": [
+            3.3113308339773835,
+            3.559220193617434
+          ],
+          "min_margin_over_2delta": 1.3113308339773835
+        },
+        "u18|REVOKE|H1->heads[24,25,26,27]": {
+          "status": "UNRESOLVED",
+          "effect_over_delta": [
+            1.1247958721894067,
+            1.3512912394338668
+          ],
+          "min_margin_over_2delta": -0.8752041278105933
+        },
+        "u18|REVOKE|H1->mlp3": {
+          "status": "UNRESOLVED",
+          "effect_over_delta": [
+            1.871935188295809,
+            1.9254278041066106
+          ],
+          "min_margin_over_2delta": -0.12806481170419093
+        }
+      },
+      "content_pairs": {
+        "__REF__|u16|REVOKE|H2": "RESOLVED_DISTINCT",
+        "__REF__|u17|SUBSTITUTE|H2": "RESOLVED_DISTINCT",
+        "__REF__|u18|REVOKE|H1": "RESOLVED_DISTINCT",
+        "u16|REVOKE|H2|u17|SUBSTITUTE|H2": "RESOLVED_DISTINCT",
+        "u16|REVOKE|H2|u18|REVOKE|H1": "RESOLVED_DISTINCT",
+        "u17|SUBSTITUTE|H2|u18|REVOKE|H1": "RESOLVED_DISTINCT"
+      },
+      "lower_relation": {
+        "u16|REVOKE|H2": [
+          "mlp3"
+        ],
+        "u17|SUBSTITUTE|H2": [
+          "mlp3"
+        ],
+        "u18|REVOKE|H1": []
+      },
+      "lower_relation_non_empty": true,
+      "all_content_pairs_resolved": true,
+      "matches_recorded": true,
+      "differences": []
+    },
+    "L24": {
+      "recorded_json": "NUIT_T127/T135/V_T135_L1_L24.json",
+      "recorded_json_sha256": "df60d3171acdd54a1067edb2e5d5bd67aac94aab117d47a8df15ef2f876edf87",
+      "checkpoint_signature": "8f5c55fc59c6d62a",
+      "replica_sha256": {
+        "rep0_IDENTITY_0.pt": "86b4ac1aa3f22360f603614bc71ad71117d8e7934ef60090f3c74ad83835c466",
+        "rep1_UPDOWN_SCALE_0.pt": "85043d60add31cece968e6356a949113a66bbe3ed9cebf9dccf09729bea83ed9",
+        "rep2_UPDOWN_SCALE_1.pt": "fb5ffb66e084fd048b37362d6398f0199a74defd30e0365210b79e5e4b3a31e1",
+        "rep3_UPDOWN_SCALE_2.pt": "9ed0ffc8f82d1b51e093e0211cc2c61cbd9860e04d36537b446b65a03cd53150",
+        "rep4_VO_DIAG_0.pt": "aeae35d6b96b5630534df75dc17f608d7cd96c7e32e216f42022f81f62ba424e",
+        "rep5_VO_DIAG_1.pt": "33d1757827463ed434d262654c4478c520fb90207eacaf54c5b7dc48d5fe5dd6",
+        "rep6_VO_DIAG_2.pt": "25f529021a3218fe7a1a163174060f354d4f7a78e6e2b3a55872e7139ea48075",
+        "rep7_QKNORM_RECIP_0.pt": "b4bb369fa4e3bdb40bdced19b2194a857be20f7d6114a7e5b7eab2dd7c91f709",
+        "rep8_QKNORM_RECIP_1.pt": "7bcf7b607b60032a570397fd3011c4feffd550bcebd615596984888c372745c5",
+        "rep9_QKNORM_RECIP_2.pt": "8b0c55ab17051e5044d7437a7e99c797ef42ace13b122fd948d714a7b1a82258"
+      },
+      "roles": [
+        "heads[28,29,30,31]"
+      ],
+      "contents": [
+        "u16|REVOKE|H2",
+        "u17|SUBSTITUTE|H2",
+        "u18|REVOKE|H1"
+      ],
+      "delta_w": 0.11352509828856452,
+      "delta_x": 0.030418499779278137,
+      "contexts": 4,
+      "cells": {
+        "u16|REVOKE|H2->heads[28,29,30,31]": {
+          "status": "RESOLVED_POSITIVE",
+          "effect_over_delta": [
+            9.933429655780559,
+            10.108716091855866
+          ],
+          "min_margin_over_2delta": 7.933429655780559
+        },
+        "u17|SUBSTITUTE|H2->heads[28,29,30,31]": {
+          "status": "RESOLVED_POSITIVE",
+          "effect_over_delta": [
+            10.039917051688901,
+            10.13412401854724
+          ],
+          "min_margin_over_2delta": 8.039917051688901
+        },
+        "u18|REVOKE|H1->heads[28,29,30,31]": {
+          "status": "RESOLVED_POSITIVE",
+          "effect_over_delta": [
+            3.620814777929769,
+            4.247835283089877
+          ],
+          "min_margin_over_2delta": 1.6208147779297688
+        }
+      },
+      "content_pairs": {
+        "__REF__|u16|REVOKE|H2": "RESOLVED_DISTINCT",
+        "__REF__|u17|SUBSTITUTE|H2": "RESOLVED_DISTINCT",
+        "__REF__|u18|REVOKE|H1": "RESOLVED_DISTINCT",
+        "u16|REVOKE|H2|u17|SUBSTITUTE|H2": "RESOLVED_DISTINCT",
+        "u16|REVOKE|H2|u18|REVOKE|H1": "RESOLVED_DISTINCT",
+        "u17|SUBSTITUTE|H2|u18|REVOKE|H1": "RESOLVED_DISTINCT"
+      },
+      "lower_relation": {
+        "u16|REVOKE|H2": [
+          "heads[28,29,30,31]"
+        ],
+        "u17|SUBSTITUTE|H2": [
+          "heads[28,29,30,31]"
+        ],
+        "u18|REVOKE|H1": [
+          "heads[28,29,30,31]"
+        ]
+      },
+      "lower_relation_non_empty": true,
+      "all_content_pairs_resolved": true,
+      "matches_recorded": true,
+      "differences": []
+    }
+  },
+  "status": "LAMBDA0_RESTRICTED_LOWER_RELATION_NONEMPTY_REPLAYED_FROM_RAW_WRITES"
+}

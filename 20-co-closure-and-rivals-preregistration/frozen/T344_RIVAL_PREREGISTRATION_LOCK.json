@@ -1,0 +1,139 @@
+{
+  "id": "T344_QWEN3_8B_RIVALS_PRECODE_LOCK",
+  "status": "DESIGN_FROZEN_BEFORE_CODING_ACQUISITION_UNSEALED",
+  "timestamp_date": "2026-10-18",
+  "origin": "V45.1_section_17.6_and_T343",
+  "label_source_integrity": "historical_FCA_Q8_is_unpaired_with_bf16_CO",
+  "cross_track_gating": false,
+  "primary_targets": [
+    {
+      "id": "FCA_E1",
+      "dtype": "numeric_bounded",
+      "system": "matched_bf16"
+    },
+    {
+      "id": "PCI_T_DS_L27",
+      "dtype": "numeric_ratio",
+      "system": "matched_bf16"
+    }
+  ],
+  "secondary_targets": [
+    "FCA_C3",
+    "FCA_T2"
+  ],
+  "baseline_features": [
+    "intervention_rms",
+    "output_information",
+    "passive_effective_memory",
+    "preintervention_independent_access_score"
+  ],
+  "co_features": [
+    "Gamma",
+    "Delta_min_HS",
+    "R_same_source_state",
+    "Lambda_L24_density_gt_delta"
+  ],
+  "influence_features": [
+    "influence_frobenius_normalized",
+    "influence_spectral_norm",
+    "influence_stable_rank",
+    "influence_direction_asymmetry"
+  ],
+  "models": {
+    "M0": [
+      "intercept",
+      "intervention_rms",
+      "output_information",
+      "passive_effective_memory",
+      "preintervention_independent_access_score"
+    ],
+    "M1_CO": [
+      "M0",
+      "Gamma",
+      "Delta_min_HS",
+      "R_same_source_state",
+      "Lambda_L24_density_gt_delta"
+    ],
+    "MR_INFLUENCE4": [
+      "M0",
+      "influence_frobenius_normalized",
+      "influence_spectral_norm",
+      "influence_stable_rank",
+      "influence_direction_asymmetry"
+    ]
+  },
+  "additional_rivals": {
+    "observability": "NOT_IDENTIFIED_UNTIL_PROSPECTIVELY_SEALED",
+    "controllability": "NOT_IDENTIFIED_UNTIL_PROSPECTIVELY_SEALED",
+    "effective_rank": "EXPLORATORY_UNTIL_SEALED"
+  },
+  "rival_selection": "FIXED_MR_INFLUENCE4_NO_BEST_RIVAL_SELECTION_ON_HOLDOUT",
+  "zero_influence_matrix_convention": "stable_rank_0_asymmetry_0_with_separate_metadata_flag_no_extra_feature",
+  "unit": "independent_matched_arm_not_donor_masks_or_episodes",
+  "grouping": "complete_arm_and_episodes_in_same_group_keep_intervention_families_separate_where_predeclared",
+  "fit": {
+    "algorithm": "ridge_intercept_unpenalized",
+    "features_scaled": "training_fold_only",
+    "outer_group_cv_splits": 5,
+    "inner_group_cv_only": true,
+    "lambda_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "inner_ties": "choose_largest_lambda",
+    "outer_folds_identical_across_models_targets": true,
+    "minimum_independent_groups_for_5_fold": 5
+  },
+  "primary_metric": "pooled_out_of_fold_R2_including_negative_values",
+  "reported_metrics": [
+    "OOF_R2",
+    "OOF_MSE",
+    "OOF_RMSE",
+    "D0",
+    "D4",
+    "group_uncertainty",
+    "coverage"
+  ],
+  "contrasts": {
+    "D0": "R2(M1_CO)-R2(M0)",
+    "D4": "R2(M1_CO)-R2(MR_INFLUENCE4)"
+  },
+  "multiplicity": {
+    "n_primary_targets": 2,
+    "n_primary_contrasts_per_target": 2,
+    "global_family_one_sided_alpha": 0.05,
+    "per_comparison_alpha": 0.0125,
+    "lower_one_sided_confidence_level": 0.9875
+  },
+  "uncertainty": {
+    "method": "paired_group_bootstrap_on_fixed_oof_predictions",
+    "n_resamples": 2000,
+    "seed": 20261018,
+    "limitations": "conditional_on_out_of_fold_predictions; if not_estimable label_inconclusive"
+  },
+  "decision": {
+    "target_advantage": "both_D0_and_D4_lower_bounds_strictly_positive",
+    "joint_advantage": "both_primary_targets_satisfy_target_advantage",
+    "otherwise": "INCONCLUSIVE_OR_RIVAL_FAVORED_WHEN_SUPPORTED",
+    "unresolved_variance": "R2_UNDEFINED_REPORT_ABSOLUTE_ERROR"
+  },
+  "seal_before_confirmatory_outcomes": [
+    "arm_and_family_ids",
+    "fold_assignments",
+    "seeds_and_task_generators",
+    "matched_FCA_bf16_instrument",
+    "matched_PCI_T_bf16_instrument",
+    "output_information_estimator",
+    "passive_memory_estimator",
+    "numeric_CO_extractors",
+    "influence_matrix_estimator",
+    "target_missingness_rules",
+    "holdout_outcome_hashes",
+    "bootstrap_exchangeability_groups"
+  ],
+  "publication": "all_initiated_analyses_including_negative_null_invalid_and_incomplete",
+  "empirical_claim_made": false
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "co-turn137-q2-l1-partial-identification-v1",
+  "status": "FROZEN",
+  "q2_interpretable_pair_test": "T135 symmetric fixed-factor refactorization certificate",
+  "raw_pair_contrast_semantics": "DIAGNOSTIC_NONINTERPRETABLE",
+  "frozen_calibration_cases": [
+    "u15|SUBSTITUTE|H1",
+    "u16|REVOKE|H2",
+    "u17|SUBSTITUTE|H2",
+    "u18|REVOKE|H1"
+  ],
+  "anchors": {
+    "L23": ["heads[24,25,26,27]", "mlp3"],
+    "L24": ["heads[28,29,30,31]"]
+  },
+  "new_hard_constraint": {
+    "layer": 23,
+    "distinct_pair": ["heads[24,25,26,27]", "mlp3"],
+    "meaning": "the two resolved active anchors cannot belong to one causal role in any admissible completion"
+  },
+  "one_sided_rules": {
+    "Q2_TRANSPORTED": "positive transport constraint",
+    "Q2_AMBIGUOUS_OR_BELOW_RESOLUTION": "UNRESOLVED; never absence",
+    "L1_RESOLVED_POSITIVE": "positive typed content-role edge",
+    "L1_UNRESOLVED": "UNRESOLVED; never absence",
+    "FUSION_OR_INACTIVE_FROM_BF16_ROLEQ": "not used as a hard negative constraint"
+  },
+  "component_status": {
+    "Gamma": "NA",
+    "Delta": "NA",
+    "R": "NA",
+    "Lambda_O": "NA until L1 lower relations are adjudicated; then partial relation only"
+  },
+  "holdout_opened": false
+}

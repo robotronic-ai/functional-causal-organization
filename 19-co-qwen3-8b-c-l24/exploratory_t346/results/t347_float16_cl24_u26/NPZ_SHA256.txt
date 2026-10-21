@@ -1,0 +1,4 @@
+NPZ files are not archived; checksums for verification against the operator copies:
+578117bca8e91ebbcbc0b4328eebc5289950b230d034145f43a35b01dc8c2055  S9_FULL12_GAUGE_CUBES_u26.npz (raw_sha256 in S9_GAUGE_CUBE_RESULT.json)
+0b6407713b8be6f2698e6b56da1533a77b194293ee110060746f05f3c2c7449f  S22_CUT_TABLE_u26.npz
+724acc08fd10819b3010c24ec47196e5ac51833ff9a36a64f0bdec1f9e891787  S23_GAME_TABLE_u26.npz

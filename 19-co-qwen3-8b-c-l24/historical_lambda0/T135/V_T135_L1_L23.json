@@ -1,0 +1,130 @@
+{
+ "schema": "claude-role-lambda-qwen-v1",
+ "version": "ROLELAMBDA_v1_PROPOSED",
+ "status": "DIAGNOSTIC_ONLY",
+ "q1_json": null,
+ "calibration_cases": [
+  "u15|SUBSTITUTE|H1",
+  "u16|REVOKE|H2",
+  "u17|SUBSTITUTE|H2",
+  "u18|REVOKE|H1"
+ ],
+ "reference_case": "u15|SUBSTITUTE|H1",
+ "candidate_mode": true,
+ "candidate_anchors": [
+  "heads[24,25,26,27]",
+  "mlp3"
+ ],
+ "result": {
+  "version": "ROLELAMBDA_v1_PROPOSED",
+  "layer": 23,
+  "site": "role writes at layer 23",
+  "replicas": 10,
+  "delta_w": 0.10848574699245679,
+  "delta_x": 0.025612645708020253,
+  "roles": [
+   "heads[24,25,26,27]",
+   "mlp3"
+  ],
+  "contents": [
+   "u16|REVOKE|H2",
+   "u17|SUBSTITUTE|H2",
+   "u18|REVOKE|H1"
+  ],
+  "reference": "__REF__",
+  "cells": {
+   "u16|REVOKE|H2->heads[24,25,26,27]": {
+    "status": "UNRESOLVED",
+    "band_detail": "AMBIGUOUS",
+    "effect_over_delta": [
+     1.9252818717805973,
+     2.0347567767985644
+    ]
+   },
+   "u16|REVOKE|H2->mlp3": {
+    "status": "RESOLVED_POSITIVE",
+    "band_detail": "POSITIVE",
+    "effect_over_delta": [
+     3.24420156010949,
+     3.3825445177813998
+    ]
+   },
+   "u17|SUBSTITUTE|H2->heads[24,25,26,27]": {
+    "status": "UNRESOLVED",
+    "band_detail": "AMBIGUOUS",
+    "effect_over_delta": [
+     1.4437954078237578,
+     1.6830619443852681
+    ]
+   },
+   "u17|SUBSTITUTE|H2->mlp3": {
+    "status": "RESOLVED_POSITIVE",
+    "band_detail": "POSITIVE",
+    "effect_over_delta": [
+     3.311330833977383,
+     3.5592201936174335
+    ]
+   },
+   "u18|REVOKE|H1->heads[24,25,26,27]": {
+    "status": "UNRESOLVED",
+    "band_detail": "AMBIGUOUS",
+    "effect_over_delta": [
+     1.1247958721894065,
+     1.3512912394338668
+    ]
+   },
+   "u18|REVOKE|H1->mlp3": {
+    "status": "UNRESOLVED",
+    "band_detail": "AMBIGUOUS",
+    "effect_over_delta": [
+     1.8719351882958088,
+     1.9254278041066102
+    ]
+   }
+  },
+  "lower_relation": {
+   "u16|REVOKE|H2": [
+    "mlp3"
+   ],
+   "u17|SUBSTITUTE|H2": [
+    "mlp3"
+   ],
+   "u18|REVOKE|H1": []
+  },
+  "labeled_relation": [
+   [
+    "u16|REVOKE|H2",
+    "mlp3"
+   ],
+   [
+    "u17|SUBSTITUTE|H2",
+    "mlp3"
+   ]
+  ],
+  "iso_class": "46e818515f3b9f98",
+  "iso_class_exact": true,
+  "content_pairs": {
+   "__REF__|u16|REVOKE|H2": "RESOLVED_DISTINCT",
+   "__REF__|u17|SUBSTITUTE|H2": "RESOLVED_DISTINCT",
+   "__REF__|u18|REVOKE|H1": "RESOLVED_DISTINCT",
+   "u16|REVOKE|H2|u17|SUBSTITUTE|H2": "RESOLVED_DISTINCT",
+   "u16|REVOKE|H2|u18|REVOKE|H1": "RESOLVED_DISTINCT",
+   "u17|SUBSTITUTE|H2|u18|REVOKE|H1": "RESOLVED_DISTINCT"
+  },
+  "content_pairs_unresolved": [],
+  "n_cells": 6,
+  "n_unresolved_cells": 4,
+  "completions": "every relation containing the 2 certified cells (2^4 candidates)",
+  "note": "no negative status exists: UNRESOLVED never means 'does not go there'",
+  "seconds": 304.8,
+  "signature": "333c115a5893a31b"
+ },
+ "roles": {
+  "heads[24,25,26,27]": [
+   "heads[24,25,26,27]"
+  ],
+  "mlp3": [
+   "mlp3"
+  ]
+ }
+}

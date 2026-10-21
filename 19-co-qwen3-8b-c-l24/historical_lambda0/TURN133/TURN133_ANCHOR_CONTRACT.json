@@ -1,0 +1,42 @@
+{
+  "schema": "co-partial-roleq-anchor-contract-t133-v1",
+  "precision": "bfloat16",
+  "status": "FROZEN",
+  "forced_merges_rule": "Only algebraic or architectural copy equivalence can force a merge. Empirical non-detection cannot.",
+  "forced_distinctions_rule": "Only a preregistered resolved causal contrast above 2*delta in every exact-recoding replica can force a distinction.",
+  "anchors": {
+    "A23_H24_27": {
+      "layer": 23,
+      "candidate": "heads[24,25,26,27]",
+      "evidence": "one-sided resolved active witness from Q1"
+    },
+    "A23_MLP3": {
+      "layer": 23,
+      "candidate": "mlp3",
+      "evidence": "one-sided resolved active witness from Q1"
+    },
+    "A24_H28_31": {
+      "layer": 24,
+      "candidate": "heads[28,29,30,31]",
+      "evidence": "one-sided resolved active witness from Q1"
+    }
+  },
+  "admissible_L23_anchor_partitions": [
+    [
+      [
+        "A23_H24_27",
+        "A23_MLP3"
+      ]
+    ],
+    [
+      [
+        "A23_H24_27"
+      ],
+      [
+        "A23_MLP3"
+      ]
+    ]
+  ],
+  "inventory_complete": false,
+  "note": "Unresolved physical candidates may still contain additional roles; the anchor partitions are not a complete role inventory."
+}

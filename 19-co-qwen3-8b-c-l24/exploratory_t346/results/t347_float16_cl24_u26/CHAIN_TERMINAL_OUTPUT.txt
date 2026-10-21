@@ -1,0 +1,10 @@
+[NIGHT] t347_gauge: <python> -I -u .../t347_run_cl24_float16_suite.py --work .../quantum --scripts-dir .../T347_CL24_F16_SCRIPTS --stage gauge --resume --authorize-gpu-run <authorization>
+[NIGHT] t347_gauge -> OK in 2184.6 s
+[NIGHT] t347_core: <python> -I -u .../t347_run_cl24_float16_suite.py --work .../quantum --scripts-dir .../T347_CL24_F16_SCRIPTS --stage core
+[NIGHT] t347_core -> OK in 1120.5 s
+[NIGHT] summary .../FAST_GPU_RESULTS/NIGHT_CHAIN_20261020_113743/CHAIN_SUMMARY.json
+{
+ "t347_gauge": "OK",
+ "t347_core": "OK"
+}
+(Operator terminal output, copied verbatim apart from path shortening. The final CHAIN_SUMMARY.json and the final t347_core.log were not provided; the snapshots in this folder were taken while the core stage was running.)

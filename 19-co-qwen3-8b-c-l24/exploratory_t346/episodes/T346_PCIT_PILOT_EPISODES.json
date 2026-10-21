@@ -1,0 +1,44 @@
+{
+  "artifact": "T346_PCIT_PILOT_EPISODES",
+  "purpose": "Six predeclared routine-inspection episodes for the T346 PCI_T_DS_L27 pilot branch (u26 exploratory calibration). Written in the style of the historical PCI_T episodes; checked by the seal step for non-overlap with every historical episode file.",
+  "split": "T346_PILOT",
+  "status": "CANDIDATE_UNTIL_SEALED",
+  "episodes": [
+    {
+      "episode_id": "T346P_001",
+      "split": "T346_PILOT",
+      "text": "A community swimming pool performs a weekly check of its poolside rescue equipment. Each ring buoy is lifted from its wall bracket, the rope is inspected for fraying, and the reflective tape is wiped and checked. The attached whistle is tested once and the lifeguard initials the sheet. No rescue drill is carried out and no equipment enters the water. After the check, every buoy is hung back on the same bracket, a dated sticker is applied to the rope, and the checklist is filed in the pool office.",
+      "text_sha256": "eb559064bca7f29d2ea64f0dddbc5c08b699c47dd6f59f1ab499f371806279d1"
+    },
+    {
+      "episode_id": "T346P_002",
+      "split": "T346_PILOT",
+      "text": "A bicycle rental shop prepares its helmets for the start of the season. Staff take each helmet from a numbered shelf, read the manufacturing date inside the shell, and press the chin strap buckle to confirm that it locks. Foam padding is examined for cracks but nothing is repaired during the check. Helmets that pass receive a green tag, and helmets that fail are placed in a separate crate. All results are typed into the shop register and the register is saved with the opening-day paperwork.",
+      "text_sha256": "6cb655203365fa1f1efe64b9b752321b4c3b989dc90d00f26c5244384e317463"
+    },
+    {
+      "episode_id": "T346P_003",
+      "split": "T346_PILOT",
+      "text": "A ferry terminal office reviews the first-aid cabinets located along the passenger deck. An attendant opens each cabinet, compares its contents with a printed list, and records the expiry date printed on every sealed package. Scissors and gloves are counted but not used. If an item is missing, the attendant writes its name in the margin without ordering a replacement. The cabinet is closed, a numbered seal is fastened across the latch, and the completed list is handed to the terminal supervisor.",
+      "text_sha256": "8f4f9cabde1a2961c1e9f79ceefad37e6a960f38d1dadac05ec55385255371e3"
+    },
+    {
+      "episode_id": "T346P_004",
+      "split": "T346_PILOT",
+      "text": "A public library inspects the microfilm readers in its local history room at the end of each month. A volunteer switches on every reader, confirms that the lamp lights, and turns the focus knob through its full range. A blank test reel is threaded once to check that the spool rotates freely. No archive material is viewed and no copies are made. Each reader is switched off, covered with a fabric sheet, and the volunteer records the serial number and the date on the maintenance card kept beside the door.",
+      "text_sha256": "a5989463f7045b12c7370bcb166181d9257dc9ddbd255542e82c5f43324be16f"
+    },
+    {
+      "episode_id": "T346P_005",
+      "split": "T346_PILOT",
+      "text": "A school gymnasium undergoes an annual review of its wall-mounted fire extinguishers. A caretaker lifts each unit from its hook, reads the pressure gauge, and checks that the safety pin and tamper seal are intact. The hose is examined for cracks and the label is compared with the register of serial numbers. No extinguisher is discharged. Every unit is hung back at the marked height, the inspection tag is initialed, and the register page is returned to the safety folder in the administration office.",
+      "text_sha256": "228070232fbb15f1d07b2941ac88188a3f2a86b8b1a0496299e1684df609d8c1"
+    },
+    {
+      "episode_id": "T346P_006",
+      "split": "T346_PILOT",
+      "text": "A regional bus garage conducts a morning audit of the destination display units installed in its parked vehicles. A technician steps aboard each bus, powers the display for a few seconds, and confirms that the stored route names scroll in the correct order. Brightness is compared against a printed reference card. The wiring cabinet is not opened and no route data is changed. The technician switches the unit off, records the bus number and the result on a clipboard form, and delivers the forms to the dispatch desk.",
+      "text_sha256": "ed27429698558ab751e5020d0a6ce728a90aa6c09aa893f77b8d44eda3f3d130"
+    }
+  ]
+}

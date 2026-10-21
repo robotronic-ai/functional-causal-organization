@@ -1,0 +1,13 @@
+{
+  "delta_T": 0.12200575938990278,
+  "failures": [],
+  "pair": {
+    "certified_by": [
+      "heads[28,29,30,31]"
+    ],
+    "note": "one-sided: UNRESOLVED leaves both same-role and distinct-role completions admissible",
+    "status": "CERTIFIED_DISTINCT"
+  },
+  "schema": "co-turn135-refactor-q2-validator-v1",
+  "status": "PASS"
+}

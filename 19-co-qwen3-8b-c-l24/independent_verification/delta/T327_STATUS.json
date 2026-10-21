@@ -1,0 +1,22 @@
+{
+  "turn": 327,
+  "world": 26,
+  "delta": {
+    "status": "NONZERO_CERTIFIED_ON_DECLARED_FINITE_C_L24_DONOR_CONTRACT",
+    "measured_delta_H": 0.4,
+    "measured_delta_S": 0.4,
+    "minimum_under_supported_future_refinements": 0.0006293859503528678,
+    "source_game_sha256": "bf2ac04c78c0d8b8321de8c1bc4e6e6909af0ca1c8c463403381571e15897368",
+    "limitations": "Retained eleven-role finite donor policy alphabet and causal boundary; arbitrary changes to system scope are excluded."
+  },
+  "r": {
+    "status": "OPEN_INTRINSIC",
+    "completed_evidence": "T325 fixed-token L24 bypass pass on generic prompt, identity only; token did not change",
+    "new_action": "real frozen u26 donors t->token->same L24 role t+1, Q1 optional; no result fabricated"
+  },
+  "gamma": {
+    "status": "NONZERO_CERTIFIED_ON_PRIOR_DECLARED_C_L24_CONTRACT",
+    "new_work": false
+  },
+  "input_T326_verification_sha256": "dd54201570d1f2246c1a2a35b004dbeee7118deea21f74103dd478bd45487529"
+}

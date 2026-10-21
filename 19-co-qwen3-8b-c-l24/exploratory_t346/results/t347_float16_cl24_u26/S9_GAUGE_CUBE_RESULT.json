@@ -1,0 +1,38 @@
+{
+  "status": "PASS_GAUGE_CUBE_ACQUISITION",
+  "declared_dtype": "float16",
+  "historical_bf16_guards": "DIAGNOSTIC_ONLY",
+  "world": 26,
+  "arms_per_replica": 4096,
+  "gauge_delta_12_readers": {
+    "heads[0,1,2,3]": 0.03071894975603956,
+    "heads[4,5,6,7]": 0.04345014093046062,
+    "heads[8,9,10,11]": 0.03891516002407869,
+    "heads[12,13,14,15]": 0.05567264264262217,
+    "heads[16,17,18,19]": 0.024553981169293748,
+    "heads[20,21,22,23]": 0.021519822506312902,
+    "heads[24,25,26,27]": 0.04069056206397276,
+    "heads[28,29,30,31]": 0.030377713229933878,
+    "mlp0": 0.02054927307966281,
+    "mlp1": 0.019331978453750676,
+    "mlp2": 0.014319396020575859,
+    "mlp3": 0.03856007586724708
+  },
+  "identifiable_readers": {
+    "heads[0,1,2,3]": true,
+    "heads[4,5,6,7]": true,
+    "heads[8,9,10,11]": true,
+    "heads[12,13,14,15]": true,
+    "heads[16,17,18,19]": true,
+    "heads[20,21,22,23]": true,
+    "heads[24,25,26,27]": true,
+    "heads[28,29,30,31]": true,
+    "mlp0": true,
+    "mlp1": true,
+    "mlp2": true,
+    "mlp3": true
+  },
+  "raw_sha256": "578117bca8e91ebbcbc0b4328eebc5289950b230d034145f43a35b01dc8c2055",
+  "gpu_seconds": 1886.9,
+  "formal_Qwen_Gamma_certified": false
+}

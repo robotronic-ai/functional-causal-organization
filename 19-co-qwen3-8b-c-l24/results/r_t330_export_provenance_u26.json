@@ -1,0 +1,47 @@
+{
+  "export_sha256": "14f4a3221dffb48e251a87c5b1953b18db4510032e3993f7c6556dc784ecee9a",
+  "source_files_sha256": {
+    "S26_R_SAMPLED_RAW_u26.npz": "b6b5a312bad8a36e9e796b937993ec850a8919ace0fc3aa61d4c38c33adafcc2",
+    "S26_T1_IDENTITY_0.npz": "2ea1ffc9064d23f882f4ddbe74d4c313bc1d00ee95391e95ef093be74a8a3b18",
+    "S26_T1_UPDOWN_SCALE_0.npz": "74f3c968495ac6fdb7b570f32b5f8d1f334934406ee75a8d0f0c7e883f69e7dc",
+    "S26_T1_UPDOWN_SCALE_1.npz": "0937d80d6ed2c3c162e4dc8b0de3abfd1536870971a1ed348174177bd007674f",
+    "S26_T1_UPDOWN_SCALE_2.npz": "c4ab8b099c6bf6e5612d49f148236ff827d379a907a804c0a14d7bfa5bd9f176",
+    "S26_T1_VO_DIAG_0.npz": "3d2a54475c57e852c05f2f834345f6590f075f37b8c0ba99f09a99cc5f7f13b7",
+    "S26_T1_VO_DIAG_1.npz": "6a9b4e955a6c5b0ab7242f59a11c2d9d931c09adc12f960f0dd58290f0d956b8",
+    "S26_T1_VO_DIAG_2.npz": "8b50eecba8f1ecf6d8588b2149e03f0cb26219636da979f4541f4b5d11e39bf2",
+    "S26_T1_QKNORM_RECIP_0.npz": "680bd232f44093a233ace3ec85290a632c6c1af4a40504660a56e951ed34e22e",
+    "S26_T1_QKNORM_RECIP_1.npz": "c39a71104cc55374400801db3c5dbf79ae9e677ac00694f906acc73efb80c666",
+    "S26_T1_QKNORM_RECIP_2.npz": "7bb60436cb2b9e0092f780e6a77c661db2257fc8760603ea47e6858c85968bce"
+  },
+  "roles_mask_bits_0_10": [
+    "heads[0,1,2,3]",
+    "heads[4,5,6,7]",
+    "heads[12,13,14,15]",
+    "heads[20,21,22,23]",
+    "heads[28,29,30,31]",
+    "mlp0",
+    "mlp1",
+    "mlp2",
+    "mlp3",
+    "heads[8,9,10,11]",
+    "heads[16,17,18,19]"
+  ],
+  "context_bit_11": "heads[24,25,26,27]",
+  "clean_next_token_per_gauge": {
+    "IDENTITY_0": 19,
+    "UPDOWN_SCALE_0": 19,
+    "UPDOWN_SCALE_1": 19,
+    "UPDOWN_SCALE_2": 19,
+    "VO_DIAG_0": 19,
+    "VO_DIAG_1": 19,
+    "VO_DIAG_2": 19,
+    "QKNORM_RECIP_0": 19,
+    "QKNORM_RECIP_1": 19,
+    "QKNORM_RECIP_2": 19
+  },
+  "max_normalization_error": 7.549516567451064e-15,
+  "return_scores": "relative L2 distance of the role-r L24 write at t+1 to the clean next-token write, per replica",
+  "delta_t1": "max over the 9 recodings and over V of the deviation of return_scores from identity; same for all rows",
+  "token_pair_js_bits": "not exported",
+  "tail_signed_posneg": "not exported"
+}

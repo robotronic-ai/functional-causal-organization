@@ -1,0 +1,2 @@
+REFERENCE_MEANS.npz is not archived (NPZ); file SHA-256 of the operator copy:
+c52821c694d1f5b0311e16c125d4cde3dfbafa06323e9bb7da2e2f52c9719f64  REFERENCE_MEANS.npz

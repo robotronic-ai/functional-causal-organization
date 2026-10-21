@@ -1,0 +1,30 @@
+# started 2026-10-19T20:47:25
+[T347-RUN] /mnt/c/Users/Merien/pycharm/llama/.venv_linux/bin/python -I -u /mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS/t347_f16_acquire_gauge_cube_gpu.py --gpu --resume --root /mnt/c/Users/Merien/pycharm/llama/quantum --world 26
+[gauge-cube] selftest OK (exact draws, VO_DIAG / UPDOWN / QKNORM transport)
+[T236] PREFLIGHT PASS: pinned T230/T234/Q1 and local project inputs present
+[T257] PREFLIGHT PASS: T256 raw/SHA, full12 sites, four clean tokens, historical APIs
+[T236] PREFLIGHT PASS: pinned T230/T234/Q1 and local project inputs present
+[T258] PREFLIGHT PASS: T256 raw, T257 Q1 9 roles, frozen 4+4 split, exact post-L25 site
+[T275] PREFLIGHT PASS pinned T258 recursive Q1/engines + T262 13world raw; 9 L24 certified physical sites
+[T276] PREFLIGHT PASS T275 SHA source/report/result/raw/donors/readers; D0 255/255 graph, 2 frozen pairs
+[T284] PREFLIGHT PASS: T283 actual RAW replay + T276 source/RAW/graph + T275 frozen donors/readers
+[T286] PREFLIGHT PASS pinned T284/T285 counterexample + recursive T275/T276/T283 actual raw/readers
+[T287] PREFLIGHT PASS pinned T286 source/result/audit/u26 raw + D0 donor registry; recursive historical Qwen APIs
+[T290] PREFLIGHT PASS: T287 source/result/raw + T289 source/result pinned; recursive T286/T276/T275 Qwen readout provenance
+[T292] PREFLIGHT PASS pinned T290 source/result/audit/full64 raw + independent T291 + recursive T286/T287 donors
+[gauge-cube] PREFLIGHT PASS (pinned preflight chain)
+/mnt/c/Users/Merien/pycharm/llama/.venv_linux/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (6.0.0.post1)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+[gauge-cube] Loading Qwen
+Skipping import of cpp extensions due to incompatible torch version 2.9.0+cu128 for torchao version 0.15.0             Please see https://github.com/pytorch/ao/issues/2919 for more info
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|##        | 1/5 [00:07<00:28,  7.22s/it]Loading checkpoint shards:  40%|####      | 2/5 [00:14<00:21,  7.27s/it]Loading checkpoint shards:  60%|######    | 3/5 [00:22<00:14,  7.48s/it]Loading checkpoint shards:  80%|########  | 4/5 [00:28<00:07,  7.14s/it]Loading checkpoint shards: 100%|##########| 5/5 [00:31<00:00,  5.46s/it]Loading checkpoint shards: 100%|##########| 5/5 [00:31<00:00,  6.27s/it]
+Traceback (most recent call last):
+  File "/mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS/t347_f16_acquire_gauge_cube_gpu.py", line 279, in main
+    run_gpu(root, out, T292, pre, a.resume, a.world); return 0
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS/t347_f16_acquire_gauge_cube_gpu.py", line 167, in run_gpu
+    need([{'site': e['site'], 'donor_units': e['donor_units'], 'squared_rms_contrast': e['squared_rms_contrast']} for e in pairs]
+  File "/mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS/t347_f16_acquire_gauge_cube_gpu.py", line 33, in need
+    raise RuntimeError(msg)
+RuntimeError: D0 background pairs differ from the frozen pairs
+[gauge-cube] STOPPED: rerun with --gpu --resume

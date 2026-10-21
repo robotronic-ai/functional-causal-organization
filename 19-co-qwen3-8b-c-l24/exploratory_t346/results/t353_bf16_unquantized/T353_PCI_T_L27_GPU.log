@@ -1,0 +1,72 @@
+/mnt/c/Users/Merien/pycharm/llama/.venv_linux/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (6.0.0.post1)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/mnt/c/Users/Merien/pycharm/llama/.venv_linux/lib/python3.12/site-packages/torch/backends/__init__.py:46: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  self.setter(val)
+Skipping import of cpp extensions due to incompatible torch version 2.9.0+cu128 for torchao version 0.15.0             Please see https://github.com/pytorch/ao/issues/2919 for more info
+`torch_dtype` is deprecated! Use `dtype` instead!
+
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]
+Loading checkpoint shards:  40%|████      | 2/5 [00:00<00:00, 14.64it/s]
+Loading checkpoint shards:  80%|████████  | 4/5 [00:00<00:00, 17.33it/s]
+Loading checkpoint shards: 100%|██████████| 5/5 [00:00<00:00, 20.76it/s]
+[T346-PCIT] 1/60 U26_BASELINE T346P_001 f=0.20 enrich=1.1032120566296213 src_rel_change=0 10.821 s
+[T346-PCIT] 2/60 U26_BASELINE T346P_001 f=0.40 enrich=0.9973605364531294 src_rel_change=0 11.076 s
+[T346-PCIT] 3/60 U26_BASELINE T346P_002 f=0.20 enrich=1.0529536183713526 src_rel_change=0 10.378 s
+[T346-PCIT] 4/60 U26_BASELINE T346P_002 f=0.40 enrich=1.0834615384615358 src_rel_change=0 10.399 s
+[T346-PCIT] 5/60 U26_BASELINE T346P_003 f=0.20 enrich=1.029709758512986 src_rel_change=0 10.482 s
+[T346-PCIT] 6/60 U26_BASELINE T346P_003 f=0.40 enrich=1.044363256784966 src_rel_change=0 10.38 s
+[T346-PCIT] 7/60 U26_BASELINE T346P_004 f=0.20 enrich=1.0416860735910547 src_rel_change=0 10.537 s
+[T346-PCIT] 8/60 U26_BASELINE T346P_004 f=0.40 enrich=1.0517782026768616 src_rel_change=0 10.683 s
+[T346-PCIT] 9/60 U26_BASELINE T346P_005 f=0.20 enrich=1.0764610764610738 src_rel_change=0 10.459 s
+[T346-PCIT] 10/60 U26_BASELINE T346P_005 f=0.40 enrich=1.017327284896257 src_rel_change=0 10.471 s
+[T346-PCIT] 11/60 U26_BASELINE T346P_006 f=0.20 enrich=1.0615478366849456 src_rel_change=0 10.62 s
+[T346-PCIT] 12/60 U26_BASELINE T346P_006 f=0.40 enrich=1.1946677604593898 src_rel_change=0 10.541 s
+[T346-PCIT] 13/60 U26_SHAM T346P_001 f=0.20 enrich=1.1032120566296213 src_rel_change=0 10.79 s
+[T346-PCIT] 14/60 U26_SHAM T346P_001 f=0.40 enrich=0.9973605364531294 src_rel_change=0 10.849 s
+[T346-PCIT] 15/60 U26_SHAM T346P_002 f=0.20 enrich=1.0529536183713526 src_rel_change=0 10.334 s
+[T346-PCIT] 16/60 U26_SHAM T346P_002 f=0.40 enrich=1.0834615384615358 src_rel_change=0 10.383 s
+[T346-PCIT] 17/60 U26_SHAM T346P_003 f=0.20 enrich=1.029709758512986 src_rel_change=0 10.408 s
+[T346-PCIT] 18/60 U26_SHAM T346P_003 f=0.40 enrich=1.044363256784966 src_rel_change=0 10.345 s
+[T346-PCIT] 19/60 U26_SHAM T346P_004 f=0.20 enrich=1.0416860735910547 src_rel_change=0 10.472 s
+[T346-PCIT] 20/60 U26_SHAM T346P_004 f=0.40 enrich=1.0517782026768616 src_rel_change=0 10.576 s
+[T346-PCIT] 21/60 U26_SHAM T346P_005 f=0.20 enrich=1.0764610764610738 src_rel_change=0 10.597 s
+[T346-PCIT] 22/60 U26_SHAM T346P_005 f=0.40 enrich=1.017327284896257 src_rel_change=0 10.515 s
+[T346-PCIT] 23/60 U26_SHAM T346P_006 f=0.20 enrich=1.0615478366849456 src_rel_change=0 10.514 s
+[T346-PCIT] 24/60 U26_SHAM T346P_006 f=0.40 enrich=1.1946677604593898 src_rel_change=0 10.642 s
+[T346-PCIT] 25/60 U26_ABLATE_025 T346P_001 f=0.20 enrich=1.060723809523807 src_rel_change=0.03393 10.843 s
+[T346-PCIT] 26/60 U26_ABLATE_025 T346P_001 f=0.40 enrich=0.9718769973723435 src_rel_change=0.02518 10.756 s
+[T346-PCIT] 27/60 U26_ABLATE_025 T346P_002 f=0.20 enrich=0.9995438996579222 src_rel_change=0.02998 10.348 s
+[T346-PCIT] 28/60 U26_ABLATE_025 T346P_002 f=0.40 enrich=1.067717272585424 src_rel_change=0.02593 10.347 s
+[T346-PCIT] 29/60 U26_ABLATE_025 T346P_003 f=0.20 enrich=1.0820146074254386 src_rel_change=0.03162 10.458 s
+[T346-PCIT] 30/60 U26_ABLATE_025 T346P_003 f=0.40 enrich=1.0341488654002489 src_rel_change=0.02891 10.519 s
+[T346-PCIT] 31/60 U26_ABLATE_025 T346P_004 f=0.20 enrich=1.1046410842329182 src_rel_change=0.03008 10.566 s
+[T346-PCIT] 32/60 U26_ABLATE_025 T346P_004 f=0.40 enrich=1.0620514354066959 src_rel_change=0.03083 10.602 s
+[T346-PCIT] 33/60 U26_ABLATE_025 T346P_005 f=0.20 enrich=1.0890490583585186 src_rel_change=0.02468 10.579 s
+[T346-PCIT] 34/60 U26_ABLATE_025 T346P_005 f=0.40 enrich=0.9865637294929825 src_rel_change=0.03824 10.641 s
+[T346-PCIT] 35/60 U26_ABLATE_025 T346P_006 f=0.20 enrich=1.0505920344456379 src_rel_change=0.0259 10.86 s
+[T346-PCIT] 36/60 U26_ABLATE_025 T346P_006 f=0.40 enrich=1.093477018532122 src_rel_change=0.03829 10.492 s
+[T346-PCIT] 37/60 U26_ABLATE_050 T346P_001 f=0.20 enrich=1.0800621842207512 src_rel_change=0.06729 10.749 s
+[T346-PCIT] 38/60 U26_ABLATE_050 T346P_001 f=0.40 enrich=0.9712153518123645 src_rel_change=0.04963 10.689 s
+[T346-PCIT] 39/60 U26_ABLATE_050 T346P_002 f=0.20 enrich=1.0969765684051371 src_rel_change=0.05879 10.393 s
+[T346-PCIT] 40/60 U26_ABLATE_050 T346P_002 f=0.40 enrich=1.0808220228510057 src_rel_change=0.05024 10.428 s
+[T346-PCIT] 41/60 U26_ABLATE_050 T346P_003 f=0.20 enrich=1.0675887850467263 src_rel_change=0.06171 10.309 s
+[T346-PCIT] 42/60 U26_ABLATE_050 T346P_003 f=0.40 enrich=1.0710548267232853 src_rel_change=0.05527 10.56 s
+[T346-PCIT] 43/60 U26_ABLATE_050 T346P_004 f=0.20 enrich=1.0599613152804614 src_rel_change=0.05909 10.558 s
+[T346-PCIT] 44/60 U26_ABLATE_050 T346P_004 f=0.40 enrich=1.0747004398604554 src_rel_change=0.06047 10.621 s
+[T346-PCIT] 45/60 U26_ABLATE_050 T346P_005 f=0.20 enrich=1.057971014492751 src_rel_change=0.04837 10.52 s
+[T346-PCIT] 46/60 U26_ABLATE_050 T346P_005 f=0.40 enrich=0.9999256284396822 src_rel_change=0.07634 10.525 s
+[T346-PCIT] 47/60 U26_ABLATE_050 T346P_006 f=0.20 enrich=1.0950910774930507 src_rel_change=0.05334 10.72 s
+[T346-PCIT] 48/60 U26_ABLATE_050 T346P_006 f=0.40 enrich=1.100133400033347 src_rel_change=0.07262 10.654 s
+[T346-PCIT] 49/60 U26_ABLATE_100 T346P_001 f=0.20 enrich=1.0658596010354777 src_rel_change=0.1355 10.614 s
+[T346-PCIT] 50/60 U26_ABLATE_100 T346P_001 f=0.40 enrich=0.9983620566870793 src_rel_change=0.09885 10.716 s
+[T346-PCIT] 51/60 U26_ABLATE_100 T346P_002 f=0.20 enrich=1.070084951456308 src_rel_change=0.1177 10.348 s
+[T346-PCIT] 52/60 U26_ABLATE_100 T346P_002 f=0.40 enrich=1.0601113738652808 src_rel_change=0.1027 10.379 s
+[T346-PCIT] 53/60 U26_ABLATE_100 T346P_003 f=0.20 enrich=1.1055056438608588 src_rel_change=0.1231 10.637 s
+[T346-PCIT] 54/60 U26_ABLATE_100 T346P_003 f=0.40 enrich=1.0485677768588801 src_rel_change=0.1101 10.441 s
+[T346-PCIT] 55/60 U26_ABLATE_100 T346P_004 f=0.20 enrich=1.1091549295774619 src_rel_change=0.1213 10.508 s
+[T346-PCIT] 56/60 U26_ABLATE_100 T346P_004 f=0.40 enrich=1.0429245636377231 src_rel_change=0.1225 10.44 s
+[T346-PCIT] 57/60 U26_ABLATE_100 T346P_005 f=0.20 enrich=1.0578525146559676 src_rel_change=0.09697 10.448 s
+[T346-PCIT] 58/60 U26_ABLATE_100 T346P_005 f=0.40 enrich=1.0425642549398282 src_rel_change=0.1561 10.478 s
+[T346-PCIT] 59/60 U26_ABLATE_100 T346P_006 f=0.20 enrich=1.0713626576437991 src_rel_change=0.1068 10.905 s
+[T346-PCIT] 60/60 U26_ABLATE_100 T346P_006 f=0.40 enrich=1.1026767553494397 src_rel_change=0.143 10.57 s
+[T346-PCIT] done ; records /mnt/c/Users/Merien/pycharm/llama/quantum/FAST_GPU_RESULTS/CLAUDE_T346_PCIT_L27_PILOT_T353/records.jsonl

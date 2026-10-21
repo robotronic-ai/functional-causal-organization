@@ -1,0 +1,48 @@
+{
+  "status": "RAW_WITNESSES_VERIFIED",
+  "world": 26,
+  "scope": "C_L24 finite donor interface; frozen L25 readers; single layer; absolute Q1 delta",
+  "q": "q_donor=Bernoulli(0.5)^12",
+  "q_bal_used": false,
+  "gauge_count": 10,
+  "cuts_per_gauge": 1023,
+  "witness_records_checked": 10230,
+  "retained_roles": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "context_roles": [
+    11
+  ],
+  "gamma_lower_bound": 0.00015673619086930833,
+  "per_gauge_lower_bounds": {
+    "IDENTITY_0": 0.0001646924153403388,
+    "UPDOWN_SCALE_0": 0.00017694155052070195,
+    "UPDOWN_SCALE_1": 0.00015673619086930833,
+    "UPDOWN_SCALE_2": 0.00015673619086930833,
+    "VO_DIAG_0": 0.00019806594835428048,
+    "VO_DIAG_1": 0.0001646924153403388,
+    "VO_DIAG_2": 0.00015673619086930833,
+    "QKNORM_RECIP_0": 0.00015673619086930833,
+    "QKNORM_RECIP_1": 0.00015673619086930833,
+    "QKNORM_RECIP_2": 0.00015673619086930833
+  },
+  "minimum_scalar_gap_margin_over_all_witnesses": 2.119257165400512e-05,
+  "source_sha256": "8d421b29a240c61ba10ae005674bc27b2b4d4fcc4e575aa055d32f32d4da3cc8",
+  "raw_evidence_checked": true,
+  "limitations": [
+    "One certified world, u26; no u25 replication is required.",
+    "Certification concerns the declared finite C_L24 donor intervention contract only.",
+    "Report-only mode checks witness consistency and lower-bound arithmetic, not the source NPZ.",
+    "A certified scalar gap proves finite-graph separation but does not estimate exact Gamma."
+  ]
+}

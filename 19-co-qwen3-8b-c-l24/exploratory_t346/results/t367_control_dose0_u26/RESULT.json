@@ -1,0 +1,36 @@
+{
+  "status": "PASS_S9_FULL12_ACQUISITION__Q1_GAMMA_OPEN",
+  "world": 26,
+  "arms_per_replica": 4096,
+  "delta_jauge_12_lecteurs": {
+    "heads[0,1,2,3]": 0.23864901161870966,
+    "heads[4,5,6,7]": 0.2876716381196811,
+    "heads[8,9,10,11]": 0.7624730251969178,
+    "heads[12,13,14,15]": 0.3984201048815039,
+    "heads[16,17,18,19]": 0.12447802891047671,
+    "heads[20,21,22,23]": 0.2661015493739798,
+    "heads[24,25,26,27]": 0.33075976402634344,
+    "heads[28,29,30,31]": 0.45705219883992454,
+    "mlp0": 0.16999537909317208,
+    "mlp1": 0.285425187726128,
+    "mlp2": 0.11597938202598268,
+    "mlp3": 0.1993413321359796
+  },
+  "lecteurs_identifiables": {
+    "heads[0,1,2,3]": true,
+    "heads[4,5,6,7]": true,
+    "heads[8,9,10,11]": true,
+    "heads[12,13,14,15]": true,
+    "heads[16,17,18,19]": true,
+    "heads[20,21,22,23]": true,
+    "heads[24,25,26,27]": true,
+    "heads[28,29,30,31]": true,
+    "mlp0": true,
+    "mlp1": true,
+    "mlp2": true,
+    "mlp3": true
+  },
+  "raw_sha256": "8d421b29a240c61ba10ae005674bc27b2b4d4fcc4e575aa055d32f32d4da3cc8",
+  "gpu_seconds": 2292.9,
+  "formal_Qwen_Gamma_certified": false
+}

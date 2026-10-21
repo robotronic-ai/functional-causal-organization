@@ -1,0 +1,388 @@
+{
+  "arms": {
+    "U26_ABLATE_025": {
+      "PCI_T_DS_L27": 1.047944065169297,
+      "PCI_T_DS_L27_ci95_descriptive": [
+        1.024965494784874,
+        1.0776903931543436
+      ],
+      "PCI_T_ST_L27_SOURCE": 429.2890625,
+      "PCI_T_ST_L27_SOURCE_ci95_descriptive": [
+        421.0390625,
+        440.921875
+      ],
+      "dose": 0.25,
+      "episode_values": {
+        "T346P_001": {
+          "n_fractions": 2,
+          "primary": 1.0163004034480752,
+          "secondary": 431.359375
+        },
+        "T346P_002": {
+          "n_fractions": 2,
+          "primary": 1.033630586121673,
+          "secondary": 419.296875
+        },
+        "T346P_003": {
+          "n_fractions": 2,
+          "primary": 1.0580817364128436,
+          "secondary": 440.828125
+        },
+        "T346P_004": {
+          "n_fractions": 2,
+          "primary": 1.0833462598198071,
+          "secondary": 441.015625
+        },
+        "T346P_005": {
+          "n_fractions": 2,
+          "primary": 1.0378063939257505,
+          "secondary": 427.21875
+        },
+        "T346P_006": {
+          "n_fractions": 2,
+          "primary": 1.07203452648888,
+          "secondary": 422.78125
+        }
+      },
+      "median_removed_activation_rms": 0.08839942955601834,
+      "median_removed_residual_write_rms": 0.136095652289714,
+      "median_site_seconds": 10.6585,
+      "median_source_rel_change_rms": 0.030029978281993747,
+      "n_episodes": 6,
+      "total_site_seconds": 127.475
+    },
+    "U26_ABLATE_050": {
+      "PCI_T_DS_L27": 1.0683263417277322,
+      "PCI_T_DS_L27_ci95_descriptive": [
+        1.0272935447413871,
+        1.093255767195635
+      ],
+      "PCI_T_ST_L27_SOURCE": 433.0546875,
+      "PCI_T_ST_L27_SOURCE_ci95_descriptive": [
+        425.046875,
+        445.3984375
+      ],
+      "dose": 0.5,
+      "episode_values": {
+        "T346P_001": {
+          "n_fractions": 2,
+          "primary": 1.0256387680165577,
+          "secondary": 430.625
+        },
+        "T346P_002": {
+          "n_fractions": 2,
+          "primary": 1.0888992956280714,
+          "secondary": 447.0
+        },
+        "T346P_003": {
+          "n_fractions": 2,
+          "primary": 1.0693218058850058,
+          "secondary": 443.796875
+        },
+        "T346P_004": {
+          "n_fractions": 2,
+          "primary": 1.0673308775704584,
+          "secondary": 435.484375
+        },
+        "T346P_005": {
+          "n_fractions": 2,
+          "primary": 1.0289483214662165,
+          "secondary": 422.234375
+        },
+        "T346P_006": {
+          "n_fractions": 2,
+          "primary": 1.0976122387631988,
+          "secondary": 427.859375
+        }
+      },
+      "median_removed_activation_rms": 0.1767988591120367,
+      "median_removed_residual_write_rms": 0.272191304579428,
+      "median_site_seconds": 10.7305,
+      "median_source_rel_change_rms": 0.05894044655956794,
+      "n_episodes": 6,
+      "total_site_seconds": 129.975
+    },
+    "U26_ABLATE_100": {
+      "PCI_T_DS_L27": 1.0705689546341934,
+      "PCI_T_DS_L27_ci95_descriptive": [
+        1.0411596068295883,
+        1.0820282084282444
+      ],
+      "PCI_T_ST_L27_SOURCE": 437.6796875,
+      "PCI_T_ST_L27_SOURCE_ci95_descriptive": [
+        431.515625,
+        440.9453125
+      ],
+      "dose": 1.0,
+      "episode_values": {
+        "T346P_001": {
+          "n_fractions": 2,
+          "primary": 1.0321108288612786,
+          "secondary": 437.78125
+        },
+        "T346P_002": {
+          "n_fractions": 2,
+          "primary": 1.0650981626607945,
+          "secondary": 437.578125
+        },
+        "T346P_003": {
+          "n_fractions": 2,
+          "primary": 1.0770367103598695,
+          "secondary": 442.875
+        },
+        "T346P_004": {
+          "n_fractions": 2,
+          "primary": 1.0760397466075924,
+          "secondary": 439.015625
+        },
+        "T346P_005": {
+          "n_fractions": 2,
+          "primary": 1.050208384797898,
+          "secondary": 433.578125
+        },
+        "T346P_006": {
+          "n_fractions": 2,
+          "primary": 1.0870197064966194,
+          "secondary": 429.453125
+        }
+      },
+      "median_removed_activation_rms": 0.3535977182240734,
+      "median_removed_residual_write_rms": 0.544382609158856,
+      "median_site_seconds": 10.625,
+      "median_source_rel_change_rms": 0.11947150695294007,
+      "n_episodes": 6,
+      "total_site_seconds": 127.582
+    },
+    "U26_BASELINE": {
+      "PCI_T_DS_L27": 1.0485902386100203,
+      "PCI_T_DS_L27_ci95_descriptive": [
+        1.041884322891467,
+        1.098157688494306
+      ],
+      "PCI_T_ST_L27_SOURCE": 435.03125,
+      "PCI_T_ST_L27_SOURCE_ci95_descriptive": [
+        427.3046875,
+        445.109375
+      ],
+      "dose": 0.0,
+      "episode_values": {
+        "T346P_001": {
+          "n_fractions": 2,
+          "primary": 1.0502862965413753,
+          "secondary": 444.921875
+        },
+        "T346P_002": {
+          "n_fractions": 2,
+          "primary": 1.0682075784164442,
+          "secondary": 437.875
+        },
+        "T346P_003": {
+          "n_fractions": 2,
+          "primary": 1.037036507648976,
+          "secondary": 430.0625
+        },
+        "T346P_004": {
+          "n_fractions": 2,
+          "primary": 1.046732138133958,
+          "secondary": 424.546875
+        },
+        "T346P_005": {
+          "n_fractions": 2,
+          "primary": 1.0468941806786654,
+          "secondary": 432.1875
+        },
+        "T346P_006": {
+          "n_fractions": 2,
+          "primary": 1.1281077985721677,
+          "secondary": 445.296875
+        }
+      },
+      "median_removed_activation_rms": 0.0,
+      "median_removed_residual_write_rms": 0.0,
+      "median_site_seconds": 10.7465,
+      "median_source_rel_change_rms": 0.0,
+      "n_episodes": 6,
+      "total_site_seconds": 130.255
+    },
+    "U26_SHAM": {
+      "PCI_T_DS_L27": 1.0485902386100203,
+      "PCI_T_DS_L27_ci95_descriptive": [
+        1.041884322891467,
+        1.098157688494306
+      ],
+      "PCI_T_ST_L27_SOURCE": 435.03125,
+      "PCI_T_ST_L27_SOURCE_ci95_descriptive": [
+        427.3046875,
+        445.109375
+      ],
+      "dose": 0.0,
+      "episode_values": {
+        "T346P_001": {
+          "n_fractions": 2,
+          "primary": 1.0502862965413753,
+          "secondary": 444.921875
+        },
+        "T346P_002": {
+          "n_fractions": 2,
+          "primary": 1.0682075784164442,
+          "secondary": 437.875
+        },
+        "T346P_003": {
+          "n_fractions": 2,
+          "primary": 1.037036507648976,
+          "secondary": 430.0625
+        },
+        "T346P_004": {
+          "n_fractions": 2,
+          "primary": 1.046732138133958,
+          "secondary": 424.546875
+        },
+        "T346P_005": {
+          "n_fractions": 2,
+          "primary": 1.0468941806786654,
+          "secondary": 432.1875
+        },
+        "T346P_006": {
+          "n_fractions": 2,
+          "primary": 1.1281077985721677,
+          "secondary": 445.296875
+        }
+      },
+      "median_removed_activation_rms": 0.0,
+      "median_removed_residual_write_rms": 0.0,
+      "median_site_seconds": 10.922,
+      "median_source_rel_change_rms": 0.0,
+      "n_episodes": 6,
+      "total_site_seconds": 132.56900000000002
+    }
+  },
+  "bootstrap": {
+    "note": "descriptive; six episodes of one world; not a significance test",
+    "reps": 5000,
+    "seed": 2026101804,
+    "unit": "episode"
+  },
+  "delta_reduction_valid": "NOT_MEASURED_IN_THIS_SCRIPT",
+  "descriptive_bands": {
+    "PCI_T_DS_L27_abs_ratio": 0.1
+  },
+  "deviations": [
+    "dtype is an argument (history float16)",
+    "new episodes",
+    "direction bank from NO_HOOK baseline fixed across arms",
+    "T346 seed streams"
+  ],
+  "dose_response_numeric": {
+    "0.25": -0.02153683992310751,
+    "0.50": 0.0013264401120257618,
+    "1.00": 0.00010239418179147641
+  },
+  "instrument_matches_historical_protocol": false,
+  "n_invalid_sites": {
+    "U26_ABLATE_025": 0,
+    "U26_ABLATE_050": 0,
+    "U26_ABLATE_100": 0,
+    "U26_BASELINE": 0,
+    "U26_SHAM": 0
+  },
+  "paired_vs_sham": {
+    "U26_ABLATE_025": {
+      "abs_median_diff_exceeds_descriptive_band": false,
+      "n_episodes_diff_le_0": 4,
+      "n_pairs": 6,
+      "primary_diff_by_episode": {
+        "T346P_001": -0.033985893093300135,
+        "T346P_002": -0.03457699229477118,
+        "T346P_003": 0.021045228763867607,
+        "T346P_004": 0.0366141216858491,
+        "T346P_005": -0.009087786752914884,
+        "T346P_006": -0.05607327208328772
+      },
+      "primary_median_diff": -0.02153683992310751,
+      "primary_median_diff_ci95_descriptive": [
+        -0.04532513218902945,
+        0.028829675224858353
+      ],
+      "secondary_median_diff": -9.265625,
+      "secondary_median_diff_ci95_descriptive": [
+        -20.546875,
+        13.6171875
+      ]
+    },
+    "U26_ABLATE_050": {
+      "abs_median_diff_exceeds_descriptive_band": false,
+      "n_episodes_diff_le_0": 3,
+      "n_pairs": 6,
+      "primary_diff_by_episode": {
+        "T346P_001": -0.024647528524817552,
+        "T346P_002": 0.020691717211627214,
+        "T346P_003": 0.03228529823602977,
+        "T346P_004": 0.02059873943650037,
+        "T346P_005": -0.017945859212448845,
+        "T346P_006": -0.030495559808968897
+      },
+      "primary_median_diff": 0.0013264401120257618,
+      "primary_median_diff_ci95_descriptive": [
+        -0.027571544166893225,
+        0.02648850772382849
+      ],
+      "secondary_median_diff": -0.4140625,
+      "secondary_median_diff_ci95_descriptive": [
+        -15.8671875,
+        12.3359375
+      ]
+    },
+    "U26_ABLATE_100": {
+      "abs_median_diff_exceeds_descriptive_band": false,
+      "n_episodes_diff_le_0": 3,
+      "n_pairs": 6,
+      "primary_diff_by_episode": {
+        "T346P_001": -0.018175467680096702,
+        "T346P_002": -0.0031094157556497137,
+        "T346P_003": 0.04000020271089344,
+        "T346P_004": 0.02930760847363434,
+        "T346P_005": 0.0033142041192326666,
+        "T346P_006": -0.04108809207554831
+      },
+      "primary_median_diff": 0.00010239418179147641,
+      "primary_median_diff_ci95_descriptive": [
+        -0.029631779877822506,
+        0.03465390559226389
+      ],
+      "secondary_median_diff": 0.546875,
+      "secondary_median_diff_ci95_descriptive": [
+        -11.4921875,
+        13.640625
+      ]
+    },
+    "U26_BASELINE": {
+      "abs_median_diff_exceeds_descriptive_band": false,
+      "n_episodes_diff_le_0": 6,
+      "n_pairs": 6,
+      "primary_diff_by_episode": {
+        "T346P_001": 0.0,
+        "T346P_002": 0.0,
+        "T346P_003": 0.0,
+        "T346P_004": 0.0,
+        "T346P_005": 0.0,
+        "T346P_006": 0.0
+      },
+      "primary_median_diff": 0.0,
+      "primary_median_diff_ci95_descriptive": [
+        0.0,
+        0.0
+      ],
+      "secondary_median_diff": 0.0,
+      "secondary_median_diff_ci95_descriptive": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "sham_vs_baseline": {
+    "identical": true,
+    "max_abs_score_diff": 0.0,
+    "n_sites_compared": 12
+  },
+  "use": "EXPLORATORY_CALIBRATION_PILOT_u26_DESCRIPTIVE_NO_INFERENCE"
+}

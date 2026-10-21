@@ -1,0 +1,853 @@
+{
+  "schema": "T364_ACQUISITION_MANIFEST_V1",
+  "status": "DRAFT_FOR_ARBITER_NOT_A_PLAN",
+  "purpose": "Arm-level table that the C_O versus rivals test needs. Rows below are the existing measured arms only; every C_O, M0 (except candidate intervention rms), MR value is null on purpose. No profile or outcome is invented. Family ids are proposals and are not precommitted.",
+  "closure_contract": null,
+  "sources": {
+    "T353_FCA_E1_RESULT.json": "376f4e174d3f77bace0f32ad3ded0f5e58f1a0c810b2dca29b6556b6b10d634b",
+    "T355_PILOT_SCOREBOARD.csv": "3b9f776c3256a740a607b67cacd058fdb3d58a439315fd1d52492a283f096e5c",
+    "calibration_bf16_V2_RESULT.json": "038786198f4f8bd95c43c678bac07b1378e25d3f5300b42f76cc472be3305d41"
+  },
+  "rows": [
+    {
+      "realization_id": "T353_U26_BASELINE",
+      "family_id": "PROPOSED_F1_MLP0_L24_ATTENUATION",
+      "family_status": "PROPOSED_NOT_PRECOMMITTED",
+      "family_committed_at": null,
+      "physical_model": "Qwen3-8B",
+      "boundary": {
+        "roles_active": 11,
+        "context_role": "heads[24,25,26,27]",
+        "donor_convention": "C_L24 frozen donors (bf16)"
+      },
+      "regime": {
+        "dtype": "bfloat16",
+        "quantization": "none"
+      },
+      "intervention": {
+        "kind": "none",
+        "site": "mlp0@L24",
+        "dose": 0.0
+      },
+      "is_control": true,
+      "co": {
+        "gamma": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "delta": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "r": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "lambda0": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        }
+      },
+      "m0": {
+        "intervention_rms": null,
+        "output_information": null,
+        "passive_effective_memory": null,
+        "preintervention_independent_access_score": null
+      },
+      "mr": {
+        "influence_frobenius_normalized": null,
+        "influence_spectral_norm": null,
+        "influence_stable_rank": null,
+        "influence_direction_asymmetry": null
+      },
+      "targets": {
+        "fca_e1": {
+          "value": 0.7515311944939369,
+          "n_units": 20,
+          "measured_at": null
+        },
+        "pci_t_ds_l27": {
+          "value": 1.0485902386100203,
+          "n_units": 6,
+          "measured_at": null
+        }
+      },
+      "candidate_intervention_rms_not_frozen": 0.0,
+      "notes": "T353/T355 pilot; PCI_T value is the median directional specificity over 6 episodes; C_O not measured on the modified state"
+    },
+    {
+      "realization_id": "T353_U26_SHAM",
+      "family_id": "PROPOSED_F1_MLP0_L24_ATTENUATION",
+      "family_status": "PROPOSED_NOT_PRECOMMITTED",
+      "family_committed_at": null,
+      "physical_model": "Qwen3-8B",
+      "boundary": {
+        "roles_active": 11,
+        "context_role": "heads[24,25,26,27]",
+        "donor_convention": "C_L24 frozen donors (bf16)"
+      },
+      "regime": {
+        "dtype": "bfloat16",
+        "quantization": "none"
+      },
+      "intervention": {
+        "kind": "sham",
+        "site": "mlp0@L24",
+        "dose": 0.0
+      },
+      "is_control": true,
+      "co": {
+        "gamma": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "delta": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "r": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "lambda0": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        }
+      },
+      "m0": {
+        "intervention_rms": null,
+        "output_information": null,
+        "passive_effective_memory": null,
+        "preintervention_independent_access_score": null
+      },
+      "mr": {
+        "influence_frobenius_normalized": null,
+        "influence_spectral_norm": null,
+        "influence_stable_rank": null,
+        "influence_direction_asymmetry": null
+      },
+      "targets": {
+        "fca_e1": {
+          "value": 0.7515311944939369,
+          "n_units": 20,
+          "measured_at": null
+        },
+        "pci_t_ds_l27": {
+          "value": 1.0485902386100203,
+          "n_units": 6,
+          "measured_at": null
+        }
+      },
+      "candidate_intervention_rms_not_frozen": 0.0,
+      "notes": "T353/T355 pilot; PCI_T value is the median directional specificity over 6 episodes; C_O not measured on the modified state"
+    },
+    {
+      "realization_id": "T353_U26_ABLATE_025",
+      "family_id": "PROPOSED_F1_MLP0_L24_ATTENUATION",
+      "family_status": "PROPOSED_NOT_PRECOMMITTED",
+      "family_committed_at": null,
+      "physical_model": "Qwen3-8B",
+      "boundary": {
+        "roles_active": 11,
+        "context_role": "heads[24,25,26,27]",
+        "donor_convention": "C_L24 frozen donors (bf16)"
+      },
+      "regime": {
+        "dtype": "bfloat16",
+        "quantization": "none"
+      },
+      "intervention": {
+        "kind": "attenuation",
+        "site": "mlp0@L24",
+        "dose": 0.25
+      },
+      "is_control": false,
+      "co": {
+        "gamma": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "delta": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "r": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "lambda0": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        }
+      },
+      "m0": {
+        "intervention_rms": null,
+        "output_information": null,
+        "passive_effective_memory": null,
+        "preintervention_independent_access_score": null
+      },
+      "mr": {
+        "influence_frobenius_normalized": null,
+        "influence_spectral_norm": null,
+        "influence_stable_rank": null,
+        "influence_direction_asymmetry": null
+      },
+      "targets": {
+        "fca_e1": {
+          "value": 0.7959800834766012,
+          "n_units": 20,
+          "measured_at": null
+        },
+        "pci_t_ds_l27": {
+          "value": 1.047944065169297,
+          "n_units": 6,
+          "measured_at": null
+        }
+      },
+      "candidate_intervention_rms_not_frozen": 0.08537397099803694,
+      "notes": "T353/T355 pilot; PCI_T value is the median directional specificity over 6 episodes; C_O not measured on the modified state"
+    },
+    {
+      "realization_id": "T353_U26_ABLATE_050",
+      "family_id": "PROPOSED_F1_MLP0_L24_ATTENUATION",
+      "family_status": "PROPOSED_NOT_PRECOMMITTED",
+      "family_committed_at": null,
+      "physical_model": "Qwen3-8B",
+      "boundary": {
+        "roles_active": 11,
+        "context_role": "heads[24,25,26,27]",
+        "donor_convention": "C_L24 frozen donors (bf16)"
+      },
+      "regime": {
+        "dtype": "bfloat16",
+        "quantization": "none"
+      },
+      "intervention": {
+        "kind": "attenuation",
+        "site": "mlp0@L24",
+        "dose": 0.5
+      },
+      "is_control": false,
+      "co": {
+        "gamma": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "delta": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "r": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "lambda0": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        }
+      },
+      "m0": {
+        "intervention_rms": null,
+        "output_information": null,
+        "passive_effective_memory": null,
+        "preintervention_independent_access_score": null
+      },
+      "mr": {
+        "influence_frobenius_normalized": null,
+        "influence_spectral_norm": null,
+        "influence_stable_rank": null,
+        "influence_direction_asymmetry": null
+      },
+      "targets": {
+        "fca_e1": {
+          "value": 0.8046100046676585,
+          "n_units": 20,
+          "measured_at": null
+        },
+        "pci_t_ds_l27": {
+          "value": 1.0683263417277322,
+          "n_units": 6,
+          "measured_at": null
+        }
+      },
+      "candidate_intervention_rms_not_frozen": 0.17074127186166038,
+      "notes": "T353/T355 pilot; PCI_T value is the median directional specificity over 6 episodes; C_O not measured on the modified state"
+    },
+    {
+      "realization_id": "T353_U26_ABLATE_100",
+      "family_id": "PROPOSED_F1_MLP0_L24_ATTENUATION",
+      "family_status": "PROPOSED_NOT_PRECOMMITTED",
+      "family_committed_at": null,
+      "physical_model": "Qwen3-8B",
+      "boundary": {
+        "roles_active": 11,
+        "context_role": "heads[24,25,26,27]",
+        "donor_convention": "C_L24 frozen donors (bf16)"
+      },
+      "regime": {
+        "dtype": "bfloat16",
+        "quantization": "none"
+      },
+      "intervention": {
+        "kind": "attenuation",
+        "site": "mlp0@L24",
+        "dose": 1.0
+      },
+      "is_control": false,
+      "co": {
+        "gamma": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "delta": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "r": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "lambda0": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        }
+      },
+      "m0": {
+        "intervention_rms": null,
+        "output_information": null,
+        "passive_effective_memory": null,
+        "preintervention_independent_access_score": null
+      },
+      "mr": {
+        "influence_frobenius_normalized": null,
+        "influence_spectral_norm": null,
+        "influence_stable_rank": null,
+        "influence_direction_asymmetry": null
+      },
+      "targets": {
+        "fca_e1": {
+          "value": 0.8043811591624815,
+          "n_units": 20,
+          "measured_at": null
+        },
+        "pci_t_ds_l27": {
+          "value": 1.0705689546341934,
+          "n_units": 6,
+          "measured_at": null
+        }
+      },
+      "candidate_intervention_rms_not_frozen": 0.3412327387171049,
+      "notes": "T353/T355 pilot; PCI_T value is the median directional specificity over 6 episodes; C_O not measured on the modified state"
+    },
+    {
+      "realization_id": "CAL_CAL_BASELINE",
+      "family_id": "CONTROL",
+      "family_status": "PROPOSED_NOT_PRECOMMITTED",
+      "family_committed_at": null,
+      "physical_model": "Qwen3-8B",
+      "boundary": {
+        "roles_active": 11,
+        "context_role": "heads[24,25,26,27]",
+        "donor_convention": "C_L24 frozen donors (bf16)"
+      },
+      "regime": {
+        "dtype": "bfloat16",
+        "quantization": "none"
+      },
+      "intervention": {
+        "kind": "no_hook",
+        "site": "none",
+        "dose": null
+      },
+      "is_control": true,
+      "co": {
+        "gamma": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "delta": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "r": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "lambda0": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        }
+      },
+      "m0": {
+        "intervention_rms": null,
+        "output_information": null,
+        "passive_effective_memory": null,
+        "preintervention_independent_access_score": null
+      },
+      "mr": {
+        "influence_frobenius_normalized": null,
+        "influence_spectral_norm": null,
+        "influence_stable_rank": null,
+        "influence_direction_asymmetry": null
+      },
+      "targets": {
+        "fca_e1": {
+          "value": 0.7705314274557592,
+          "n_units": 6,
+          "measured_at": null
+        },
+        "pci_t_ds_l27": {
+          "value": null,
+          "n_units": 0,
+          "measured_at": null
+        }
+      },
+      "candidate_intervention_rms_not_frozen": 0.0,
+      "notes": "6-instance calibration; no PCI_T measured"
+    },
+    {
+      "realization_id": "CAL_CAL_SHAM",
+      "family_id": "CONTROL",
+      "family_status": "PROPOSED_NOT_PRECOMMITTED",
+      "family_committed_at": null,
+      "physical_model": "Qwen3-8B",
+      "boundary": {
+        "roles_active": 11,
+        "context_role": "heads[24,25,26,27]",
+        "donor_convention": "C_L24 frozen donors (bf16)"
+      },
+      "regime": {
+        "dtype": "bfloat16",
+        "quantization": "none"
+      },
+      "intervention": {
+        "kind": "sham",
+        "site": "mlp@L24:all",
+        "dose": null
+      },
+      "is_control": true,
+      "co": {
+        "gamma": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "delta": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "r": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "lambda0": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        }
+      },
+      "m0": {
+        "intervention_rms": null,
+        "output_information": null,
+        "passive_effective_memory": null,
+        "preintervention_independent_access_score": null
+      },
+      "mr": {
+        "influence_frobenius_normalized": null,
+        "influence_spectral_norm": null,
+        "influence_stable_rank": null,
+        "influence_direction_asymmetry": null
+      },
+      "targets": {
+        "fca_e1": {
+          "value": 0.7705314274557592,
+          "n_units": 6,
+          "measured_at": null
+        },
+        "pci_t_ds_l27": {
+          "value": null,
+          "n_units": 0,
+          "measured_at": null
+        }
+      },
+      "candidate_intervention_rms_not_frozen": 0.0,
+      "notes": "6-instance calibration; no PCI_T measured"
+    },
+    {
+      "realization_id": "CAL_MLP0_L24_MEAN",
+      "family_id": "PROPOSED_F2_L24_MLP_MEAN_SUBSTITUTION",
+      "family_status": "PROPOSED_NOT_PRECOMMITTED",
+      "family_committed_at": null,
+      "physical_model": "Qwen3-8B",
+      "boundary": {
+        "roles_active": 11,
+        "context_role": "heads[24,25,26,27]",
+        "donor_convention": "C_L24 frozen donors (bf16)"
+      },
+      "regime": {
+        "dtype": "bfloat16",
+        "quantization": "none"
+      },
+      "intervention": {
+        "kind": "mean",
+        "site": "mlp@L24:block0",
+        "dose": null
+      },
+      "is_control": false,
+      "co": {
+        "gamma": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "delta": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "r": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "lambda0": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        }
+      },
+      "m0": {
+        "intervention_rms": null,
+        "output_information": null,
+        "passive_effective_memory": null,
+        "preintervention_independent_access_score": null
+      },
+      "mr": {
+        "influence_frobenius_normalized": null,
+        "influence_spectral_norm": null,
+        "influence_stable_rank": null,
+        "influence_direction_asymmetry": null
+      },
+      "targets": {
+        "fca_e1": {
+          "value": 0.8040772866871838,
+          "n_units": 6,
+          "measured_at": null
+        },
+        "pci_t_ds_l27": {
+          "value": null,
+          "n_units": 0,
+          "measured_at": null
+        }
+      },
+      "candidate_intervention_rms_not_frozen": 0.3265277183350591,
+      "notes": "6-instance calibration; no PCI_T measured"
+    },
+    {
+      "realization_id": "CAL_MLP0_L24_PATCH_MATCHED",
+      "family_id": "PROPOSED_F3_MLP0_L24_CONTENT_PATCH",
+      "family_status": "PROPOSED_NOT_PRECOMMITTED",
+      "family_committed_at": null,
+      "physical_model": "Qwen3-8B",
+      "boundary": {
+        "roles_active": 11,
+        "context_role": "heads[24,25,26,27]",
+        "donor_convention": "C_L24 frozen donors (bf16)"
+      },
+      "regime": {
+        "dtype": "bfloat16",
+        "quantization": "none"
+      },
+      "intervention": {
+        "kind": "patch",
+        "site": "mlp@L24:block0",
+        "dose": null
+      },
+      "is_control": false,
+      "co": {
+        "gamma": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "delta": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "r": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "lambda0": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        }
+      },
+      "m0": {
+        "intervention_rms": null,
+        "output_information": null,
+        "passive_effective_memory": null,
+        "preintervention_independent_access_score": null
+      },
+      "mr": {
+        "influence_frobenius_normalized": null,
+        "influence_spectral_norm": null,
+        "influence_stable_rank": null,
+        "influence_direction_asymmetry": null
+      },
+      "targets": {
+        "fca_e1": {
+          "value": 0.7629352994909944,
+          "n_units": 6,
+          "measured_at": null
+        },
+        "pci_t_ds_l27": {
+          "value": null,
+          "n_units": 0,
+          "measured_at": null
+        }
+      },
+      "candidate_intervention_rms_not_frozen": 0.0,
+      "notes": "6-instance calibration; no PCI_T measured"
+    },
+    {
+      "realization_id": "CAL_MLP0_L24_ZERO",
+      "family_id": "PROPOSED_F1_MLP0_L24_ATTENUATION",
+      "family_status": "PROPOSED_NOT_PRECOMMITTED",
+      "family_committed_at": null,
+      "physical_model": "Qwen3-8B",
+      "boundary": {
+        "roles_active": 11,
+        "context_role": "heads[24,25,26,27]",
+        "donor_convention": "C_L24 frozen donors (bf16)"
+      },
+      "regime": {
+        "dtype": "bfloat16",
+        "quantization": "none"
+      },
+      "intervention": {
+        "kind": "zero",
+        "site": "mlp@L24:block0",
+        "dose": null
+      },
+      "is_control": false,
+      "co": {
+        "gamma": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "delta": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "r": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "lambda0": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        }
+      },
+      "m0": {
+        "intervention_rms": null,
+        "output_information": null,
+        "passive_effective_memory": null,
+        "preintervention_independent_access_score": null
+      },
+      "mr": {
+        "influence_frobenius_normalized": null,
+        "influence_spectral_norm": null,
+        "influence_stable_rank": null,
+        "influence_direction_asymmetry": null
+      },
+      "targets": {
+        "fca_e1": {
+          "value": 0.8027936703292061,
+          "n_units": 6,
+          "measured_at": null
+        },
+        "pci_t_ds_l27": {
+          "value": null,
+          "n_units": 0,
+          "measured_at": null
+        }
+      },
+      "candidate_intervention_rms_not_frozen": 0.3418324108347559,
+      "notes": "6-instance calibration; no PCI_T measured; equals U26_ABLATE_100 on the shared six instances (identical paired differences), so it is not an independent realization"
+    },
+    {
+      "realization_id": "CAL_MLP_L24_MEAN",
+      "family_id": "PROPOSED_F2_L24_MLP_MEAN_SUBSTITUTION",
+      "family_status": "PROPOSED_NOT_PRECOMMITTED",
+      "family_committed_at": null,
+      "physical_model": "Qwen3-8B",
+      "boundary": {
+        "roles_active": 11,
+        "context_role": "heads[24,25,26,27]",
+        "donor_convention": "C_L24 frozen donors (bf16)"
+      },
+      "regime": {
+        "dtype": "bfloat16",
+        "quantization": "none"
+      },
+      "intervention": {
+        "kind": "mean",
+        "site": "mlp@L24:all",
+        "dose": null
+      },
+      "is_control": false,
+      "co": {
+        "gamma": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "delta": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "r": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "lambda0": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        }
+      },
+      "m0": {
+        "intervention_rms": null,
+        "output_information": null,
+        "passive_effective_memory": null,
+        "preintervention_independent_access_score": null
+      },
+      "mr": {
+        "influence_frobenius_normalized": null,
+        "influence_spectral_norm": null,
+        "influence_stable_rank": null,
+        "influence_direction_asymmetry": null
+      },
+      "targets": {
+        "fca_e1": {
+          "value": 0.8335703979091585,
+          "n_units": 6,
+          "measured_at": null
+        },
+        "pci_t_ds_l27": {
+          "value": null,
+          "n_units": 0,
+          "measured_at": null
+        }
+      },
+      "candidate_intervention_rms_not_frozen": 0.30872127754011003,
+      "notes": "6-instance calibration; no PCI_T measured"
+    },
+    {
+      "realization_id": "CAL_STRENGTH_MATCHED_RANDOM",
+      "family_id": "PROPOSED_F4_STRENGTH_MATCHED_RANDOM",
+      "family_status": "PROPOSED_NOT_PRECOMMITTED",
+      "family_committed_at": null,
+      "physical_model": "Qwen3-8B",
+      "boundary": {
+        "roles_active": 11,
+        "context_role": "heads[24,25,26,27]",
+        "donor_convention": "C_L24 frozen donors (bf16)"
+      },
+      "regime": {
+        "dtype": "bfloat16",
+        "quantization": "none"
+      },
+      "intervention": {
+        "kind": "random_matched",
+        "site": "mlp@L24:block0",
+        "dose": null
+      },
+      "is_control": false,
+      "co": {
+        "gamma": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "delta": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "r": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        },
+        "lambda0": {
+          "contract_id": null,
+          "value": null,
+          "status": "NOT_MEASURED"
+        }
+      },
+      "m0": {
+        "intervention_rms": null,
+        "output_information": null,
+        "passive_effective_memory": null,
+        "preintervention_independent_access_score": null
+      },
+      "mr": {
+        "influence_frobenius_normalized": null,
+        "influence_spectral_norm": null,
+        "influence_stable_rank": null,
+        "influence_direction_asymmetry": null
+      },
+      "targets": {
+        "fca_e1": {
+          "value": 0.7455521410269067,
+          "n_units": 6,
+          "measured_at": null
+        },
+        "pci_t_ds_l27": {
+          "value": null,
+          "n_units": 0,
+          "measured_at": null
+        }
+      },
+      "candidate_intervention_rms_not_frozen": 33.50553540458818,
+      "notes": "6-instance calibration; no PCI_T measured"
+    }
+  ]
+}

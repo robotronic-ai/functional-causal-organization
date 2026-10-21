@@ -1,0 +1,13 @@
+{
+  "status": "FULL_GAME_AND_SELECTED_RAW_REPLAY_VERIFIED",
+  "world": 26,
+  "n_gauges": 10,
+  "n_coalitions": 2048,
+  "checked_raw_gauge_coalitions": 100,
+  "source_sha256": "8d421b29a240c61ba10ae005674bc27b2b4d4fcc4e575aa055d32f32d4da3cc8",
+  "npz_sha256": "bf2ac04c78c0d8b8321de8c1bc4e6e6909af0ca1c8c463403381571e15897368",
+  "all_gauges_positive": true,
+  "min_delta_H": 0.3999999999999999,
+  "min_delta_S": 0.3999999999999999,
+  "warning": "Selected raw coalition replay is not exhaustive reproduction of the entire raw game."
+}

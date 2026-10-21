@@ -1,0 +1,75 @@
+{
+  "closure": {
+    "cell_rule": "NOT_EVALUATED_HERE: the frozen T341 cell and eta rule must be applied by the closure test itself",
+    "closure_contract_present": false,
+    "rows_with_numeric_profile": 0,
+    "status": "NOT_READY"
+  },
+  "contrasts": {
+    "D0_fca_e1": {
+      "families": [],
+      "precommitment_failures": {},
+      "reasons": [
+        "no row has M0, the four C_O coordinates, the four MR covariates and the target together",
+        "0 independent families, at least 5 required for 5 family-held-out folds"
+      ],
+      "status": "NOT_COMPUTABLE",
+      "usable_rows": 0
+    },
+    "D0_pci_t_ds_l27": {
+      "families": [],
+      "precommitment_failures": {},
+      "reasons": [
+        "no row has M0, the four C_O coordinates, the four MR covariates and the target together",
+        "0 independent families, at least 5 required for 5 family-held-out folds"
+      ],
+      "status": "NOT_COMPUTABLE",
+      "usable_rows": 0
+    },
+    "D4_fca_e1": {
+      "families": [],
+      "precommitment_failures": {},
+      "reasons": [
+        "no row has M0, the four C_O coordinates, the four MR covariates and the target together",
+        "0 independent families, at least 5 required for 5 family-held-out folds"
+      ],
+      "status": "NOT_COMPUTABLE",
+      "usable_rows": 0
+    },
+    "D4_pci_t_ds_l27": {
+      "families": [],
+      "precommitment_failures": {},
+      "reasons": [
+        "no row has M0, the four C_O coordinates, the four MR covariates and the target together",
+        "0 independent families, at least 5 required for 5 family-held-out folds"
+      ],
+      "status": "NOT_COMPUTABLE",
+      "usable_rows": 0
+    }
+  },
+  "distinct_regime_boundary_donor_conventions": 1,
+  "families_declared": [
+    "CONTROL",
+    "PROPOSED_F1_MLP0_L24_ATTENUATION",
+    "PROPOSED_F2_L24_MLP_MEAN_SUBSTITUTION",
+    "PROPOSED_F3_MLP0_L24_CONTENT_PATCH",
+    "PROPOSED_F4_STRENGTH_MATCHED_RANDOM"
+  ],
+  "gpu_invoked": false,
+  "manifest_sha256": "00115f65c6a5fe9fc81dd1242c431999c3f5f5b4eb9ec8746df98e7fd89e15d1",
+  "mixed_regimes_must_not_be_pooled": false,
+  "n_controls": 4,
+  "n_rows": 12,
+  "n_rows_with_schema_problems": 0,
+  "rows_complete": {
+    "CO": 0,
+    "M0": 0,
+    "MR": 0,
+    "fca_e1": 12,
+    "pci_t_ds_l27": 5
+  },
+  "schema": "T364_MANIFEST_AUDIT_V1",
+  "schema_problems": {},
+  "status": "NOT_READY",
+  "verdict": "STRUCTURAL_READINESS_ONLY_NO_PREDICTIVE_RESULT"
+}

@@ -1,0 +1,114 @@
+# started 2026-10-19T20:51:03
+[T346-FCA] fca_bench folders found:
+  /mnt/c/Users/Merien/pycharm/llama/quantum version=0.2.2 runner=None
+  /mnt/c/Users/Merien/pycharm/llama/quantum/FCA027 version=0.2.7 runner=FCA027_GPU_R6
+/mnt/c/Users/Merien/pycharm/llama/.venv_linux/lib/python3.12/site-packages/requests/__init__.py:113: RequestsDependencyWarning: urllib3 (2.6.3) or chardet (6.0.0.post1)/charset_normalizer (3.4.4) doesn't match a supported version!
+  warnings.warn(
+/mnt/c/Users/Merien/pycharm/llama/.venv_linux/lib/python3.12/site-packages/torch/__init__.py:1617: UserWarning: Please use the new API settings to control TF32 behavior, such as torch.backends.cudnn.conv.fp32_precision = 'tf32' or torch.backends.cuda.matmul.fp32_precision = 'ieee'. Old settings, e.g, torch.backends.cuda.matmul.allow_tf32 = True, torch.backends.cudnn.allow_tf32 = True, allowTF32CuDNN() and allowTF32CuBLAS() will be deprecated after Pytorch 2.9. Please see https://pytorch.org/docs/main/notes/cuda.html#tensorfloat-32-tf32-on-ampere-and-later-devices (Triggered internally at /pytorch/aten/src/ATen/Context.cpp:80.)
+  _C._set_float32_matmul_precision(precision)
+[GPU] cuda:0 NVIDIA GeForce RTX 5060 Ti total_vram=15.93 GiB quantization=bnb8 attention=sdpa
+Skipping import of cpp extensions due to incompatible torch version 2.9.0+cu128 for torchao version 0.15.0             Please see https://github.com/pytorch/ao/issues/2919 for more info
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:24<01:36, 24.17s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:48<01:12, 24.05s/it]Loading checkpoint shards:  60%|██████    | 3/5 [01:12<00:48, 24.10s/it]Loading checkpoint shards:  80%|████████  | 4/5 [01:31<00:22, 22.32s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:38<00:00, 16.62s/it]Loading checkpoint shards: 100%|██████████| 5/5 [01:38<00:00, 19.68s/it]
+[GPU] model ready; allocated=8.79 GiB reserved=10.21 GiB; CPU offload=DISALLOWED
+[T346-FCA] 1/100 U26_BASELINE E1-2026101801 score=0.5475 valid=True gen_calls=61 152.23 s
+[T346-FCA] 2/100 U26_SHAM E1-2026101801 score=0.5475 valid=True gen_calls=61 143.92 s
+[T346-FCA] 3/100 U26_ABLATE_025 E1-2026101801 score=0.5344 valid=True gen_calls=61 144.06 s
+[T346-FCA] 4/100 U26_ABLATE_050 E1-2026101801 score=0.5091 valid=True gen_calls=61 146.32 s
+[T346-FCA] 5/100 U26_ABLATE_100 E1-2026101801 score=0.5099 valid=True gen_calls=61 142.33 s
+[T346-FCA] 6/100 U26_BASELINE E1-2026101802 score=0.5000 valid=True gen_calls=61 140.6 s
+[T346-FCA] 7/100 U26_SHAM E1-2026101802 score=0.5000 valid=True gen_calls=61 142.06 s
+[T346-FCA] 8/100 U26_ABLATE_025 E1-2026101802 score=0.5000 valid=True gen_calls=61 142.22 s
+[T346-FCA] 9/100 U26_ABLATE_050 E1-2026101802 score=0.5000 valid=True gen_calls=61 141.53 s
+[T346-FCA] 10/100 U26_ABLATE_100 E1-2026101802 score=0.5000 valid=True gen_calls=61 140.97 s
+[T346-FCA] 11/100 U26_BASELINE E1-2026101803 score=0.7358 valid=True gen_calls=61 138.88 s
+[T346-FCA] 12/100 U26_SHAM E1-2026101803 score=0.7358 valid=True gen_calls=61 140.09 s
+[T346-FCA] 13/100 U26_ABLATE_025 E1-2026101803 score=0.7361 valid=True gen_calls=61 140.4 s
+[T346-FCA] 14/100 U26_ABLATE_050 E1-2026101803 score=0.7392 valid=True gen_calls=61 140.37 s
+[T346-FCA] 15/100 U26_ABLATE_100 E1-2026101803 score=0.7394 valid=True gen_calls=61 139.01 s
+[T346-FCA] 16/100 U26_BASELINE E1-2026101804 score=0.7714 valid=True gen_calls=61 140.59 s
+[T346-FCA] 17/100 U26_SHAM E1-2026101804 score=0.7714 valid=True gen_calls=61 141.19 s
+[T346-FCA] 18/100 U26_ABLATE_025 E1-2026101804 score=0.7842 valid=True gen_calls=61 142.59 s
+[T346-FCA] 19/100 U26_ABLATE_050 E1-2026101804 score=0.7396 valid=True gen_calls=61 142.21 s
+[T346-FCA] 20/100 U26_ABLATE_100 E1-2026101804 score=0.7552 valid=True gen_calls=61 141.8 s
+[T346-FCA] 21/100 U26_BASELINE E1-2026101805 score=0.7230 valid=True gen_calls=61 141.35 s
+[T346-FCA] 22/100 U26_SHAM E1-2026101805 score=0.7230 valid=True gen_calls=61 141.57 s
+[T346-FCA] 23/100 U26_ABLATE_025 E1-2026101805 score=0.7794 valid=True gen_calls=61 142.44 s
+[T346-FCA] 24/100 U26_ABLATE_050 E1-2026101805 score=0.7718 valid=True gen_calls=61 142.99 s
+[T346-FCA] 25/100 U26_ABLATE_100 E1-2026101805 score=0.8614 valid=True gen_calls=61 142.36 s
+[T346-FCA] 26/100 U26_BASELINE E1-2026101806 score=0.5000 valid=True gen_calls=61 140.13 s
+[T346-FCA] 27/100 U26_SHAM E1-2026101806 score=0.5000 valid=True gen_calls=61 140.29 s
+[T346-FCA] 28/100 U26_ABLATE_025 E1-2026101806 score=0.5330 valid=True gen_calls=61 140.71 s
+[T346-FCA] 29/100 U26_ABLATE_050 E1-2026101806 score=0.5000 valid=True gen_calls=61 141.91 s
+[T346-FCA] 30/100 U26_ABLATE_100 E1-2026101806 score=0.5000 valid=True gen_calls=61 142.22 s
+[T346-FCA] 31/100 U26_BASELINE E1-2026101807 score=0.7583 valid=True gen_calls=61 143.61 s
+[T346-FCA] 32/100 U26_SHAM E1-2026101807 score=0.7583 valid=True gen_calls=61 143.48 s
+[T346-FCA] 33/100 U26_ABLATE_025 E1-2026101807 score=0.7583 valid=True gen_calls=61 143.57 s
+[T346-FCA] 34/100 U26_ABLATE_050 E1-2026101807 score=0.7581 valid=True gen_calls=61 144.46 s
+[T346-FCA] 35/100 U26_ABLATE_100 E1-2026101807 score=0.8242 valid=True gen_calls=61 177.76 s
+[T346-FCA] 36/100 U26_BASELINE E1-2026101808 score=0.7679 valid=True gen_calls=61 144.01 s
+[T346-FCA] 37/100 U26_SHAM E1-2026101808 score=0.7679 valid=True gen_calls=61 143.86 s
+[T346-FCA] 38/100 U26_ABLATE_025 E1-2026101808 score=0.7518 valid=True gen_calls=61 143.42 s
+[T346-FCA] 39/100 U26_ABLATE_050 E1-2026101808 score=0.7540 valid=True gen_calls=61 144.38 s
+[T346-FCA] 40/100 U26_ABLATE_100 E1-2026101808 score=0.7502 valid=True gen_calls=61 144.67 s
+[T346-FCA] 41/100 U26_BASELINE E1-2026101809 score=0.7255 valid=True gen_calls=61 143.29 s
+[T346-FCA] 42/100 U26_SHAM E1-2026101809 score=0.7255 valid=True gen_calls=61 142.09 s
+[T346-FCA] 43/100 U26_ABLATE_025 E1-2026101809 score=0.7146 valid=True gen_calls=61 142.6 s
+[T346-FCA] 44/100 U26_ABLATE_050 E1-2026101809 score=0.6918 valid=True gen_calls=61 143.15 s
+[T346-FCA] 45/100 U26_ABLATE_100 E1-2026101809 score=0.6741 valid=True gen_calls=61 144.15 s
+[T346-FCA] 46/100 U26_BASELINE E1-2026101810 score=0.6737 valid=True gen_calls=61 140.55 s
+[T346-FCA] 47/100 U26_SHAM E1-2026101810 score=0.6737 valid=True gen_calls=61 139.71 s
+[T346-FCA] 48/100 U26_ABLATE_025 E1-2026101810 score=0.6979 valid=True gen_calls=61 139.24 s
+[T346-FCA] 49/100 U26_ABLATE_050 E1-2026101810 score=0.6983 valid=True gen_calls=61 139.29 s
+[T346-FCA] 50/100 U26_ABLATE_100 E1-2026101810 score=0.7210 valid=True gen_calls=61 139.89 s
+[T346-FCA] 51/100 U26_BASELINE E1-2026101811 score=0.9016 valid=True gen_calls=61 141.64 s
+[T346-FCA] 52/100 U26_SHAM E1-2026101811 score=0.9016 valid=True gen_calls=61 141.29 s
+[T346-FCA] 53/100 U26_ABLATE_025 E1-2026101811 score=0.8542 valid=True gen_calls=61 140.83 s
+[T346-FCA] 54/100 U26_ABLATE_050 E1-2026101811 score=0.8305 valid=True gen_calls=61 140.76 s
+[T346-FCA] 55/100 U26_ABLATE_100 E1-2026101811 score=0.8573 valid=True gen_calls=61 160.38 s
+[T346-FCA] 56/100 U26_BASELINE E1-2026101812 score=0.6799 valid=True gen_calls=61 142.74 s
+[T346-FCA] 57/100 U26_SHAM E1-2026101812 score=0.6799 valid=True gen_calls=61 142.98 s
+[T346-FCA] 58/100 U26_ABLATE_025 E1-2026101812 score=0.6961 valid=True gen_calls=61 141.25 s
+[T346-FCA] 59/100 U26_ABLATE_050 E1-2026101812 score=0.7143 valid=True gen_calls=61 141.69 s
+[T346-FCA] 60/100 U26_ABLATE_100 E1-2026101812 score=0.7158 valid=True gen_calls=61 141.5 s
+[T346-FCA] 61/100 U26_BASELINE E1-2026101813 score=0.5920 valid=True gen_calls=61 142.94 s
+[T346-FCA] 62/100 U26_SHAM E1-2026101813 score=0.5920 valid=True gen_calls=61 143.48 s
+[T346-FCA] 63/100 U26_ABLATE_025 E1-2026101813 score=0.5823 valid=True gen_calls=61 142.81 s
+[T346-FCA] 64/100 U26_ABLATE_050 E1-2026101813 score=0.5908 valid=True gen_calls=61 142.39 s
+[T346-FCA] 65/100 U26_ABLATE_100 E1-2026101813 score=0.5130 valid=True gen_calls=61 142.31 s
+[T346-FCA] 66/100 U26_BASELINE E1-2026101814 score=0.5000 valid=True gen_calls=61 142.4 s
+[T346-FCA] 67/100 U26_SHAM E1-2026101814 score=0.5000 valid=True gen_calls=61 143.18 s
+[T346-FCA] 68/100 U26_ABLATE_025 E1-2026101814 score=0.5000 valid=True gen_calls=61 143.3 s
+[T346-FCA] 69/100 U26_ABLATE_050 E1-2026101814 score=0.5000 valid=True gen_calls=61 142.46 s
+[T346-FCA] 70/100 U26_ABLATE_100 E1-2026101814 score=0.5000 valid=True gen_calls=61 142.8 s
+[T346-FCA] 71/100 U26_BASELINE E1-2026101815 score=0.7114 valid=True gen_calls=61 141.91 s
+[T346-FCA] 72/100 U26_SHAM E1-2026101815 score=0.7114 valid=True gen_calls=61 143.21 s
+[T346-FCA] 73/100 U26_ABLATE_025 E1-2026101815 score=0.7345 valid=True gen_calls=61 143.63 s
+[T346-FCA] 74/100 U26_ABLATE_050 E1-2026101815 score=0.7381 valid=True gen_calls=61 142.55 s
+[T346-FCA] 75/100 U26_ABLATE_100 E1-2026101815 score=0.7524 valid=True gen_calls=61 142.48 s
+[T346-FCA] 76/100 U26_BASELINE E1-2026101816 score=0.8057 valid=True gen_calls=61 142.57 s
+[T346-FCA] 77/100 U26_SHAM E1-2026101816 score=0.8057 valid=True gen_calls=61 143.33 s
+[T346-FCA] 78/100 U26_ABLATE_025 E1-2026101816 score=0.7619 valid=True gen_calls=61 144.15 s
+[T346-FCA] 79/100 U26_ABLATE_050 E1-2026101816 score=0.7380 valid=True gen_calls=61 143.69 s
+[T346-FCA] 80/100 U26_ABLATE_100 E1-2026101816 score=0.7650 valid=True gen_calls=61 142.5 s
+[T346-FCA] 81/100 U26_BASELINE E1-2026101817 score=0.8901 valid=True gen_calls=61 142.5 s
+[T346-FCA] 82/100 U26_SHAM E1-2026101817 score=0.8901 valid=True gen_calls=61 143.35 s
+[T346-FCA] 83/100 U26_ABLATE_025 E1-2026101817 score=0.8375 valid=True gen_calls=61 144.76 s
+[T346-FCA] 84/100 U26_ABLATE_050 E1-2026101817 score=0.8126 valid=True gen_calls=61 144.83 s
+[T346-FCA] 85/100 U26_ABLATE_100 E1-2026101817 score=0.7589 valid=True gen_calls=61 143.47 s
+[T346-FCA] 86/100 U26_BASELINE E1-2026101818 score=0.5000 valid=True gen_calls=61 138.03 s
+[T346-FCA] 87/100 U26_SHAM E1-2026101818 score=0.5000 valid=True gen_calls=61 137.94 s
+[T346-FCA] 88/100 U26_ABLATE_025 E1-2026101818 score=0.5000 valid=True gen_calls=61 139.66 s
+[T346-FCA] 89/100 U26_ABLATE_050 E1-2026101818 score=0.5000 valid=True gen_calls=61 139.45 s
+[T346-FCA] 90/100 U26_ABLATE_100 E1-2026101818 score=0.5000 valid=True gen_calls=61 139.27 s
+[T346-FCA] 91/100 U26_BASELINE E1-2026101819 score=0.7600 valid=True gen_calls=61 143.24 s
+[T346-FCA] 92/100 U26_SHAM E1-2026101819 score=0.7600 valid=True gen_calls=61 143.38 s
+[T346-FCA] 93/100 U26_ABLATE_025 E1-2026101819 score=0.7122 valid=True gen_calls=61 144.13 s
+[T346-FCA] 94/100 U26_ABLATE_050 E1-2026101819 score=0.7461 valid=True gen_calls=61 144.63 s
+[T346-FCA] 95/100 U26_ABLATE_100 E1-2026101819 score=0.7494 valid=True gen_calls=61 144.47 s
+[T346-FCA] 96/100 U26_BASELINE E1-2026101820 score=0.7067 valid=True gen_calls=61 141.43 s
+[T346-FCA] 97/100 U26_SHAM E1-2026101820 score=0.7067 valid=True gen_calls=61 141.78 s
+[T346-FCA] 98/100 U26_ABLATE_025 E1-2026101820 score=0.7461 valid=True gen_calls=61 141.69 s
+[T346-FCA] 99/100 U26_ABLATE_050 E1-2026101820 score=0.7115 valid=True gen_calls=61 152.19 s
+[T346-FCA] 100/100 U26_ABLATE_100 E1-2026101820 score=0.8296 valid=True gen_calls=61 166.07 s
+[T346-FCA] acquisition loop finished in 14318.1 s
+[T346-FCA] done ; records /mnt/c/Users/Merien/pycharm/llama/quantum/FAST_GPU_RESULTS/CLAUDE_T346_FCA_E1_PILOT/records.jsonl

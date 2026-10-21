@@ -1,0 +1,30 @@
+{
+  "note": "durations are measured wall-clock seconds of each step",
+  "started": "2026-10-20T11:37:43",
+  "steps": {
+    "t347_gauge": {
+      "command": [
+        "/mnt/c/Users/Merien/pycharm/llama/.venv_linux/bin/python",
+        "-I",
+        "-u",
+        "/mnt/c/Users/Merien/pycharm/llama/quantum/t347_run_cl24_float16_suite.py",
+        "--work",
+        "/mnt/c/Users/Merien/pycharm/llama/quantum",
+        "--scripts-dir",
+        "/mnt/c/Users/Merien/pycharm/llama/quantum/T347_CL24_F16_SCRIPTS",
+        "--stage",
+        "gauge",
+        "--resume",
+        "--authorize-gpu-run",
+        "<authorization>"
+      ],
+      "log": "/mnt/c/Users/Merien/pycharm/llama/quantum/FAST_GPU_RESULTS/NIGHT_CHAIN_20261020_113743/t347_gauge.log",
+      "returncode": 0,
+      "script_sha256": {
+        "t347_run_cl24_float16_suite.py": "25443391c7df7e51f46910fcd0c10703c02d89f07fdb9a10564cba8c25b521f2"
+      },
+      "seconds": 2184.6,
+      "status": "OK"
+    }
+  }
+}

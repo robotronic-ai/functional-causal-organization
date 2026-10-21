@@ -1,0 +1,34 @@
+{
+  "turn": "T323",
+  "model": "Qwen3-8B",
+  "primary_claim": "Gamma_intrinsic_Qwen3_8B = NONZERO_CERTIFIED",
+  "status": "NONZERO_CERTIFIED",
+  "object": "Gamma_intrinsic_Qwen3_8B",
+  "scope_contract": "C_L24",
+  "world": "u26",
+  "required_world_count": 1,
+  "intervention_law": "q_donor = product Bernoulli(0.5) on 12 donor site bits",
+  "q_bal_used": false,
+  "resolution": "absolute delta from nine Q1 recodings",
+  "retained_roles": 11,
+  "context_roles": [
+    "heads[24,25,26,27]"
+  ],
+  "gauge_count": 10,
+  "cuts_per_gauge": 1023,
+  "raw_witness_records_verified": 10230,
+  "gamma_positive_lower_bound": 0.00015673619086930833,
+  "raw_source_sha256": "8d421b29a240c61ba10ae005674bc27b2b4d4fcc4e575aa055d32f32d4da3cc8",
+  "verification_report": "RESULT(20261017-133131).json",
+  "evidence_status": "RAW_WITNESSES_VERIFIED",
+  "qualification": "Certificate is on Qwen3-8B under the explicitly declared C_L24 causal contract, not over all possible grains, layers, interventions, and horizons.",
+  "no_claims": [
+    "Delta certified",
+    "R certified",
+    "full C_O functional closure"
+  ],
+  "next_components": [
+    "Delta",
+    "R"
+  ]
+}
