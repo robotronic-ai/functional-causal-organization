@@ -5,17 +5,17 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.23124247"
     description: "Zenodo concept DOI (all versions; always resolves to the latest release)"
-  - type: other
-    value: "hal-05776792"
-    description: "HAL preprint of the accompanying article"
+  - type: doi
+    value: "10.5281/zenodo.23375826"
+    description: "Accompanying article (Zenodo, all versions)"
 type: software
 authors:
   - family-names: "Merien"
     given-names: "Ronan"
     affiliation: "Robotronic"
     email: "ronan.merien@robotronic.com"
-version: "1.6"
-date-released: "2026-10-21"
+version: "1.6.1"
+date-released: "2026-10-24"
 repository-code: "https://github.com/robotronic-ai/functional-causal-organization"
 license: MIT
 abstract: >-

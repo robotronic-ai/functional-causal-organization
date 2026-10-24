@@ -2,7 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23124247.svg)](https://doi.org/10.5281/zenodo.23124247)
 
-Article: *Measuring Functional Access in a Language Model by Intervention: PCI_T and FCA-Bench* — HAL [hal-05776792](https://hal.science/hal-05776792) · Zenodo [10.5281/zenodo.23375827](https://doi.org/10.5281/zenodo.23375827)
+Article: *Measuring Functional Access in a Language Model by Intervention: PCI_T and FCA-Bench* (version 1.6) — Zenodo [10.5281/zenodo.23375826](https://doi.org/10.5281/zenodo.23375826)
 
 Repository: [github.com/robotronic-ai/functional-causal-organization](https://github.com/robotronic-ai/functional-causal-organization)
 
@@ -57,7 +57,7 @@ A `V3` or `V4` verdict is never silently turned into a `V1` number in any docume
 | 06 | `06-transformer-measurement` | Transformer re-entry measurement | Closed, with two archived-and-fixed defects documented rather than hidden. |
 | 07 | `07-gamma-scaling-and-certification` | §7.1 scaling / certification | Mixed — see below. |
 | 08 | `08-lambda-addressing-theory` | §17.5 "Pont d'adressage", §7.3 | Closed constructive theory: 7 theorems, 4 exact finite witness domains, all PASS. Status `STABILIZED-CONSTRUCTIVE-THEORY`. |
-| 09 | `09-lambda-addressing-empirical` | §17.5, §7.3 | Screening protocol executed on a real model across 3 stages (up to ~1.26M state pairs); **zero candidate fibers found**, so Λ itself was never opened for scoring. Universal Λ-necessity remains **OPEN**, not settled either way. |
+| 09 | `09-lambda-addressing-empirical` | §17.5, §7.3 | A purpose-built system with an exactly identical declared baseline channel (262,656 comparisons) is fully separated by a late context-to-role channel: RELINK gate 1.0, LOCK gate 0.0 (576 challenge episodes per system). Screens on real Qwen3-8B states (up to 1,256,905 pairs) find the rich perturbation channel separating every declared state. |
 | 10 | `10-continuous-predictive-geometry` | Predictive-state theory, continuous extension | Pure math + exact finite/closed-form verification only. **Not yet applied to any trained model.** |
 | 11 | `11-rmt-prospective-physical-cut` | §17.6-adjacent prospective validation | Protocol and analysis engine complete and self-tested; **`NOT_EXECUTED_REAL_MODEL`** — no result yet from the target model of the working paper. |
 | 12 | `12-readout-relative-minimal-predictive` | Predictive realization theory | Theoretical derivation + exhaustive finite verification (13,538 cases, 0 failures). Stochastic/continuous extensions explicitly `OPEN`. No trained model involved. |
@@ -72,7 +72,7 @@ A `V3` or `V4` verdict is never silently turned into a `V1` number in any docume
 
 ## Reading this archive honestly
 
-Three campaigns (10, 11, and the target-transformer sub-bundle of 07) remain designs or tooling that have not yet been run against the target trained model, while campaign 09 is a completed negative screen rather than a positive confirmation. Folder 13 is different: its A-dagger v0.28 instrument is sealed **and** it has been executed against Qwen3-8B. The folder therefore separates two evidence layers that a reader should not conflate: release validation of the measurement specification, and the instance-relative behavioral results of the Qwen campaign.
+Three campaigns (10, 11, and the target-transformer sub-bundle of 07) remain designs or tooling that have not yet been run against the target trained model, while campaign 09 has been executed, on a purpose-built system and as screens on real Qwen3-8B states. Folder 13 is different: its A-dagger v0.28 instrument is sealed **and** it has been executed against Qwen3-8B. The folder therefore separates two evidence layers that a reader should not conflate: release validation of the measurement specification, and the instance-relative behavioral results of the Qwen campaign.
 
 For folder 13, the final system profile is `(2, FAIL, FAIL, PASS, FAIL)`. This is not a scalar consciousness score. A-dagger is explicitly behavioral and architecture-neutral; its certificates and core rung are reported separately. The core result carries `LOW_REFERENCE_POWER` annotations on inherited DELAYED-USE and SUBST estimates, Cert_E carries the documented erasure/convention flags, and Cert_A carries `CONVENTION_WEAK`. Those annotations narrow interpretation without silently changing the recorded verdicts.
 
@@ -221,10 +221,10 @@ Frozen protocols, byte-identical to their hashed originals: graded functional cl
 
 ## Suggested reading order
 
-1. The article (HAL or Zenodo link above), then `16-pci-t-directional-specificity/` — protocol first, then the synthetic bench, the Qwen3-8B calibration and replication, and the verifier — and `17-fca-bench/` — protocol first, then the runner, then the Qwen3-8B instance-by-instance results.
+1. The article (Zenodo link above), then `16-pci-t-directional-specificity/` — protocol first, then the synthetic bench, the Qwen3-8B calibration and replication, and the verifier — and `17-fca-bench/` — protocol first, then the runner, then the Qwen3-8B instance-by-instance results.
 2. `04-gamma-delta-characterization` and `05-keff-r-normalization` — the core Γ/Δ/R axis results.
 3. `07-gamma-scaling-and-certification` — what changes, and what doesn't yet, at larger scale.
-4. `08-lambda-addressing-theory` then `09-lambda-addressing-empirical` — the Λ addressing-sufficiency theory and its (negative) empirical screen.
+4. `08-lambda-addressing-theory` then `09-lambda-addressing-empirical` — the Λ addressing-sufficiency theory and its empirical campaign.
 5. `01`–`03` and `06` — the supporting factorization, gauge-transport, boundary-closure and transformer-measurement results.
 6. `10`–`12` — the three protocol extensions, all instrument-complete, not yet run on a real model.
 7. `13-a-dagger-spec-behavioral-protocol` — read the sealed v0.28 instrument first, then its executable validation/sealing record, then the completed Qwen3-8B campaign and final profile `(2, FAIL, FAIL, PASS, FAIL)`.
@@ -251,7 +251,7 @@ The licenses cover this archive's contents. The Qwen3-8B model used in the exper
 
 If you use the instruments of folders 16 and 17, please cite the article:
 
-> Merien, R. (2026). *Measuring Functional Access in a Language Model by Intervention: PCI_T and FCA-Bench*. HAL hal-05776792; Zenodo, https://doi.org/10.5281/zenodo.23375827.
+> Merien, R. (2026). *Measuring Functional Access in a Language Model by Intervention: PCI_T and FCA-Bench* (version 1.6). Zenodo, https://doi.org/10.5281/zenodo.23375826.
 
 For the code, data and other campaigns, cite the archived release of this repository: the DOI and release tag are given in `CITATION.cff`, in the release notes and on the Zenodo record. GitHub's "Cite this repository" button reads `CITATION.cff`.
 
